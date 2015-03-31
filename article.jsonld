@@ -7,8 +7,8 @@
 
     "sameAs": { "@id": "owl:sameAs", "@type": "@id" },
     "subClassOf": { "@id": "rdfs:subClassOf", "@type": "@id", "@container": "@set" },
-    "disjointWith": { "@id": "owld:disjointWith", "@type": "@id", "@container": "@set" },
-    "unionOf": { "@id": "owd:unionOf", "@type": "@id", "@container": "@set" },
+    "disjointWith": { "@id": "owl:disjointWith", "@type": "@id", "@container": "@set" },
+    "unionOf": { "@id": "owl:unionOf", "@type": "@id", "@container": "@set" },
     "comment": "rdfs:comment",
 
     "defines": { "@reverse": "rdfs:isDefinedBy" }
