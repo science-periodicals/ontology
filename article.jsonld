@@ -5,10 +5,6 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "owl": "http://www.w3.org/2002/07/owl#",
 
-    //TODO domain and range
-    "domain": { "@id": "rdfs:domain", "@type": "@id" },
-    "range": { "@id": "rdfs:range", "@type": "@id" },
-
     "sameAs": { "@id": "owl:sameAs", "@type": "@id" },
     "subClassOf": { "@id": "rdfs:subClassOf", "@type": "@id", "@container": "@set" },
     "disjointWith": { "@id": "owld:disjointWith", "@type": "@id", "@container": "@set" },
