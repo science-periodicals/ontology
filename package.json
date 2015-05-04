@@ -1,0 +1,24 @@
+{
+  "name": "schema-components",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Collection of SA structured vocabulary definitions",
+  "main": "null",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/standard-analytics/schema-components.git"
+  },
+  "keywords": [
+    "schema",
+    "JSON-LD"
+  ],
+  "author": "Standard Analytics",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/standard-analytics/schema-components/issues"
+  },
+  "homepage": "https://github.com/standard-analytics/schema-components#readme"
+}
