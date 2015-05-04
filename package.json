@@ -1,11 +1,12 @@
 {
   "name": "schema-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "Collection of SA structured vocabulary definitions",
-  "main": "null",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node_modules/.bin/browserify index.js > schema-components-browser.js",
+    "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -16,9 +17,19 @@
     "JSON-LD"
   ],
   "author": "Standard Analytics",
-  "license": "ISC",
+  "license": "Apache-v2",
   "bugs": {
     "url": "https://github.com/standard-analytics/schema-components/issues"
   },
-  "homepage": "https://github.com/standard-analytics/schema-components#readme"
+  "homepage": "https://github.com/standard-analytics/schema-components#readme",
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
+  },
+  "devDependencies": {
+    "brfs": "^1.4.0",
+    "browserify": "^10.1.0",
+    "mocha": "^2.2.4"
+  }
 }

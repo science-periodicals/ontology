@@ -10,6 +10,7 @@
     "disjointWith": { "@id": "owl:disjointWith", "@type": "@id", "@container": "@set" },
     "unionOf": { "@id": "owl:unionOf", "@type": "@id", "@container": "@set" },
     "comment": "rdfs:comment",
+    "label": "rdfs:label",
 
     "defines": { "@reverse": "rdfs:isDefinedBy" }
   },
@@ -20,6 +21,7 @@
     {
       "@id": "article:Abstract",
       "@type": "rdfs:Class",
+      "label": "Abstract",
       "comment": "A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose.",
       "subClassOf": [],
       "disjointWith": []
@@ -27,6 +29,7 @@
     {
       "@id": "article:Introduction",
       "@type": "rdfs:Class",
+      "label": "Introduction",
       "sameAs": "http://purl.org/spar/deo/Introduction",
       "comment": "An initial description which states the purpose and goals of the following writing, and, in the case of journal articles, typically includes background information on the research topic and a review of related work in the area.",
       "subClassOf": [
@@ -37,6 +40,7 @@
     {
       "@id": "article:MaterialsAndMethods",
       "@type": "rdfs:Class",
+      "label": "Materials and Methods",
       "unionOf": [
         "http://purl.org/spar/deo/Materials",
         "http://purl.org/spar/deo/Methods"
@@ -50,6 +54,7 @@
     {
       "@id": "article:Results",
       "@type": "rdfs:Class",
+      "label": "Results",
       "sameAs": "http://purl.org/spar/deo/Results",
       "comment": "The report of the specific findings of an investigation, given without discussion or conclusion being drawn.",
       "subClassOf": [
@@ -60,6 +65,7 @@
     {
       "@id": "article:Discussion",
       "@type": "rdfs:Class",
+      "label": "Discussion",
       "comment": "An interpretation and discussion of the results obtained and an analysis of their significance, in support of conclusions. These conclusions may be part of this discussion or may be included in a separate section of the document.",
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
@@ -69,6 +75,7 @@
     {
       "@id": "article:Conclusion",
       "@type": "rdfs:Class",
+      "label": "Conclusion",
       "comment": "A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section.",
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
@@ -78,6 +85,7 @@
     {
       "@id": "article:Acknowledgements",
       "@type": "rdfs:Class",
+      "label": "Acknowledgements",
       "sameAs": "http://purl.org/spar/deo/Acknowledgements",
       "comment": "Usually part of the preface, or a separate section in its own right, often as part of the back matter, it acknowledges those, including funding agencies, who contributed to the undertaking of a research project described in a publication, or to the creation of the work in some way. In scientific articles, the acknowledgements are usually placed as a separated section immediately following the Discussion or Conclusions.",
       "subClassOf": [
@@ -88,6 +96,7 @@
     {
       "@id": "article:ReferenceList",
       "@type": "rdfs:Class",
+      "label": "References",
       "sameAs": "http://purl.org/spar/doco/ListOfReferences",
       "comment": "A list of items each representing a reference to a specific part of the same document, or to another publication.",
       "subClassOf": [
@@ -98,6 +107,7 @@
     {
       "@id": "article:Reference",
       "@type": "rdfs:Class",
+      "label": "Reference",
       "sameAs": "http://purl.org/spar/deo/Reference",
       "comment": "A reference to a specific part of the document, or to another publication.",
       "subClassOf": [
