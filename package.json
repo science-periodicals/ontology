@@ -1,16 +1,16 @@
 {
-  "name": "schema-components",
+  "name": "doco-ontology",
   "version": "0.0.2",
   "private": true,
   "description": "Collection of SA structured vocabulary definitions",
   "main": "index.js",
   "scripts": {
-    "build": "node_modules/.bin/browserify index.js > schema-components-browser.js",
+    "build": "node_modules/.bin/browserify index.js > doco-ontology-browser.js",
     "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/standard-analytics/schema-components.git"
+    "url": "git+https://github.com/standard-analytics/doco-ontology.git"
   },
   "keywords": [
     "schema",
@@ -19,9 +19,9 @@
   "author": "Standard Analytics",
   "license": "Apache-v2",
   "bugs": {
-    "url": "https://github.com/standard-analytics/schema-components/issues"
+    "url": "https://github.com/standard-analytics/doco-ontology/issues"
   },
-  "homepage": "https://github.com/standard-analytics/schema-components#readme",
+  "homepage": "https://github.com/standard-analytics/doco-ontology#readme",
   "browserify": {
     "transform": [
       "brfs"
