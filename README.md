@@ -1,7 +1,7 @@
-schema-components
+doco-ontology
 =================
 
-Structured vocabularies of SA core data models, as a collection of JSON-LD files. Work on these ontologies is ongoing and the definitions are by no means complete.
+SA Document Components Ontology, in JSON-LD format.
 
 ### Article
 
