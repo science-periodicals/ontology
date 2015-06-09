@@ -19,12 +19,20 @@
 
   "defines": [
     {
+      "@id": "article:Unspecified",
+      "@type": "rdfs:Class",
+      "label": "Unspecified",
+      "comment": "A section that is unknown or otherwise unspecified.",
+      "subClassOf": [],
+      "disjointWith": ["article:Abstract", "article:Introduction", "article:MaterialsAndMethods", "article:Results", "article:Discussion", "article:Conclusion", "article:Acknowledgements", "article:ReferenceList", "article:Reference"]
+    },
+    {
       "@id": "article:Abstract",
       "@type": "rdfs:Class",
       "label": "Abstract",
       "comment": "A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose.",
       "subClassOf": [],
-      "disjointWith": []
+      "disjointWith": ["article:Unspecified"]
     },
     {
       "@id": "article:Introduction",
@@ -35,7 +43,7 @@
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": []
+      "disjointWith": ["article:Unspecified"]
     },
     {
       "@id": "article:MaterialsAndMethods",
@@ -49,7 +57,7 @@
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": []
+      "disjointWith": ["article:Unspecified"]
     },
     {
       "@id": "article:Results",
@@ -60,7 +68,7 @@
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": []
+      "disjointWith": ["article:Unspecified"]
     },
     {
       "@id": "article:Discussion",
@@ -70,7 +78,7 @@
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": []
+      "disjointWith": ["article:Unspecified"]
     },
     {
       "@id": "article:Conclusion",
@@ -80,7 +88,7 @@
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": []
+      "disjointWith": ["article:Unspecified"]
     },
     {
       "@id": "article:Acknowledgements",
@@ -91,7 +99,7 @@
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": []
+      "disjointWith": ["article:Unspecified"]
     },
     {
       "@id": "article:ReferenceList",
@@ -102,7 +110,7 @@
       "subClassOf": [
         "http://purl.org/spar/doco/List"
       ],
-      "disjointWith": []
+      "disjointWith": ["article:Unspecified"]
     },
     {
       "@id": "article:Reference",
@@ -113,7 +121,7 @@
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": []
+      "disjointWith": ["article:Unspecified"]
     }
 
   ]
