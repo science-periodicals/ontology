@@ -148,9 +148,10 @@
       "@id": "article:EquationBox",
       "@type": "rdfs:Class",
       "label": "Equation",
+      "sameAs": "http://purl.org/spar/doco/FormulaBox",
       "comment": "A box containing a mathematical equation, optionally with a caption.",
       "subClassOf": [
-        "http://purl.org/spar/doco/FigureBox"
+        "http://purl.org/spar/deo/DiscourseElement"
       ],
       "disjointWith": ["article:Unspecified"]
     }
