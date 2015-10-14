@@ -122,6 +122,27 @@
         "http://purl.org/spar/deo/DiscourseElement"
       ],
       "disjointWith": ["article:Unspecified"]
+    },
+    {
+      "@id": "article:FootnoteList",
+      "@type": "rdfs:Class",
+      "label": "Footnotes",
+      "comment": "A list of items each representing a footnote.",
+      "subClassOf": [
+        "http://purl.org/spar/doco/List"
+      ],
+      "disjointWith": ["article:Unspecified"]
+    },
+    {
+      "@id": "article:Footnote",
+      "@type": "rdfs:Class",
+      "label": "Footnote",
+      "sameAs": "http://purl.org/spar/doco/Footnote",
+      "comment": "A structural item that allows the author to make an additional remark, usually outside the main body of the text.",
+      "subClassOf": [
+        "http://purl.org/spar/deo/DiscourseElement"
+      ],
+      "disjointWith": ["article:Unspecified"]
     }
 
   ]
