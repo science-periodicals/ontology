@@ -143,7 +143,16 @@
         "http://purl.org/spar/deo/DiscourseElement"
       ],
       "disjointWith": ["article:Unspecified"]
+    },
+    {
+      "@id": "article:EquationBox",
+      "@type": "rdfs:Class",
+      "label": "Equation",
+      "comment": "A box containing a mathematical equation, optionally with a caption.",
+      "subClassOf": [
+        "http://purl.org/spar/doco/FigureBox"
+      ],
+      "disjointWith": ["article:Unspecified"]
     }
-
   ]
 }
