@@ -145,11 +145,22 @@
       "disjointWith": ["article:Unspecified"]
     },
     {
-      "@id": "article:EquationBox",
+      "@id": "article:Formula",
       "@type": "rdfs:Class",
-      "label": "Equation",
+      "label": "Formula",
+      "sameAs": "http://purl.org/spar/doco/Formula",
+      "comment": "A unit of information expressed in mathematical, chemical or logical symbols and language.",
+      "subClassOf": [
+        "http://purl.org/spar/deo/DiscourseElement"
+      ],
+      "disjointWith": ["article:Unspecified"]
+    },
+    {
+      "@id": "article:FormulaBox",
+      "@type": "rdfs:Class",
+      "label": "Formula box",
       "sameAs": "http://purl.org/spar/doco/FormulaBox",
-      "comment": "A box containing a mathematical equation, optionally with a caption.",
+      "comment": "A space within a document that contains one or more formulae.",
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
