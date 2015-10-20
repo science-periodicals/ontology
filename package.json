@@ -1,6 +1,6 @@
 {
   "name": "@scienceai/doco-ontology",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Collection of SA structured vocabulary definitions",
   "main": "index.js",
   "scripts": {

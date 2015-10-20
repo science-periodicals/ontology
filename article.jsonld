@@ -151,7 +151,8 @@
       "sameAs": "http://purl.org/spar/doco/Formula",
       "comment": "A unit of information expressed in mathematical, chemical or logical symbols and language.",
       "subClassOf": [
-        "http://purl.org/spar/deo/DiscourseElement"
+        "http://purl.org/spar/deo/DiscourseElement",
+        "http://schema.org/CreativeWork"
       ],
       "disjointWith": ["article:Unspecified"]
     },
@@ -162,7 +163,8 @@
       "sameAs": "http://purl.org/spar/doco/FormulaBox",
       "comment": "A space within a document that contains one or more formulae.",
       "subClassOf": [
-        "http://purl.org/spar/deo/DiscourseElement"
+        "http://purl.org/spar/deo/DiscourseElement",
+        "http://schema.org/MediaObject"
       ],
       "disjointWith": ["article:Unspecified"]
     }
