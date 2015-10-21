@@ -1,15 +1,15 @@
 {
-  "name": "@scienceai/doco-ontology",
-  "version": "0.6.0",
-  "description": "Collection of SA structured vocabulary definitions",
+  "name": "@scienceai/scholarly-article",
+  "version": "0.7.0",
+  "description": "Scholarly Article Document Components Ontology",
   "main": "index.js",
   "scripts": {
-    "build": "browserify index.js > doco-ontology-browser.js",
+    "build": "browserify index.js > scholarly-article-browser.js",
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scienceai/doco-ontology.git"
+    "url": "git+https://github.com/scienceai/scholarly-article.git"
   },
   "keywords": [
     "schema",
@@ -18,9 +18,9 @@
   "author": "Standard Analytics",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/scienceai/doco-ontology/issues"
+    "url": "https://github.com/scienceai/scholarly-article/issues"
   },
-  "homepage": "https://github.com/scienceai/doco-ontology#readme",
+  "homepage": "https://github.com/scienceai/scholarly-article#readme",
   "browserify": {
     "transform": [
       "brfs"

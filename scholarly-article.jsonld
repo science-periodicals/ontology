@@ -1,6 +1,6 @@
 {
   "@context": {
-    "article": "https://science.ai/schema/article#",
+    "sa": "https://ns.science.ai/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "owl": "http://www.w3.org/2002/07/owl#",
@@ -15,27 +15,29 @@
     "defines": { "@reverse": "rdfs:isDefinedBy" }
   },
 
-  "@id": "https://science.ai/schema/article",
+  "@id": "https://ns.science.ai/",
 
   "defines": [
     {
-      "@id": "article:Unspecified",
+      "@id": "sa:Unspecified",
       "@type": "rdfs:Class",
       "label": "Unspecified",
       "comment": "A section that is unknown or otherwise unspecified.",
       "subClassOf": [],
-      "disjointWith": ["article:Abstract", "article:Introduction", "article:MaterialsAndMethods", "article:Results", "article:Discussion", "article:Conclusion", "article:Acknowledgements", "article:ReferenceList", "article:Reference"]
+      "disjointWith": ["sa:Abstract", "sa:Introduction", "sa:MaterialsAndMethods", "sa:Results", "sa:Discussion", "sa:Conclusion", "sa:Acknowledgements", "sa:ReferenceList", "sa:Reference", "sa:FootnoteList", "sa:Footnote", "sa:Formula", "sa:FormulaObject", "sa:Image", "sa:Video", "sa:Audio", "sa:Table", "sa:TableObject"]
     },
+
     {
-      "@id": "article:Abstract",
+      "@id": "sa:Abstract",
       "@type": "rdfs:Class",
       "label": "Abstract",
       "comment": "A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose.",
       "subClassOf": [],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
+
     {
-      "@id": "article:Introduction",
+      "@id": "sa:Introduction",
       "@type": "rdfs:Class",
       "label": "Introduction",
       "sameAs": "http://purl.org/spar/deo/Introduction",
@@ -43,10 +45,11 @@
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
+
     {
-      "@id": "article:MaterialsAndMethods",
+      "@id": "sa:MaterialsAndMethods",
       "@type": "rdfs:Class",
       "label": "Materials and Methods",
       "unionOf": [
@@ -57,10 +60,11 @@
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
+
     {
-      "@id": "article:Results",
+      "@id": "sa:Results",
       "@type": "rdfs:Class",
       "label": "Results",
       "sameAs": "http://purl.org/spar/deo/Results",
@@ -68,30 +72,33 @@
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
+
     {
-      "@id": "article:Discussion",
+      "@id": "sa:Discussion",
       "@type": "rdfs:Class",
       "label": "Discussion",
       "comment": "An interpretation and discussion of the results obtained and an analysis of their significance, in support of conclusions. These conclusions may be part of this discussion or may be included in a separate section of the document.",
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
+
     {
-      "@id": "article:Conclusion",
+      "@id": "sa:Conclusion",
       "@type": "rdfs:Class",
       "label": "Conclusion",
       "comment": "A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section.",
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
+
     {
-      "@id": "article:Acknowledgements",
+      "@id": "sa:Acknowledgements",
       "@type": "rdfs:Class",
       "label": "Acknowledgements",
       "sameAs": "http://purl.org/spar/deo/Acknowledgements",
@@ -99,10 +106,11 @@
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
+
     {
-      "@id": "article:ReferenceList",
+      "@id": "sa:ReferenceList",
       "@type": "rdfs:Class",
       "label": "References",
       "sameAs": "http://purl.org/spar/doco/ListOfReferences",
@@ -110,10 +118,10 @@
       "subClassOf": [
         "http://purl.org/spar/doco/List"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
     {
-      "@id": "article:Reference",
+      "@id": "sa:Reference",
       "@type": "rdfs:Class",
       "label": "Reference",
       "sameAs": "http://purl.org/spar/deo/Reference",
@@ -121,20 +129,21 @@
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
+
     {
-      "@id": "article:FootnoteList",
+      "@id": "sa:FootnoteList",
       "@type": "rdfs:Class",
       "label": "Footnotes",
       "comment": "A list of items each representing a footnote.",
       "subClassOf": [
         "http://purl.org/spar/doco/List"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
     {
-      "@id": "article:Footnote",
+      "@id": "sa:Footnote",
       "@type": "rdfs:Class",
       "label": "Footnote",
       "sameAs": "http://purl.org/spar/doco/Footnote",
@@ -142,10 +151,11 @@
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
+
     {
-      "@id": "article:Formula",
+      "@id": "sa:Formula",
       "@type": "rdfs:Class",
       "label": "Formula",
       "sameAs": "http://purl.org/spar/doco/Formula",
@@ -154,23 +164,23 @@
         "http://purl.org/spar/deo/DiscourseElement",
         "http://schema.org/CreativeWork"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
     {
-      "@id": "article:FormulaBox",
+      "@id": "sa:FormulaObject",
       "@type": "rdfs:Class",
-      "label": "Formula box",
+      "label": "Formula Object",
       "sameAs": "http://purl.org/spar/doco/FormulaBox",
-      "comment": "A space within a document that contains one or more formulae.",
+      "comment": "A formula object embedded in a web page",
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement",
         "http://schema.org/MediaObject"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
 
     {
-      "@id": "article:Image",
+      "@id": "sa:Image",
       "@type": "rdfs:Class",
       "label": "Image",
       "sameAs": "http://purl.org/spar/doco/Figure",
@@ -178,30 +188,31 @@
       "subClassOf": [
         "http://schema.org/CreativeWork"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
     {
-      "@id": "article:Video",
+      "@id": "sa:Video",
       "@type": "rdfs:Class",
       "label": "Video",
       "comment": "A video resource",
       "subClassOf": [
         "http://schema.org/CreativeWork"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
     {
-      "@id": "article:Audio",
+      "@id": "sa:Audio",
       "@type": "rdfs:Class",
       "label": "Audio",
       "comment": "An audio resource",
       "subClassOf": [
         "http://schema.org/CreativeWork"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
+
     {
-      "@id": "article:Table",
+      "@id": "sa:Table",
       "@type": "rdfs:Class",
       "sameAs": "http://purl.org/spar/doco/Table",
       "label": "Table",
@@ -209,10 +220,10 @@
       "subClassOf": [
         "http://schema.org/CreativeWork"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     },
     {
-      "@id": "article:TableObject",
+      "@id": "sa:TableObject",
       "@type": "rdfs:Class",
       "sameAs": "http://purl.org/spar/doco/TableBox",
       "label": "TableObject",
@@ -220,7 +231,7 @@
       "subClassOf": [
         "http://schema.org/CreativeWork"
       ],
-      "disjointWith": ["article:Unspecified"]
+      "disjointWith": ["sa:Unspecified"]
     }
 
   ]

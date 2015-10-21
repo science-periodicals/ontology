@@ -1,12 +1,17 @@
-doco-ontology
+scholarly-article
 =================
 
-SA Document Components Ontology, in JSON-LD format.
+Extension of
+[`schema:ScholarlyArticle`](http://schema.org/ScholarlyArticle) for
+article components and rhetorical elements.
 
-### Article
+## References:
 
-Namespace `article`: `https://science.ai/schema/article#`
+- [DoCO, the Document Components Ontology](http://purl.org/spar/doco)
+- [DEO, the Discourse Elements Ontology](http://purl.org/spar/deo).
 
-Basic article components and rhetorical elements class definitions, taking a subset from [DoCO, the Document Components Ontology](http://purl.org/spar/doco) and [DEO, the Discourse Elements Ontology](http://purl.org/spar/deo). Note that these two ontologies also incorporate the [SALT Rhetorical Ontology](http://salt.semanticauthoring.org/ontologies/sro.rdfs), which is no longer maintained. Therefore, we define our own classes where appropriate.
+Note these two ontologies also incorporate the
+[SALT Rhetorical Ontology](http://salt.semanticauthoring.org/ontologies/sro.rdfs)
+(no longer maintained).
 
-This ontology forms the basis for [doco-classifier](https://github.com/standard-analytics/doco-classifier).
+- https://github.com/DrInventor/ontologies
