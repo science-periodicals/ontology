@@ -1,7 +1,7 @@
 {
   "name": "@scienceai/scholarly-article",
   "version": "0.7.0",
-  "description": "Scholarly Article Document Components Ontology",
+  "description": "Extension of schema:ScholarlyArticle for article components and rhetorical elements",
   "main": "index.js",
   "scripts": {
     "build": "browserify index.js > scholarly-article-browser.js",
