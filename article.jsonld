@@ -167,6 +167,61 @@
         "http://schema.org/MediaObject"
       ],
       "disjointWith": ["article:Unspecified"]
+    },
+
+    {
+      "@id": "article:Image",
+      "@type": "rdfs:Class",
+      "label": "Image",
+      "sameAs": "http://purl.org/spar/doco/Figure",
+      "comment": "An image resource",
+      "subClassOf": [
+        "http://schema.org/CreativeWork"
+      ],
+      "disjointWith": ["article:Unspecified"]
+    },
+    {
+      "@id": "article:Video",
+      "@type": "rdfs:Class",
+      "label": "Video",
+      "comment": "A video resource",
+      "subClassOf": [
+        "http://schema.org/CreativeWork"
+      ],
+      "disjointWith": ["article:Unspecified"]
+    },
+    {
+      "@id": "article:Audio",
+      "@type": "rdfs:Class",
+      "label": "Audio",
+      "comment": "An audio resource",
+      "subClassOf": [
+        "http://schema.org/CreativeWork"
+      ],
+      "disjointWith": ["article:Unspecified"]
+    },
+    {
+      "@id": "article:Table",
+      "@type": "rdfs:Class",
+      "sameAs": "http://purl.org/spar/doco/Table",
+      "label": "Table",
+      "comment": "A table resource (set of data arranged in cells within rows and columns)",
+      "subClassOf": [
+        "http://schema.org/CreativeWork"
+      ],
+      "disjointWith": ["article:Unspecified"]
+    },
+    {
+      "@id": "article:TableObject",
+      "@type": "rdfs:Class",
+      "sameAs": "http://purl.org/spar/doco/TableBox",
+      "label": "TableObject",
+      "comment": "A table object embedded in a web page",
+      "subClassOf": [
+        "http://schema.org/CreativeWork"
+      ],
+      "disjointWith": ["article:Unspecified"]
     }
+
   ]
 }
