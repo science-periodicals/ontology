@@ -1,10 +1,11 @@
 {
   "name": "@scienceai/scholarly-article",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Extension of schema:ScholarlyArticle for article components and rhetorical elements",
   "main": "index.js",
   "scripts": {
     "build": "browserify index.js > scholarly-article-browser.js",
+    "prepublish": "npm run build",
     "test": "mocha"
   },
   "repository": {
@@ -13,6 +14,9 @@
   },
   "keywords": [
     "schema",
+    "scholarly",
+    "article",
+    "ontology",
     "JSON-LD"
   ],
   "author": "Standard Analytics",
@@ -21,13 +25,7 @@
     "url": "https://github.com/scienceai/scholarly-article/issues"
   },
   "homepage": "https://github.com/scienceai/scholarly-article#readme",
-  "browserify": {
-    "transform": [
-      "brfs"
-    ]
-  },
   "devDependencies": {
-    "brfs": "1.4.1",
     "browserify": "11.2.0",
     "mocha": "2.3.3"
   }
