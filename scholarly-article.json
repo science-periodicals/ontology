@@ -18,7 +18,7 @@
     "unionOf": { "@id": "owl:unionOf", "@type": "@id", "@container": "@set" },
     "comment": "rdfs:comment",
     "label": "rdfs:label",
-    "status": "vs:term_status"
+    "status": "vs:term_status",
 
     "defines": { "@reverse": "rdfs:isDefinedBy" }
   },
