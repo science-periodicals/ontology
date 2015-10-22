@@ -199,7 +199,6 @@
         "http://purl.org/spar/deo/DiscourseElement",
         "http://schema.org/MediaObject"
       ],
-      "disjointWith": ["sa:Unspecified"],
       "status": "testing"
     },
 
@@ -250,16 +249,27 @@
       "disjointWith": ["sa:Unspecified"],
       "status": "testing"
     },
+
     {
       "@id": "sa:TableObject",
       "@type": "rdfs:Class",
       "sameAs": "http://purl.org/spar/doco/TableBox",
-      "label": "TableObject",
+      "label": "Table Object",
       "comment": "A table object embedded in a web page",
       "subClassOf": [
         "http://schema.org/MediaObject"
       ],
-      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:DocumentObject",
+      "@type": "rdfs:Class",
+      "label": "Document Object",
+      "comment": "The most generic type for creative work encodings that are documents (HTML, LaTEX, DOCX, etc.)",
+      "subClassOf": [
+        "http://schema.org/MediaObject"
+      ],
       "status": "testing"
     },
 
