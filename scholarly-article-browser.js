@@ -9,13 +9,21 @@ module.exports={
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "owl": "http://www.w3.org/2002/07/owl#",
+    "vs": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
 
     "sameAs": { "@id": "owl:sameAs", "@type": "@id" },
+    "seeAlso": { "@id": "rdfs:seeAlso", "@type": "@id" },
+    "equivalentClass": { "@id": "owl:equivalentClass", "@type": "@id" },
+    "equivalentProperty": { "@id": "owl:equivalentProperty", "@type": "@id" },
+    "domain": { "@id": "rdfs:domain", "@type": "@id" },
+    "range": { "@id": "rdfs:range", "@type": "@id" },
     "subClassOf": { "@id": "rdfs:subClassOf", "@type": "@id", "@container": "@set" },
     "disjointWith": { "@id": "owl:disjointWith", "@type": "@id", "@container": "@set" },
     "unionOf": { "@id": "owl:unionOf", "@type": "@id", "@container": "@set" },
     "comment": "rdfs:comment",
     "label": "rdfs:label",
+    "status": "vs:term_status",
 
     "defines": { "@reverse": "rdfs:isDefinedBy" }
   },
@@ -29,7 +37,8 @@ module.exports={
       "label": "Unspecified",
       "comment": "A section that is unknown or otherwise unspecified.",
       "subClassOf": [],
-      "disjointWith": ["sa:Abstract", "sa:Introduction", "sa:MaterialsAndMethods", "sa:Results", "sa:Discussion", "sa:Conclusion", "sa:Acknowledgements", "sa:ReferenceList", "sa:Reference", "sa:FootnoteList", "sa:Footnote", "sa:Formula", "sa:FormulaObject", "sa:Image", "sa:Video", "sa:Audio", "sa:Table", "sa:TableObject"]
+      "disjointWith": ["sa:Abstract", "sa:Introduction", "sa:MaterialsAndMethods", "sa:Results", "sa:Discussion", "sa:Conclusion", "sa:Acknowledgements", "sa:ReferenceList", "sa:Reference", "sa:FootnoteList", "sa:Footnote", "sa:Formula", "sa:Image", "sa:Video", "sa:Audio", "sa:Table"],
+      "status": "testing"
     },
 
     {
@@ -37,8 +46,11 @@ module.exports={
       "@type": "rdfs:Class",
       "label": "Abstract",
       "comment": "A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose.",
-      "subClassOf": [],
-      "disjointWith": ["sa:Unspecified"]
+      "subClassOf": [
+        "http://schema.org/CreativeWork"
+      ],
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
 
     {
@@ -50,7 +62,8 @@ module.exports={
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
 
     {
@@ -65,7 +78,8 @@ module.exports={
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
 
     {
@@ -77,7 +91,8 @@ module.exports={
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
 
     {
@@ -88,7 +103,8 @@ module.exports={
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
 
     {
@@ -99,7 +115,8 @@ module.exports={
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
 
     {
@@ -111,7 +128,8 @@ module.exports={
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
 
     {
@@ -123,7 +141,8 @@ module.exports={
       "subClassOf": [
         "http://purl.org/spar/doco/List"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
     {
       "@id": "sa:Reference",
@@ -134,7 +153,8 @@ module.exports={
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
 
     {
@@ -145,7 +165,8 @@ module.exports={
       "subClassOf": [
         "http://purl.org/spar/doco/List"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
     {
       "@id": "sa:Footnote",
@@ -156,7 +177,8 @@ module.exports={
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
 
     {
@@ -169,7 +191,8 @@ module.exports={
         "http://purl.org/spar/deo/DiscourseElement",
         "http://schema.org/CreativeWork"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
     {
       "@id": "sa:FormulaObject",
@@ -181,7 +204,7 @@ module.exports={
         "http://purl.org/spar/deo/DiscourseElement",
         "http://schema.org/MediaObject"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "status": "testing"
     },
 
     {
@@ -193,7 +216,8 @@ module.exports={
       "subClassOf": [
         "http://schema.org/CreativeWork"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
     {
       "@id": "sa:Video",
@@ -203,7 +227,8 @@ module.exports={
       "subClassOf": [
         "http://schema.org/CreativeWork"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
     {
       "@id": "sa:Audio",
@@ -213,7 +238,8 @@ module.exports={
       "subClassOf": [
         "http://schema.org/CreativeWork"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
 
     {
@@ -225,18 +251,75 @@ module.exports={
       "subClassOf": [
         "http://schema.org/CreativeWork"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
     },
+
     {
       "@id": "sa:TableObject",
       "@type": "rdfs:Class",
       "sameAs": "http://purl.org/spar/doco/TableBox",
-      "label": "TableObject",
+      "label": "Table Object",
       "comment": "A table object embedded in a web page",
       "subClassOf": [
-        "http://schema.org/CreativeWork"
+        "http://schema.org/MediaObject"
       ],
-      "disjointWith": ["sa:Unspecified"]
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:DocumentObject",
+      "@type": "rdfs:Class",
+      "label": "Document Object",
+      "comment": "The most generic type for creative work encodings that are documents (HTML, LaTEX, DOCX, etc.)",
+      "subClassOf": [
+        "http://schema.org/MediaObject"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:Checksum",
+      "@type": "rdfs:Class",
+      "subClassOf": "schema:Intangible",
+      "label": "checksum",
+      "comment": "A small-size datum from an arbitrary block of digital data for the purpose of detecting errors which may have been introduced during its transmission or storage.",
+      "status": "testing",
+      "seeAlso": "http://en.wikipedia.org/wiki/Checksum",
+      "equivalenClass": "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#FileHash"
+    },
+    {
+      "@id": "sa:checksum",
+      "@type": "rdf:Property",
+      "comment":"The checksum of the resource.",
+      "label": "checksum",
+      "range": "sa:Checksum",
+      "domain": "schema:CreativeWork",
+      "status": "testing",
+      "seeAlso": "http://en.wikipedia.org/wiki/Checksum",
+      "equivalentProperty": "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#hasHash"
+    },
+    {
+      "@id": "sa:checksumAlgorithm",
+      "@type": "rdf:Property",
+      "comment":"Name of the algorithm used to compute the checksum value. Examples might include MD5, SHA-1 etc.",
+      "label": "checksum algorithm",
+      "range": "xsd:string",
+      "domain": "sa:Checksum",
+      "status": "testing",
+      "seeAlso": "http://en.wikipedia.org/wiki/Checksum",
+      "equivalentProperty": "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#hashAlgorithm"
+    },
+    {
+      "@id": "sa:checksumValue",
+      "@type": "rdf:Property",
+      "comment":"The actual value of the hash in base64 if no datatype are present.",
+      "label": "hash value",
+      "range": "xsd:string",
+      "domain": "sa:Checksum",
+      "status": "testing",
+      "seeAlso": "http://en.wikipedia.org/wiki/Checksum",
+      "equivalentProperty": "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#hashValue"
     }
 
   ]
