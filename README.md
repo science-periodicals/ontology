@@ -1,9 +1,10 @@
 
 # scholarly-article
 
-Extension of [`schema:ScholarlyArticle`](http://schema.org/ScholarlyArticle) for article components
-and rhetorical elements. The classes defined in `scholarly-article.json` should hopefully be
-self-documenting.
+Extension of
+[`schema:ScholarlyArticle`](http://schema.org/ScholarlyArticle) for
+article components and rhetorical elements. The classes defined in
+`scholarly-article.json` should hopefully be self-documenting.
 
 ## See Also
 
