@@ -279,6 +279,17 @@ module.exports={
     },
 
     {
+      "@id": "sa:Bundle",
+      "@type": "rdfs:Class",
+      "label": "Bundle",
+      "comment": "A bundle of creative works",
+      "subClassOf": [
+        "http://schema.org/CreativeWork"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:Checksum",
       "@type": "rdfs:Class",
       "subClassOf": "schema:Intangible",
