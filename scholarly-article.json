@@ -6,6 +6,7 @@
     "owl": "http://www.w3.org/2002/07/owl#",
     "vs": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "bibo": "http://purl.org/ontology/bibo/",
 
     "sameAs": { "@id": "owl:sameAs", "@type": "@id" },
     "seeAlso": { "@id": "rdfs:seeAlso", "@type": "@id" },
@@ -282,6 +283,18 @@
         "http://schema.org/CreativeWork"
       ],
       "status": "testing"
+    },
+
+    {
+      "@id": "sa:doi",
+      "@type": "rdf:Property",
+      "comment":"A digital object identifier (DOI) for the resource.",
+      "label": "doi",
+      "range": "schema:URL",
+      "domain": "schema:CreativeWork",
+      "status": "testing",
+      "seeAlso": "https://en.wikipedia.org/wiki/Digital_object_identifier",
+      "equivalentProperty": "bibo:doi"
     },
 
     {
