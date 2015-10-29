@@ -33,7 +33,7 @@
       "label": "Unspecified",
       "comment": "A section that is unknown or otherwise unspecified.",
       "subClassOf": [],
-      "disjointWith": ["sa:Abstract", "sa:Introduction", "sa:MaterialsAndMethods", "sa:Results", "sa:Discussion", "sa:Conclusion", "sa:Acknowledgements", "sa:ReferenceList", "sa:Reference", "sa:FootnoteList", "sa:Footnote", "sa:Formula", "sa:Image", "sa:Video", "sa:Audio", "sa:Table"],
+      "disjointWith": ["sa:Abstract", "sa:Introduction", "sa:MaterialsAndMethods", "sa:Results", "sa:Discussion", "sa:Conclusion", "sa:Acknowledgements", "sa:ReferenceList", "sa:Reference", "sa:FootnoteList", "sa:Footnote", "sa:Formula", "sa:Image", "sa:Video", "sa:Audio", "sa:Table", "sa:Funding"],
       "status": "testing"
     },
 
@@ -121,6 +121,18 @@
       "label": "Acknowledgements",
       "sameAs": "http://purl.org/spar/deo/Acknowledgements",
       "comment": "Usually part of the preface, or a separate section in its own right, often as part of the back matter, it acknowledges those, including funding agencies, who contributed to the undertaking of a research project described in a publication, or to the creation of the work in some way. In scientific articles, the acknowledgements are usually placed as a separated section immediately following the Discussion or Conclusions.",
+      "subClassOf": [
+        "http://purl.org/spar/deo/DiscourseElement"
+      ],
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:Funding",
+      "@type": "rdfs:Class",
+      "label": "Funding",
+      "comment": "Person or Organization that funded the research on which a work was based.",
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
       ],
