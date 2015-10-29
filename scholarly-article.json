@@ -307,6 +307,17 @@
       "seeAlso": "http://en.wikipedia.org/wiki/Checksum",
       "equivalenClass": "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#FileHash"
     },
+
+    {
+      "@id": "sa:PerceptualHash",
+      "@type": "rdfs:Class",
+      "subClassOf": "sa:Checksum",
+      "label": "perceptual hash",
+      "comment": "A fingerprint of a multimedia file derived from various features from its content. Unlike cryptographic hash functions which rely on the avalanche effect of small changes in input leading to drastic changes in the output, perceptual hashes are close to one another if the features are similar and are resiliant to transformations such as rotation, skew, contrast adjustment and different compression/formats.",
+      "status": "testing",
+      "seeAlso": "https://en.wikipedia.org/wiki/Perceptual_hashing"
+    },
+
     {
       "@id": "sa:checksum",
       "@type": "rdf:Property",
