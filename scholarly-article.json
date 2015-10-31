@@ -362,6 +362,84 @@
       "status": "testing",
       "seeAlso": "http://en.wikipedia.org/wiki/Checksum",
       "equivalentProperty": "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#hashValue"
+    },
+
+
+    {
+      "@id": "sa:UploadAction",
+      "@type": "rdfs:Class",
+      "label": "Upload Action",
+      "comment": "The act of uploading an object to an entry point within some Web-based protocol.",
+      "subClassOf": [
+        "http://schema.org/Action"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:MimeDetectionAction",
+      "@type": "rdfs:Class",
+      "label": "Mime Detection Action",
+      "comment": "The act of detecting the MIME type of an object.",
+      "subClassOf": [
+        "http://schema.org/Action"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:ImageProcessingAction",
+      "@type": "rdfs:Class",
+      "label": "Image Processing Action",
+      "comment": "The act of converting an image object to web first format and extracting metadata about the object.",
+      "subClassOf": [
+        "http://schema.org/Action"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:AudioVideoProcessingAction",
+      "@type": "rdfs:Class",
+      "label": "Audio Video Processing Action",
+      "comment": "The act of converting an audio or video object to web first format and extracting metadata about the object.",
+      "subClassOf": [
+        "http://schema.org/Action"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:RdfaConversionAction",
+      "@type": "rdfs:Class",
+      "label": "RDFa Conversion Action",
+      "comment": "The act of converting an object to RDFa (HTML web document with rich structured data markup).",
+      "subClassOf": [
+        "http://schema.org/Action"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:CsvwAction",
+      "@type": "rdfs:Class",
+      "label": "CSVW Action",
+      "comment": "The act of extracting metadata about a tabular object compatible with the W3C Model for Tabular Data and Metadata on the Web",
+      "subClassOf": [
+        "http://schema.org/Action"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:SemanticTaggingAction",
+      "@type": "rdfs:Class",
+      "label": "Semantic Tagging Action",
+      "comment": "The act of extracting semantic tags provided by web ontologies (OWL) or vocabularies (RDF Schema) from an object.",
+      "subClassOf": [
+        "http://schema.org/Action"
+      ],
+      "status": "testing"
     }
 
   ]
