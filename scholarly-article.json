@@ -331,10 +331,10 @@
     },
 
     {
-      "@id": "sa:checksum",
+      "@id": "sa:contentChecksum",
       "@type": "rdf:Property",
-      "comment":"The checksum of the resource.",
-      "label": "checksum",
+      "comment":"The checksum of a resource.",
+      "label": "content checksum",
       "range": "sa:Checksum",
       "domain": "schema:CreativeWork",
       "status": "testing",
