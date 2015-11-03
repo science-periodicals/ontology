@@ -287,17 +287,6 @@
     },
 
     {
-      "@id": "sa:Bundle",
-      "@type": "rdfs:Class",
-      "label": "Bundle",
-      "comment": "A bundle of creative works",
-      "subClassOf": [
-        "http://schema.org/CreativeWork"
-      ],
-      "status": "testing"
-    },
-
-    {
       "@id": "sa:doi",
       "@type": "rdf:Property",
       "comment":"A digital object identifier (DOI) for the resource.",
