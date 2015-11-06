@@ -20,6 +20,7 @@
     "comment": "rdfs:comment",
     "label": "rdfs:label",
     "status": "vs:term_status",
+    "source": { "@id": "dc:source", "@type": "@id" },
 
     "defines": { "@reverse": "rdfs:isDefinedBy" }
   },
@@ -353,6 +354,28 @@
       "equivalentProperty": "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#hashValue"
     },
 
+    {
+      "@id": "sa:AuthoringRole",
+      "@type": "rdfs:Class",
+      "label": "Authoring Role",
+      "comment": "A subclass of Role used to describe authoring roles.",
+      "subClassOf": [
+        "http://schema.org/Role"
+      ],
+      "source": "https://github.com/scienceai/scholarly.vernacular.io/issues/32",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:roleAffiliation",
+      "@type": "rdf:Property",
+      "comment":"The affiliation under which the role was performed.",
+      "label": "role affiliation",
+      "range": "schema:Organization",
+      "domain": "sa:AuthoringRole",
+      "source": "https://github.com/scienceai/scholarly.vernacular.io/issues/32",
+      "status": "testing"
+    },
 
     {
       "@id": "sa:UploadAction",
