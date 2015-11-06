@@ -378,6 +378,17 @@
     },
 
     {
+      "@id": "sa:roleContactPoint",
+      "@type": "rdf:Property",
+      "comment": "A contact point for the person or organization behind an authoring role.",
+      "label": "role contact point",
+      "range": "schema:ContactPoint",
+      "domain": "sa:AuthoringRole",
+      "source": "https://github.com/scienceai/scholarly.vernacular.io/issues/32",
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:UploadAction",
       "@type": "rdfs:Class",
       "label": "Upload Action",
