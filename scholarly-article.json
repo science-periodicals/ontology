@@ -355,10 +355,10 @@
     },
 
     {
-      "@id": "sa:AuthoringRole",
+      "@id": "sa:ContributorRole",
       "@type": "rdfs:Class",
-      "label": "Authoring Role",
-      "comment": "A subclass of Role used to describe authoring roles.",
+      "label": "Contributor Role",
+      "comment": "A subclass of Role used to describe contributor roles.",
       "subClassOf": [
         "http://schema.org/Role"
       ],
