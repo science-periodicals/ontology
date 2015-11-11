@@ -389,6 +389,41 @@
     },
 
     {
+      "@id": "sa:SponsorRole",
+      "@type": "rdfs:Class",
+      "label": "Contributor Role",
+      "comment": "A subclass of Role used to describe sponsoring roles.",
+      "subClassOf": [
+        "http://schema.org/Role"
+      ],
+      "source": "https://github.com/scienceai/scholarly-article/issues/16",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:roleOffer",
+      "@type": "rdf:Property",
+      "comment": "An offer made by the role's sponsor.",
+      "label": "role offer",
+      "range": "schema:Offer",
+      "domain": "sa:SponsorRole",
+      "source": "https://github.com/scienceai/scholarly-article/issues/16",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:FundingSource",
+      "@type": "rdfs:Class",
+      "label": "Funding Source",
+      "comment": "The most generic type of funding source",
+      "subClassOf": [
+        "http://schema.org/Offer"
+      ],
+      "source": "https://github.com/scienceai/scholarly-article/issues/16",
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:UploadAction",
       "@type": "rdfs:Class",
       "label": "Upload Action",
