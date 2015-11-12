@@ -391,7 +391,7 @@
     {
       "@id": "sa:SponsorRole",
       "@type": "rdfs:Class",
-      "label": "Contributor Role",
+      "label": "Sponsor Role",
       "comment": "A subclass of Role used to describe sponsoring roles.",
       "subClassOf": [
         "http://schema.org/Role"
