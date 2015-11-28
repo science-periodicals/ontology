@@ -7,6 +7,7 @@
     "vs": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "bibo": "http://purl.org/ontology/bibo/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
 
     "sameAs": { "@id": "owl:sameAs", "@type": "@id" },
     "seeAlso": { "@id": "rdfs:seeAlso", "@type": "@id" },
@@ -19,6 +20,7 @@
     "unionOf": { "@id": "owl:unionOf", "@type": "@id", "@container": "@set" },
     "comment": "rdfs:comment",
     "label": "rdfs:label",
+    "altLabel": "skos:altLabel",
     "status": "vs:term_status",
     "source": { "@id": "dc:source", "@type": "@id" },
 
@@ -145,6 +147,7 @@
       "@id": "sa:ReferenceList",
       "@type": "rdfs:Class",
       "label": "References",
+      "altLabel": ["Bibliography", "Works Cited"],
       "sameAs": "http://purl.org/spar/doco/ListOfReferences",
       "comment": "A list of items each representing a reference to a specific part of the same document, or to another publication.",
       "subClassOf": [
