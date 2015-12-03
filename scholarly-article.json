@@ -36,7 +36,7 @@
       "label": "Unspecified",
       "comment": "A section that is unknown or otherwise unspecified.",
       "subClassOf": [],
-      "disjointWith": ["sa:Abstract", "sa:Introduction", "sa:MaterialsAndMethods", "sa:Results", "sa:Discussion", "sa:Conclusion", "sa:Acknowledgements", "sa:ReferenceList", "sa:Reference", "sa:Formula", "sa:Image", "sa:Video", "sa:Audio", "sa:Table", "sa:Funding"],
+      "disjointWith": ["sa:Abstract", "sa:Introduction", "sa:MaterialsAndMethods", "sa:Results", "sa:Discussion", "sa:Conclusion", "sa:Acknowledgements", "sa:ReferenceList", "sa:Reference", "sa:Formula", "sa:Image", "sa:Video", "sa:Audio", "sa:Table", "sa:Funding", "sa:Disclosure"],
       "status": "testing"
     },
 
@@ -126,6 +126,19 @@
       "comment": "Usually part of the preface, or a separate section in its own right, often as part of the back matter, it acknowledges those, including funding agencies, who contributed to the undertaking of a research project described in a publication, or to the creation of the work in some way. In scientific articles, the acknowledgements are usually placed as a separated section immediately following the Discussion or Conclusions.",
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
+      ],
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:Disclosure",
+      "@type": "rdfs:Class",
+      "label": "Disclosure",
+      "altLabel": ["conflict of interest", "competing interest"],
+      "comment": "A section containing acknowledgment of facts that interfere with or could reasonably be perceived as interfering with the full and objective presentation, peer review, editorial decision-making, or publication of research",
+      "subClassOf": [
+        "http://schema.org/CreativeWork"
       ],
       "disjointWith": ["sa:Unspecified"],
       "status": "testing"
