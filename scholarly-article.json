@@ -36,7 +36,11 @@
       "label": "Unspecified",
       "comment": "A section that is unknown or otherwise unspecified.",
       "subClassOf": [],
-      "disjointWith": ["sa:Abstract", "sa:Introduction", "sa:MaterialsAndMethods", "sa:Results", "sa:Discussion", "sa:Conclusion", "sa:Acknowledgements", "sa:ReferenceList", "sa:Reference", "sa:Formula", "sa:Image", "sa:Video", "sa:Audio", "sa:Table", "sa:Funding", "sa:Disclosure"],
+      "disjointWith": ["sa:Abstract", "sa:Introduction", "sa:MaterialsAndMethods", "sa:Results",
+                       "sa:Discussion", "sa:Conclusion", "sa:Acknowledgements", "sa:ReferenceList",
+                       "sa:Reference", "sa:Formula", "sa:Image", "sa:Video", "sa:Audio", "sa:Table",
+                       "sa:Funding", "sa:Disclosure", "sa:Authors", "sa:Contributors",
+                       "sa:Affiliations"],
       "status": "testing"
     },
 
@@ -47,6 +51,43 @@
       "comment": "A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose.",
       "subClassOf": [
         "http://schema.org/CreativeWork"
+      ],
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:Authors",
+      "@type": "rdfs:Class",
+      "label": "Authors",
+      "altLabel": ["Author"],
+      "comment": "A list of items each denoting an author of a particular publication.",
+      "subClassOf": [
+        "http://purl.org/spar/doco/ListOfAuthors"
+      ],
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
+    },
+    {
+      "@id": "sa:Contributors",
+      "@type": "rdfs:Class",
+      "label": "Contributors",
+      "altLabel": ["Contributor"],
+      "comment": "A list of items, each denoting a contributor to a publication where such contributions are insufficient to warrant classification as author.",
+      "subClassOf": [
+        "http://purl.org/spar/doco/ListOfContributors"
+      ],
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
+    },
+    {
+      "@id": "sa:Affiliations",
+      "@type": "rdfs:Class",
+      "label": "Affiliations",
+      "altLabel": ["Affiliation"],
+      "comment": "A list of affiliations for the authors and contributors.",
+      "subClassOf": [
+        "http://purl.org/spar/doco/ListOfOrganizations"
       ],
       "disjointWith": ["sa:Unspecified"],
       "status": "testing"
