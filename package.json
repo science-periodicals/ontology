@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build-website": "node ./lib/index.js",
-    "build": "browserify index.js > scholarly-article-browser.js; npm run build-website",
+    "build-context": "node ./lib/context.js",
+    "build": "browserify index.js > scholarly-article-browser.js; npm run build-website; npm run build-context",
     "prepublish": "npm run build",
     "test": "mocha",
     "watch": "http-server & nodemon -e js,html,css -w ./lib/ --exec 'npm run build-website'"
@@ -32,6 +33,7 @@
     "is-url": "^1.2.1",
     "jsdom": "^7.2.1",
     "mocha": "2.3.3",
-    "nodemon": "^1.8.1"
+    "nodemon": "^1.8.1",
+    "request": "^2.67.0"
   }
 }
