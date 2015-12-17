@@ -126,6 +126,10 @@ a:active {
   color: #64b5f6;
 }
 
+nav ul li {
+  display: inline-block;
+  margin: 0px 1em 0px 0px;
+}
 
 article dt::after {
   content: ":";
@@ -168,5 +172,57 @@ article li h3 {
   a {
     word-wrap: break-word;
   }
+}
 
+/* D3 chart */
+
+.hidden {
+  display: none;
+}
+
+figure {
+  margin-bottom: 2em;
+}
+
+figure pre {
+  max-height: 500px;
+  overflow-y: scroll;
+  font-size: 12px;
+  line-height: 13px;
+}
+
+#viz {
+  overflow-x: scroll;
+}
+
+svg {
+  border: none;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node text {
+  font-size: 12px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  fill: #333333;
+}
+
+.d3-tip {
+  font-size: 14px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333333;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  padding: 10px 20px;
+  max-width: 250px;
+  word-wrap: break-word;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.link {
+  fill: none;
+  stroke: #DADFE1;
+  stroke-width: 1px;
 }

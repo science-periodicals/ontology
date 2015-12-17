@@ -4,9 +4,11 @@
   "description": "Extension of schema:ScholarlyArticle for article components and rhetorical elements",
   "main": "index.js",
   "scripts": {
-    "build": "browserify index.js > scholarly-article-browser.js; (cd lib && node index.js)",
+    "build-website": "node ./lib/index.js",
+    "build": "browserify index.js > scholarly-article-browser.js; npm run build-website",
     "prepublish": "npm run build",
-    "test": "mocha"
+    "test": "mocha",
+    "watch": "http-server & nodemon -e js,html,css -w ./lib/ --exec 'npm run build-website'"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "browserify": "11.2.0",
     "is-url": "^1.2.1",
     "jsdom": "^7.2.1",
-    "mocha": "2.3.3"
+    "mocha": "2.3.3",
+    "nodemon": "^1.8.1"
   }
 }

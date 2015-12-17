@@ -4,7 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Scholarly Article Ontology (SA)</title>
-    <link rel="stylesheet" href="sa.css">
+    <link rel="stylesheet" href="lib/sa.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.11/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.7/d3-tip.min.js"></script>
+    <script type="text/javascript" src="http://scienceai.github.io/jsonld-vis/jsonld-vis.js"></script>
+
+    <!--<script type="text/javascript" src="lib/jsonld-vis.js"></script>-->
+    <script type="text/javascript" src="lib/sa.js"></script>
   </head>
   <body>
 
@@ -38,11 +44,32 @@
         and removed from this ontology if accepted.
       </p>
 
+      <p>
+        The 'Scholarly Article Ontology' (<abbr title="Scholarly
+        Article Ontology">SA</abbr>) uses the semantic of
+        schema.org <a href="http://schema.org">Role</a>. Roles are
+        especially useful for concepts of scholarly communication such
+        as author affiliations, correspondence and sources of funding
+        as these concepts are often specific to a persona (e.g., a
+        person as an author of a given work) as opposed to the person
+        in general.  For instance, a person can be affiliated with N
+        institutions but have contributed to a a given work only
+        within a subset of the institutions he is affiliated to.
+      </p>
+      <p>
+        Readers not familiar with the semantic of schema.org Role
+        can consult
+        the <a href="http://blog.schema.org/2014/06/introducing-role.html">introductory
+          blog post</a>.
+      </p>
+
+
       <h2>Namespace</h2>
       <p>
         <code>http://ns.science.ai#</code>, prefixed
         as <code>sa</code>.
       </p>
+
 
       <h2>Context</h2>
       <p>
@@ -50,6 +77,34 @@
         available at <a href="">https://science.ai</a> (requires
         a <code>Accept: application/ld+json</code> header).
       </p>
+
+      <nav>
+        <h2>Overview</h2>
+        <h3>Classes</h3>
+        <ul id="overview-classes">
+        </ul>
+        <h3>Properties</h3>
+        <ul id="overview-properties">
+        </ul>
+      </nav>
+
+      <h2>Example</h2>
+
+      <figure>
+        <div id="viz"></div>
+        <figcaption>
+          <p>
+            A detailed example of a Scholarly Article illustrating the
+            use of classes and properties defined by the 'Scholarly
+            Article Ontology' (<abbr title="Scholarly Article
+            Ontology">SA</abbr>) and how they should be combined
+            with <a href="http://schema.org">schema.org</a>.
+          </p>
+          <a href="#example-jsonld">view as JSON-LD</a>
+          <pre id="example-jsonld" class="hidden"><code></code></pre>
+        </figcaption>
+      </figure>
+
 
     </main>
 
