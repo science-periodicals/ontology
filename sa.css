@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+  src: url('fonts/Open-Sans-300/Open-Sans-300.eot');
+  src: url('fonts/Open-Sans-300/Open-Sans-300.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Light'),
+       local('Open-Sans-300'),
+       url('fonts/Open-Sans-300/Open-Sans-300.woff2') format('woff2'),
+       url('fonts/Open-Sans-300/Open-Sans-300.woff') format('woff'),
+       url('fonts/Open-Sans-300/Open-Sans-300.ttf') format('truetype'),
+       url('fonts/Open-Sans-300/Open-Sans-300.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: normal;
+  src: url('fonts/Open-Sans-600/Open-Sans-600.eot');
+  src: url('fonts/Open-Sans-600/Open-Sans-600.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Semibold'),
+       local('Open-Sans-600'),
+       url('fonts/Open-Sans-600/Open-Sans-600.woff2') format('woff2'),
+       url('fonts/Open-Sans-600/Open-Sans-600.woff') format('woff'),
+       url('fonts/Open-Sans-600/Open-Sans-600.ttf') format('truetype'),
+       url('fonts/Open-Sans-600/Open-Sans-600.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: italic;
+  src: url('fonts/Open-Sans-300italic/Open-Sans-300italic.eot');
+  src: url('fonts/Open-Sans-300italic/Open-Sans-300italic.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Light Italic'),
+       local('Open-Sans-300italic'),
+       url('fonts/Open-Sans-300italic/Open-Sans-300italic.woff2') format('woff2'),
+       url('fonts/Open-Sans-300italic/Open-Sans-300italic.woff') format('woff'),
+       url('fonts/Open-Sans-300italic/Open-Sans-300italic.ttf') format('truetype'),
+       url('fonts/Open-Sans-300italic/Open-Sans-300italic.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: italic;
+  src: url('fonts/Open-Sans-600italic/Open-Sans-600italic.eot');
+  src: url('fonts/Open-Sans-600italic/Open-Sans-600italic.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Semibold Italic'),
+       local('Open-Sans-600italic'),
+       url('fonts/Open-Sans-600italic/Open-Sans-600italic.woff2') format('woff2'),
+       url('fonts/Open-Sans-600italic/Open-Sans-600italic.woff') format('woff'),
+       url('fonts/Open-Sans-600italic/Open-Sans-600italic.ttf') format('truetype'),
+       url('fonts/Open-Sans-600italic/Open-Sans-600italic.svg#OpenSans') format('svg');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background: #fff;
+  padding-bottom: 50px;
+  color: #434343;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.scienceai {
+  background-color: #fff;
+  padding: 8px 25px;
+  width: 100%;
+  border-top:1px solid #E0E0E0;
+  border-bottom:1px solid #E0E0E0;
+  display:inline-block;
+  vertical-align: middle;
+  height: 52px;
+  margin-bottom: 10px;
+  position: fixed;
+  top:0px;
+  z-index: 100;
+  box-shadow: 2px 2px 5px #BCBCBC;
+}
+
+article {
+  margin: 43px auto;
+  max-width: 1024px;
+  min-height: 500px;
+  padding:0 2em;
+}
+
+
+.title {
+  text-align: center;
+  margin-top: 88px;
+}
+
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+  letter-spacing: .08em;
+  page-break-after: avoid;
+}
+
+h1, h2{
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+a {
+  color: #2196f3;
+}
+a, :link, :visited {
+            text-decoration: none;
+            color: #2196f3;
+          }
+a:active {
+  color: #64b5f6;
+}
+
+
+
+main dt::after {
+  content: ":";
+}
+
+
+main ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+main ul li {
+  background-color: whitesmoke;
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 10px 40px 20px 40px;
+}
+
+main dd li {
+  list-style: circle;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+main li h3 {
+  border-bottom: 2px solid white;
+  padding-bottom: 16px;
+}
