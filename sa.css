@@ -85,7 +85,7 @@ body {
   box-shadow: 2px 2px 5px #BCBCBC;
 }
 
-article {
+main {
   margin: 43px auto;
   max-width: 1024px;
   min-height: 500px;
@@ -127,17 +127,17 @@ a:active {
 
 
 
-main dt::after {
+article dt::after {
   content: ":";
 }
 
 
-main ul {
+article ul {
   padding-left: 0;
   margin-left: 0;
 }
 
-main ul li {
+article ul li {
   background-color: whitesmoke;
   list-style: none;
   margin-left: 0;
@@ -146,13 +146,13 @@ main ul li {
   padding: 10px 40px 20px 40px;
 }
 
-main dd li {
+article dd li {
   list-style: circle;
   padding: 0px;
   margin-bottom: 0px;
 }
 
-main li h3 {
+article li h3 {
   border-bottom: 2px solid white;
   padding-bottom: 16px;
 }

@@ -4,7 +4,7 @@
   "description": "Extension of schema:ScholarlyArticle for article components and rhetorical elements",
   "main": "index.js",
   "scripts": {
-    "build": "browserify index.js > scholarly-article-browser.js",
+    "build": "browserify index.js > scholarly-article-browser.js; (cd lib && node index.js)",
     "prepublish": "npm run build",
     "test": "mocha"
   },
