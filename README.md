@@ -4,8 +4,9 @@
 Extension of
 [`schema:ScholarlyArticle`](http://schema.org/ScholarlyArticle) for
 article components, rhetorical elements and other things that are
-unlikely to make it to schema.org. The classes and properties defined
-in `scholarly-article.json` should hopefully be self-documenting.
+unlikely to make it to schema.org.
+
+See: [http://ns.science.ai](http://ns.science.ai).
 
 ## See Also
 

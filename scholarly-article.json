@@ -40,7 +40,7 @@
       "subClassOf": [],
       "disjointWith": ["sa:Abstract", "sa:Introduction", "sa:MaterialsAndMethods", "sa:Results",
                        "sa:Discussion", "sa:Conclusion", "sa:Acknowledgements", "sa:ReferenceList",
-                       "sa:Reference", "sa:Formula", "sa:Image", "sa:Video", "sa:Audio", "sa:Table",
+                       "sa:Reference", "sa:Formula", "sa:Image", "sa:Video", "sa:Audio", "schema:Table",
                        "sa:Funding", "sa:Disclosure", "sa:SupportingInformation", "sa:Authors", "sa:Contributors",
                        "sa:Affiliations"],
       "status": "testing"
