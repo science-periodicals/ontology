@@ -118,13 +118,13 @@ a {
   color: #2196f3;
 }
 a, :link, :visited {
-            text-decoration: none;
-            color: #2196f3;
-          }
+  text-decoration: none;
+  color: #2196f3;
+}
+
 a:active {
   color: #64b5f6;
 }
-
 
 
 article dt::after {
@@ -155,4 +155,18 @@ article dd li {
 article li h3 {
   border-bottom: 2px solid white;
   padding-bottom: 16px;
+}
+
+
+@media screen and (max-width: 640px) {
+  body {
+    margin: 0 auto;
+    padding: 1px;
+    font-size: 0.9em;
+  }
+
+  a {
+    word-wrap: break-word;
+  }
+
 }
