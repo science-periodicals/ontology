@@ -35,7 +35,7 @@
     "mocha": "2.3.3",
     "nodemon": "^1.8.1",
     "request": "^2.67.0",
-    "jsonld-markup": "0.0.0",
+    "jsonld-markup": "0.0.1",
     "browserify": "^12.0.1",
     "jsonld-vis": "^0.2.0"
   }
