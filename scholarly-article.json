@@ -42,7 +42,7 @@
                        "sa:Discussion", "sa:Conclusion", "sa:Acknowledgements", "sa:ReferenceList",
                        "sa:Reference", "sa:Formula", "sa:Image", "sa:Video", "sa:Audio", "schema:Table",
                        "sa:Funding", "sa:Disclosure", "sa:SupportingInformation", "sa:Authors", "sa:Contributors",
-                       "sa:Affiliations"],
+                       "sa:Affiliations", "sa:Abbreviations", "sa:Keywords"],
       "status": "testing"
     },
 
@@ -176,6 +176,19 @@
     },
 
     {
+      "@id": "sa:Abbreviations",
+      "@type": "rdfs:Class",
+      "label": "Abbreviations",
+      "sameAs": "http://purl.org/spar/doco/Glossary",
+      "comment": "A set of definitions for abbreviations used in the document.",
+      "subClassOf": [
+        "http://purl.org/spar/doco/Section"
+      ],
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:Disclosure",
       "@type": "rdfs:Class",
       "label": "Disclosure",
@@ -195,6 +208,18 @@
       "comment": "Person or Organization that funded the research on which a work was based.",
       "subClassOf": [
         "http://purl.org/spar/deo/DiscourseElement"
+      ],
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:Keywords",
+      "@type": "rdfs:Class",
+      "label": "Keywords",
+      "comment": "A section containing a list of keywords as part of the document's metadata.",
+      "subClassOf": [
+        "http://purl.org/spar/doco/Section"
       ],
       "disjointWith": ["sa:Unspecified"],
       "status": "testing"
