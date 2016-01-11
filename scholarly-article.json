@@ -189,6 +189,18 @@
     },
 
     {
+      "@id": "sa:Copyright",
+      "@type": "rdfs:Class",
+      "label": "Copyright",
+      "comment": "A section containing a copyright mention for the document.",
+      "subClassOf": [
+        "http://purl.org/spar/doco/Section"
+      ],
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:Disclosure",
       "@type": "rdfs:Class",
       "label": "Disclosure",
