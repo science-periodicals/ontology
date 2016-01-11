@@ -412,6 +412,7 @@ module.exports = {
     "Conclusion": "http://ns.science.ai#Conclusion",
     "Acknowledgements": "http://ns.science.ai#Acknowledgements",
     "Abbreviations": "http://ns.science.ai#Abbreviations",
+    "Copyright": "http://ns.science.ai#Copyright",
     "Disclosure": "http://ns.science.ai#Disclosure",
     "Funding": "http://ns.science.ai#Funding",
     "Keywords": "http://ns.science.ai#Keywords",
