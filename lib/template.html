@@ -483,11 +483,6 @@
       "isBasedOnUrl": [
         "http://example.com/supporting-code",
         "http://www.ncbi.nlm.nih.gov/nucleotide/U49845",
-        "http://dx.doi.org/10.5061/dryad.1rk60",
-        "http://dx.doi.org/10.1016/j.softx.2015.10.002"
-      ],
-      "exampleOfWork": "http://example.com/regal#figure6",
-      "citation": [
         {
           "@id": "http://dx.doi.org/10.5061/dryad.1rk60",
           "name": "Datasets for Quantifying Crowd Size for Mobile Phone and Twitter Data",
@@ -517,6 +512,7 @@
             "@value": 2015
           }
         },
+
         {
           "@id": "http://dx.doi.org/10.1016/j.softx.2015.10.002",
           "name": "Mapping phylogenetic endemism in R using georeferenced branch extents",
@@ -538,45 +534,45 @@
             "@type": "xsd:gYearMonth",
             "@value": "2015-12"
           }
+        }
+      ],
+      "exampleOfWork": {
+        "@id": "http://example.com/regal#figure6",
+        "@type": "Image",
+        "name": "Xanadu growth",
+        "alternateName": "figure6",
+        "author": {
+          "@type": "Person",
+          "name": "Dr. Brian Regal",
+          "givenName": "Brian",
+          "familyName": "Regal"
         },
-        {
-          "@id": "http://example.com/regal#figure6",
-          "@type": "Image",
-          "name": "Xanadu growth",
-          "alternateName": "figure6",
-          "author": {
-            "@type": "Person",
-            "name": "Dr. Brian Regal",
-            "givenName": "Brian",
-            "familyName": "Regal"
-          },
-          "datePublished": {
-            "@type": "xsd:gYear",
-            "@value": 2010
-          },
-          "copyrightYear": "2010",
-          "copyrightHolder": {
+        "datePublished": {
+          "@type": "xsd:gYear",
+          "@value": 2010
+        },
+        "copyrightYear": "2010",
+        "copyrightHolder": {
+          "@id": "http://www.nyu.edu/",
+          "@type": "CollegeOrUniversity",
+          "name": "New York University",
+          "alternateName": "NYU"
+        },
+        "potentialAction": {
+          "@type": "AuthorizeAction",
+          "actionStatus": "CompletedActionStatus",
+          "agent": {
             "@id": "http://www.nyu.edu/",
             "@type": "CollegeOrUniversity",
             "name": "New York University",
             "alternateName": "NYU"
           },
-          "potentialAction": {
-            "@type": "AuthorizeAction",
-            "actionStatus": "CompletedActionStatus",
-            "agent": {
-              "@id": "http://www.nyu.edu/",
-              "@type": "CollegeOrUniversity",
-              "name": "New York University",
-              "alternateName": "NYU"
-            },
-            "result": {
-              "@type": "MediaObject",
-              "contentUrl": "http://example.com/permission.pdf"
-            }
+          "result": {
+            "@type": "MediaObject",
+            "contentUrl": "http://example.com/permission.pdf"
           }
         }
-      ],
+      },
 
       "license": {
         "@id": "https://creativecommons.org/licenses/by/4.0/legalcode",
