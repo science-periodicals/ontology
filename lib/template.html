@@ -385,7 +385,6 @@
   },
 
   "hasPart": [
-
     {
       "@id": "http://example.com/supporting-table",
       "@type": "Table",
@@ -409,22 +408,26 @@
           "@type": "ContactPoint",
           "email": "contact@example.com"
         },
-        "roleComment": [
-          {
-            "@type": "Comment",
-            "text": "Created the experiment",
-            "about": {
-              "@type": "CreateAction"
-            }
-          }
-        ]
+        "roleAction":  {
+          "@type": "CreateAction"
+          "actionStatus": "CompletedActionStatus",
+          "description": "Created the experiment"
+        }
       },
       "encoding": {
         "@type": "TableObject",
         "contentUrl": "http://example.com/supporting-table1",
         "fileFormat": "text/html"
       },
-      "isBasedOnUrl": "http://example.com/supporting-code"
+      "isBasedOnUrl": "http://example.com/supporting-code",
+      "comment": {
+        "@type": "Comment",
+        "text": "p-value < 0.05, statistically significant",
+        "about": {
+          "@id": "http://example.com/supporting-table#1",
+          "name": "1"
+        }
+      }
     },
 
     {
@@ -449,12 +452,11 @@
           "@type": "ContactPoint",
           "email": "james@nyu.edu"
         },
-        "roleComment": [
-          {
-            "@type": "Comment",
-            "text": "Collected the data"
-          }
-        ]
+        "roleAction": {
+          "@type": "Action",
+          "actionStatus": "CompletedActionStatus",
+          "description": "Collected the data"
+        }
       },
       "contributor": {
         "@type": "ContributorRole",
@@ -466,12 +468,11 @@
           "familyName": "Engelbart",
           "additionalName": "Carl"
         },
-        "roleComment": [
-          {
-            "@type": "Comment",
-            "text": "Prepared the figure"
-          }
-        ]
+        "roleAction": {
+          "@type": "Action",
+          "actionStatus": "CompletedActionStatus",
+          "text": "Prepared the figure"
+        }
       },
       "isBasedOnUrl": [
         "http://example.com/supporting-code",
@@ -598,15 +599,14 @@
           "@type": "ContactPoint",
           "email": "contact@example.com"
         },
-        "roleComment": [
-          {
-            "@type": "Comment",
-            "text": "Created the video",
-            "about": {
-              "@type": "CreateAction"
-            }
+        "roleAction": {
+          "@type": "CreateAction"
+          "actionStatus": "CompletedActionStatus",
+          "description": "Created the video",
+          "result": {
+            "@id": "http://example.com/supporting-video"
           }
-        ]
+        }
       },
       "encoding": [
         {
@@ -667,12 +667,11 @@
           "honorificPrefix": "Prof",
           "honorificSuffix": "MD"
         },
-        "roleComment": [
-          {
-            "@type": "Comment",
-            "text": "Designed the experiment"
-          }
-        ]
+        "roleAction": {
+          "@type": "Action",
+          "actionStatus": "CompletedActionStatus",
+          "description": "Designed the experiment"
+        }
       },
       "contributor": {
         "@type": "ContributorRole",
@@ -684,12 +683,11 @@
           "familyName": "Engelbart",
           "additionalName": "Carl"
         },
-        "roleComment": [
-          {
-            "@type": "Comment",
-            "text": "Deposited the data"
-          }
-        ]
+        "roleAction": {
+          "@type": "Action",
+          "actionStatus": "CompletedActionStatus",
+          "description": "Deposited the data"
+        }
       },
       "sponsor": {
         "@type": "SponsorRole",
