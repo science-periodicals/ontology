@@ -516,40 +516,40 @@
     },
 
     {
-      "@id": "sa:roleComment",
+      "@id": "sa:roleAction",
       "@type": "rdf:Property",
-      "label": "roleComment",
-      "altLabel": "role comment",
-      "comment": "role comments such as author notes, disclosure statements or acknowledgement statements",
-      "range": "schema:Comment",
+      "label": "roleAction",
+      "altLabel": "role action",
+      "comment": "Indicates an action in which the role acts as an 'agent'.",
+      "range": "schema:Action",
       "domain": "sa:ContributorRole",
-      "source": "https://github.com/scienceai/scholarly-article/issues/19",
+      "source": "https://github.com/scienceai/scholarly-article/issues/20",
       "status": "testing"
     },
 
     {
-      "@id": "sa:DisclosureStatement",
+      "@id": "sa:DisclosureAction",
       "@type": "rdfs:Class",
-      "label": "DisclosureStatement",
-      "altLabel": "Disclosure Statement",
-      "comment": "A disclosure statement",
+      "label": "DisclosureAction",
+      "altLabel": "Disclosure Action",
+      "comment": "The act of making a disclosure.",
       "subClassOf": [
-        "schema:Comment"
+        "schema:InformAction"
       ],
-      "source": "https://github.com/scienceai/scholarly-article/issues/19",
+      "source": "https://github.com/scienceai/scholarly-article/issues/20",
       "status": "testing"
     },
 
     {
-      "@id": "sa:AcknowledgementStatement",
+      "@id": "sa:AcknowledgeAction",
       "@type": "rdfs:Class",
-      "label": "AcknowledgementStatement",
-      "altLabel": "Acknowledgement Statement",
-      "comment": "An acknowledgement statement",
+      "label": "AcknowledgeAction",
+      "altLabel": "Acknowledge Action",
+      "comment": "The act of acknowledging someone, with no expectation of a response.",
       "subClassOf": [
-        "schema:Comment"
+        "schema:CommunicateAction"
       ],
-      "source": "https://github.com/scienceai/scholarly-article/issues/19",
+      "source": "https://github.com/scienceai/scholarly-article/issues/20",
       "status": "testing"
     },
 

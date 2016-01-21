@@ -459,12 +459,12 @@ module.exports = {
       "@type": "@id"
     },
     "FundingSource": "http://ns.science.ai#FundingSource",
-    "roleComment": {
-      "@id": "http://ns.science.ai#roleComment",
+    "roleAction": {
+      "@id": "http://ns.science.ai#roleAction",
       "@type": "@id"
     },
-    "DisclosureStatement": "http://ns.science.ai#DisclosureStatement",
-    "AcknowledgementStatement": "http://ns.science.ai#AcknowledgementStatement",
+    "DisclosureAction": "http://ns.science.ai#DisclosureAction",
+    "AcknowledgeAction": "http://ns.science.ai#AcknowledgeAction",
     "UploadAction": "http://ns.science.ai#UploadAction",
     "MimeDetectionAction": "http://ns.science.ai#MimeDetectionAction",
     "ImageProcessingAction": "http://ns.science.ai#ImageProcessingAction",

@@ -233,42 +233,38 @@
       "address": "Department of Biology, New York University, 70 Washington Square South, New York, NY 10012, USA"
     },
 
-    "roleComment": [
+    "roleAction": [
       {
-        "@type": "Comment",
-        "text": "wrote the introduction",
-        "about": {
-          "@type": "WriteAction",
-          "result": {
-            "@id": "http://example.com/article#Introduction",
-            "@type": "Introduction"
-          }
-        }
-      },
-      {
-        "@type": "Comment",
-        "text": "senior author on this work",
-        "about": {
-          "@type": "CreateAction"
+        "@type": "WriteAction",
+        "actionStatus": "CompletedActionStatus",
+        "description": "Wrote the introduction",
+        "result": {
+          "@id": "http://example.com/article#Introduction",
+          "@type": "Introduction"
         }
       },
 
       {
-        "@type": "AcknowledgementStatement",
-        "text": "is thankful for the pioneering contribution of: Bush, Vannevar \"Vannevar Bush\"",
-        "about": {
-          "@type": "CreateAction",
-          "agent": {
-            "@type": "Person",
-            "name": "Vannevar Bush"
-          }
+        "@type": "CreateAction",
+        "actionStatus": "CompletedActionStatus",
+        "description": "Senior author on this work"
+      },
+
+      {
+        "@type": "AcknowledgeAction",
+        "actionStatus": "CompletedActionStatus",
+        "description": "is thankful for the pioneering contribution of",
+        "recipient": {
+          "@type": "Person",
+          "name": "Vannevar Bush"
         }
       },
 
       {
-        "@type": "DisclosureStatement",
-        "text": "received personal fees for consulting for: Pfizer Inc - New York, NY, USA",
-        "about": {
+        "@type": "DisclosureAction",
+        "actionStatus": "CompletedActionStatus",
+        "description": "received personal fees for consulting for",
+        "object": {
           "@type": "PayAction",
           "agent": {
             "@type": "Corporation",
@@ -283,6 +279,30 @@
               }
             }
           }
+        },
+        "result": {
+          "@type": "MediaObject",
+          "contentUrl": "http://example.com/signed_disclosure.pdf"
+        }
+      },
+
+      {
+        "@type": "DisclosureAction",
+        "actionStatus": "CompletedActionStatus",
+        "description": "is board member of",
+        "object": {
+          "@type": "OrganizationRole",
+          "roleName": "board member",
+          "memberOf": {
+            "@id": "http://www.merck.com",
+            "@type": "Corporation",
+            "name": "Merck"
+          },
+          "startDate": "2016-01-01"
+        },
+        "result": {
+          "@type": "MediaObject",
+          "contentUrl": "http://example.com/signed_disclosure.pdf"
         }
       }
     ],
@@ -623,6 +643,11 @@
         "@id": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
         "name": "CC0-1.0"
       },
+      "distribution": {
+        "@id": "http://example.com/encoding-dataset-fasta",
+        "@type": "DataDownload",
+        "contentUrl": "http://www.ncbi.nlm.nih.gov/nuccore/1293613?report=fasta"
+      },
       "isPartOf": {
         "@id": "http://www.ncbi.nlm.nih.gov/genbank/",
         "name": "GenBank",
@@ -819,7 +844,7 @@
       "expectsAcceptanceOf": {
         "@type": "Offer",
         "potentialAction": {
-          "@type": "PayAction",
+          "@type": "BuyAction",
           "price": "25USD"
         }
       }
