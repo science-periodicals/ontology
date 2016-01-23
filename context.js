@@ -212,7 +212,9 @@ module.exports = {
       "@type": "@id"
     },
     "isBasedOnUrl": {
-      "@type": "@id"
+      "@type": "@id",
+      "@id": "http://schema.org/isBasedOnUrl",
+      "@container": "@set"
     },
     "labelDetails": {
       "@type": "@id"
@@ -314,7 +316,9 @@ module.exports = {
       "@type": "@id"
     },
     "sameAs": {
-      "@type": "@id"
+      "@type": "@id",
+      "@id": "http://schema.org/sameAs",
+      "@container": "@list"
     },
     "scheduledPaymentDate": {
       "@type": "Date"
@@ -400,6 +404,98 @@ module.exports = {
     "webCheckinTime": {
       "@type": "DateTime"
     },
+    "encoding": {
+      "@id": "http://schema.org/encoding",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "hasPart": {
+      "@id": "http://schema.org/hasPart",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "distribution": {
+      "@id": "http://schema.org/distribution",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "additionalName": {
+      "@id": "http://schema.org/additionalName",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "comment": {
+      "@id": "http://schema.org/comment",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "author": {
+      "@id": "http://schema.org/author",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "contributor": {
+      "@id": "http://schema.org/contributor",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "provider": {
+      "@id": "http://schema.org/provider",
+      "@type": "@id"
+    },
+    "creator": {
+      "@id": "http://schema.org/creator",
+      "@type": "@id"
+    },
+    "thumbnail": {
+      "@id": "http://schema.org/thumbnail",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "exampleOfWork": {
+      "@id": "http://schema.org/exampleOfWork",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "potentialAction": {
+      "@id": "http://schema.org/potentialAction",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "result": {
+      "@id": "http://schema.org/result",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "recipient": {
+      "@id": "http://schema.org/recipient",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "about": {
+      "@id": "http://schema.org/about",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "sponsor": {
+      "@id": "http://schema.org/sponsor",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "citation": {
+      "@id": "http://schema.org/citation",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "keywords": {
+      "@id": "http://schema.org/keywords",
+      "@container": "@list"
+    },
+    "participant": {
+      "@id": "http://schema.org/participant",
+      "@container": "@list",
+      "@type": "@id"
+    },
     "Unspecified": "http://ns.science.ai#Unspecified",
     "Abstract": "http://ns.science.ai#Abstract",
     "Authors": "http://ns.science.ai#Authors",
@@ -430,7 +526,8 @@ module.exports = {
     "PerceptualHash": "http://ns.science.ai#PerceptualHash",
     "contentChecksum": {
       "@id": "http://ns.science.ai#contentChecksum",
-      "@type": "@id"
+      "@type": "@id",
+      "@container": "@set"
     },
     "checksumAlgorithm": {
       "@id": "http://ns.science.ai#checksumAlgorithm",
@@ -447,21 +544,25 @@ module.exports = {
     "ContributorRole": "http://ns.science.ai#ContributorRole",
     "roleAffiliation": {
       "@id": "http://ns.science.ai#roleAffiliation",
-      "@type": "@id"
+      "@type": "@id",
+      "@container": "@list"
     },
     "roleContactPoint": {
       "@id": "http://ns.science.ai#roleContactPoint",
-      "@type": "@id"
+      "@type": "@id",
+      "@container": "@list"
     },
     "SponsorRole": "http://ns.science.ai#SponsorRole",
     "roleOffer": {
       "@id": "http://ns.science.ai#roleOffer",
-      "@type": "@id"
+      "@type": "@id",
+      "@container": "@list"
     },
     "FundingSource": "http://ns.science.ai#FundingSource",
     "roleAction": {
       "@id": "http://ns.science.ai#roleAction",
-      "@type": "@id"
+      "@type": "@id",
+      "@container": "@list"
     },
     "DisclosureAction": "http://ns.science.ai#DisclosureAction",
     "AcknowledgeAction": "http://ns.science.ai#AcknowledgeAction",
