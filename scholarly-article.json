@@ -460,9 +460,22 @@
       "altLabel": "Webverse",
       "comment": "A type of selector reasonably resilient to markup modifications and edits of the content",
       "subClassOf": [
-        "oa:Selector"
+        "schema:Intangible"
       ],
+      "equivalentClass": "oa:selector",
       "seeAlso": "https://github.com/scienceai/web-verse",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:Project",
+      "@type": "rdfs:Class",
+      "label": "Project",
+      "comment": "A project (a collective endeavour of some kind)",
+      "subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "equivalentClass": "http://xmlns.com/foaf/spec/#term_Project",
       "status": "testing"
     },
 
