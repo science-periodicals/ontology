@@ -406,7 +406,7 @@ module.exports = {
     },
     "encoding": {
       "@id": "http://schema.org/encoding",
-      "@container": "@list",
+      "@container": "@set",
       "@type": "@id"
     },
     "hasPart": {
@@ -416,7 +416,7 @@ module.exports = {
     },
     "distribution": {
       "@id": "http://schema.org/distribution",
-      "@container": "@list",
+      "@container": "@set",
       "@type": "@id"
     },
     "additionalName": {
@@ -429,14 +429,20 @@ module.exports = {
       "@container": "@list",
       "@type": "@id"
     },
+    "agent": {
+      "@id": "http://schema.org/agent",
+      "@type": "@id"
+    },
+    "recipient": {
+      "@id": "http://schema.org/recipient",
+      "@type": "@id"
+    },
     "author": {
       "@id": "http://schema.org/author",
-      "@container": "@list",
       "@type": "@id"
     },
     "contributor": {
       "@id": "http://schema.org/contributor",
-      "@container": "@list",
       "@type": "@id"
     },
     "provider": {
@@ -464,11 +470,6 @@ module.exports = {
     },
     "result": {
       "@id": "http://schema.org/result",
-      "@container": "@list",
-      "@type": "@id"
-    },
-    "recipient": {
-      "@id": "http://schema.org/recipient",
       "@container": "@list",
       "@type": "@id"
     },
@@ -541,6 +542,12 @@ module.exports = {
       "@id": "http://ns.science.ai#doi",
       "@type": "@id"
     },
+    "selector": {
+      "@id": "http://ns.science.ai#selector",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "WebVerse": "http://ns.science.ai#WebVerse",
     "ContributorRole": "http://ns.science.ai#ContributorRole",
     "roleAffiliation": {
       "@id": "http://ns.science.ai#roleAffiliation",

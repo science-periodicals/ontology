@@ -10,6 +10,7 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "dc": "http://purl.org/dc/terms/",
     "schema": "http://schema.org/",
+    "oa": "http://www.w3.org/ns/oa#",
 
     "sameAs": { "@id": "owl:sameAs", "@type": "@id" },
     "seeAlso": { "@id": "rdfs:seeAlso", "@type": "@id" },
@@ -438,6 +439,31 @@
       "status": "testing",
       "seeAlso": "https://en.wikipedia.org/wiki/Digital_object_identifier",
       "equivalentProperty": "bibo:doi"
+    },
+
+    {
+      "@id": "sa:selector",
+      "@type": "rdf:Property",
+      "label": "selector",
+      "comment": "A selector identifying the location of of a web resource where this thing is refered",
+      "range": "sa:WebVerse",
+      "domain": "schema:Thing",
+      "status": "testing",
+      "seeAlso": "https://github.com/scienceai/web-verse",
+      "equivalentProperty": "oa:hasSelector"
+    },
+
+    {
+      "@id": "sa:WebVerse",
+      "@type": "rdfs:Class",
+      "label": "WebVerse",
+      "altLabel": "Webverse",
+      "comment": "A type of selector reasonably resilient to markup modifications and edits of the content",
+      "subClassOf": [
+        "oa:Selector"
+      ],
+      "seeAlso": "https://github.com/scienceai/web-verse",
+      "status": "testing"
     },
 
     {
