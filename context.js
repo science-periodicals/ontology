@@ -548,6 +548,7 @@ module.exports = {
       "@container": "@set"
     },
     "WebVerse": "http://ns.science.ai#WebVerse",
+    "Project": "http://ns.science.ai#Project",
     "ContributorRole": "http://ns.science.ai#ContributorRole",
     "roleAffiliation": {
       "@id": "http://ns.science.ai#roleAffiliation",
