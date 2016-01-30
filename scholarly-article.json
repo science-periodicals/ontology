@@ -26,8 +26,7 @@
     "altLabel": "skos:altLabel",
     "status": "vs:term_status",
     "source": { "@id": "dc:source", "@type": "@id" },
-
-    "defines": { "@reverse": "rdfs:isDefinedBy" }
+    "defines": { "@reverse": "rdfs:isDefinedBy", "@type": "@id" }
   },
 
   "@id": "https://ns.science.ai/",
