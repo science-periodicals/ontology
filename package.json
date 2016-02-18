@@ -1,6 +1,6 @@
 {
   "name": "@scienceai/scholarly-article",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "description": "Extension of schema:ScholarlyArticle for article components and rhetorical elements",
   "main": "index.js",
   "scripts": {
@@ -36,6 +36,6 @@
     "jsonld-vis": "^0.2.0",
     "mocha": "2.3.3",
     "nodemon": "^1.8.1",
-    "request": "^2.67.0"
+    "schema.org": "^1.5.0"
   }
 }
