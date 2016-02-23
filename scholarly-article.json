@@ -428,6 +428,20 @@
       "equivalentProperty": "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#hashValue"
     },
 
+
+    {
+      "@id": "sa:AccessControl",
+      "@type": "rdfs:Class",
+      "label": "AccessControl",
+      "altLabel": ["access control"],
+      "subClassOf": "schema:Intangible",
+      "comment": "Defines the permissions granted to an agent to access a resource",
+      "status": "testing",
+      "seeAlso": "https://en.wikipedia.org/wiki/Access_control",
+      "equivalenClass": "http://www.w3.org/ns/auth/acl#accessControl"
+    },
+
+
     {
       "@id": "sa:doi",
       "@type": "rdf:Property",
