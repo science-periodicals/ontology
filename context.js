@@ -318,7 +318,7 @@ module.exports = {
     "sameAs": {
       "@type": "@id",
       "@id": "http://schema.org/sameAs",
-      "@container": "@list"
+      "@container": "@set"
     },
     "scheduledPaymentDate": {
       "@type": "Date"
@@ -423,11 +423,6 @@ module.exports = {
       "@container": "@set",
       "@type": "@id"
     },
-    "additionalName": {
-      "@id": "http://schema.org/additionalName",
-      "@container": "@list",
-      "@type": "@id"
-    },
     "comment": {
       "@id": "http://schema.org/comment",
       "@container": "@list",
@@ -505,7 +500,7 @@ module.exports = {
     },
     "keywords": {
       "@id": "http://schema.org/keywords",
-      "@container": "@list"
+      "@container": "@set"
     },
     "participant": {
       "@id": "http://schema.org/participant",
