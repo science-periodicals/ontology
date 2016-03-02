@@ -630,6 +630,42 @@
     },
 
     {
+      "@id": "sa:UpdateProjectAction",
+      "@type": "rdfs:Class",
+      "label": "UpdateProjectAction",
+      "altLabel": "Update Project Action",
+      "comment": "The act of updating a project.",
+      "subClassOf": [
+        "schema:UpdateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:CreateProfileAction",
+      "@type": "rdfs:Class",
+      "label": "CreateProfileAction",
+      "altLabel": "Create Profile Action",
+      "comment": "The act of creating a profile.",
+      "subClassOf": [
+        "schema:CreateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:UpdateProfileAction",
+      "@type": "rdfs:Class",
+      "label": "UpdateProfileAction",
+      "altLabel": "Update Profile Action",
+      "comment": "The act of updating a profile.",
+      "subClassOf": [
+        "schema:UpdateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:DeleteProjectAction",
       "@type": "rdfs:Class",
       "label": "DeleteProjectAction",
