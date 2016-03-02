@@ -618,6 +618,42 @@
     },
 
     {
+      "@id": "sa:CreateProjectAction",
+      "@type": "rdfs:Class",
+      "label": "CreateProjectAction",
+      "altLabel": "Create Project Action",
+      "comment": "The act of creating a project.",
+      "subClassOf": [
+        "schema:CreateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:CreateReleaseAction",
+      "@type": "rdfs:Class",
+      "label": "CreateReleaseAction",
+      "altLabel": "Create Release Action",
+      "comment": "The act of creating a release (snapshot) of an object.",
+      "subClassOf": [
+        "schema:CreateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:CreatePeriodicalAction",
+      "@type": "rdfs:Class",
+      "label": "CreatePeriodicalAction",
+      "altLabel": "Create Periodical Action",
+      "comment": "The act of creating a periodical.",
+      "subClassOf": [
+        "schema:CreateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:MimeDetectionAction",
       "@type": "rdfs:Class",
       "label": "MimeDetectionAction",
