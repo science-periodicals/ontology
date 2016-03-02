@@ -630,6 +630,18 @@
     },
 
     {
+      "@id": "sa:DeleteProjectAction",
+      "@type": "rdfs:Class",
+      "label": "DeleteProjectAction",
+      "altLabel": "Delete Project Action",
+      "comment": "The act of deleting a project.",
+      "subClassOf": [
+        "schema:DeleteAction"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:CreateReleaseAction",
       "@type": "rdfs:Class",
       "label": "CreateReleaseAction",
