@@ -305,7 +305,18 @@
       ],
       "status": "testing"
     },
-
+    {
+      "@id": "sa:SoftwareSourceCodeObject",
+      "@type": "rdfs:Class",
+      "label": "SoftwareSourceCodeObject",
+      "altLabel": "Software Source Code Object",
+      "sameAs": "http://purl.org/spar/doco/FormulaBox",
+      "comment": "A source code object embedded in a web page",
+      "subClassOf": [
+        "schema:MediaObject"
+      ],
+      "status": "testing"
+    },
     {
       "@id": "sa:Image",
       "@type": "rdfs:Class",
