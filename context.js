@@ -527,6 +527,7 @@ module.exports = {
     "Reference": "http://ns.science.ai#Reference",
     "Formula": "http://ns.science.ai#Formula",
     "FormulaObject": "http://ns.science.ai#FormulaObject",
+    "SoftwareSourceCodeObject": "http://ns.science.ai#SoftwareSourceCodeObject",
     "Image": "http://ns.science.ai#Image",
     "Video": "http://ns.science.ai#Video",
     "Audio": "http://ns.science.ai#Audio",
