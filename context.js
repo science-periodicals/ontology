@@ -548,6 +548,10 @@ module.exports = {
       "@id": "http://ns.science.ai#checksumValue",
       "@type": "xsd:string"
     },
+    "progress": {
+      "@id": "http://ns.science.ai#progress",
+      "@type": "@id"
+    },
     "AccessControl": "http://ns.science.ai#AccessControl",
     "doi": {
       "@id": "http://ns.science.ai#doi",

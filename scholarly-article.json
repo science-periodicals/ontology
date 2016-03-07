@@ -439,6 +439,15 @@
       "equivalentProperty": "http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#hashValue"
     },
 
+    {
+      "@id": "sa:progress",
+      "@type": "rdf:Property",
+      "label": "progress",
+      "comment":"A quantitative measure of the progress of an event",
+      "range": "schema:QuantitativeValue",
+      "domain": "schema:Event",
+      "status": "testing"
+    },
 
     {
       "@id": "sa:AccessControl",
