@@ -467,6 +467,14 @@ module.exports = {
       "@container": "@set",
       "@type": "@id"
     },
+    "encodesCreativeWork": {
+      "@id": "http://schema.org/encodesCreativeWork",
+      "@type": "@id"
+    },
+    "isPartOf": {
+      "@id": "http://schema.org/isPartOf",
+      "@type": "@id"
+    },
     "exampleOfWork": {
       "@id": "http://schema.org/exampleOfWork",
       "@container": "@set",
@@ -474,22 +482,22 @@ module.exports = {
     },
     "potentialAction": {
       "@id": "http://schema.org/potentialAction",
-      "@container": "@list",
+      "@container": "@set",
       "@type": "@id"
     },
     "result": {
       "@id": "http://schema.org/result",
-      "@container": "@list",
+      "@container": "@set",
       "@type": "@id"
     },
     "about": {
       "@id": "http://schema.org/about",
-      "@container": "@list",
+      "@container": "@set",
       "@type": "@id"
     },
     "sponsor": {
       "@id": "http://schema.org/sponsor",
-      "@container": "@list",
+      "@container": "@set",
       "@type": "@id"
     },
     "citation": {
