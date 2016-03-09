@@ -134,7 +134,7 @@ module.exports = {
       "@type": "Date"
     },
     "datePublished": {
-      "@type": "Date"
+      "@id": "http://schema.org/datePublished"
     },
     "dateVehicleFirstRegistered": {
       "@type": "Date"
@@ -167,7 +167,7 @@ module.exports = {
       "@type": "Date"
     },
     "endTime": {
-      "@type": "DateTime"
+      "@id": "http://schema.org/endTime"
     },
     "engineType": {
       "@type": "@id"
