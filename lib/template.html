@@ -187,7 +187,23 @@
       "additionalName": ["Peter", "Robert"],
       "honorificPrefix": "Prof",
       "honorificSuffix": "MD",
-      "sameAs": "https://twitter.com/jsullivan"
+      "sameAs": "https://twitter.com/jsullivan",
+      "sponsor": {
+        "@type": "SponsorRole",
+        "sponsor": {
+          "@type": "GovernmentOrganization",
+          "@id": "http://www.fic.nih.gov/",
+          "@type": "GovernmentOrganization",
+          "name": "Fogarty International Center",
+          "parentOrganization": {
+            "@id": "http://www.nih.gov",
+            "@type": "GovernmentOrganization",
+            "name": "National Institutes of Health",
+            "alternateName": "NIH"
+          }
+        },
+        "startDate": "2012-01-01"
+      }
     },
     "roleAffiliation": {
       "@id": "http://www.biology.as.nyu.edu/",
@@ -305,24 +321,7 @@
           "contentUrl": "http://example.com/signed_disclosure.pdf"
         }
       }
-    ],
-
-    "sponsor": {
-      "@type": "SponsorRole",
-      "sponsor": {
-        "@type": "GovernmentOrganization",
-        "@id": "http://www.fic.nih.gov/",
-        "@type": "GovernmentOrganization",
-        "name": "Fogarty International Center",
-        "parentOrganization": {
-          "@id": "http://www.nih.gov",
-          "@type": "GovernmentOrganization",
-          "name": "National Institutes of Health",
-          "alternateName": "NIH"
-        }
-      },
-      "startDate": "2012-01-01"
-    }
+    ]
   },
 
   "contributor": {
