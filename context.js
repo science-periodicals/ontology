@@ -514,6 +514,11 @@ module.exports = {
       "@container": "@list",
       "@type": "@id"
     },
+    "exifData": {
+      "@id": "http://schema.org/exifData",
+      "@container": "@set",
+      "@type": "@id"
+    },
     "Unspecified": "http://ns.science.ai#Unspecified",
     "Abstract": "http://ns.science.ai#Abstract",
     "Authors": "http://ns.science.ai#Authors",
