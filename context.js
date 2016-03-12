@@ -226,7 +226,8 @@ module.exports = {
       "@type": "@id"
     },
     "mainEntityOfPage": {
-      "@type": "@id"
+      "@type": "@id",
+      "@id": "http://schema.org/mainEntityOfPage"
     },
     "map": {
       "@type": "@id"
@@ -425,13 +426,23 @@ module.exports = {
       "@container": "@set",
       "@type": "@id"
     },
+    "review": {
+      "@id": "http://schema.org/review",
+      "@container": "@set",
+      "@type": "@id"
+    },
     "comment": {
       "@id": "http://schema.org/comment",
-      "@container": "@list",
+      "@container": "@set",
       "@type": "@id"
     },
     "agent": {
       "@id": "http://schema.org/agent",
+      "@type": "@id"
+    },
+    "participant": {
+      "@id": "http://schema.org/participant",
+      "@container": "@set",
       "@type": "@id"
     },
     "recipient": {
@@ -487,12 +498,19 @@ module.exports = {
     },
     "result": {
       "@id": "http://schema.org/result",
-      "@container": "@set",
+      "@type": "@id"
+    },
+    "object": {
+      "@id": "http://schema.org/object",
       "@type": "@id"
     },
     "about": {
       "@id": "http://schema.org/about",
       "@container": "@set",
+      "@type": "@id"
+    },
+    "mainEntity": {
+      "@id": "http://schema.org/mainEntity",
       "@type": "@id"
     },
     "sponsor": {
@@ -508,11 +526,6 @@ module.exports = {
     "keywords": {
       "@id": "http://schema.org/keywords",
       "@container": "@set"
-    },
-    "participant": {
-      "@id": "http://schema.org/participant",
-      "@container": "@list",
-      "@type": "@id"
     },
     "exifData": {
       "@id": "http://schema.org/exifData",
@@ -576,6 +589,35 @@ module.exports = {
       "@container": "@set"
     },
     "WebVerse": "http://ns.science.ai#WebVerse",
+    "webVerseKey": {
+      "@id": "http://ns.science.ai#webVerseKey",
+      "@type": "schema:Text"
+    },
+    "webVerseHash": {
+      "@id": "http://ns.science.ai#webVerseHash",
+      "@type": "schema:Text"
+    },
+    "webVerseId": {
+      "@id": "http://ns.science.ai#webVerseId",
+      "@type": "schema:Text"
+    },
+    "startOffset": {
+      "@id": "http://ns.science.ai#startOffset",
+      "@type": "schema:Number"
+    },
+    "endOffset": {
+      "@id": "http://ns.science.ai#endOffset",
+      "@type": "schema:Number"
+    },
+    "TargetRole": "http://ns.science.ai#TargetRole",
+    "AnnotationAction": "http://ns.science.ai#AnnotationAction",
+    "annotationBody": {
+      "@id": "http://ns.science.ai#annotationBody",
+      "@type": "@id"
+    },
+    "LinkAction": "http://ns.science.ai#LinkAction",
+    "TagAction": "http://ns.science.ai#TagAction",
+    "ClassifyAction": "http://ns.science.ai#ClassifyAction",
     "Project": "http://ns.science.ai#Project",
     "ContributorRole": "http://ns.science.ai#ContributorRole",
     "roleAffiliation": {

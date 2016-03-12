@@ -480,7 +480,7 @@
       "label": "selector",
       "comment": "A selector identifying the location of of a web resource where this thing is refered",
       "range": "sa:WebVerse",
-      "domain": "schema:Thing",
+      "domain": "sa:TargetRole",
       "status": "testing",
       "seeAlso": "https://github.com/scienceai/web-verse",
       "equivalentProperty": "oa:hasSelector"
@@ -497,6 +497,138 @@
       ],
       "equivalentClass": "oa:selector",
       "seeAlso": "https://github.com/scienceai/web-verse",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:webVerseKey",
+      "@type": "rdf:Property",
+      "label": "webVerseKey",
+      "altLabel": "web verse key",
+      "comment":"The key of a web verse selector",
+      "range": "schema:Text",
+      "domain": "sa:WebVerse",
+      "seeAlso": "https://github.com/scienceai/web-verse",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:webVerseHash",
+      "@type": "rdf:Property",
+      "label": "webVerseHash",
+      "altLabel": "web verse hash",
+      "comment":"The hash of a web verse selector",
+      "range": "schema:Text",
+      "domain": "sa:WebVerse",
+      "seeAlso": "https://github.com/scienceai/web-verse",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:webVerseId",
+      "@type": "rdf:Property",
+      "label": "webVerseId",
+      "altLabel": "web verse id",
+      "comment":"The identifier of a web verse selector",
+      "range": "schema:Text",
+      "domain": "sa:WebVerse",
+      "seeAlso": "https://github.com/scienceai/web-verse",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:startOffset",
+      "@type": "rdf:Property",
+      "label": "startOffset",
+      "altLabel": "start offset",
+      "comment":"A number representing where a range selection starts",
+      "range": "schema:Number",
+      "domain": "sa:WebVerse",
+      "seeAlso": "https://github.com/scienceai/web-verse",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:endOffset",
+      "@type": "rdf:Property",
+      "label": "endOffset",
+      "altLabel": "end offset",
+      "comment":"A number representing where a range selection ends",
+      "range": "schema:Number",
+      "domain": "sa:WebVerse",
+      "seeAlso": "https://github.com/scienceai/web-verse",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:TargetRole",
+      "@type": "rdfs:Class",
+      "label": "TargetRole",
+      "altLabel": "Target Role",
+      "comment": "A subclass of Role allowing to specify specific selections of a target resource",
+      "subClassOf": [
+        "schema:Role"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:AnnotationAction",
+      "@type": "rdfs:Class",
+      "label": "AnnotationAction",
+      "altLabel": "Annotation Action",
+      "comment": "The act of annotating an object",
+      "subClassOf": [
+        "schema:Action"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:annotationBody",
+      "@type": "rdf:Property",
+      "label": "annotationBody",
+      "altLabel": "annotation body",
+      "comment":"The body of an annotation",
+      "range": "schema:Thing",
+      "domain": "sa:AnnotationAction",
+      "equivalentProperty": "oa:hasBody",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:LinkAction",
+      "@type": "rdfs:Class",
+      "label": "LinkAction",
+      "altLabel": "Link Action",
+      "comment": "The act of annotating an object with the motivation of linking it",
+      "subClassOf": [
+        "sa:AnnotationAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:TagAction",
+      "@type": "rdfs:Class",
+      "label": "TagAction",
+      "altLabel": "Tag Action",
+      "comment": "The act of annotating an object with the motivation of taging it",
+      "subClassOf": [
+        "sa:AnnotationAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:ClassifyAction",
+      "@type": "rdfs:Class",
+      "label": "ClassifyAction",
+      "altLabel": "Classify Action",
+      "comment": "The act of annotating an object with the motivation of classifying it",
+      "subClassOf": [
+        "sa:AnnotationAction"
+      ],
       "status": "testing"
     },
 
