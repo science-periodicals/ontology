@@ -532,6 +532,10 @@ module.exports = {
       "@container": "@set",
       "@type": "@id"
     },
+    "targetProductOf": {
+      "@reverse": "http://schema.org/targetProduct",
+      "@type": "@id"
+    },
     "Unspecified": "http://ns.science.ai#Unspecified",
     "Abstract": "http://ns.science.ai#Abstract",
     "Authors": "http://ns.science.ai#Authors",
