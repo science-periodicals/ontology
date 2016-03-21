@@ -543,6 +543,8 @@ module.exports = {
     "Affiliations": "http://ns.science.ai#Affiliations",
     "Introduction": "http://ns.science.ai#Introduction",
     "MaterialsAndMethods": "http://ns.science.ai#MaterialsAndMethods",
+    "Notes": "http://ns.science.ai#Notes",
+    "License": "http://ns.science.ai#License",
     "Results": "http://ns.science.ai#Results",
     "Discussion": "http://ns.science.ai#Discussion",
     "Conclusion": "http://ns.science.ai#Conclusion",
