@@ -140,7 +140,7 @@
     {
       "@id": "sa:License",
       "@type": "rdfs:Class",
-      "label": "Notes",
+      "label": "License",
       "comment": "A section conveying licensing information about the document.",
       "subClassOf": [
         "http://purl.org/spar/doco/Section"
