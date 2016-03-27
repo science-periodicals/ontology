@@ -297,7 +297,6 @@
       "sameAs": "http://purl.org/spar/doco/Formula",
       "comment": "A unit of information expressed in mathematical, chemical or logical symbols and language.",
       "subClassOf": [
-        "http://purl.org/spar/deo/DiscourseElement",
         "schema:CreativeWork"
       ],
       "disjointWith": ["sa:Unspecified"],
@@ -311,7 +310,6 @@
       "sameAs": "http://purl.org/spar/doco/FormulaBox",
       "comment": "A formula object embedded in a web page",
       "subClassOf": [
-        "http://purl.org/spar/deo/DiscourseElement",
         "schema:MediaObject"
       ],
       "status": "testing"
