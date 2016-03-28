@@ -513,6 +513,10 @@ module.exports = {
       "@id": "http://schema.org/mainEntity",
       "@type": "@id"
     },
+    "copyrightHolder": {
+      "@id": "http://schema.org/copyrightHolder",
+      "@type": "@id"
+    },
     "sponsor": {
       "@id": "http://schema.org/sponsor",
       "@container": "@set",
