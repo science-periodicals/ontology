@@ -536,6 +536,18 @@ module.exports = {
       "@container": "@set",
       "@type": "@id"
     },
+    "location": {
+      "@id": "http://schema.org/location",
+      "@type": "@id"
+    },
+    "address": {
+      "@id": "http://schema.org/address",
+      "@type": "@id"
+    },
+    "parentOrganization": {
+      "@id": "http://schema.org/parentOrganization",
+      "@type": "@id"
+    },
     "targetProductOf": {
       "@reverse": "http://schema.org/targetProduct",
       "@type": "@id"
