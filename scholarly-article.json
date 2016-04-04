@@ -911,18 +911,6 @@
     },
 
     {
-      "@id": "sa:CsvwAction",
-      "@type": "rdfs:Class",
-      "label": "CSVWAction",
-      "altLabel": "CSVW Action",
-      "comment": "The act of extracting metadata about a tabular object compatible with the W3C Model for Tabular Data and Metadata on the Web",
-      "subClassOf": [
-        "schema:Action"
-      ],
-      "status": "testing"
-    },
-
-    {
       "@id": "sa:SemanticTaggingAction",
       "@type": "rdfs:Class",
       "label": "SemanticTaggingAction",
