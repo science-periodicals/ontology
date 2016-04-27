@@ -548,6 +548,10 @@ module.exports = {
       "@id": "http://schema.org/parentOrganization",
       "@type": "@id"
     },
+    "expectsAcceptanceOf": {
+      "@id": "http://schema.org/expectsAcceptanceOf",
+      "@type": "@id"
+    },
     "targetProductOf": {
       "@reverse": "http://schema.org/targetProduct",
       "@type": "@id"
