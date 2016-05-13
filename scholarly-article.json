@@ -851,18 +851,6 @@
     },
 
     {
-      "@id": "sa:UpdateReleaseAction",
-      "@type": "rdfs:Class",
-      "label": "UpdateReleaseAction",
-      "altLabel": "Update Release Action",
-      "comment": "The act of updating a release (snapshot) of an object.",
-      "subClassOf": [
-        "schema:UpdateAction"
-      ],
-      "status": "testing"
-    },
-
-    {
       "@id": "sa:CreatePeriodicalAction",
       "@type": "rdfs:Class",
       "label": "CreatePeriodicalAction",
