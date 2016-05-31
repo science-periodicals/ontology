@@ -920,6 +920,17 @@
         "schema:Action"
       ],
       "status": "testing"
+    },
+
+    {
+      "@id": "sa:Tag",
+      "@type": "rdfs:Class",
+      "label": "Tag",
+      "comment": "A non-hierarchical keyword or term assigned to a piece of information",
+      "subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "status": "testing"
     }
 
   ]
