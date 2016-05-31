@@ -681,6 +681,7 @@ module.exports = {
     "ImageProcessingAction": "http://ns.science.ai#ImageProcessingAction",
     "AudioVideoProcessingAction": "http://ns.science.ai#AudioVideoProcessingAction",
     "RdfaConversionAction": "http://ns.science.ai#RdfaConversionAction",
-    "SemanticTaggingAction": "http://ns.science.ai#SemanticTaggingAction"
+    "SemanticTaggingAction": "http://ns.science.ai#SemanticTaggingAction",
+    "Tag": "http://ns.science.ai#Tag"
   }
 };
