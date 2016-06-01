@@ -676,6 +676,7 @@ module.exports = {
     "UpdateProfileAction": "http://ns.science.ai#UpdateProfileAction",
     "DeleteProjectAction": "http://ns.science.ai#DeleteProjectAction",
     "CreateReleaseAction": "http://ns.science.ai#CreateReleaseAction",
+    "UpdateReleaseAction": "http://ns.science.ai#UpdateReleaseAction",
     "CreatePeriodicalAction": "http://ns.science.ai#CreatePeriodicalAction",
     "MimeDetectionAction": "http://ns.science.ai#MimeDetectionAction",
     "ImageProcessingAction": "http://ns.science.ai#ImageProcessingAction",
