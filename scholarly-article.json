@@ -691,6 +691,17 @@
     },
 
     {
+      "@id": "sa:roleAccess",
+      "@type": "rdf:Property",
+      "label": "roleAccess",
+      "altLabel": "role acces",
+      "comment": "The access control list of the role.",
+      "range": "sa:AccessControl",
+      "domain": "schema:Role",
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:SponsorRole",
       "@type": "rdfs:Class",
       "label": "SponsorRole",
