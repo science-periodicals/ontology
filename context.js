@@ -490,6 +490,11 @@ module.exports = {
       "@container": "@set",
       "@type": "@id"
     },
+    "isBasedOn": {
+      "@id": "http://schema.org/isBasedOn",
+      "@container": "@set",
+      "@type": "@id"
+    },
     "encodesCreativeWork": {
       "@id": "http://schema.org/encodesCreativeWork",
       "@type": "@id"
