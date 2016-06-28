@@ -293,7 +293,9 @@ module.exports = {
       "@type": "@id"
     },
     "publishingPrinciples": {
-      "@type": "@id"
+      "@type": "@id",
+      "@id": "http://schema.org/publishingPrinciples",
+      "@container": "@list"
     },
     "purchaseDate": {
       "@type": "Date"
@@ -458,6 +460,16 @@ module.exports = {
       "@container": "@list",
       "@type": "@id"
     },
+    "producer": {
+      "@id": "http://schema.org/producer",
+      "@container": "@list",
+      "@type": "@id"
+    },
+    "editor": {
+      "@id": "http://schema.org/editor",
+      "@container": "@list",
+      "@type": "@id"
+    },
     "contributor": {
       "@id": "http://schema.org/contributor",
       "@container": "@list",
@@ -550,6 +562,10 @@ module.exports = {
     },
     "expectsAcceptanceOf": {
       "@id": "http://schema.org/expectsAcceptanceOf",
+      "@type": "@id"
+    },
+    "instrument": {
+      "@id": "http://schema.org/instrument",
       "@type": "@id"
     },
     "targetProductOf": {
@@ -654,6 +670,10 @@ module.exports = {
       "@id": "http://ns.science.ai#roleContactPoint",
       "@type": "@id",
       "@container": "@list"
+    },
+    "roleAccess": {
+      "@id": "http://ns.science.ai#roleAccess",
+      "@type": "@id"
     },
     "SponsorRole": "http://ns.science.ai#SponsorRole",
     "roleOffer": {
