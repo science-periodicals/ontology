@@ -897,6 +897,30 @@
     },
 
     {
+      "@id": "sa:CreateOfferAction",
+      "@type": "rdfs:Class",
+      "label": "CreateOfferAction",
+      "altLabel": "Create Offer Action",
+      "comment": "The act of creating an Offer.",
+      "subClassOf": [
+        "schema:CreateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:PublishReviewAction",
+      "@type": "rdfs:Class",
+      "label": "PublishReviewAction",
+      "altLabel": "Publish Review Action",
+      "comment": "The act of publishing one or several reviews as part of a Release.",
+      "subClassOf": [
+        "schema:AddAction"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:MimeDetectionAction",
       "@type": "rdfs:Class",
       "label": "MimeDetectionAction",
