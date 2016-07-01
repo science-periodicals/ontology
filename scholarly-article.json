@@ -594,18 +594,6 @@
     },
 
     {
-      "@id": "sa:annotationBody",
-      "@type": "rdf:Property",
-      "label": "annotationBody",
-      "altLabel": "annotation body",
-      "comment":"The body of an annotation",
-      "range": "schema:Thing",
-      "domain": "sa:AnnotationAction",
-      "equivalentProperty": "oa:hasBody",
-      "status": "testing"
-    },
-
-    {
       "@id": "sa:LinkAction",
       "@type": "rdfs:Class",
       "label": "LinkAction",
