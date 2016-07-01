@@ -1,7 +1,7 @@
 {
   "name": "@scienceai/scholarly-article",
-  "version": "7.0.0",
-  "description": "Extension of schema:ScholarlyArticle for article components and rhetorical elements",
+  "version": "8.0.0",
+  "description": "schema.org extension to describe the production process, content, distribution and preservation of scholarly articles (and similar artifacts)",
   "main": "index.js",
   "scripts": {
     "build-website": "node ./lib/index.js; browserify ./lib/sa.js > ./lib/bundle.js",

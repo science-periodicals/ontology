@@ -582,25 +582,13 @@
     },
 
     {
-      "@id": "sa:AnnotationAction",
-      "@type": "rdfs:Class",
-      "label": "AnnotationAction",
-      "altLabel": "Annotation Action",
-      "comment": "The act of annotating an object",
-      "subClassOf": [
-        "schema:Action"
-      ],
-      "status": "testing"
-    },
-
-    {
       "@id": "sa:LinkAction",
       "@type": "rdfs:Class",
       "label": "LinkAction",
       "altLabel": "Link Action",
       "comment": "The act of annotating an object with the motivation of linking it",
       "subClassOf": [
-        "sa:AnnotationAction"
+        "sa:CommentAction"
       ],
       "status": "testing"
     },
@@ -612,7 +600,7 @@
       "altLabel": "Tag Action",
       "comment": "The act of annotating an object with the motivation of taging it",
       "subClassOf": [
-        "sa:AnnotationAction"
+        "sa:CommentAction"
       ],
       "status": "testing"
     },
@@ -624,7 +612,7 @@
       "altLabel": "Classify Action",
       "comment": "The act of annotating an object with the motivation of classifying it",
       "subClassOf": [
-        "sa:AnnotationAction"
+        "sa:CommentAction"
       ],
       "status": "testing"
     },
