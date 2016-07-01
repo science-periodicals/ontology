@@ -665,6 +665,18 @@
     },
 
     {
+      "@id": "sa:slug",
+      "@type": "rdf:Property",
+      "label": "slug",
+      "comment": "Part of a URL that identifies a page in human-readable keywords",
+      "range": "schema:Text",
+      "domain": "schema:Release",
+      "status": "testing",
+      "seeAlso": "https://en.wikipedia.org/wiki/Semantic_URL#Slug",
+      "equivalentProperty": "http://www.bbc.co.uk/ontologies/provenance/slug"
+    },
+
+    {
       "@id": "sa:ContributorRole",
       "@type": "rdfs:Class",
       "label": "ContributorRole",
