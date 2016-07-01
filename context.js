@@ -665,6 +665,7 @@ module.exports = {
     "TagAction": "http://ns.science.ai#TagAction",
     "ClassifyAction": "http://ns.science.ai#ClassifyAction",
     "Project": "http://ns.science.ai#Project",
+    "Release": "http://ns.science.ai#Release",
     "ContributorRole": "http://ns.science.ai#ContributorRole",
     "roleAffiliation": {
       "@id": "http://ns.science.ai#roleAffiliation",
