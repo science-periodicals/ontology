@@ -654,6 +654,17 @@
     },
 
     {
+      "@id": "sa:Release",
+      "@type": "rdfs:Class",
+      "label": "Release",
+      "comment": "A release of a creative work",
+      "subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:ContributorRole",
       "@type": "rdfs:Class",
       "label": "ContributorRole",

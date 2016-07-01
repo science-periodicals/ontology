@@ -1,6 +1,6 @@
 {
   "name": "@scienceai/scholarly-article",
-  "version": "6.4.2",
+  "version": "6.5.0",
   "description": "Extension of schema:ScholarlyArticle for article components and rhetorical elements",
   "main": "index.js",
   "scripts": {
