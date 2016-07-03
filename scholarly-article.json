@@ -598,19 +598,7 @@
       "@type": "rdfs:Class",
       "label": "TagAction",
       "altLabel": "Tag Action",
-      "comment": "The act of annotating an object with the motivation of taging it",
-      "subClassOf": [
-        "sa:CommentAction"
-      ],
-      "status": "testing"
-    },
-
-    {
-      "@id": "sa:ClassifyAction",
-      "@type": "rdfs:Class",
-      "label": "ClassifyAction",
-      "altLabel": "Classify Action",
-      "comment": "The act of annotating an object with the motivation of classifying it",
+      "comment": "The act of annotating an object with the motivation of tagging / classifying it",
       "subClassOf": [
         "sa:CommentAction"
       ],
