@@ -11,6 +11,7 @@
     "dc": "http://purl.org/dc/terms/",
     "schema": "http://schema.org/",
     "oa": "http://www.w3.org/ns/oa#",
+    "hydra": "http://www.w3.org/ns/hydra/core#",
 
     "sameAs": { "@id": "owl:sameAs", "@type": "@id" },
     "seeAlso": { "@id": "rdfs:seeAlso", "@type": "@id" },
@@ -470,6 +471,170 @@
       "equivalenClass": "http://www.w3.org/ns/auth/acl#accessControl"
     },
 
+    {
+      "@id": "sa:readAccess",
+      "@type": "rdf:Property",
+      "label": "readAccess",
+      "altLabel": ["read access"],
+      "comment": "Permission to read or view a resource.",
+      "range": "schema:Boolean",
+      "domain": "sa:AccessControl",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:writeAccess",
+      "@type": "rdf:Property",
+      "label": "writeAccess",
+      "altLabel": ["write access"],
+      "comment": "Permission to create or edit a resource.",
+      "range": "schema:Boolean",
+      "domain": "sa:AccessControl",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:adminAccess",
+      "@type": "rdf:Property",
+      "label": "adminAccess",
+      "altLabel": ["admin access"],
+      "comment": "Permission to administrate a resource.",
+      "range": "schema:Boolean",
+      "domain": "sa:AccessControl",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:readReviewAccess",
+      "@type": "rdf:Property",
+      "label": "readReviewAccess",
+      "altLabel": ["read review access"],
+      "comment": "Permission to read or view reviews of other agents based on their roles.",
+      "range": "schema:Text",
+      "domain": "sa:AccessControl",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:writeReviewAccess",
+      "@type": "rdf:Property",
+      "label": "writeReviewAccess",
+      "altLabel": ["write review access"],
+      "comment": "Permission to write reviews or edit reviews of other agents based on their roles.",
+      "range": "schema:Text",
+      "domain": "sa:AccessControl",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:readAnnotationAccess",
+      "@type": "rdf:Property",
+      "label": "readAnnotationAccess",
+      "altLabel": ["read annotation access"],
+      "comment": "Permission to read or view annotations of other agents based on their roles.",
+      "range": "schema:Text",
+      "domain": "sa:AccessControl",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:writeAnnotationAccess",
+      "@type": "rdf:Property",
+      "label": "writeAnnotationAccess",
+      "altLabel": ["write annotation access"],
+      "comment": "Permission to write annotations or edit annotations of other agents based on their roles.",
+      "range": "schema:Text",
+      "domain": "sa:AccessControl",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:decisionAccess",
+      "@type": "rdf:Property",
+      "label": "decisionAccess",
+      "altLabel": ["decision access"],
+      "comment": "Permission to make a decision regarding the outcome of an action.",
+      "range": "schema:Boolean",
+      "domain": "sa:AccessControl",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:contactAccess",
+      "@type": "rdf:Property",
+      "label": "contactAccess",
+      "altLabel": ["contact access"],
+      "comment": "Permission to contact other agents based on their roles.",
+      "range": "schema:Text",
+      "domain": "sa:AccessControl",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:inviteAccess",
+      "@type": "rdf:Property",
+      "label": "inviteAccess",
+      "altLabel": ["invite access"],
+      "comment": "Permission to invite other agents based on their roles.",
+      "range": "schema:Text",
+      "domain": "sa:AccessControl",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:identityAccess",
+      "@type": "rdf:Property",
+      "label": "identityAccess",
+      "altLabel": ["identity access"],
+      "comment": "Permission to view the identity of other agents based on their roles.",
+      "range": "schema:Text",
+      "domain": "sa:AccessControl",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:identityAccess",
+      "@type": "rdf:Property",
+      "label": "identityAccess",
+      "altLabel": ["identity access"],
+      "comment": "Permission to view the identity of other agents based on their roles.",
+      "range": "schema:Text",
+      "domain": "sa:AccessControl",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:assignAccess",
+      "@type": "rdf:Property",
+      "label": "assignAccess",
+      "altLabel": ["assign access"],
+      "comment": "Permission to assign actions to other agents based on their roles.",
+      "range": "schema:Text",
+      "domain": "sa:AccessControl",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:Error",
+      "@type": "rdfs:Class",
+      "label": "Error",
+      "subClassOf": "schema:Intangible",
+      "comment": "A runtime error, used to report information beyond the returned status code.",
+      "status": "testing",
+      "seeAlso": "https://en.wikipedia.org/wiki/Access_control",
+      "equivalenClass": "hydra:Error"
+    },
+
+    {
+      "@id": "sa:statusCode",
+      "@type": "rdf:Property",
+      "label": "Error",
+      "comment": "The HTTP status code.",
+      "range": "schema:Integer",
+      "domain": "sa:Error",
+      "status": "testing",
+      "equivalentProperty": "hydra:statusCode"
+    },
 
     {
       "@id": "sa:doi",
