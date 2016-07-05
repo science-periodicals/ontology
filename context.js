@@ -410,7 +410,6 @@ module.exports = {
     "sa": "http://ns.science.ai#",
     "user": "https://science.ai/user/",
     "bot": "https://science.ai/bot/",
-    "error": "https://science.ai/error/",
     "tmp": "https://science.ai/tmp/",
     "scienceai": "https://science.ai/",
     "hasPart": {
@@ -511,6 +510,10 @@ module.exports = {
     "potentialAction": {
       "@id": "http://schema.org/potentialAction",
       "@container": "@set",
+      "@type": "@id"
+    },
+    "error": {
+      "@id": "http://schema.org/error",
       "@type": "@id"
     },
     "result": {
