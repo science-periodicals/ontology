@@ -627,55 +627,6 @@ module.exports = {
       "@id": "http://ns.science.ai#progress",
       "@type": "@id"
     },
-    "AccessControl": "http://ns.science.ai#AccessControl",
-    "readAccess": {
-      "@id": "http://ns.science.ai#readAccess",
-      "@type": "@id"
-    },
-    "writeAccess": {
-      "@id": "http://ns.science.ai#writeAccess",
-      "@type": "@id"
-    },
-    "adminAccess": {
-      "@id": "http://ns.science.ai#adminAccess",
-      "@type": "@id"
-    },
-    "readReviewAccess": {
-      "@id": "http://ns.science.ai#readReviewAccess",
-      "@type": "schema:Text"
-    },
-    "writeReviewAccess": {
-      "@id": "http://ns.science.ai#writeReviewAccess",
-      "@type": "schema:Text"
-    },
-    "readAnnotationAccess": {
-      "@id": "http://ns.science.ai#readAnnotationAccess",
-      "@type": "schema:Text"
-    },
-    "writeAnnotationAccess": {
-      "@id": "http://ns.science.ai#writeAnnotationAccess",
-      "@type": "schema:Text"
-    },
-    "decisionAccess": {
-      "@id": "http://ns.science.ai#decisionAccess",
-      "@type": "@id"
-    },
-    "contactAccess": {
-      "@id": "http://ns.science.ai#contactAccess",
-      "@type": "schema:Text"
-    },
-    "inviteAccess": {
-      "@id": "http://ns.science.ai#inviteAccess",
-      "@type": "schema:Text"
-    },
-    "identityAccess": {
-      "@id": "http://ns.science.ai#identityAccess",
-      "@type": "schema:Text"
-    },
-    "assignAccess": {
-      "@id": "http://ns.science.ai#assignAccess",
-      "@type": "schema:Text"
-    },
     "Error": "http://ns.science.ai#Error",
     "statusCode": {
       "@id": "http://ns.science.ai#statusCode",
@@ -731,8 +682,8 @@ module.exports = {
       "@type": "@id",
       "@container": "@list"
     },
-    "roleAccess": {
-      "@id": "http://ns.science.ai#roleAccess",
+    "permissionScope": {
+      "@id": "http://ns.science.ai#permissionScope",
       "@type": "@id"
     },
     "SponsorRole": "http://ns.science.ai#SponsorRole",

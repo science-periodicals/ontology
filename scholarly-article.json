@@ -460,157 +460,92 @@
     },
 
     {
-      "@id": "sa:AccessControl",
-      "@type": "rdfs:Class",
-      "label": "AccessControl",
-      "altLabel": ["access control"],
-      "subClassOf": "schema:Intangible",
-      "comment": "Defines the permissions granted to an agent to access a resource",
-      "status": "testing",
-      "seeAlso": "https://en.wikipedia.org/wiki/Access_control",
-      "equivalenClass": "http://www.w3.org/ns/auth/acl#accessControl"
-    },
-
-    {
-      "@id": "sa:readAccess",
-      "@type": "rdf:Property",
-      "label": "readAccess",
-      "altLabel": ["read access"],
-      "comment": "Permission to read or view a resource.",
-      "range": "schema:Boolean",
-      "domain": "sa:AccessControl",
-      "status": "testing"
-    },
-
-    {
-      "@id": "sa:writeAccess",
-      "@type": "rdf:Property",
-      "label": "writeAccess",
-      "altLabel": ["write access"],
-      "comment": "Permission to create or edit a resource.",
-      "range": "schema:Boolean",
-      "domain": "sa:AccessControl",
-      "status": "testing"
-    },
-
-    {
-      "@id": "sa:adminAccess",
-      "@type": "rdf:Property",
-      "label": "adminAccess",
-      "altLabel": ["admin access"],
+      "@id": "sa:AdminPermission",
+      "@type": "schema:DigitalDocumentPermission",
+      "label": "AdminPermission",
+      "altLabel": ["admin permission"],
       "comment": "Permission to administrate a resource.",
-      "range": "schema:Boolean",
-      "domain": "sa:AccessControl",
       "status": "testing"
     },
 
     {
-      "@id": "sa:readReviewAccess",
-      "@type": "rdf:Property",
-      "label": "readReviewAccess",
-      "altLabel": ["read review access"],
+      "@id": "sa:ReadReviewPermission",
+      "@type": "schema:DigitalDocumentPermission",
+      "label": "ReadReviewPermission",
+      "altLabel": ["read review permission"],
       "comment": "Permission to read or view reviews of other agents based on their roles.",
-      "range": "schema:Text",
-      "domain": "sa:AccessControl",
       "status": "testing"
     },
 
     {
-      "@id": "sa:writeReviewAccess",
-      "@type": "rdf:Property",
-      "label": "writeReviewAccess",
-      "altLabel": ["write review access"],
+      "@id": "sa:WriteReviewPermission",
+      "@type": "schema:DigitalDocumentPermission",
+      "label": "WriteReviewPermission",
+      "altLabel": ["write review permission"],
       "comment": "Permission to write reviews or edit reviews of other agents based on their roles.",
-      "range": "schema:Text",
-      "domain": "sa:AccessControl",
       "status": "testing"
     },
 
     {
-      "@id": "sa:readAnnotationAccess",
-      "@type": "rdf:Property",
-      "label": "readAnnotationAccess",
-      "altLabel": ["read annotation access"],
-      "comment": "Permission to read or view annotations of other agents based on their roles.",
-      "range": "schema:Text",
-      "domain": "sa:AccessControl",
+      "@id": "sa:ReadCommentPermission",
+      "@type": "schema:DigitalDocumentPermission",
+      "label": "ReadCommentPermission",
+      "altLabel": ["read comment permission"],
+      "comment": "Permission to read or view comments (and annotations) of other agents based on their roles.",
       "status": "testing"
     },
 
     {
-      "@id": "sa:writeAnnotationAccess",
-      "@type": "rdf:Property",
-      "label": "writeAnnotationAccess",
-      "altLabel": ["write annotation access"],
-      "comment": "Permission to write annotations or edit annotations of other agents based on their roles.",
-      "range": "schema:Text",
-      "domain": "sa:AccessControl",
+      "@id": "sa:WriteCommentPermission",
+      "@type": "schema:DigitalDocumentPermission",
+      "label": "WriteCommentPermission",
+      "altLabel": ["write comment access"],
+      "comment": "Permission to write or edit comments (and annotations) of other agents based on their roles.",
       "status": "testing"
     },
 
     {
-      "@id": "sa:decisionAccess",
-      "@type": "rdf:Property",
-      "label": "decisionAccess",
-      "altLabel": ["decision access"],
+      "@id": "sa:AssessPermission",
+      "@type": "schema:DigitalDocumentPermission",
+      "label": "AssessPermission",
+      "altLabel": ["assess permission"],
       "comment": "Permission to make a decision regarding the outcome of an action.",
-      "range": "schema:Boolean",
-      "domain": "sa:AccessControl",
       "status": "testing"
     },
 
     {
-      "@id": "sa:contactAccess",
-      "@type": "rdf:Property",
-      "label": "contactAccess",
-      "altLabel": ["contact access"],
+      "@id": "sa:CommunicatePermission",
+      "@type": "schema:DigitalDocumentPermission",
+      "label": "CommunicatePermission",
+      "altLabel": ["communicate permission"],
       "comment": "Permission to contact other agents based on their roles.",
-      "range": "schema:Text",
-      "domain": "sa:AccessControl",
       "status": "testing"
     },
 
     {
-      "@id": "sa:inviteAccess",
-      "@type": "rdf:Property",
-      "label": "inviteAccess",
-      "altLabel": ["invite access"],
+      "@id": "sa:InvitePermission",
+      "@type": "schema:DigitalDocumentPermission",
+      "label": "InvitePermission",
+      "altLabel": ["invite permission"],
       "comment": "Permission to invite other agents based on their roles.",
-      "range": "schema:Text",
-      "domain": "sa:AccessControl",
       "status": "testing"
     },
 
     {
-      "@id": "sa:identityAccess",
-      "@type": "rdf:Property",
-      "label": "identityAccess",
-      "altLabel": ["identity access"],
+      "@id": "sa:ViewIdentityPermission",
+      "@type": "schema:DigitalDocumentPermission",
+      "label": "ViewIdentityPermission",
+      "altLabel": ["view identity permission"],
       "comment": "Permission to view the identity of other agents based on their roles.",
-      "range": "schema:Text",
-      "domain": "sa:AccessControl",
       "status": "testing"
     },
 
     {
-      "@id": "sa:identityAccess",
-      "@type": "rdf:Property",
-      "label": "identityAccess",
-      "altLabel": ["identity access"],
-      "comment": "Permission to view the identity of other agents based on their roles.",
-      "range": "schema:Text",
-      "domain": "sa:AccessControl",
-      "status": "testing"
-    },
-
-    {
-      "@id": "sa:assignAccess",
-      "@type": "rdf:Property",
-      "label": "assignAccess",
-      "altLabel": ["assign access"],
+      "@id": "sa:AssignPermission",
+      "@type": "schema:DigitalDocumentPermission",
+      "label": "AssignPermission",
+      "altLabel": ["assign permission"],
       "comment": "Permission to assign actions to other agents based on their roles.",
-      "range": "schema:Text",
-      "domain": "sa:AccessControl",
       "status": "testing"
     },
 
@@ -843,13 +778,13 @@
     },
 
     {
-      "@id": "sa:roleAccess",
+      "@id": "sa:permissionScope",
       "@type": "rdf:Property",
-      "label": "roleAccess",
-      "altLabel": "role acces",
-      "comment": "The access control list of the role.",
-      "range": "sa:AccessControl",
-      "domain": "schema:Role",
+      "label": "permissionScope",
+      "altLabel": "permission scope",
+      "comment": "The scope of a permission.",
+      "range": "schema:Audience",
+      "domain": "schema:DigitalDocumentPermission",
       "status": "testing"
     },
 
