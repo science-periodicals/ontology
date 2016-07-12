@@ -742,6 +742,17 @@
     },
 
     {
+      "@id": "sa:Graph",
+      "@type": "rdfs:Class",
+      "label": "Graph",
+      "comment": "A graph",
+      "subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:slug",
       "@type": "rdf:Property",
       "label": "slug",
