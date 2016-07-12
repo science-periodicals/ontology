@@ -636,11 +636,11 @@ module.exports = {
       "@id": "http://ns.science.ai#doi",
       "@type": "@id"
     },
-    "selector": {
-      "@id": "http://ns.science.ai#selector",
-      "@type": "@id",
-      "@container": "@set"
+    "hasSelector": {
+      "@id": "http://ns.science.ai#hasSelector",
+      "@type": "@id"
     },
+    "Selector": "http://ns.science.ai#Selector",
     "WebVerse": "http://ns.science.ai#WebVerse",
     "webVerseKey": {
       "@id": "http://ns.science.ai#webVerseKey",
@@ -701,6 +701,9 @@ module.exports = {
     "DisclosureAction": "http://ns.science.ai#DisclosureAction",
     "AcknowledgeAction": "http://ns.science.ai#AcknowledgeAction",
     "UploadAction": "http://ns.science.ai#UploadAction",
+    "CreateWorkflowAction": "http://ns.science.ai#CreateWorkflowAction",
+    "UpdateWorkflowAction": "http://ns.science.ai#UpdateWorkflowAction",
+    "DeleteWorkflowAction": "http://ns.science.ai#DeleteWorkflowAction",
     "CreateProjectAction": "http://ns.science.ai#CreateProjectAction",
     "UpdateProjectAction": "http://ns.science.ai#UpdateProjectAction",
     "CreateProfileAction": "http://ns.science.ai#CreateProfileAction",

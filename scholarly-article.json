@@ -584,15 +584,29 @@
     },
 
     {
-      "@id": "sa:selector",
+      "@id": "sa:hasSelector",
       "@type": "rdf:Property",
-      "label": "selector",
-      "comment": "A selector identifying the location of of a web resource where this thing is refered",
-      "range": "sa:WebVerse",
+      "label": "hasSelector",
+      "comment": "A selector identifying the region of interest within the target resource",
+      "range": "sa:Selector",
       "domain": "sa:TargetRole",
       "status": "testing",
       "seeAlso": "https://github.com/scienceai/web-verse",
       "equivalentProperty": "oa:hasSelector"
+    },
+
+    {
+      "@id": "sa:Selector",
+      "@type": "rdfs:Class",
+      "label": "Selector",
+      "altLabel": "Selector",
+      "comment": "The most generic type of Selector",
+      "subClassOf": [
+        "schema:Intangible"
+      ],
+      "equivalentClass": "oa:Selector",
+      "seeAlso": "https://github.com/scienceai/web-verse",
+      "status": "testing"
     },
 
     {
@@ -602,9 +616,8 @@
       "altLabel": "Webverse",
       "comment": "A type of selector reasonably resilient to markup modifications and edits of the content",
       "subClassOf": [
-        "schema:Intangible"
+        "sa:Selector"
       ],
-      "equivalentClass": "oa:selector",
       "seeAlso": "https://github.com/scienceai/web-verse",
       "status": "testing"
     },
@@ -872,6 +885,42 @@
       "comment": "The act of uploading an object to an entry point within some Web-based protocol.",
       "subClassOf": [
         "schema:Action"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:CreateWorkflowAction",
+      "@type": "rdfs:Class",
+      "label": "CreateWorkflowAction",
+      "altLabel": "Create Workflow Action",
+      "comment": "The act of creating a the resources needed for editorial workflow management",
+      "subClassOf": [
+        "schema:CreateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:UpdateWorkflowAction",
+      "@type": "rdfs:Class",
+      "label": "UpdateWorkflowAction",
+      "altLabel": "Update Workflow Action",
+      "comment": "The act of updating a workflow.",
+      "subClassOf": [
+        "schema:UpdateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:DeleteWorkflowAction",
+      "@type": "rdfs:Class",
+      "label": "DeleteWorkflowAction",
+      "altLabel": "Delete Workflow Action",
+      "comment": "The act of deleting a workflow.",
+      "subClassOf": [
+        "schema:DeleteAction"
       ],
       "status": "testing"
     },
