@@ -702,7 +702,6 @@ module.exports = {
     "DisclosureAction": "http://ns.science.ai#DisclosureAction",
     "AcknowledgeAction": "http://ns.science.ai#AcknowledgeAction",
     "UploadAction": "http://ns.science.ai#UploadAction",
-    "CreateWorkflowAction": "http://ns.science.ai#CreateWorkflowAction",
     "UpdateWorkflowAction": "http://ns.science.ai#UpdateWorkflowAction",
     "DeleteWorkflowAction": "http://ns.science.ai#DeleteWorkflowAction",
     "CreateProjectAction": "http://ns.science.ai#CreateProjectAction",

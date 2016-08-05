@@ -901,18 +901,6 @@
     },
 
     {
-      "@id": "sa:CreateWorkflowAction",
-      "@type": "rdfs:Class",
-      "label": "CreateWorkflowAction",
-      "altLabel": "Create Workflow Action",
-      "comment": "The act of creating a the resources needed for editorial workflow management",
-      "subClassOf": [
-        "schema:CreateAction"
-      ],
-      "status": "testing"
-    },
-
-    {
       "@id": "sa:UpdateWorkflowAction",
       "@type": "rdfs:Class",
       "label": "UpdateWorkflowAction",
