@@ -1021,6 +1021,18 @@
     },
 
     {
+      "@id": "sa:UpdatePeriodicalAction",
+      "@type": "rdfs:Class",
+      "label": "UpdatePeriodicalAction",
+      "altLabel": "Update Periodical Action",
+      "comment": "The act of updating a periodical.",
+      "subClassOf": [
+        "schema:UpdateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:CreateOfferAction",
       "@type": "rdfs:Class",
       "label": "CreateOfferAction",

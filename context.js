@@ -712,6 +712,7 @@ module.exports = {
     "CreateReleaseAction": "http://ns.science.ai#CreateReleaseAction",
     "UpdateReleaseAction": "http://ns.science.ai#UpdateReleaseAction",
     "CreatePeriodicalAction": "http://ns.science.ai#CreatePeriodicalAction",
+    "UpdatePeriodicalAction": "http://ns.science.ai#UpdatePeriodicalAction",
     "CreateOfferAction": "http://ns.science.ai#CreateOfferAction",
     "MimeDetectionAction": "http://ns.science.ai#MimeDetectionAction",
     "ImageProcessingAction": "http://ns.science.ai#ImageProcessingAction",
