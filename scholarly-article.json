@@ -949,6 +949,54 @@
     },
 
     {
+      "@id": "sa:DeleteProjectAction",
+      "@type": "rdfs:Class",
+      "label": "DeleteProjectAction",
+      "altLabel": "Delete Project Action",
+      "comment": "The act of deleting a project.",
+      "subClassOf": [
+        "schema:DeleteAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:CreateGraphAction",
+      "@type": "rdfs:Class",
+      "label": "CreateGraphAction",
+      "altLabel": "Create Graph Action",
+      "comment": "The act of creating a graph.",
+      "subClassOf": [
+        "schema:CreateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:UpdateGraphAction",
+      "@type": "rdfs:Class",
+      "label": "UpdateGraphAction",
+      "altLabel": "Update Graph Action",
+      "comment": "The act of updating a graph.",
+      "subClassOf": [
+        "schema:UpdateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:DeleteGraphAction",
+      "@type": "rdfs:Class",
+      "label": "DeleteGraphAction",
+      "altLabel": "Delete Graph Action",
+      "comment": "The act of deleting a graph.",
+      "subClassOf": [
+        "schema:DeleteAction"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:CreateProfileAction",
       "@type": "rdfs:Class",
       "label": "CreateProfileAction",
@@ -968,18 +1016,6 @@
       "comment": "The act of updating a profile.",
       "subClassOf": [
         "schema:UpdateAction"
-      ],
-      "status": "testing"
-    },
-
-    {
-      "@id": "sa:DeleteProjectAction",
-      "@type": "rdfs:Class",
-      "label": "DeleteProjectAction",
-      "altLabel": "Delete Project Action",
-      "comment": "The act of deleting a project.",
-      "subClassOf": [
-        "schema:DeleteAction"
       ],
       "status": "testing"
     },
