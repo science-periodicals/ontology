@@ -411,6 +411,7 @@ module.exports = {
     "user": "https://science.ai/user/",
     "bot": "https://science.ai/bot/",
     "tmp": "https://science.ai/tmp/",
+    "seq": "https://science.ai/seq/",
     "scienceai": "https://science.ai/",
     "hasPart": {
       "@id": "http://schema.org/hasPart",
