@@ -997,11 +997,11 @@
     },
 
     {
-      "@id": "sa:CreateProfileAction",
+      "@id": "sa:CreateUserProfileAction",
       "@type": "rdfs:Class",
-      "label": "CreateProfileAction",
-      "altLabel": "Create Profile Action",
-      "comment": "The act of creating a profile.",
+      "label": "CreateUserProfileAction",
+      "altLabel": "Create User Profile Action",
+      "comment": "The act of creating a profile for an user (person or organization).",
       "subClassOf": [
         "schema:CreateAction"
       ],
@@ -1009,11 +1009,11 @@
     },
 
     {
-      "@id": "sa:UpdateProfileAction",
+      "@id": "sa:UpdateUserProfileAction",
       "@type": "rdfs:Class",
-      "label": "UpdateProfileAction",
-      "altLabel": "Update Profile Action",
-      "comment": "The act of updating a profile.",
+      "label": "UpdateUserProfileAction",
+      "altLabel": "Update User Profile Action",
+      "comment": "The act of updating a profile for an user (person or organization).",
       "subClassOf": [
         "schema:UpdateAction"
       ],
