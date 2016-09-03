@@ -901,6 +901,18 @@
     },
 
     {
+      "@id": "sa:WorkflowAction",
+      "@type": "rdfs:Class",
+      "label": "WorkflowAction",
+      "altLabel": "Workflow Action",
+      "comment": "The act of managing a Graph according to some specific access control rules (instrument)",
+      "subClassOf": [
+        "schema:Action"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:UpdateWorkflowAction",
       "@type": "rdfs:Class",
       "label": "UpdateWorkflowAction",
