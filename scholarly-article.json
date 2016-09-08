@@ -532,6 +532,15 @@
     },
 
     {
+      "@id": "sa:CreateReleasePermission",
+      "@type": "schema:DigitalDocumentPermission",
+      "label": "CreateReleasePermission",
+      "altLabel": ["create release permission"],
+      "comment": "Permission to allow other agents (based on their roles) to create public releases of a Graph.",
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:ViewIdentityPermission",
       "@type": "schema:DigitalDocumentPermission",
       "label": "ViewIdentityPermission",
