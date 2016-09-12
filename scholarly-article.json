@@ -728,18 +728,6 @@
     },
 
     {
-      "@id": "sa:Project",
-      "@type": "rdfs:Class",
-      "label": "Project",
-      "comment": "A project (a collective endeavour of some kind)",
-      "subClassOf": [
-        "schema:CreativeWork"
-      ],
-      "equivalentClass": "http://xmlns.com/foaf/spec/#term_Project",
-      "status": "testing"
-    },
-
-    {
       "@id": "sa:Release",
       "@type": "rdfs:Class",
       "label": "Release",
