@@ -414,7 +414,10 @@ module.exports = {
     "seq": "https://science.ai/seq/",
     "service": "https://science.ai/service/",
     "workflow": "https://science.ai/workflow/",
-    "question": "https://science.ai/question/",
+    "question": {
+      "@id": "https://science.ai/question/",
+      "@type": "@id"
+    },
     "scienceai": "https://science.ai/",
     "hasPart": {
       "@id": "http://schema.org/hasPart",
@@ -582,6 +585,10 @@ module.exports = {
     },
     "targetCollection": {
       "@id": "http://schema.org/targetCollection",
+      "@type": "@id"
+    },
+    "parentItem": {
+      "@id": "http://schema.org/parentItem",
       "@type": "@id"
     },
     "targetProductOf": {
