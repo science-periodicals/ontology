@@ -413,6 +413,8 @@ module.exports = {
     "tmp": "https://science.ai/tmp/",
     "seq": "https://science.ai/seq/",
     "service": "https://science.ai/service/",
+    "workflow": "https://science.ai/workflow/",
+    "question": "https://science.ai/question/",
     "scienceai": "https://science.ai/",
     "hasPart": {
       "@id": "http://schema.org/hasPart",
