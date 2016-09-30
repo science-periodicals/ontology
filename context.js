@@ -591,6 +591,19 @@ module.exports = {
       "@id": "http://schema.org/parentItem",
       "@type": "@id"
     },
+    "item": {
+      "@id": "http://schema.org/item",
+      "@type": "@id"
+    },
+    "itemListElement": {
+      "@id": "http://schema.org/itemListElement",
+      "@container": "@set",
+      "@type": "@id"
+    },
+    "itemListFacet": {
+      "@id": "http://ns.science.ai#itemListFacet",
+      "@type": "@id"
+    },
     "targetProductOf": {
       "@reverse": "http://schema.org/targetProduct",
       "@type": "@id"
@@ -731,6 +744,12 @@ module.exports = {
     "AudioVideoProcessingAction": "http://ns.science.ai#AudioVideoProcessingAction",
     "RdfaConversionAction": "http://ns.science.ai#RdfaConversionAction",
     "SemanticTaggingAction": "http://ns.science.ai#SemanticTaggingAction",
-    "Tag": "http://ns.science.ai#Tag"
+    "Tag": "http://ns.science.ai#Tag",
+    "Facet": "http://ns.science.ai#Facet",
+    "RangeFacet": "http://ns.science.ai#RangeFacet",
+    "count": {
+      "@id": "http://ns.science.ai#count",
+      "@type": "@id"
+    }
   }
 };

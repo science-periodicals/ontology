@@ -1086,6 +1086,47 @@
         "schema:CreativeWork"
       ],
       "status": "testing"
+    },
+
+    {
+      "@id": "sa:Facet",
+      "@type": "rdfs:Class",
+      "label": "Facet",
+      "comment": "A facet used in faceted search",
+      "subClassOf": [
+        "schema:Intangible"
+      ],
+      "status": "testing"
+    },
+    {
+      "@id": "sa:RangeFacet",
+      "@type": "rdfs:Class",
+      "label": "Tag",
+      "comment": "A facet computed over a range",
+      "subClassOf": [
+        "sa:Facet"
+      ],
+      "status": "testing"
+    },
+    {
+      "@id": "sa:itemListFacet",
+      "@type": "rdf:Property",
+      "label": "itemListFacet",
+      "altLabel": "item list facet",
+      "comment": "Facets computed from the ItemList",
+      "range": "sa:Facet",
+      "domain": "schema:ItemList",
+      "status": "testing"
+    },
+    {
+      "@id": "sa:count",
+      "@type": "rdf:Property",
+      "label": "count",
+      "altLabel": "count",
+      "comment": "Total number of a collection of items",
+      "range": "schema:Intangible",
+      "domain": "sa:Facet",
+      "status": "testing"
     }
 
   ]
