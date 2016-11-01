@@ -4275,7 +4275,9 @@ module.exports = {
       "@id": "schema:functionalClass"
     },
     "funder": {
-      "@id": "schema:funder"
+      "@id": "schema:funder",
+      "@container": "@set",
+      "@type": "@id"
     },
     "game": {
       "@id": "schema:game"
