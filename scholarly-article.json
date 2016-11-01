@@ -823,11 +823,23 @@
     },
 
     {
+      "@id": "sa:FunderRole",
+      "@type": "rdfs:Class",
+      "label": "FunderRole",
+      "altLabel": "Funder Role",
+      "comment": "A subclass of Role used to describe funding (financing) roles.",
+      "subClassOf": [
+        "schema:SponsorRole"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:roleOffer",
       "@type": "rdf:Property",
       "label": "roleOffer",
       "altLabel": "role offer",
-      "comment": "An offer made by the role's sponsor.",
+      "comment": "An offer made by the role's sponsor or funder.",
       "range": "schema:Offer",
       "domain": "sa:SponsorRole",
       "source": "https://github.com/scienceai/scholarly-article/issues/16",

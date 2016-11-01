@@ -6550,6 +6550,7 @@ module.exports = {
       "@type": "@id"
     },
     "SponsorRole": "http://ns.science.ai#SponsorRole",
+    "FunderRole": "http://ns.science.ai#FunderRole",
     "roleOffer": {
       "@id": "http://ns.science.ai#roleOffer",
       "@type": "@id",
