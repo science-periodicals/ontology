@@ -6506,6 +6506,14 @@ module.exports = {
       "@type": "@id"
     },
     "Selector": "http://ns.science.ai#Selector",
+    "selectionContent": {
+      "@id": "http://ns.science.ai#selectionContent",
+      "@type": "schema:Text"
+    },
+    "selectionHash": {
+      "@id": "http://ns.science.ai#selectionHash",
+      "@type": "schema:Text"
+    },
     "NodeSelector": "http://ns.science.ai#NodeSelector",
     "nodeKey": {
       "@id": "http://ns.science.ai#nodeKey",

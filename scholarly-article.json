@@ -619,6 +619,28 @@
     },
 
     {
+      "@id": "sa:selectionContent",
+      "@type": "rdf:Property",
+      "label": "selectionContent",
+      "altLabel": "selection content",
+      "comment":"The content of the selection",
+      "range": "schema:Text",
+      "domain": "sa:Selector",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:selectionHash",
+      "@type": "rdf:Property",
+      "label": "selectionHash",
+      "altLabel": "selection hash",
+      "comment":"The hash of the content of the selection",
+      "range": "schema:Text",
+      "domain": "sa:Selector",
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:NodeSelector",
       "@type": "rdfs:Class",
       "label": "NodeSelector",
