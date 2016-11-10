@@ -6437,6 +6437,10 @@ module.exports = {
     "service": "https://science.ai/service/",
     "workflow": "https://science.ai/workflow/",
     "scienceai": "https://science.ai/",
+    "hasSelector": {
+      "@id": "http://ns.science.ai#hasSelector",
+      "@type": "@id"
+    },
     "itemListFacet": {
       "@id": "http://ns.science.ai#itemListFacet",
       "@type": "@id"
@@ -6501,12 +6505,17 @@ module.exports = {
       "@id": "http://ns.science.ai#doi",
       "@type": "@id"
     },
-    "hasSelector": {
-      "@id": "http://ns.science.ai#hasSelector",
-      "@type": "@id"
-    },
     "Selector": "http://ns.science.ai#Selector",
-    "WebVerse": "http://ns.science.ai#WebVerse",
+    "NodeSelector": "http://ns.science.ai#NodeSelector",
+    "nodeKey": {
+      "@id": "http://ns.science.ai#nodeKey",
+      "@type": "schema:Text"
+    },
+    "nodeId": {
+      "@id": "http://ns.science.ai#nodeId",
+      "@type": "schema:Text"
+    },
+    "WebVerseSelector": "http://ns.science.ai#WebVerseSelector",
     "webVerseKey": {
       "@id": "http://ns.science.ai#webVerseKey",
       "@type": "schema:Text"

@@ -619,13 +619,47 @@
     },
 
     {
-      "@id": "sa:WebVerse",
+      "@id": "sa:NodeSelector",
       "@type": "rdfs:Class",
-      "label": "WebVerse",
-      "altLabel": "Webverse",
-      "comment": "A type of selector reasonably resilient to markup modifications and edits of the content",
+      "label": "NodeSelector",
+      "altLabel": "Node Selector",
+      "comment": "A type of Selector to select a node within a Graph",
       "subClassOf": [
         "sa:Selector"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:nodeKey",
+      "@type": "rdf:Property",
+      "label": "nodeKey",
+      "altLabel": "node key",
+      "comment":"The key (property) of the node targeted by the selector",
+      "range": "schema:Text",
+      "domain": "sa:NodeSelector",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:nodeId",
+      "@type": "rdf:Property",
+      "label": "nodeId",
+      "altLabel": "node ID",
+      "comment":"The @id of the node targeted by the selector",
+      "range": "schema:Text",
+      "domain": "sa:NodeSelector",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:WebVerseSelector",
+      "@type": "rdfs:Class",
+      "label": "WebVerseSelector",
+      "altLabel": "WebVerse Selector",
+      "comment": "A type of selector reasonably resilient to markup modifications and edits of the content",
+      "subClassOf": [
+        "sa:NodeSelector"
       ],
       "seeAlso": "https://github.com/scienceai/web-verse",
       "status": "testing"
@@ -674,8 +708,7 @@
       "altLabel": "start offset",
       "comment":"A number representing where a range selection starts",
       "range": "schema:Number",
-      "domain": "sa:WebVerse",
-      "seeAlso": "https://github.com/scienceai/web-verse",
+      "domain": "sa:Selector",
       "status": "testing"
     },
 
@@ -686,8 +719,7 @@
       "altLabel": "end offset",
       "comment":"A number representing where a range selection ends",
       "range": "schema:Number",
-      "domain": "sa:WebVerse",
-      "seeAlso": "https://github.com/scienceai/web-verse",
+      "domain": "sa:Selector",
       "status": "testing"
     },
 
