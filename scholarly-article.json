@@ -1204,6 +1204,17 @@
       "range": "schema:Duration",
       "domain": "schema:Action",
       "status": "testing"
+    },
+
+    {
+      "@id": "sa:resultOf",
+      "@type": "rdf:Property",
+      "label": "resultOf",
+      "comment":"The Action which resulted in this Thing",
+      "altLabel": "result of",
+      "range": "schema:Thing",
+      "domain": "schema:Thing",
+      "status": "testing"
     }
 
   ]

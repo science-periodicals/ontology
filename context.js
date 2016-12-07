@@ -5471,8 +5471,7 @@ module.exports = {
     },
     "publishingPrinciples": {
       "@id": "schema:publishingPrinciples",
-      "@type": "@id",
-      "@container": "@list"
+      "@type": "@id"
     },
     "purchaseDate": {
       "@id": "schema:purchaseDate",
@@ -6608,6 +6607,10 @@ module.exports = {
     },
     "expectedDuration": {
       "@id": "http://ns.science.ai#expectedDuration",
+      "@type": "@id"
+    },
+    "resultOf": {
+      "@id": "http://ns.science.ai#resultOf",
       "@type": "@id"
     }
   }
