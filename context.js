@@ -6605,6 +6605,10 @@ module.exports = {
     "count": {
       "@id": "http://ns.science.ai#count",
       "@type": "@id"
+    },
+    "expectedDuration": {
+      "@id": "http://ns.science.ai#expectedDuration",
+      "@type": "@id"
     }
   }
 };

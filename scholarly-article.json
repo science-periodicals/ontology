@@ -1193,6 +1193,17 @@
       "range": "schema:Intangible",
       "domain": "sa:Facet",
       "status": "testing"
+    },
+
+    {
+      "@id": "sa:expectedDuration",
+      "@type": "rdf:Property",
+      "label": "expectedDuration",
+      "comment":"The expected duration of an Action",
+      "altLabel": "expected duration",
+      "range": "schema:Duration",
+      "domain": "schema:Action",
+      "status": "testing"
     }
 
   ]
