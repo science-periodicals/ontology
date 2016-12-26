@@ -388,6 +388,17 @@
     },
 
     {
+      "@id": "sa:resourceOf",
+      "@type": "rdf:Property",
+      "label": "resourceOf",
+      "altLabel": "resource of",
+      "comment":"The Graph this node is a resource of",
+      "range": "sa:Graph",
+      "domain": "schema:CreativeWork",
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:Checksum",
       "@type": "rdfs:Class",
       "label": "Checksum",

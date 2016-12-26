@@ -6476,6 +6476,9 @@ module.exports = {
     "Audio": "http://ns.science.ai#Audio",
     "TableObject": "http://ns.science.ai#TableObject",
     "DocumentObject": "http://ns.science.ai#DocumentObject",
+    "resourceOf": {
+      "@id": "http://ns.science.ai#resourceOf"
+    },
     "Checksum": "http://ns.science.ai#Checksum",
     "PerceptualHash": "http://ns.science.ai#PerceptualHash",
     "contentChecksum": {
