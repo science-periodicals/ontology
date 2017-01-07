@@ -705,7 +705,7 @@
       "altLabel": "web verse key",
       "comment":"The key of a web verse selector",
       "range": "schema:Text",
-      "domain": "sa:WebVerse",
+      "domain": "sa:WebVerseSelector",
       "seeAlso": "https://github.com/scienceai/web-verse",
       "status": "testing"
     },
@@ -717,7 +717,7 @@
       "altLabel": "web verse hash",
       "comment":"The hash of a web verse selector",
       "range": "schema:Text",
-      "domain": "sa:WebVerse",
+      "domain": "sa:WebVerseSelector",
       "seeAlso": "https://github.com/scienceai/web-verse",
       "status": "testing"
     },
@@ -729,7 +729,7 @@
       "altLabel": "web verse id",
       "comment":"The identifier of a web verse selector",
       "range": "schema:Text",
-      "domain": "sa:WebVerse",
+      "domain": "sa:WebVerseSelector",
       "seeAlso": "https://github.com/scienceai/web-verse",
       "status": "testing"
     },
