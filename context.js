@@ -6476,6 +6476,7 @@ module.exports = {
     "Audio": "http://ns.science.ai#Audio",
     "TableObject": "http://ns.science.ai#TableObject",
     "DocumentObject": "http://ns.science.ai#DocumentObject",
+    "Footnote": "http://ns.science.ai#Footnote",
     "resourceOf": {
       "@id": "http://ns.science.ai#resourceOf"
     },

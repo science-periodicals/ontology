@@ -388,6 +388,15 @@
     },
 
     {
+      "@id": "sa:Footnote",
+      "@type": "rdfs:Class",
+      "label": "Footnote",
+      "subClassOf": "schema:Comment",
+      "comment": "An ancillary piece of information typically displayed at the bottom of a page.",
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:resourceOf",
       "@type": "rdf:Property",
       "label": "resourceOf",
