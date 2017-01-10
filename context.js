@@ -6433,6 +6433,7 @@ module.exports = {
     "bot": "https://science.ai/bot/",
     "tmp": "https://science.ai/tmp/",
     "seq": "https://science.ai/seq/",
+    "spdx": "https://spdx.org/licenses/",
     "service": "https://science.ai/service/",
     "workflow": "https://science.ai/workflow/",
     "scienceai": "https://science.ai/",
