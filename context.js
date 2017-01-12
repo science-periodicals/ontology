@@ -4885,7 +4885,8 @@ module.exports = {
       "@id": "schema:merchant"
     },
     "messageAttachment": {
-      "@id": "schema:messageAttachment"
+      "@id": "schema:messageAttachment",
+      "@type": "@id"
     },
     "mileageFromOdometer": {
       "@id": "schema:mileageFromOdometer"
@@ -6438,6 +6439,7 @@ module.exports = {
     "service": "https://science.ai/service/",
     "workflow": "https://science.ai/workflow/",
     "scienceai": "https://science.ai/",
+    "ses": "https://api.scienceai/ses/",
     "hasSelector": {
       "@id": "http://ns.science.ai#hasSelector",
       "@type": "@id"
