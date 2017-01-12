@@ -14,5 +14,6 @@ module.exports = {
   service: "https://science.ai/service/",
   workflow: "https://science.ai/workflow/",
   question: "https://science.ai/question/",
-  scienceai: "https://science.ai/"
+  scienceai: "https://science.ai/",
+  ses: 'https://api.scienceai/ses/'
 };
