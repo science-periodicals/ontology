@@ -6503,6 +6503,10 @@ module.exports = {
       "@id": "http://ns.science.ai#progress",
       "@type": "@id"
     },
+    "numberOfRequiredReviews": {
+      "@id": "http://ns.science.ai#numberOfRequiredReviews",
+      "@type": "@id"
+    },
     "Error": "http://ns.science.ai#Error",
     "statusCode": {
       "@id": "http://ns.science.ai#statusCode",
