@@ -4325,7 +4325,8 @@ module.exports = {
       "@id": "schema:globalLocationNumber"
     },
     "grantee": {
-      "@id": "schema:grantee"
+      "@id": "schema:grantee",
+      "@type": "@id"
     },
     "grantsCredential": {
       "@id": "schema:grantsCredential"
@@ -4365,7 +4366,9 @@ module.exports = {
       "@id": "schema:hasDeliveryMethod"
     },
     "hasDigitalDocumentPermission": {
-      "@id": "schema:hasDigitalDocumentPermission"
+      "@id": "schema:hasDigitalDocumentPermission",
+      "@container": "@set",
+      "@type": "@id"
     },
     "hasEnumerationValue": {
       "@id": "schema:hasEnumerationValue"
@@ -6577,7 +6580,8 @@ module.exports = {
     },
     "permissionScope": {
       "@id": "http://ns.science.ai#permissionScope",
-      "@type": "@id"
+      "@type": "@id",
+      "@container": "@set"
     },
     "SponsorRole": "http://ns.science.ai#SponsorRole",
     "FunderRole": "http://ns.science.ai#FunderRole",
