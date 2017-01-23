@@ -6561,7 +6561,7 @@ module.exports = {
     "TargetRole": "http://ns.science.ai#TargetRole",
     "LinkAction": "http://ns.science.ai#LinkAction",
     "TagAction": "http://ns.science.ai#TagAction",
-    "Release": "http://ns.science.ai#Release",
+    "DeauthorizeAction": "http://ns.science.ai#DeauthorizeAction",
     "Graph": "http://ns.science.ai#Graph",
     "slug": {
       "@id": "http://ns.science.ai#slug",

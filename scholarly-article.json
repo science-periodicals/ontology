@@ -813,12 +813,13 @@
     },
 
     {
-      "@id": "sa:Release",
+      "@id": "sa:DeauthorizeAction",
       "@type": "rdfs:Class",
-      "label": "Release",
-      "comment": "A release of a creative work",
+      "label": "DeauthorizeAction",
+      "altLabel": "Deauthorize Action",
+      "comment": "The antonym of an AuthorizeAction",
       "subClassOf": [
-        "schema:CreativeWork"
+        "sa:AllocateAction"
       ],
       "status": "testing"
     },
@@ -840,7 +841,7 @@
       "label": "slug",
       "comment": "Part of a URL that identifies a page in human-readable keywords",
       "range": "schema:Text",
-      "domain": "schema:Release",
+      "domain": "sa:Graph",
       "status": "testing",
       "seeAlso": "https://en.wikipedia.org/wiki/Semantic_URL#Slug",
       "equivalentProperty": "http://www.bbc.co.uk/ontologies/provenance/slug"
