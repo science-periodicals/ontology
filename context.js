@@ -6562,6 +6562,7 @@ module.exports = {
     "LinkAction": "http://ns.science.ai#LinkAction",
     "TagAction": "http://ns.science.ai#TagAction",
     "DeauthorizeAction": "http://ns.science.ai#DeauthorizeAction",
+    "PaySeriesAction": "http://ns.science.ai#PaySeriesAction",
     "Graph": "http://ns.science.ai#Graph",
     "slug": {
       "@id": "http://ns.science.ai#slug",

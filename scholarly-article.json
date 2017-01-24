@@ -825,6 +825,18 @@
     },
 
     {
+      "@id": "sa:PaySeriesAction",
+      "@type": "rdfs:Class",
+      "label": "PaySeriesAction",
+      "altLabel": "Pay Series Action",
+      "comment": "A series of PayActions, essentially modelling a subscription with recurring payment.",
+      "subClassOf": [
+        "sa:PayAction"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:Graph",
       "@type": "rdfs:Class",
       "label": "Graph",
