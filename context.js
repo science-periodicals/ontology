@@ -2945,7 +2945,8 @@ module.exports = {
       "@id": "schema:accelerationTime"
     },
     "acceptedAnswer": {
-      "@id": "schema:acceptedAnswer"
+      "@id": "schema:acceptedAnswer",
+      "@type": "@id"
     },
     "acceptedOffer": {
       "@id": "schema:acceptedOffer"
@@ -6041,7 +6042,8 @@ module.exports = {
       "@id": "schema:sugarContent"
     },
     "suggestedAnswer": {
-      "@id": "schema:suggestedAnswer"
+      "@id": "schema:suggestedAnswer",
+      "@type": "@id"
     },
     "suggestedGender": {
       "@id": "schema:suggestedGender"
