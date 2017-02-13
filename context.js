@@ -5691,7 +5691,8 @@ module.exports = {
       "@id": "schema:reviewCount"
     },
     "reviewRating": {
-      "@id": "schema:reviewRating"
+      "@id": "schema:reviewRating",
+      "@type": "@id"
     },
     "reviewedBy": {
       "@id": "schema:reviewedBy"
