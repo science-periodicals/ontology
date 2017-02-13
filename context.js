@@ -5674,10 +5674,12 @@ module.exports = {
       "@type": "@id"
     },
     "resultComment": {
-      "@id": "schema:resultComment"
+      "@id": "schema:resultComment",
+      "@type": "@id"
     },
     "resultReview": {
-      "@id": "schema:resultReview"
+      "@id": "schema:resultReview",
+      "@type": "@id"
     },
     "review": {
       "@id": "schema:review",
