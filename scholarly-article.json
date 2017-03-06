@@ -849,11 +849,11 @@
     },
 
     {
-      "@id": "sa:AuthorizeOrganizationAction",
+      "@id": "sa:AuthorizePaymentAction",
       "@type": "rdfs:Class",
-      "label": "AuthorizeOrganizationAction",
-      "altLabel": "Authorize Organization Action",
-      "comment": "An action to authorize payment for an Organization.",
+      "label": "AuthorizePaymentAction",
+      "altLabel": "Authorize Payment Action",
+      "comment": "An action to authorize payment for an Organization, Person, etc.",
       "subClassOf": [
         "schema:AuthorizeAction"
       ],
