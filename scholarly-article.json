@@ -831,7 +831,43 @@
       "altLabel": "Pay Series Action",
       "comment": "A series of PayActions, essentially modelling a subscription with recurring payment.",
       "subClassOf": [
-        "sa:PayAction"
+        "schema:PayAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:CreateOrganizationAction",
+      "@type": "rdfs:Class",
+      "label": "CreateOrganizationAction",
+      "altLabel": "Create Organization Action",
+      "comment": "An action to create an Organization.",
+      "subClassOf": [
+        "sa:CreateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:AuthorizeOrganizationAction",
+      "@type": "rdfs:Class",
+      "label": "AuthorizeOrganizationAction",
+      "altLabel": "Authorize Organization Action",
+      "comment": "An action to authorize payment for an Organization.",
+      "subClassOf": [
+        "schema:AuthorizeAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:ConsumePlanAction",
+      "@type": "rdfs:Class",
+      "label": "ConsumePlanAction",
+      "altLabel": "Consume Plan Action",
+      "comment": "An to accept a plan (Offer) for an Organization.",
+      "subClassOf": [
+        "schema:ConsumeAction"
       ],
       "status": "testing"
     },
