@@ -849,6 +849,18 @@
     },
 
     {
+      "@id": "sa:UpdateOrganizationAction",
+      "@type": "rdfs:Class",
+      "label": "UpdateOrganizationAction",
+      "altLabel": "Update Organization Action",
+      "comment": "The act of updating an organization.",
+      "subClassOf": [
+        "schema:UpdateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:AuthorizePaymentAction",
       "@type": "rdfs:Class",
       "label": "AuthorizePaymentAction",

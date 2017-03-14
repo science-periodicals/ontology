@@ -6569,6 +6569,7 @@ module.exports = {
     "DeauthorizeAction": "http://ns.science.ai#DeauthorizeAction",
     "PaySeriesAction": "http://ns.science.ai#PaySeriesAction",
     "CreateOrganizationAction": "http://ns.science.ai#CreateOrganizationAction",
+    "UpdateOrganizationAction": "http://ns.science.ai#UpdateOrganizationAction",
     "AuthorizePaymentAction": "http://ns.science.ai#AuthorizePaymentAction",
     "ConsumePlanAction": "http://ns.science.ai#ConsumePlanAction",
     "Graph": "http://ns.science.ai#Graph",
