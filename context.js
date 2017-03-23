@@ -6513,11 +6513,11 @@ module.exports = {
     },
     "numberOfRequiredReviews": {
       "@id": "http://ns.science.ai#numberOfRequiredReviews",
-      "@type": "@id"
+      "@type": "schema:Number"
     },
     "numberOfRequiredInstances": {
       "@id": "http://ns.science.ai#numberOfRequiredInstances",
-      "@type": "@id"
+      "@type": "schema:Number"
     },
     "Error": "http://ns.science.ai#Error",
     "statusCode": {

@@ -584,8 +584,8 @@
       "label": "numberOfRequiredReviews",
       "altLabel": "number of required reviews",
       "comment":"The number of reviews required before performing an assess action",
-      "range": "schema:AssessAction",
-      "domain": "schema:Number",
+      "domain": "schema:AssessAction",
+      "range": "schema:Number",
       "status": "testing"
     },
 
@@ -595,8 +595,8 @@
       "label": "numberOfRequiredInstances",
       "altLabel": "number of required instances",
       "comment":"The number of instances of the action required",
-      "range": "schema:Action",
-      "domain": "schema:Number",
+      "domain": "schema:Action",
+      "range": "schema:Number",
       "status": "testing"
     },
 
