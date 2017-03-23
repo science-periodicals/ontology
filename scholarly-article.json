@@ -590,6 +590,17 @@
     },
 
     {
+      "@id": "sa:numberOfRequiredInstances",
+      "@type": "rdf:Property",
+      "label": "numberOfRequiredInstances",
+      "altLabel": "number of required instances",
+      "comment":"The number of instances of the action required",
+      "range": "schema:Action",
+      "domain": "schema:Number",
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:Error",
       "@type": "rdfs:Class",
       "label": "Error",
