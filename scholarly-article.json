@@ -408,6 +408,17 @@
     },
 
     {
+      "@id": "sa:suggestedResult",
+      "@type": "rdf:Property",
+      "label": "suggestedResult",
+      "altLabel": "suggested result",
+      "comment":"The suggested result of an action",
+      "range": "schema:Thing",
+      "domain": "schema:Action",
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:Checksum",
       "@type": "rdfs:Class",
       "label": "Checksum",
