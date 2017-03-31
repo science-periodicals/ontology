@@ -6448,6 +6448,10 @@ module.exports = {
     "workflow": "https://science.ai/workflow/",
     "scienceai": "https://science.ai/",
     "ses": "https://api.scienceai/ses/",
+    "suggestedResult": {
+      "@id": "http://ns.science.ai#suggestedResult",
+      "@type": "@id"
+    },
     "hasSelector": {
       "@id": "http://ns.science.ai#hasSelector",
       "@type": "@id"
