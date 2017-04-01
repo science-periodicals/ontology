@@ -728,6 +728,17 @@
     },
 
     {
+      "@id": "sa:nodeValueId",
+      "@type": "rdf:Property",
+      "label": "nodeValueId",
+      "altLabel": "node value ID",
+      "comment":"The @id of the value targeted by the selector, this is especialy useful when the value is a list",
+      "range": "schema:Text",
+      "domain": "sa:NodeSelector",
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:WebVerseSelector",
       "@type": "rdfs:Class",
       "label": "WebVerseSelector",

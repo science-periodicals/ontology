@@ -6550,6 +6550,10 @@ module.exports = {
       "@id": "http://ns.science.ai#nodeId",
       "@type": "schema:Text"
     },
+    "nodeValueId": {
+      "@id": "http://ns.science.ai#nodeValueId",
+      "@type": "schema:Text"
+    },
     "WebVerseSelector": "http://ns.science.ai#WebVerseSelector",
     "webVerseKey": {
       "@id": "http://ns.science.ai#webVerseKey",
