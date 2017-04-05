@@ -481,6 +481,15 @@
     },
 
     {
+      "@id": "sa:ProgressEvent",
+      "@type": "rdfs:Class",
+      "label": "ProgressEvent",
+      "altLabel": ["progress event"],
+      "comment": "An event providing information about the progress status of an action",
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:progress",
       "@type": "rdf:Property",
       "label": "progress",
@@ -492,7 +501,8 @@
 
     {
       "@id": "sa:AdminPermission",
-      "@type": "schema:DigitalDocumentPermission",
+      "@type": "rdfs:Class",
+      "subClassOf": "schema:DigitalDocumentPermission",
       "label": "AdminPermission",
       "altLabel": ["admin permission"],
       "comment": "Permission to administrate a resource.",
@@ -501,7 +511,8 @@
 
     {
       "@id": "sa:ReadReviewPermission",
-      "@type": "schema:DigitalDocumentPermission",
+      "@type": "rdfs:Class",
+      "subClassOf": "schema:DigitalDocumentPermission",
       "label": "ReadReviewPermission",
       "altLabel": ["read review permission"],
       "comment": "Permission to read or view reviews of other agents based on their roles.",
@@ -510,7 +521,8 @@
 
     {
       "@id": "sa:WriteReviewPermission",
-      "@type": "schema:DigitalDocumentPermission",
+      "@type": "rdfs:Class",
+      "subClassOf": "schema:DigitalDocumentPermission",
       "label": "WriteReviewPermission",
       "altLabel": ["write review permission"],
       "comment": "Permission to write reviews or edit reviews of other agents based on their roles.",
@@ -519,7 +531,8 @@
 
     {
       "@id": "sa:ReadCommentPermission",
-      "@type": "schema:DigitalDocumentPermission",
+      "@type": "rdfs:Class",
+      "subClassOf": "schema:DigitalDocumentPermission",
       "label": "ReadCommentPermission",
       "altLabel": ["read comment permission"],
       "comment": "Permission to read or view comments (and annotations) of other agents based on their roles.",
@@ -528,7 +541,8 @@
 
     {
       "@id": "sa:WriteCommentPermission",
-      "@type": "schema:DigitalDocumentPermission",
+      "@type": "rdfs:Class",
+      "subClassOf": "schema:DigitalDocumentPermission",
       "label": "WriteCommentPermission",
       "altLabel": ["write comment access"],
       "comment": "Permission to write or edit comments (and annotations) of other agents based on their roles.",
@@ -537,7 +551,8 @@
 
     {
       "@id": "sa:AssessPermission",
-      "@type": "schema:DigitalDocumentPermission",
+      "@type": "rdfs:Class",
+      "subClassOf": "schema:DigitalDocumentPermission",
       "label": "AssessPermission",
       "altLabel": ["assess permission"],
       "comment": "Permission to make a decision regarding the outcome of an action.",
@@ -546,7 +561,8 @@
 
     {
       "@id": "sa:CommunicatePermission",
-      "@type": "schema:DigitalDocumentPermission",
+      "@type": "rdfs:Class",
+      "subClassOf": "schema:DigitalDocumentPermission",
       "label": "CommunicatePermission",
       "altLabel": ["communicate permission"],
       "comment": "Permission to contact other agents based on their roles.",
@@ -555,7 +571,8 @@
 
     {
       "@id": "sa:InvitePermission",
-      "@type": "schema:DigitalDocumentPermission",
+      "@type": "rdfs:Class",
+      "subClassOf": "schema:DigitalDocumentPermission",
       "label": "InvitePermission",
       "altLabel": ["invite permission"],
       "comment": "Permission to invite other agents based on their roles.",
@@ -564,7 +581,8 @@
 
     {
       "@id": "sa:CreateReleasePermission",
-      "@type": "schema:DigitalDocumentPermission",
+      "@type": "rdfs:Class",
+      "subClassOf": "schema:DigitalDocumentPermission",
       "label": "CreateReleasePermission",
       "altLabel": ["create release permission"],
       "comment": "Permission to allow other agents (based on their roles) to create public releases of a Graph.",
@@ -573,7 +591,8 @@
 
     {
       "@id": "sa:ViewIdentityPermission",
-      "@type": "schema:DigitalDocumentPermission",
+      "@type": "rdfs:Class",
+      "subClassOf": "schema:DigitalDocumentPermission",
       "label": "ViewIdentityPermission",
       "altLabel": ["view identity permission"],
       "comment": "Permission to view the identity of other agents based on their roles.",
@@ -582,7 +601,8 @@
 
     {
       "@id": "sa:AssignPermission",
-      "@type": "schema:DigitalDocumentPermission",
+      "@type": "rdfs:Class",
+      "subClassOf": "schema:DigitalDocumentPermission",
       "label": "AssignPermission",
       "altLabel": ["assign permission"],
       "comment": "Permission to assign actions to other agents based on their roles.",

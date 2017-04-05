@@ -1,6 +1,6 @@
 {
   "name": "@scienceai/scholarly-article",
-  "version": "17.18.0",
+  "version": "17.19.0",
   "description": "schema.org extension to describe the production process, content, distribution and preservation of scholarly articles (and similar artifacts)",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/scienceai/scholarly-article#readme",
   "devDependencies": {
-    "browserify": "^14.1.0",
+    "browserify": "^14.3.0",
     "is-url": "1.2.2",
     "jsdom": "^9.12.0",
     "jsonld-markup": "^0.2.1",
