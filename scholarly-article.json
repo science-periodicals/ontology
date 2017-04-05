@@ -484,6 +484,7 @@
       "@id": "sa:ProgressEvent",
       "@type": "rdfs:Class",
       "label": "ProgressEvent",
+      "subClassOf": "schema:Event",
       "altLabel": ["progress event"],
       "comment": "An event providing information about the progress status of an action",
       "status": "testing"
