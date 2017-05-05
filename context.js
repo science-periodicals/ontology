@@ -6668,6 +6668,14 @@ module.exports = {
     "style": {
       "@id": "http://ns.science.ai#style",
       "@type": "@id"
+    },
+    "encodesStyle": {
+      "@id": "http://ns.science.ai#encodesStyle",
+      "@type": "@id"
+    },
+    "isStyleOf": {
+      "@id": "http://ns.science.ai#isStyleOf",
+      "@type": "@id"
     }
   }
 };

@@ -1375,7 +1375,6 @@
       "status": "testing"
     },
 
-
     {
       "@id": "sa:CssVariable",
       "@type": "rdfs:Class",
@@ -1394,6 +1393,26 @@
       "comment":"describes how the creative work should be styled",
       "range": "sa:CssVariable",
       "domain": "schema:CreativeWork",
+      "status": "testing"
+    },
+    {
+      "@id": "sa:encodesStyle",
+      "@type": "rdf:Property",
+      "label": "encodesStyle",
+      "altLabel": "encodes style",
+      "comment":"the CSS asset encoded by this MediaObject",
+      "range": "sa:CssVariable",
+      "domain": "schema:MediaObject",
+      "status": "testing"
+    },
+    {
+      "@id": "sa:isStyleOf",
+      "@type": "rdf:Property",
+      "label": "isStyleOf",
+      "altLabel": "is style of",
+      "comment":"the CreativeWork styled by this style",
+      "range": "schema:CreativeWork",
+      "domain": "sa:CssVariable",
       "status": "testing"
     }
 
