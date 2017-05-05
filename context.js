@@ -6663,6 +6663,11 @@ module.exports = {
     "resultOf": {
       "@id": "http://ns.science.ai#resultOf",
       "@type": "@id"
+    },
+    "CssVariable": "http://ns.science.ai#CssVariable",
+    "style": {
+      "@id": "http://ns.science.ai#style",
+      "@type": "@id"
     }
   }
 };

@@ -1,6 +1,6 @@
 {
   "name": "@scienceai/scholarly-article",
-  "version": "17.19.1",
+  "version": "17.20.0",
   "description": "schema.org extension to describe the production process, content, distribution and preservation of scholarly articles (and similar artifacts)",
   "main": "index.js",
   "scripts": {
@@ -34,8 +34,8 @@
     "jsdom": "^9.12.0",
     "jsonld-markup": "^0.2.1",
     "jsonld-vis": "0.2.0",
-    "mocha": "^3.2.0",
+    "mocha": "^3.3.0",
     "nodemon": "1.11.0",
-    "schema.org": "^2.3.1"
+    "schema.org": "^2.4.0"
   }
 }

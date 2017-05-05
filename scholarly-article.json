@@ -1373,6 +1373,28 @@
       "range": "schema:Thing",
       "domain": "schema:Thing",
       "status": "testing"
+    },
+
+
+    {
+      "@id": "sa:CssVariable",
+      "@type": "rdfs:Class",
+      "label": "CssVariable",
+      "altLabel": "CSS variable",
+      "comment": "A CSS variable",
+      "subClassOf": [
+        "schema:PropertyValue"
+      ],
+      "status": "testing"
+    },
+    {
+      "@id": "sa:style",
+      "@type": "rdf:Property",
+      "label": "style",
+      "comment":"describes how the creative work should be styled",
+      "range": "sa:CssVariable",
+      "domain": "schema:CreativeWork",
+      "status": "testing"
     }
 
   ]
