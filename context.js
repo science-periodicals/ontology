@@ -33,7 +33,7 @@ module.exports = {
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "rev": "http://purl.org/stuff/rev#",
     "rif": "http://www.w3.org/2007/rif#",
-    "role": "http://www.w3.org/1999/xhtml/vocab#role",
+    "role": "https://science.ai/role/",
     "rr": "http://www.w3.org/ns/r2rml#",
     "sd": "http://www.w3.org/ns/sparql-service-description#",
     "sioc": "http://rdfs.org/sioc/ns#",
@@ -6446,6 +6446,11 @@ module.exports = {
     "spdx": "https://spdx.org/licenses/",
     "service": "https://science.ai/service/",
     "workflow": "https://science.ai/workflow/",
+    "answer": "https://science.ai/answer/",
+    "style": {
+      "@id": "http://ns.science.ai#style",
+      "@type": "@id"
+    },
     "scienceai": "https://science.ai/",
     "ses": "https://api.scienceai/ses/",
     "suggestedResult": {
@@ -6665,10 +6670,6 @@ module.exports = {
       "@type": "@id"
     },
     "CssVariable": "http://ns.science.ai#CssVariable",
-    "style": {
-      "@id": "http://ns.science.ai#style",
-      "@type": "@id"
-    },
     "encodesStyle": {
       "@id": "http://ns.science.ai#encodesStyle",
       "@type": "@id"
