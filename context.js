@@ -6615,7 +6615,7 @@ module.exports = {
     "roleContactPoint": {
       "@id": "http://ns.science.ai#roleContactPoint",
       "@type": "@id",
-      "@container": "@list"
+      "@container": "@set"
     },
     "permissionScope": {
       "@id": "http://ns.science.ai#permissionScope",
@@ -6627,13 +6627,13 @@ module.exports = {
     "roleOffer": {
       "@id": "http://ns.science.ai#roleOffer",
       "@type": "@id",
-      "@container": "@list"
+      "@container": "@set"
     },
     "FundingSource": "http://ns.science.ai#FundingSource",
     "roleAction": {
       "@id": "http://ns.science.ai#roleAction",
       "@type": "@id",
-      "@container": "@list"
+      "@container": "@set"
     },
     "DisclosureAction": "http://ns.science.ai#DisclosureAction",
     "AcknowledgeAction": "http://ns.science.ai#AcknowledgeAction",
