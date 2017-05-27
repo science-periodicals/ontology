@@ -6449,7 +6449,8 @@ module.exports = {
     "answer": "https://science.ai/answer/",
     "style": {
       "@id": "http://ns.science.ai#style",
-      "@type": "@id"
+      "@type": "@id",
+      "@container": "@set"
     },
     "scienceai": "https://science.ai/",
     "ses": "https://api.scienceai/ses/",
