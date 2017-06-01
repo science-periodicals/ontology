@@ -5357,7 +5357,8 @@ module.exports = {
       "@id": "schema:priceRange"
     },
     "priceSpecification": {
-      "@id": "schema:priceSpecification"
+      "@id": "schema:priceSpecification",
+      "@type": "@id"
     },
     "priceType": {
       "@id": "schema:priceType"
