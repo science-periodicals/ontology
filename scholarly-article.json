@@ -440,7 +440,6 @@
       "seeAlso": "https://en.wikipedia.org/wiki/Perceptual_hashing"
     },
 
-
     {
       "@id": "sa:contentChecksum",
       "@type": "rdf:Property",
@@ -934,6 +933,18 @@
       "comment": "An to accept a plan (Offer) for an Organization.",
       "subClassOf": [
         "schema:ConsumeAction"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:TypesettingAction",
+      "@type": "rdfs:Class",
+      "label": "TypesettingAction",
+      "altLabel": "Typesetting Action",
+      "comment": "The act of typesetting a document",
+      "subClassOf": [
+        "sa:Action"
       ],
       "status": "testing"
     },

@@ -47,6 +47,9 @@ module.exports = {
     "xhv": "http://www.w3.org/1999/xhtml/vocab#",
     "xml": "http://www.w3.org/XML/1998/namespace",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "AMRadioChannel": {
+      "@id": "schema:AMRadioChannel"
+    },
     "APIReference": {
       "@id": "schema:APIReference"
     },
@@ -347,6 +350,9 @@ module.exports = {
     "BroadcastService": {
       "@id": "schema:BroadcastService"
     },
+    "BrokerageAccount": {
+      "@id": "schema:BrokerageAccount"
+    },
     "BuddhistTemple": {
       "@id": "schema:BuddhistTemple"
     },
@@ -424,6 +430,12 @@ module.exports = {
     },
     "CassetteFormat": {
       "@id": "schema:CassetteFormat"
+    },
+    "CategoryCode": {
+      "@id": "schema:CategoryCode"
+    },
+    "CategoryCodeSet": {
+      "@id": "schema:CategoryCodeSet"
     },
     "CatholicChurch": {
       "@id": "schema:CatholicChurch"
@@ -539,6 +551,9 @@ module.exports = {
     "CompilationAlbum": {
       "@id": "schema:CompilationAlbum"
     },
+    "CompleteDataFeed": {
+      "@id": "schema:CompleteDataFeed"
+    },
     "Completed": {
       "@id": "schema:Completed"
     },
@@ -556,6 +571,9 @@ module.exports = {
     },
     "ConfirmAction": {
       "@id": "schema:ConfirmAction"
+    },
+    "Consortium": {
+      "@id": "schema:Consortium"
     },
     "ConsumeAction": {
       "@id": "schema:ConsumeAction"
@@ -887,6 +905,9 @@ module.exports = {
     "EndorseAction": {
       "@id": "schema:EndorseAction"
     },
+    "EndorsementRating": {
+      "@id": "schema:EndorsementRating"
+    },
     "Energy": {
       "@id": "schema:Energy"
     },
@@ -904,12 +925,6 @@ module.exports = {
     },
     "Enumeration": {
       "@id": "schema:Enumeration"
-    },
-    "EnumerationValue": {
-      "@id": "schema:EnumerationValue"
-    },
-    "EnumerationValueSet": {
-      "@id": "schema:EnumerationValueSet"
     },
     "Episode": {
       "@id": "schema:Episode"
@@ -950,6 +965,9 @@ module.exports = {
     "EvidenceLevelC": {
       "@id": "schema:EvidenceLevelC"
     },
+    "ExchangeRateSpecification": {
+      "@id": "schema:ExchangeRateSpecification"
+    },
     "ExerciseAction": {
       "@id": "schema:ExerciseAction"
     },
@@ -982,6 +1000,9 @@ module.exports = {
     },
     "FDAnotEvaluated": {
       "@id": "schema:FDAnotEvaluated"
+    },
+    "FMRadioChannel": {
+      "@id": "schema:FMRadioChannel"
     },
     "FailedActionStatus": {
       "@id": "schema:FailedActionStatus"
@@ -1043,6 +1064,9 @@ module.exports = {
     "FourWheelDriveConfiguration": {
       "@id": "schema:FourWheelDriveConfiguration"
     },
+    "Friday": {
+      "@id": "schema:Friday"
+    },
     "FrontWheelDriveConfiguration": {
       "@id": "schema:FrontWheelDriveConfiguration"
     },
@@ -1096,6 +1120,9 @@ module.exports = {
     },
     "GeoShape": {
       "@id": "schema:GeoShape"
+    },
+    "GeospatialGeometry": {
+      "@id": "schema:GeospatialGeometry"
     },
     "Geriatric": {
       "@id": "schema:Geriatric"
@@ -1280,6 +1307,9 @@ module.exports = {
     "InternetCafe": {
       "@id": "schema:InternetCafe"
     },
+    "InvestmentFund": {
+      "@id": "schema:InvestmentFund"
+    },
     "InvestmentOrDeposit": {
       "@id": "schema:InvestmentOrDeposit"
     },
@@ -1364,6 +1394,9 @@ module.exports = {
     "Library": {
       "@id": "schema:Library"
     },
+    "LibrarySystem": {
+      "@id": "schema:LibrarySystem"
+    },
     "LifestyleModification": {
       "@id": "schema:LifestyleModification"
     },
@@ -1381,9 +1414,6 @@ module.exports = {
     },
     "LiquorStore": {
       "@id": "schema:LiquorStore"
-    },
-    "ListItem": {
-      "@id": "schema:ListItem"
     },
     "ListenAction": {
       "@id": "schema:ListenAction"
@@ -1601,6 +1631,15 @@ module.exports = {
     "MensClothingStore": {
       "@id": "schema:MensClothingStore"
     },
+    "Menu": {
+      "@id": "schema:Menu"
+    },
+    "MenuItem": {
+      "@id": "schema:MenuItem"
+    },
+    "MenuSection": {
+      "@id": "schema:MenuSection"
+    },
     "Message": {
       "@id": "schema:Message"
     },
@@ -1624,6 +1663,12 @@ module.exports = {
     },
     "MonetaryAmount": {
       "@id": "schema:MonetaryAmount"
+    },
+    "MoneyTransfer": {
+      "@id": "schema:MoneyTransfer"
+    },
+    "MortgageLoan": {
+      "@id": "schema:MortgageLoan"
     },
     "Mosque": {
       "@id": "schema:Mosque"
@@ -1744,9 +1789,6 @@ module.exports = {
     },
     "Neurologic": {
       "@id": "schema:Neurologic"
-    },
-    "NewCondition": {
-      "@id": "schema:NewCondition"
     },
     "NewsArticle": {
       "@id": "schema:NewsArticle"
@@ -2291,6 +2333,9 @@ module.exports = {
     "RentalVehicleUsage": {
       "@id": "schema:RentalVehicleUsage"
     },
+    "RepaymentSpecification": {
+      "@id": "schema:RepaymentSpecification"
+    },
     "ReplaceAction": {
       "@id": "schema:ReplaceAction"
     },
@@ -2402,6 +2447,9 @@ module.exports = {
     "SaleEvent": {
       "@id": "schema:SaleEvent"
     },
+    "Saturday": {
+      "@id": "schema:Saturday"
+    },
     "ScheduleAction": {
       "@id": "schema:ScheduleAction"
     },
@@ -2507,6 +2555,9 @@ module.exports = {
     "SoundtrackAlbum": {
       "@id": "schema:SoundtrackAlbum"
     },
+    "SpeakableSpecification": {
+      "@id": "schema:SpeakableSpecification"
+    },
     "Specialty": {
       "@id": "schema:Specialty"
     },
@@ -2557,6 +2608,9 @@ module.exports = {
     },
     "StudioAlbum": {
       "@id": "schema:StudioAlbum"
+    },
+    "StupidType": {
+      "@id": "schema:StupidType"
     },
     "SubscribeAction": {
       "@id": "schema:SubscribeAction"
@@ -2738,6 +2792,9 @@ module.exports = {
     "TripleBlindedTrial": {
       "@id": "schema:TripleBlindedTrial"
     },
+    "Tuesday": {
+      "@id": "schema:Tuesday"
+    },
     "TypeAndQuantityNode": {
       "@id": "schema:TypeAndQuantityNode"
     },
@@ -2885,6 +2942,9 @@ module.exports = {
     "WearAction": {
       "@id": "schema:WearAction"
     },
+    "WebAPI": {
+      "@id": "schema:WebAPI"
+    },
     "WebApplication": {
       "@id": "schema:WebApplication"
     },
@@ -2896,6 +2956,9 @@ module.exports = {
     },
     "WebSite": {
       "@id": "schema:WebSite"
+    },
+    "Wednesday": {
+      "@id": "schema:Wednesday"
     },
     "WesternConventional": {
       "@id": "schema:WesternConventional"
@@ -2984,6 +3047,12 @@ module.exports = {
     },
     "accountId": {
       "@id": "schema:accountId"
+    },
+    "accountMinimumInflow": {
+      "@id": "schema:accountMinimumInflow"
+    },
+    "accountOverdraftLimit": {
+      "@id": "schema:accountOverdraftLimit"
     },
     "accountablePerson": {
       "@id": "schema:accountablePerson"
@@ -3318,11 +3387,18 @@ module.exports = {
     "background": {
       "@id": "schema:background"
     },
+    "bankAccountType": {
+      "@id": "schema:bankAccountType",
+      "@type": "@id"
+    },
     "baseSalary": {
       "@id": "schema:baseSalary"
     },
     "bed": {
       "@id": "schema:bed"
+    },
+    "beneficiaryBank": {
+      "@id": "schema:beneficiaryBank"
     },
     "benefits": {
       "@id": "schema:benefits"
@@ -3436,9 +3512,6 @@ module.exports = {
     "broadcastServiceTier": {
       "@id": "schema:broadcastServiceTier"
     },
-    "broadcastSignalModulation": {
-      "@id": "schema:broadcastSignalModulation"
-    },
     "broadcastTimezone": {
       "@id": "schema:broadcastTimezone"
     },
@@ -3486,6 +3559,9 @@ module.exports = {
     },
     "carrierRequirements": {
       "@id": "schema:carrierRequirements"
+    },
+    "cashBack": {
+      "@id": "schema:cashBack"
     },
     "catalog": {
       "@id": "schema:catalog"
@@ -3634,6 +3710,9 @@ module.exports = {
     "contactType": {
       "@id": "schema:contactType"
     },
+    "contactlessPayment": {
+      "@id": "schema:contactlessPayment"
+    },
     "containedIn": {
       "@id": "schema:containedIn"
     },
@@ -3717,15 +3796,9 @@ module.exports = {
     "courseCode": {
       "@id": "schema:courseCode"
     },
-    "courseCredits": {
-      "@id": "schema:courseCredits"
-    },
-    "courseCreditsUnit": {
-      "@id": "schema:courseCreditsUnit",
-      "@type": "@id"
-    },
     "courseMode": {
-      "@id": "schema:courseMode"
+      "@id": "schema:courseMode",
+      "@type": "@id"
     },
     "coursePrerequisites": {
       "@id": "schema:coursePrerequisites"
@@ -3745,11 +3818,17 @@ module.exports = {
     "creditedTo": {
       "@id": "schema:creditedTo"
     },
+    "cssSelector": {
+      "@id": "schema:cssSelector"
+    },
     "currenciesAccepted": {
       "@id": "schema:currenciesAccepted"
     },
     "currency": {
       "@id": "schema:currency"
+    },
+    "currentExchangeRate": {
+      "@id": "schema:currentExchangeRate"
     },
     "customer": {
       "@id": "schema:customer"
@@ -3923,8 +4002,15 @@ module.exports = {
       "@container": "@set",
       "@type": "@id"
     },
+    "documentation": {
+      "@id": "schema:documentation",
+      "@type": "@id"
+    },
     "domainIncludes": {
       "@id": "schema:domainIncludes"
+    },
+    "domiciledMortgage": {
+      "@id": "schema:domiciledMortgage"
     },
     "doorTime": {
       "@id": "schema:doorTime",
@@ -3941,6 +4027,9 @@ module.exports = {
     },
     "doseValue": {
       "@id": "schema:doseValue"
+    },
+    "downPayment": {
+      "@id": "schema:downPayment"
     },
     "downloadUrl": {
       "@id": "schema:downloadUrl",
@@ -3983,6 +4072,9 @@ module.exports = {
     "durationOfWarranty": {
       "@id": "schema:durationOfWarranty"
     },
+    "earlyPrepaymentPenalty": {
+      "@id": "schema:earlyPrepaymentPenalty"
+    },
     "editor": {
       "@id": "schema:editor",
       "@container": "@list",
@@ -3993,6 +4085,10 @@ module.exports = {
     },
     "educationalAlignment": {
       "@id": "schema:educationalAlignment"
+    },
+    "educationalCredentialAwarded": {
+      "@id": "schema:educationalCredentialAwarded",
+      "@type": "@id"
     },
     "educationalFramework": {
       "@id": "schema:educationalFramework"
@@ -4084,9 +4180,6 @@ module.exports = {
     "entertainmentBusiness": {
       "@id": "schema:entertainmentBusiness"
     },
-    "enumerationValueCode": {
-      "@id": "schema:enumerationValueCode"
-    },
     "epidemiology": {
       "@id": "schema:epidemiology"
     },
@@ -4131,6 +4224,12 @@ module.exports = {
       "@id": "schema:exampleOfWork",
       "@container": "@set",
       "@type": "@id"
+    },
+    "exchangeRate": {
+      "@id": "schema:exchangeRate"
+    },
+    "exchangeRateSpread": {
+      "@id": "schema:exchangeRateSpread"
     },
     "executableLibraryName": {
       "@id": "schema:executableLibraryName"
@@ -4212,6 +4311,9 @@ module.exports = {
     },
     "flightNumber": {
       "@id": "schema:flightNumber"
+    },
+    "floorLimit": {
+      "@id": "schema:floorLimit"
     },
     "floorSize": {
       "@id": "schema:floorSize"
@@ -4319,18 +4421,48 @@ module.exports = {
     "geographicArea": {
       "@id": "schema:geographicArea"
     },
+    "geospatiallyContains": {
+      "@id": "schema:geospatiallyContains"
+    },
+    "geospatiallyCoveredBy": {
+      "@id": "schema:geospatiallyCoveredBy"
+    },
+    "geospatiallyCovers": {
+      "@id": "schema:geospatiallyCovers"
+    },
+    "geospatiallyCrosses": {
+      "@id": "schema:geospatiallyCrosses"
+    },
+    "geospatiallyDisjoint": {
+      "@id": "schema:geospatiallyDisjoint"
+    },
+    "geospatiallyEquals": {
+      "@id": "schema:geospatiallyEquals"
+    },
+    "geospatiallyIntersects": {
+      "@id": "schema:geospatiallyIntersects"
+    },
+    "geospatiallyOverlaps": {
+      "@id": "schema:geospatiallyOverlaps"
+    },
+    "geospatiallyTouches": {
+      "@id": "schema:geospatiallyTouches"
+    },
+    "geospatiallyWithin": {
+      "@id": "schema:geospatiallyWithin"
+    },
     "givenName": {
       "@id": "schema:givenName"
     },
     "globalLocationNumber": {
       "@id": "schema:globalLocationNumber"
     },
+    "gracePeriod": {
+      "@id": "schema:gracePeriod"
+    },
     "grantee": {
       "@id": "schema:grantee",
       "@type": "@id"
-    },
-    "grantsCredential": {
-      "@id": "schema:grantsCredential"
     },
     "greater": {
       "@id": "schema:greater"
@@ -4360,6 +4492,12 @@ module.exports = {
     "guidelineSubject": {
       "@id": "schema:guidelineSubject"
     },
+    "hasBroadcastChannel": {
+      "@id": "schema:hasBroadcastChannel"
+    },
+    "hasCategoryCode": {
+      "@id": "schema:hasCategoryCode"
+    },
     "hasCourseInstance": {
       "@id": "schema:hasCourseInstance"
     },
@@ -4371,12 +4509,19 @@ module.exports = {
       "@container": "@set",
       "@type": "@id"
     },
-    "hasEnumerationValue": {
-      "@id": "schema:hasEnumerationValue"
-    },
     "hasMap": {
       "@id": "schema:hasMap",
       "@type": "@id"
+    },
+    "hasMenu": {
+      "@id": "schema:hasMenu",
+      "@type": "@id"
+    },
+    "hasMenuItem": {
+      "@id": "schema:hasMenuItem"
+    },
+    "hasMenuSection": {
+      "@id": "schema:hasMenuSection"
     },
     "hasOfferCatalog": {
       "@id": "schema:hasOfferCatalog"
@@ -4474,6 +4619,10 @@ module.exports = {
     "icaoCode": {
       "@id": "schema:icaoCode"
     },
+    "identifier": {
+      "@id": "schema:identifier",
+      "@type": "@id"
+    },
     "identifyingExam": {
       "@id": "schema:identifyingExam"
     },
@@ -4495,6 +4644,10 @@ module.exports = {
     },
     "inBroadcastLineup": {
       "@id": "schema:inBroadcastLineup"
+    },
+    "inCodeSet": {
+      "@id": "schema:inCodeSet",
+      "@type": "@id"
     },
     "inLanguage": {
       "@id": "schema:inLanguage"
@@ -4770,8 +4923,24 @@ module.exports = {
     "liveBlogUpdate": {
       "@id": "schema:liveBlogUpdate"
     },
+    "loanMortgageMandateAmount": {
+      "@id": "schema:loanMortgageMandateAmount"
+    },
+    "loanPaymentAmount": {
+      "@id": "schema:loanPaymentAmount"
+    },
+    "loanPaymentFrequency": {
+      "@id": "schema:loanPaymentFrequency"
+    },
+    "loanRepaymentForm": {
+      "@id": "schema:loanRepaymentForm"
+    },
     "loanTerm": {
       "@id": "schema:loanTerm"
+    },
+    "loanType": {
+      "@id": "schema:loanType",
+      "@type": "@id"
     },
     "location": {
       "@id": "schema:location",
@@ -4843,11 +5012,18 @@ module.exports = {
     "maxValue": {
       "@id": "schema:maxValue"
     },
+    "maximumAttendeeCapacity": {
+      "@id": "schema:maximumAttendeeCapacity"
+    },
     "maximumIntake": {
       "@id": "schema:maximumIntake"
     },
     "mealService": {
       "@id": "schema:mealService"
+    },
+    "measurementTechnique": {
+      "@id": "schema:measurementTechnique",
+      "@type": "@id"
     },
     "mechanismOfAction": {
       "@id": "schema:mechanismOfAction"
@@ -4885,6 +5061,9 @@ module.exports = {
       "@id": "schema:menu",
       "@type": "@id"
     },
+    "menuAddOn": {
+      "@id": "schema:menuAddOn"
+    },
     "merchant": {
       "@id": "schema:merchant"
     },
@@ -4914,6 +5093,9 @@ module.exports = {
     "modifiedTime": {
       "@id": "schema:modifiedTime",
       "@type": "DateTime"
+    },
+    "monthlyMinimumRepaymentAmount": {
+      "@id": "schema:monthlyMinimumRepaymentAmount"
     },
     "mpn": {
       "@id": "schema:mpn"
@@ -5011,6 +5193,9 @@ module.exports = {
     },
     "numberOfItems": {
       "@id": "schema:numberOfItems"
+    },
+    "numberOfLoanPayments": {
+      "@id": "schema:numberOfLoanPayments"
     },
     "numberOfPages": {
       "@id": "schema:numberOfPages"
@@ -5155,9 +5340,6 @@ module.exports = {
     },
     "parents": {
       "@id": "schema:parents"
-    },
-    "partOfEnumerationValueSet": {
-      "@id": "schema:partOfEnumerationValueSet"
     },
     "partOfEpisode": {
       "@id": "schema:partOfEpisode"
@@ -5332,10 +5514,6 @@ module.exports = {
     },
     "prescriptionStatus": {
       "@id": "schema:prescriptionStatus"
-    },
-    "previewUrl": {
-      "@id": "schema:previewUrl",
-      "@type": "@id"
     },
     "previousItem": {
       "@id": "schema:previousItem"
@@ -5563,6 +5741,9 @@ module.exports = {
     "recordingOf": {
       "@id": "schema:recordingOf"
     },
+    "recourseLoan": {
+      "@id": "schema:recourseLoan"
+    },
     "referenceQuantity": {
       "@id": "schema:referenceQuantity"
     },
@@ -5613,6 +5794,12 @@ module.exports = {
     },
     "relevantSpecialty": {
       "@id": "schema:relevantSpecialty"
+    },
+    "remainingAttendeeCapacity": {
+      "@id": "schema:remainingAttendeeCapacity"
+    },
+    "renegotiableLoan": {
+      "@id": "schema:renegotiableLoan"
     },
     "repetitions": {
       "@id": "schema:repetitions"
@@ -5922,6 +6109,10 @@ module.exports = {
     "spatialCoverage": {
       "@id": "schema:spatialCoverage"
     },
+    "speakable": {
+      "@id": "schema:speakable",
+      "@type": "@id"
+    },
     "specialCommitments": {
       "@id": "schema:specialCommitments"
     },
@@ -6011,6 +6202,9 @@ module.exports = {
     },
     "studySubject": {
       "@id": "schema:studySubject"
+    },
+    "stupidProperty": {
+      "@id": "schema:stupidProperty"
     },
     "subEvent": {
       "@id": "schema:subEvent"
@@ -6115,6 +6309,10 @@ module.exports = {
     },
     "temporalCoverage": {
       "@id": "schema:temporalCoverage",
+      "@type": "@id"
+    },
+    "termsOfService": {
+      "@id": "schema:termsOfService",
       "@type": "@id"
     },
     "text": {
@@ -6309,6 +6507,9 @@ module.exports = {
     "valueRequired": {
       "@id": "schema:valueRequired"
     },
+    "variableMeasured": {
+      "@id": "schema:variableMeasured"
+    },
     "variablesMeasured": {
       "@id": "schema:variablesMeasured"
     },
@@ -6432,6 +6633,9 @@ module.exports = {
     },
     "worstRating": {
       "@id": "schema:worstRating"
+    },
+    "xpath": {
+      "@id": "schema:xpath"
     },
     "yearlyRevenue": {
       "@id": "schema:yearlyRevenue"
@@ -6603,6 +6807,7 @@ module.exports = {
     "UpdateOrganizationAction": "http://ns.science.ai#UpdateOrganizationAction",
     "AuthorizePaymentAction": "http://ns.science.ai#AuthorizePaymentAction",
     "ConsumePlanAction": "http://ns.science.ai#ConsumePlanAction",
+    "TypesettingAction": "http://ns.science.ai#TypesettingAction",
     "Graph": "http://ns.science.ai#Graph",
     "slug": {
       "@id": "http://ns.science.ai#slug",
