@@ -1376,6 +1376,17 @@
     },
 
     {
+      "@id": "sa:dateRejected",
+      "@type": "rdf:Property",
+      "label": "dateRejected",
+      "comment":"The rejection date",
+      "altLabel": "date rejected",
+      "range": "schema:Date",
+      "domain": "sa:Graph",
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:resultOf",
       "@type": "rdf:Property",
       "label": "resultOf",
