@@ -5042,7 +5042,8 @@ module.exports = {
       "@id": "schema:member"
     },
     "memberOf": {
-      "@id": "schema:memberOf"
+      "@id": "schema:memberOf",
+      "@type": "@id"
     },
     "members": {
       "@id": "schema:members"
@@ -6663,10 +6664,6 @@ module.exports = {
       "@id": "http://ns.science.ai#suggestedResult",
       "@type": "@id"
     },
-    "hasSelector": {
-      "@id": "http://ns.science.ai#hasSelector",
-      "@type": "@id"
-    },
     "itemListFacet": {
       "@id": "http://ns.science.ai#itemListFacet",
       "@type": "@id"
@@ -6753,6 +6750,14 @@ module.exports = {
     },
     "doi": {
       "@id": "http://ns.science.ai#doi",
+      "@type": "@id"
+    },
+    "hasSelector": {
+      "@id": "http://ns.science.ai#hasSelector",
+      "@type": "@id"
+    },
+    "selector": {
+      "@id": "http://ns.science.ai#selector",
       "@type": "@id"
     },
     "Selector": "http://ns.science.ai#Selector",
@@ -6881,6 +6886,11 @@ module.exports = {
       "@type": "@id"
     },
     "CssVariable": "http://ns.science.ai#CssVariable",
+    "styleGuide": {
+      "@id": "http://ns.science.ai#styleGuide",
+      "@type": "@id"
+    },
+    "StyleGuide": "http://ns.science.ai#StyleGuide",
     "encodesStyle": {
       "@id": "http://ns.science.ai#encodesStyle",
       "@type": "@id"

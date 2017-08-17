@@ -672,6 +672,17 @@
       "comment": "A selector identifying the region of interest within the target resource",
       "range": "sa:Selector",
       "domain": "sa:TargetRole",
+      "status": "deprecated",
+      "seeAlso": "https://github.com/scienceai/web-verse",
+      "equivalentProperty": "oa:hasSelector"
+    },
+    {
+      "@id": "sa:selector",
+      "@type": "rdf:Property",
+      "label": "selector",
+      "comment": "A selector identifying the region of interest within the target resource",
+      "range": "sa:Selector",
+      "domain": "sa:TargetRole",
       "status": "testing",
       "seeAlso": "https://github.com/scienceai/web-verse",
       "equivalentProperty": "oa:hasSelector"
@@ -1408,6 +1419,28 @@
       ],
       "status": "testing"
     },
+    {
+      "@id": "sa:styleGuide",
+      "@type": "rdf:Property",
+      "label": "styleGuide",
+      "altLabel": "style guide",
+      "comment":"A style guide used in the creation of the CreativeWork",
+      "range": "sa:StyleGuide",
+      "domain": "schema:CreativeWork",
+      "status": "testing"
+    },
+    {
+      "@id": "sa:StyleGuide",
+      "@type": "rdfs:Class",
+      "label": "StyleGuide",
+      "altLabel": "Style guide",
+      "comment": "A style guide",
+      "subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "status": "testing"
+    },
+
     {
       "@id": "sa:style",
       "@type": "rdf:Property",
