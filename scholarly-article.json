@@ -961,6 +961,18 @@
     },
 
     {
+      "@id": "sa:ResetAction",
+      "@type": "rdfs:Class",
+      "label": "ResetAction",
+      "altLabel": "Reset Action",
+      "comment": "The act of reseting an object to its canonical state",
+      "subClassOf": [
+        "sa:Action"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:Graph",
       "@type": "rdfs:Class",
       "label": "Graph",

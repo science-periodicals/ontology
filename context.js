@@ -6813,6 +6813,7 @@ module.exports = {
     "AuthorizePaymentAction": "http://ns.science.ai#AuthorizePaymentAction",
     "ConsumePlanAction": "http://ns.science.ai#ConsumePlanAction",
     "TypesettingAction": "http://ns.science.ai#TypesettingAction",
+    "ResetAction": "http://ns.science.ai#ResetAction",
     "Graph": "http://ns.science.ai#Graph",
     "slug": {
       "@id": "http://ns.science.ai#slug",
