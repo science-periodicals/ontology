@@ -2,7 +2,7 @@ var sa = require('..');
 var assert = require('assert');
 var prefixes = require('../prefixes');
 
-describe('sa-ontology', function() {
+describe('ontology', function() {
   it('should be available as a JS object', function() {
     assert(sa.defines);
   });

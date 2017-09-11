@@ -1399,6 +1399,17 @@
     },
 
     {
+      "@id": "sa:activatedTime",
+      "@type": "rdf:Property",
+      "label": "activatedTime",
+      "comment":"The time when the action was activated",
+      "altLabel": "activated time",
+      "range": "schema:Duration",
+      "domain": "sa:TypesettingAction",
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:dateRejected",
       "@type": "rdf:Property",
       "label": "dateRejected",

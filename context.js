@@ -6878,6 +6878,10 @@ module.exports = {
       "@id": "http://ns.science.ai#expectedDuration",
       "@type": "@id"
     },
+    "activatedTime": {
+      "@id": "http://ns.science.ai#activatedTime",
+      "@type": "@id"
+    },
     "dateRejected": {
       "@id": "http://ns.science.ai#dateRejected",
       "@type": "schema:Date"

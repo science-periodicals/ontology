@@ -1,2 +1,1 @@
-
-module.exports = require('./scholarly-article.json');
+module.exports = require('./ontology.json');
