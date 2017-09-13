@@ -859,7 +859,7 @@
       "altLabel": "Link Action",
       "comment": "The act of annotating an object with the motivation of linking it",
       "subClassOf": [
-        "sa:CommentAction"
+        "schema:CommentAction"
       ],
       "status": "testing"
     },
@@ -871,7 +871,7 @@
       "altLabel": "Tag Action",
       "comment": "The act of annotating an object with the motivation of tagging / classifying it",
       "subClassOf": [
-        "sa:CommentAction"
+        "schema:CommentAction"
       ],
       "status": "testing"
     },
@@ -883,7 +883,7 @@
       "altLabel": "Deauthorize Action",
       "comment": "The antonym of an AuthorizeAction",
       "subClassOf": [
-        "sa:AllocateAction"
+        "schema:Action"
       ],
       "status": "testing"
     },
@@ -907,7 +907,7 @@
       "altLabel": "Create Organization Action",
       "comment": "An action to create an Organization.",
       "subClassOf": [
-        "sa:CreateAction"
+        "schema:CreateAction"
       ],
       "status": "testing"
     },
@@ -955,7 +955,19 @@
       "altLabel": "Typesetting Action",
       "comment": "The act of typesetting a document",
       "subClassOf": [
-        "sa:Action"
+        "schema:Action"
+      ],
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:CreateSandboxAction",
+      "@type": "rdfs:Class",
+      "label": "CreateSandboxAction",
+      "altLabel": "Create Sandbox Action",
+      "comment": "The act of creating a sandbox",
+      "subClassOf": [
+        "schema:CreateAction"
       ],
       "status": "testing"
     },
