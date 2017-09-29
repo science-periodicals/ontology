@@ -61,6 +61,19 @@
     },
 
     {
+      "@id": "sa:ImpactStatement",
+      "@type": "rdfs:Class",
+      "label": "ImpactStatement",
+      "altLabel": "Impact Statement",
+      "comment": "A brief summary, in lay terms of the impact of the work ('So what?',  'Who cares?' etc.).",
+      "subClassOf": [
+        "schema:CreativeWork"
+      ],
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:Authors",
       "@type": "rdfs:Class",
       "label": "Authors",
@@ -1504,6 +1517,18 @@
       "range": "schema:CreativeWork",
       "domain": "sa:CssVariable",
       "status": "testing"
+    },
+
+    {
+      "@id": "sa:detailedDescription",
+      "@type": "rdf:Property",
+      "label": "detailedDescription",
+      "comment":"A detailed description (such as a named or structured abstract) of the item.",
+      "altLabel": "detailed description",
+      "range": "schema:CreativeWork",
+      "domain": "schema:CreativeWork",
+      "status": "testing",
+      "equivalentProperty": "http://schema.googleapis.com/detailedDescription"
     }
 
   ]

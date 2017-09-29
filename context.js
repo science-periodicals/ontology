@@ -6674,6 +6674,7 @@ module.exports = {
     },
     "Unspecified": "http://ns.science.ai#Unspecified",
     "Abstract": "http://ns.science.ai#Abstract",
+    "ImpactStatement": "http://ns.science.ai#ImpactStatement",
     "Authors": "http://ns.science.ai#Authors",
     "Contributors": "http://ns.science.ai#Contributors",
     "Affiliations": "http://ns.science.ai#Affiliations",
@@ -6903,6 +6904,10 @@ module.exports = {
     },
     "isStyleOf": {
       "@id": "http://ns.science.ai#isStyleOf",
+      "@type": "@id"
+    },
+    "detailedDescription": {
+      "@id": "http://ns.science.ai#detailedDescription",
       "@type": "@id"
     }
   }
