@@ -61,6 +61,18 @@
     },
 
     {
+      "@id": "sa:AbstractSection",
+      "@type": "rdfs:Class",
+      "label": "AbstractSection",
+      "comment": "A section of an abstract",
+      "subClassOf": [
+        "schema:Abstract"
+      ],
+      "disjointWith": ["sa:Unspecified"],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:ImpactStatement",
       "@type": "rdfs:Class",
       "label": "ImpactStatement",
