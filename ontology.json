@@ -914,6 +914,18 @@
     },
 
     {
+      "@id": "sa:UnassignAction",
+      "@type": "rdfs:Class",
+      "label": "UnassignAction",
+      "altLabel": "Unassign Action",
+      "comment": "The antonym of an AssignAction",
+      "subClassOf": [
+        "schema:AllocateAction"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:PaySeriesAction",
       "@type": "rdfs:Class",
       "label": "PaySeriesAction",
