@@ -926,6 +926,18 @@
     },
 
     {
+      "@id": "sa:CloneAction",
+      "@type": "rdfs:Class",
+      "label": "CloneAction",
+      "altLabel": "Clone Action",
+      "comment": "The action of cloning (duplicating) an object",
+      "subClassOf": [
+        "schema:Action"
+      ],
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:PaySeriesAction",
       "@type": "rdfs:Class",
       "label": "PaySeriesAction",
