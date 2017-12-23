@@ -6758,10 +6758,6 @@ module.exports = {
       "@id": "http://ns.science.ai#hasSelector",
       "@type": "@id"
     },
-    "selector": {
-      "@id": "http://ns.science.ai#selector",
-      "@type": "@id"
-    },
     "Selector": "http://ns.science.ai#Selector",
     "selectionContent": {
       "@id": "http://ns.science.ai#selectionContent",
@@ -6810,6 +6806,7 @@ module.exports = {
     "TagAction": "http://ns.science.ai#TagAction",
     "DeauthorizeAction": "http://ns.science.ai#DeauthorizeAction",
     "UnassignAction": "http://ns.science.ai#UnassignAction",
+    "CloneAction": "http://ns.science.ai#CloneAction",
     "PaySeriesAction": "http://ns.science.ai#PaySeriesAction",
     "CreateOrganizationAction": "http://ns.science.ai#CreateOrganizationAction",
     "UpdateOrganizationAction": "http://ns.science.ai#UpdateOrganizationAction",
@@ -6843,8 +6840,7 @@ module.exports = {
     "FunderRole": "http://ns.science.ai#FunderRole",
     "roleOffer": {
       "@id": "http://ns.science.ai#roleOffer",
-      "@type": "@id",
-      "@container": "@set"
+      "@type": "@id"
     },
     "FundingSource": "http://ns.science.ai#FundingSource",
     "roleAction": {
@@ -6911,6 +6907,14 @@ module.exports = {
     "detailedDescription": {
       "@id": "http://ns.science.ai#detailedDescription",
       "@type": "@id"
+    },
+    "articleFrontMatter": {
+      "@id": "http://ns.science.ai#articleFrontMatter",
+      "@type": "schema:Text"
+    },
+    "articleBackMatter": {
+      "@id": "http://ns.science.ai#articleBackMatter",
+      "@type": "schema:Text"
     }
   }
 };
