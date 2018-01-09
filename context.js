@@ -23,7 +23,7 @@ module.exports = {
     },
     "ma": "http://www.w3.org/ns/ma-ont#",
     "og": "http://ogp.me/ns#",
-    "org": "http://www.w3.org/ns/org#",
+    "org": "https://science.ai/organization/",
     "owl": "http://www.w3.org/2002/07/owl#",
     "prov": "http://www.w3.org/ns/prov#",
     "ptr": "http://www.w3.org/2009/pointers#",
