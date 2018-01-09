@@ -975,14 +975,27 @@
     },
 
     {
-      "@id": "sa:ConsumePlanAction",
+      "@id": "sa:CreateServiceAction",
       "@type": "rdfs:Class",
-      "label": "ConsumePlanAction",
-      "altLabel": "Consume Plan Action",
-      "comment": "An to accept a plan (Offer) for an Organization.",
+      "label": "CreateServiceAction",
+      "altLabel": "Create Service Action",
+      "comment": "An action to create a Service.",
       "subClassOf": [
-        "schema:ConsumeAction"
+        "schema:CreateAction"
       ],
+      "source": "https://github.com/scienceai/librarian/issues/124",
+      "status": "testing"
+    },
+
+    {
+      "@id": "sa:acceptsActionOfType",
+      "@type": "rdf:Property",
+      "label": "acceptsActionOfType",
+      "altLabel": "accepts action of type",
+      "comment":"The type of action accepted by the ServiceChannel.",
+      "range": "schema:Text",
+      "domain": "schema:ServiceChannel",
+      "source": "https://github.com/scienceai/librarian/issues/124",
       "status": "testing"
     },
 
