@@ -535,56 +535,6 @@
     },
 
     {
-      "@id": "sa:ReadReviewPermission",
-      "@type": "rdfs:Class",
-      "subClassOf": "schema:DigitalDocumentPermission",
-      "label": "ReadReviewPermission",
-      "altLabel": ["read review permission"],
-      "comment": "Permission to read or view reviews of other agents based on their roles.",
-      "status": "testing"
-    },
-
-    {
-      "@id": "sa:WriteReviewPermission",
-      "@type": "rdfs:Class",
-      "subClassOf": "schema:DigitalDocumentPermission",
-      "label": "WriteReviewPermission",
-      "altLabel": ["write review permission"],
-      "comment": "Permission to write reviews or edit reviews of other agents based on their roles.",
-      "status": "testing"
-    },
-
-    {
-      "@id": "sa:ReadCommentPermission",
-      "@type": "rdfs:Class",
-      "subClassOf": "schema:DigitalDocumentPermission",
-      "label": "ReadCommentPermission",
-      "altLabel": ["read comment permission"],
-      "comment": "Permission to read or view comments (and annotations) of other agents based on their roles.",
-      "status": "testing"
-    },
-
-    {
-      "@id": "sa:WriteCommentPermission",
-      "@type": "rdfs:Class",
-      "subClassOf": "schema:DigitalDocumentPermission",
-      "label": "WriteCommentPermission",
-      "altLabel": ["write comment access"],
-      "comment": "Permission to write or edit comments (and annotations) of other agents based on their roles.",
-      "status": "testing"
-    },
-
-    {
-      "@id": "sa:AssessPermission",
-      "@type": "rdfs:Class",
-      "subClassOf": "schema:DigitalDocumentPermission",
-      "label": "AssessPermission",
-      "altLabel": ["assess permission"],
-      "comment": "Permission to make a decision regarding the outcome of an action.",
-      "status": "testing"
-    },
-
-    {
       "@id": "sa:CommunicatePermission",
       "@type": "rdfs:Class",
       "subClassOf": "schema:DigitalDocumentPermission",
@@ -605,32 +555,12 @@
     },
 
     {
-      "@id": "sa:CreateReleasePermission",
-      "@type": "rdfs:Class",
-      "subClassOf": "schema:DigitalDocumentPermission",
-      "label": "CreateReleasePermission",
-      "altLabel": ["create release permission"],
-      "comment": "Permission to allow other agents (based on their roles) to create public releases of a Graph.",
-      "status": "testing"
-    },
-
-    {
       "@id": "sa:ViewIdentityPermission",
       "@type": "rdfs:Class",
       "subClassOf": "schema:DigitalDocumentPermission",
       "label": "ViewIdentityPermission",
       "altLabel": ["view identity permission"],
       "comment": "Permission to view the identity of other agents based on their roles.",
-      "status": "testing"
-    },
-
-    {
-      "@id": "sa:AssignPermission",
-      "@type": "rdfs:Class",
-      "subClassOf": "schema:DigitalDocumentPermission",
-      "label": "AssignPermission",
-      "altLabel": ["assign permission"],
-      "comment": "Permission to assign actions to other agents based on their roles.",
       "status": "testing"
     },
 
@@ -1095,6 +1025,17 @@
     },
 
     {
+      "@id": "sa:audienceScope",
+      "@type": "rdf:Property",
+      "label": "audienceScope",
+      "altLabel": "audience scope",
+      "comment": "The scope of a audience.",
+      "range": "schema:Thing",
+      "domain": "schema:Audience",
+      "status": "testing"
+    },
+
+    {
       "@id": "sa:SponsorRole",
       "@type": "rdfs:Class",
       "label": "SponsorRole",
@@ -1219,18 +1160,6 @@
     },
 
     {
-      "@id": "sa:UpdateGraphAction",
-      "@type": "rdfs:Class",
-      "label": "UpdateGraphAction",
-      "altLabel": "Update Graph Action",
-      "comment": "The act of updating a graph.",
-      "subClassOf": [
-        "schema:UpdateAction"
-      ],
-      "status": "testing"
-    },
-
-    {
       "@id": "sa:DeleteGraphAction",
       "@type": "rdfs:Class",
       "label": "DeleteGraphAction",
@@ -1238,30 +1167,6 @@
       "comment": "The act of deleting a graph.",
       "subClassOf": [
         "schema:DeleteAction"
-      ],
-      "status": "testing"
-    },
-
-    {
-      "@id": "sa:CreateUserProfileAction",
-      "@type": "rdfs:Class",
-      "label": "CreateUserProfileAction",
-      "altLabel": "Create User Profile Action",
-      "comment": "The act of creating a profile for an user (person or organization).",
-      "subClassOf": [
-        "schema:CreateAction"
-      ],
-      "status": "testing"
-    },
-
-    {
-      "@id": "sa:UpdateUserProfileAction",
-      "@type": "rdfs:Class",
-      "label": "UpdateUserProfileAction",
-      "altLabel": "Update User Profile Action",
-      "comment": "The act of updating a profile for an user (person or organization).",
-      "subClassOf": [
-        "schema:UpdateAction"
       ],
       "status": "testing"
     },
@@ -1279,18 +1184,6 @@
     },
 
     {
-      "@id": "sa:UpdateReleaseAction",
-      "@type": "rdfs:Class",
-      "label": "UpdateReleaseAction",
-      "altLabel": "Update Release Action",
-      "comment": "The act of updating a release (snapshot) of an object.",
-      "subClassOf": [
-        "schema:UpdateAction"
-      ],
-      "status": "testing"
-    },
-
-    {
       "@id": "sa:CreatePeriodicalAction",
       "@type": "rdfs:Class",
       "label": "CreatePeriodicalAction",
@@ -1298,18 +1191,6 @@
       "comment": "The act of creating a periodical.",
       "subClassOf": [
         "schema:CreateAction"
-      ],
-      "status": "testing"
-    },
-
-    {
-      "@id": "sa:UpdatePeriodicalAction",
-      "@type": "rdfs:Class",
-      "label": "UpdatePeriodicalAction",
-      "altLabel": "Update Periodical Action",
-      "comment": "The act of updating a periodical.",
-      "subClassOf": [
-        "schema:UpdateAction"
       ],
       "status": "testing"
     },

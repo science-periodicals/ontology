@@ -6727,16 +6727,9 @@ module.exports = {
       "@type": "@id"
     },
     "AdminPermission": "http://ns.science.ai#AdminPermission",
-    "ReadReviewPermission": "http://ns.science.ai#ReadReviewPermission",
-    "WriteReviewPermission": "http://ns.science.ai#WriteReviewPermission",
-    "ReadCommentPermission": "http://ns.science.ai#ReadCommentPermission",
-    "WriteCommentPermission": "http://ns.science.ai#WriteCommentPermission",
-    "AssessPermission": "http://ns.science.ai#AssessPermission",
     "CommunicatePermission": "http://ns.science.ai#CommunicatePermission",
     "InvitePermission": "http://ns.science.ai#InvitePermission",
-    "CreateReleasePermission": "http://ns.science.ai#CreateReleasePermission",
     "ViewIdentityPermission": "http://ns.science.ai#ViewIdentityPermission",
-    "AssignPermission": "http://ns.science.ai#AssignPermission",
     "numberOfRequiredReviews": {
       "@id": "http://ns.science.ai#numberOfRequiredReviews",
       "@type": "schema:Number"
@@ -6809,7 +6802,6 @@ module.exports = {
     "CloneAction": "http://ns.science.ai#CloneAction",
     "PaySeriesAction": "http://ns.science.ai#PaySeriesAction",
     "CreateOrganizationAction": "http://ns.science.ai#CreateOrganizationAction",
-    "UpdateOrganizationAction": "http://ns.science.ai#UpdateOrganizationAction",
     "AuthorizePaymentAction": "http://ns.science.ai#AuthorizePaymentAction",
     "CreateServiceAction": "http://ns.science.ai#CreateServiceAction",
     "acceptsActionOfType": {
@@ -6840,6 +6832,10 @@ module.exports = {
       "@type": "@id",
       "@container": "@set"
     },
+    "audienceScope": {
+      "@id": "http://ns.science.ai#audienceScope",
+      "@type": "@id"
+    },
     "SponsorRole": "http://ns.science.ai#SponsorRole",
     "FunderRole": "http://ns.science.ai#FunderRole",
     "roleOffer": {
@@ -6857,14 +6853,9 @@ module.exports = {
     "UploadAction": "http://ns.science.ai#UploadAction",
     "CreateGraphAction": "http://ns.science.ai#CreateGraphAction",
     "CreateWorkflowStageAction": "http://ns.science.ai#CreateWorkflowStageAction",
-    "UpdateGraphAction": "http://ns.science.ai#UpdateGraphAction",
     "DeleteGraphAction": "http://ns.science.ai#DeleteGraphAction",
-    "CreateUserProfileAction": "http://ns.science.ai#CreateUserProfileAction",
-    "UpdateUserProfileAction": "http://ns.science.ai#UpdateUserProfileAction",
     "CreateReleaseAction": "http://ns.science.ai#CreateReleaseAction",
-    "UpdateReleaseAction": "http://ns.science.ai#UpdateReleaseAction",
     "CreatePeriodicalAction": "http://ns.science.ai#CreatePeriodicalAction",
-    "UpdatePeriodicalAction": "http://ns.science.ai#UpdatePeriodicalAction",
     "CreateOfferAction": "http://ns.science.ai#CreateOfferAction",
     "MimeDetectionAction": "http://ns.science.ai#MimeDetectionAction",
     "ImageProcessingAction": "http://ns.science.ai#ImageProcessingAction",
