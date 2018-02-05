@@ -1403,6 +1403,26 @@ module.exports = {
       range: 'schema:Text',
       domain: 'schema:Article',
       status: 'testing'
+    },
+
+    {
+      '@id': 'sa:AssignUrlAction',
+      '@type': 'rdfs:Class',
+      label: 'AssignUrlAction',
+      altLabel: 'Assign URL Action',
+      comment: 'The act of assigning an URL to an object',
+      subClassOf: ['schema:AssignAction'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:UnassignUrlAction',
+      '@type': 'rdfs:Class',
+      label: 'UnassignUrlAction',
+      altLabel: 'Unassign URL Action',
+      comment: 'The antonym of an AssignUrlAction',
+      subClassOf: ['schema:UnassignAction'],
+      status: 'testing'
     }
   ]
 };
