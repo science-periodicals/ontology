@@ -6804,10 +6804,6 @@ module.exports = {
     "CreateOrganizationAction": "http://ns.science.ai#CreateOrganizationAction",
     "AuthorizePaymentAction": "http://ns.science.ai#AuthorizePaymentAction",
     "CreateServiceAction": "http://ns.science.ai#CreateServiceAction",
-    "acceptsActionOfType": {
-      "@id": "http://ns.science.ai#acceptsActionOfType",
-      "@type": "schema:Text"
-    },
     "TypesettingAction": "http://ns.science.ai#TypesettingAction",
     "CreateSandboxAction": "http://ns.science.ai#CreateSandboxAction",
     "ResetAction": "http://ns.science.ai#ResetAction",

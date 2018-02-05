@@ -1,1 +1,1 @@
-module.exports = require('./ontology.json');
+module.exports = require('./ontology');
