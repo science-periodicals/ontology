@@ -6906,6 +6906,8 @@ module.exports = {
     "articleBackMatter": {
       "@id": "http://ns.science.ai#articleBackMatter",
       "@type": "schema:Text"
-    }
+    },
+    "AssignUrlAction": "http://ns.science.ai#AssignUrlAction",
+    "UnassignUrlAction": "http://ns.science.ai#UnassignUrlAction"
   }
 };
