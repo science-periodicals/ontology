@@ -551,6 +551,16 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:CreateGraphPermission',
+      '@type': 'rdfs:Class',
+      subClassOf: 'schema:DigitalDocumentPermission',
+      label: 'CreateGraphPermission',
+      altLabel: ['create graph permission'],
+      comment: 'Permission to create a Graph.',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:CommunicatePermission',
       '@type': 'rdfs:Class',
       subClassOf: 'schema:DigitalDocumentPermission',
