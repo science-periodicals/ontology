@@ -6672,28 +6672,28 @@ module.exports = {
       "@reverse": "http://schema.org/targetProduct",
       "@type": "@id"
     },
-    "Unspecified": "http://ns.science.ai#Unspecified",
-    "Abstract": "http://ns.science.ai#Abstract",
-    "AbstractSection": "http://ns.science.ai#AbstractSection",
-    "ImpactStatement": "http://ns.science.ai#ImpactStatement",
-    "Authors": "http://ns.science.ai#Authors",
-    "Contributors": "http://ns.science.ai#Contributors",
-    "Affiliations": "http://ns.science.ai#Affiliations",
-    "Introduction": "http://ns.science.ai#Introduction",
-    "MaterialsAndMethods": "http://ns.science.ai#MaterialsAndMethods",
-    "Notes": "http://ns.science.ai#Notes",
-    "License": "http://ns.science.ai#License",
-    "Results": "http://ns.science.ai#Results",
-    "Discussion": "http://ns.science.ai#Discussion",
-    "Conclusion": "http://ns.science.ai#Conclusion",
-    "Acknowledgements": "http://ns.science.ai#Acknowledgements",
-    "Copyright": "http://ns.science.ai#Copyright",
-    "Disclosure": "http://ns.science.ai#Disclosure",
-    "Funding": "http://ns.science.ai#Funding",
-    "Keywords": "http://ns.science.ai#Keywords",
-    "SupportingInformation": "http://ns.science.ai#SupportingInformation",
-    "ReferenceList": "http://ns.science.ai#ReferenceList",
-    "Reference": "http://ns.science.ai#Reference",
+    "WPUnspecified": "http://ns.science.ai#WPUnspecified",
+    "WPAbstract": "http://ns.science.ai#WPAbstract",
+    "WPAbstractSection": "http://ns.science.ai#WPAbstractSection",
+    "WPImpactStatement": "http://ns.science.ai#WPImpactStatement",
+    "WPAuthors": "http://ns.science.ai#WPAuthors",
+    "WPContributors": "http://ns.science.ai#WPContributors",
+    "WPAffiliations": "http://ns.science.ai#WPAffiliations",
+    "WPIntroduction": "http://ns.science.ai#WPIntroduction",
+    "WPMaterialsAndMethods": "http://ns.science.ai#WPMaterialsAndMethods",
+    "WPNotes": "http://ns.science.ai#WPNotes",
+    "WPLicense": "http://ns.science.ai#WPLicense",
+    "WPResults": "http://ns.science.ai#WPResults",
+    "WPDiscussion": "http://ns.science.ai#WPDiscussion",
+    "WPConclusion": "http://ns.science.ai#WPConclusion",
+    "WPAcknowledgements": "http://ns.science.ai#WPAcknowledgements",
+    "WPCopyright": "http://ns.science.ai#WPCopyright",
+    "WPDisclosure": "http://ns.science.ai#WPDisclosure",
+    "WPFunding": "http://ns.science.ai#WPFunding",
+    "WPKeywords": "http://ns.science.ai#WPKeywords",
+    "WPSupportingInformation": "http://ns.science.ai#WPSupportingInformation",
+    "WPReferenceList": "http://ns.science.ai#WPReferenceList",
+    "WPReference": "http://ns.science.ai#WPReference",
     "Formula": "http://ns.science.ai#Formula",
     "FormulaObject": "http://ns.science.ai#FormulaObject",
     "SoftwareSourceCodeObject": "http://ns.science.ai#SoftwareSourceCodeObject",
@@ -6703,9 +6703,6 @@ module.exports = {
     "TableObject": "http://ns.science.ai#TableObject",
     "DocumentObject": "http://ns.science.ai#DocumentObject",
     "Footnote": "http://ns.science.ai#Footnote",
-    "resourceOf": {
-      "@id": "http://ns.science.ai#resourceOf"
-    },
     "Checksum": "http://ns.science.ai#Checksum",
     "PerceptualHash": "http://ns.science.ai#PerceptualHash",
     "contentChecksum": {
@@ -6731,6 +6728,15 @@ module.exports = {
     "CommunicatePermission": "http://ns.science.ai#CommunicatePermission",
     "InvitePermission": "http://ns.science.ai#InvitePermission",
     "ViewIdentityPermission": "http://ns.science.ai#ViewIdentityPermission",
+    "permissionScope": {
+      "@id": "http://ns.science.ai#permissionScope",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "audienceScope": {
+      "@id": "http://ns.science.ai#audienceScope",
+      "@type": "@id"
+    },
     "numberOfRequiredReviews": {
       "@id": "http://ns.science.ai#numberOfRequiredReviews",
       "@type": "schema:Number"
@@ -6747,6 +6753,10 @@ module.exports = {
     "doi": {
       "@id": "http://ns.science.ai#doi",
       "@type": "@id"
+    },
+    "slug": {
+      "@id": "http://ns.science.ai#slug",
+      "@type": "schema:Text"
     },
     "hasSelector": {
       "@id": "http://ns.science.ai#hasSelector",
@@ -6808,43 +6818,6 @@ module.exports = {
     "TypesettingAction": "http://ns.science.ai#TypesettingAction",
     "CreateSandboxAction": "http://ns.science.ai#CreateSandboxAction",
     "ResetAction": "http://ns.science.ai#ResetAction",
-    "Graph": "http://ns.science.ai#Graph",
-    "slug": {
-      "@id": "http://ns.science.ai#slug",
-      "@type": "schema:Text"
-    },
-    "ContributorRole": "http://ns.science.ai#ContributorRole",
-    "roleAffiliation": {
-      "@id": "http://ns.science.ai#roleAffiliation",
-      "@type": "@id",
-      "@container": "@list"
-    },
-    "roleContactPoint": {
-      "@id": "http://ns.science.ai#roleContactPoint",
-      "@type": "@id",
-      "@container": "@set"
-    },
-    "permissionScope": {
-      "@id": "http://ns.science.ai#permissionScope",
-      "@type": "@id",
-      "@container": "@set"
-    },
-    "audienceScope": {
-      "@id": "http://ns.science.ai#audienceScope",
-      "@type": "@id"
-    },
-    "SponsorRole": "http://ns.science.ai#SponsorRole",
-    "FunderRole": "http://ns.science.ai#FunderRole",
-    "roleOffer": {
-      "@id": "http://ns.science.ai#roleOffer",
-      "@type": "@id"
-    },
-    "FundingSource": "http://ns.science.ai#FundingSource",
-    "roleAction": {
-      "@id": "http://ns.science.ai#roleAction",
-      "@type": "@id",
-      "@container": "@set"
-    },
     "DisclosureAction": "http://ns.science.ai#DisclosureAction",
     "AcknowledgeAction": "http://ns.science.ai#AcknowledgeAction",
     "UploadAction": "http://ns.science.ai#UploadAction",
@@ -6859,6 +6832,33 @@ module.exports = {
     "AudioVideoProcessingAction": "http://ns.science.ai#AudioVideoProcessingAction",
     "RdfaConversionAction": "http://ns.science.ai#RdfaConversionAction",
     "SemanticTaggingAction": "http://ns.science.ai#SemanticTaggingAction",
+    "AssignUrlAction": "http://ns.science.ai#AssignUrlAction",
+    "CreatePublicationTypeAction": "http://ns.science.ai#CreatePublicationTypeAction",
+    "CreatePublicationElementTypeAction": "http://ns.science.ai#CreatePublicationElementTypeAction",
+    "UnassignUrlAction": "http://ns.science.ai#UnassignUrlAction",
+    "ContributorRole": "http://ns.science.ai#ContributorRole",
+    "roleAffiliation": {
+      "@id": "http://ns.science.ai#roleAffiliation",
+      "@type": "@id",
+      "@container": "@list"
+    },
+    "roleContactPoint": {
+      "@id": "http://ns.science.ai#roleContactPoint",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "SponsorRole": "http://ns.science.ai#SponsorRole",
+    "FunderRole": "http://ns.science.ai#FunderRole",
+    "roleOffer": {
+      "@id": "http://ns.science.ai#roleOffer",
+      "@type": "@id"
+    },
+    "FundingSource": "http://ns.science.ai#FundingSource",
+    "roleAction": {
+      "@id": "http://ns.science.ai#roleAction",
+      "@type": "@id",
+      "@container": "@set"
+    },
     "Tag": "http://ns.science.ai#Tag",
     "Facet": "http://ns.science.ai#Facet",
     "RangeFacet": "http://ns.science.ai#RangeFacet",
@@ -6896,6 +6896,10 @@ module.exports = {
       "@id": "http://ns.science.ai#isStyleOf",
       "@type": "@id"
     },
+    "Graph": "http://ns.science.ai#Graph",
+    "resourceOf": {
+      "@id": "http://ns.science.ai#resourceOf"
+    },
     "detailedDescription": {
       "@id": "http://ns.science.ai#detailedDescription",
       "@type": "@id"
@@ -6908,7 +6912,20 @@ module.exports = {
       "@id": "http://ns.science.ai#articleBackMatter",
       "@type": "schema:Text"
     },
-    "AssignUrlAction": "http://ns.science.ai#AssignUrlAction",
-    "UnassignUrlAction": "http://ns.science.ai#UnassignUrlAction"
+    "PublicationType": "http://ns.science.ai#PublicationType",
+    "PublicationElementType": "http://ns.science.ai#PublicationElementType",
+    "AuthorGuidelines": "http://ns.science.ai#AuthorGuidelines",
+    "guidelines": {
+      "@id": "http://ns.science.ai#guidelines",
+      "@type": "@id"
+    },
+    "publicationElementTypeCoverage": {
+      "@id": "http://ns.science.ai#publicationElementTypeCoverage",
+      "@type": "@id"
+    },
+    "publicationTypeCoverage": {
+      "@id": "http://ns.science.ai#publicationTypeCoverage",
+      "@type": "@id"
+    }
   }
 };
