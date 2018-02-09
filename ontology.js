@@ -24,12 +24,6 @@ module.exports = {
       '@type': '@id',
       '@container': '@set'
     },
-    disjointWith: {
-      '@id': 'owl:disjointWith',
-      '@type': '@id',
-      '@container': '@set'
-    },
-    unionOf: { '@id': 'owl:unionOf', '@type': '@id', '@container': '@set' },
     comment: 'rdfs:comment',
     label: 'rdfs:label',
     altLabel: 'skos:altLabel',
@@ -41,249 +35,224 @@ module.exports = {
   '@id': 'https://ns.science.ai/',
 
   defines: [
+    // Rhetorical elements kind of (all subclassOf schema:WebPageElement)
     {
-      '@id': 'sa:Unspecified',
+      '@id': 'sa:WPUnspecified',
       '@type': 'rdfs:Class',
-      label: 'Unspecified',
+      label: 'WPUnspecified',
       comment: 'A section that is unknown or otherwise unspecified.',
       subClassOf: [],
-      disjointWith: [
-        'sa:Abstract',
-        'sa:Introduction',
-        'sa:MaterialsAndMethods',
-        'sa:Results',
-        'sa:Discussion',
-        'sa:Conclusion',
-        'sa:Acknowledgements',
-        'sa:ReferenceList',
-        'sa:Reference',
-        'sa:Formula',
-        'sa:Image',
-        'sa:Video',
-        'sa:Audio',
-        'schema:Table',
-        'sa:Funding',
-        'sa:Disclosure',
-        'sa:SupportingInformation',
-        'sa:Authors',
-        'sa:Contributors',
-        'sa:Affiliations',
-        'sa:Keywords',
-        'sa:Copyright',
-        'sa:License',
-        'sa:Notes'
-      ],
-      status: 'testing'
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:Abstract',
+      '@id': 'sa:WPAbstract',
       '@type': 'rdfs:Class',
-      label: 'Abstract',
+      label: 'WPAbstract',
       comment:
         "A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose.",
       subClassOf: ['schema:CreativeWork'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:AbstractSection',
+      '@id': 'sa:WPAbstractSection',
       '@type': 'rdfs:Class',
-      label: 'AbstractSection',
+      label: 'WPAbstractSection',
       comment: 'A section of an abstract',
-      subClassOf: ['schema:Abstract'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: ['sa:Abstract'],
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:ImpactStatement',
+      '@id': 'sa:WPImpactStatement',
       '@type': 'rdfs:Class',
-      label: 'ImpactStatement',
+      label: 'WPImpactStatement',
       altLabel: 'Impact Statement',
       comment:
         "A brief summary, in lay terms of the impact of the work ('So what?',  'Who cares?' etc.).",
       subClassOf: ['schema:CreativeWork'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:Authors',
+      '@id': 'sa:WPAuthors',
       '@type': 'rdfs:Class',
-      label: 'Authors',
-      altLabel: ['Author'],
+      label: 'WPAuthors',
+      altLabel: ['Authors'],
       comment:
         'A list of items each denoting an author of a particular publication.',
       subClassOf: ['http://purl.org/spar/doco/ListOfAuthors'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
-    },
-    {
-      '@id': 'sa:Contributors',
-      '@type': 'rdfs:Class',
-      label: 'Contributors',
-      altLabel: ['Contributor'],
-      comment:
-        'A list of items, each denoting a contributor to a publication where such contributions are insufficient to warrant classification as author.',
-      subClassOf: ['http://purl.org/spar/doco/ListOfContributors'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
-    },
-    {
-      '@id': 'sa:Affiliations',
-      '@type': 'rdfs:Class',
-      label: 'Affiliations',
-      altLabel: ['Affiliation'],
-      comment: 'A list of affiliations for the authors and contributors.',
-      subClassOf: ['http://purl.org/spar/doco/ListOfOrganizations'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:Introduction',
+      '@id': 'sa:WPContributors',
+      '@type': 'rdfs:Class',
+      label: 'WPContributors',
+      altLabel: ['Contributors'],
+      comment:
+        'A list of items, each denoting a contributor to a publication where such contributions are insufficient to warrant classification as author.',
+      subClassOf: ['http://purl.org/spar/doco/ListOfContributors'],
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
+    },
+
+    {
+      '@id': 'sa:WPAffiliations',
+      '@type': 'rdfs:Class',
+      label: 'WPAffiliations',
+      altLabel: ['Affiliations'],
+      comment: 'A list of affiliations for the authors and contributors.',
+      subClassOf: ['http://purl.org/spar/doco/ListOfOrganizations'],
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
+    },
+
+    {
+      '@id': 'sa:WPIntroduction',
       '@type': 'rdfs:Class',
       label: 'Introduction',
       sameAs: 'http://purl.org/spar/deo/Introduction',
       comment:
         'An initial description which states the purpose and goals of the following writing, and, in the case of journal articles, typically includes background information on the research topic and a review of related work in the area.',
-      subClassOf: ['http://purl.org/spar/deo/DiscourseElement'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:MaterialsAndMethods',
+      '@id': 'sa:WPMaterialsAndMethods',
       '@type': 'rdfs:Class',
-      label: 'MaterialsAndMethods',
+      label: 'WPMaterialsAndMethods',
       altLabel: ['Materials And Methods', 'Materials', 'Methods'],
-      unionOf: [
-        'http://purl.org/spar/deo/Materials',
-        'http://purl.org/spar/deo/Methods'
-      ],
       comment:
         "A description in a research paper documenting the specialized materials and/or methods used in the work described. This description is contained in a section often entitled 'Methods and Materials', 'Experimental' or a related term.",
-      subClassOf: ['http://purl.org/spar/deo/DiscourseElement'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:Notes',
+      '@id': 'sa:WPNotes',
       '@type': 'rdfs:Class',
-      label: 'Notes',
+      label: 'WPNotes',
       comment:
         'A list of items that are general notes on the authors, affiliations, or the document.',
-      subClassOf: ['http://purl.org/spar/doco/Section'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
-    },
-    {
-      '@id': 'sa:License',
-      '@type': 'rdfs:Class',
-      label: 'License',
-      comment: 'A section conveying licensing information about the document.',
-      subClassOf: ['http://purl.org/spar/doco/Section'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:Results',
+      '@id': 'sa:WPLicense',
       '@type': 'rdfs:Class',
-      label: 'Results',
+      label: 'WPLicense',
+      comment: 'A section conveying licensing information about the document.',
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
+    },
+
+    {
+      '@id': 'sa:WPResults',
+      '@type': 'rdfs:Class',
+      label: 'WPResults',
       sameAs: 'http://purl.org/spar/deo/Results',
       comment:
         'The report of the specific findings of an investigation, given without discussion or conclusion being drawn.',
-      subClassOf: ['http://purl.org/spar/deo/DiscourseElement'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:Discussion',
+      '@id': 'sa:WPDiscussion',
       '@type': 'rdfs:Class',
-      label: 'Discussion',
+      label: 'WPDiscussion',
       comment:
         'An interpretation and discussion of the results obtained and an analysis of their significance, in support of conclusions. These conclusions may be part of this discussion or may be included in a separate section of the document.',
-      subClassOf: ['http://purl.org/spar/deo/DiscourseElement'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:Conclusion',
+      '@id': 'sa:WPConclusion',
       '@type': 'rdfs:Class',
-      label: 'Conclusion',
+      label: 'WPConclusion',
       comment:
         'A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section.',
-      subClassOf: ['http://purl.org/spar/deo/DiscourseElement'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:Acknowledgements',
+      '@id': 'sa:WPAcknowledgements',
       '@type': 'rdfs:Class',
-      label: 'Acknowledgements',
+      label: 'WPAcknowledgements',
       sameAs: 'http://purl.org/spar/deo/Acknowledgements',
       comment:
         'Usually part of the preface, or a separate section in its own right, often as part of the back matter, it acknowledges those, including funding agencies, who contributed to the undertaking of a research project described in a publication, or to the creation of the work in some way. In scientific articles, the acknowledgements are usually placed as a separated section immediately following the Discussion or Conclusions.',
-      subClassOf: ['http://purl.org/spar/deo/DiscourseElement'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:Copyright',
+      '@id': 'sa:WPCopyright',
       '@type': 'rdfs:Class',
-      label: 'Copyright',
+      label: 'WPCopyright',
       comment: 'A section containing a copyright mention for the document.',
-      subClassOf: ['http://purl.org/spar/doco/Section'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:Disclosure',
+      '@id': 'sa:WPDisclosure',
       '@type': 'rdfs:Class',
-      label: 'Disclosure',
+      label: 'WPDisclosure',
       altLabel: ['Conflict of Interest', 'Competing Interest'],
       comment:
         'A section containing acknowledgment of facts that interfere with or could reasonably be perceived as interfering with the full and objective presentation, peer review, editorial decision-making, or publication of research',
-      subClassOf: ['schema:CreativeWork'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:Funding',
+      '@id': 'sa:WPFunding',
       '@type': 'rdfs:Class',
-      label: 'Funding',
+      label: 'WPFunding',
       comment:
         'Person or Organization that funded the research on which a work was based.',
-      subClassOf: ['http://purl.org/spar/deo/DiscourseElement'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:Keywords',
+      '@id': 'sa:WPKeywords',
       '@type': 'rdfs:Class',
-      label: 'Keywords',
+      label: 'WPKeywords',
       comment:
         "A section containing a list of keywords as part of the document's metadata.",
-      subClassOf: ['http://purl.org/spar/doco/Section'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:SupportingInformation',
+      '@id': 'sa:WPSupportingInformation',
       '@type': 'rdfs:Class',
-      label: 'SupportingInformation',
+      label: 'WPSupportingInformation',
       altLabel: 'Supporting Information',
       sameAs: 'http://purl.org/spar/doco/Appendix',
       altLabel: [
@@ -300,15 +269,15 @@ module.exports = {
       ],
       comment:
         'Any information either auxiliary to the main content of the creative work or required to reproduce or verify the results of the creative work',
-      subClassOf: ['http://purl.org/spar/deo/DiscourseElement'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
     {
-      '@id': 'sa:ReferenceList',
+      '@id': 'sa:WPReferenceList',
       '@type': 'rdfs:Class',
-      label: 'ReferenceList',
+      label: 'WPReferenceList',
       altLabel: [
         'References',
         'Literature',
@@ -319,22 +288,25 @@ module.exports = {
       sameAs: 'http://purl.org/spar/doco/ListOfReferences',
       comment:
         'A list of items each representing a reference to a specific part of the same document, or to another publication.',
-      subClassOf: ['http://purl.org/spar/doco/List'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
+
     {
-      '@id': 'sa:Reference',
+      '@id': 'sa:WPReference',
       '@type': 'rdfs:Class',
-      label: 'Reference',
+      label: 'WPReference',
       altLabel: ['Citation'],
       sameAs: 'http://purl.org/spar/deo/Reference',
       comment:
         'A reference to a specific part of the document, or to another publication.',
-      subClassOf: ['http://purl.org/spar/deo/DiscourseElement'],
-      disjointWith: ['sa:Unspecified'],
-      status: 'testing'
+      subClassOf: 'schema:WebPageElement',
+      status: 'testing',
+      source: 'https://github.com/scienceai/ontology/issues/26'
     },
+
+    // Resource and encodings
     {
       '@id': 'sa:Formula',
       '@type': 'rdfs:Class',
@@ -344,7 +316,6 @@ module.exports = {
       comment:
         'A unit of information expressed in mathematical, chemical or logical symbols and language.',
       subClassOf: ['schema:CreativeWork'],
-      disjointWith: ['sa:Unspecified'],
       status: 'testing'
     },
     {
@@ -374,7 +345,6 @@ module.exports = {
       sameAs: 'http://purl.org/spar/doco/Figure',
       comment: 'An image resource',
       subClassOf: ['schema:CreativeWork'],
-      disjointWith: ['sa:Unspecified'],
       status: 'testing'
     },
     {
@@ -383,7 +353,6 @@ module.exports = {
       label: 'Video',
       comment: 'A video resource',
       subClassOf: ['schema:CreativeWork'],
-      disjointWith: ['sa:Unspecified'],
       status: 'testing'
     },
     {
@@ -392,7 +361,6 @@ module.exports = {
       label: 'Audio',
       comment: 'An audio resource',
       subClassOf: ['schema:CreativeWork'],
-      disjointWith: ['sa:Unspecified'],
       status: 'testing'
     },
 
@@ -428,28 +396,7 @@ module.exports = {
       status: 'testing'
     },
 
-    {
-      '@id': 'sa:resourceOf',
-      '@type': 'rdf:Property',
-      label: 'resourceOf',
-      altLabel: 'resource of',
-      comment: 'The Graph this node is a resource of',
-      range: 'sa:Graph',
-      domain: 'schema:CreativeWork',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:suggestedResult',
-      '@type': 'rdf:Property',
-      label: 'suggestedResult',
-      altLabel: 'suggested result',
-      comment: 'The suggested result of an action',
-      range: 'schema:Thing',
-      domain: 'schema:Action',
-      status: 'testing'
-    },
-
+    // Checksums
     {
       '@id': 'sa:Checksum',
       '@type': 'rdfs:Class',
@@ -519,6 +466,7 @@ module.exports = {
         'http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#hashValue'
     },
 
+    // Progress
     {
       '@id': 'sa:ProgressEvent',
       '@type': 'rdfs:Class',
@@ -540,6 +488,7 @@ module.exports = {
       status: 'testing'
     },
 
+    // Permissions
     {
       '@id': 'sa:AdminPermission',
       '@type': 'rdfs:Class',
@@ -592,6 +541,28 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:permissionScope',
+      '@type': 'rdf:Property',
+      label: 'permissionScope',
+      altLabel: 'permission scope',
+      comment: 'The scope of a permission.',
+      range: 'schema:Audience',
+      domain: 'schema:DigitalDocumentPermission',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:audienceScope',
+      '@type': 'rdf:Property',
+      label: 'audienceScope',
+      altLabel: 'audience scope',
+      comment: 'The scope of a audience.',
+      range: 'schema:Thing',
+      domain: 'schema:Audience',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:numberOfRequiredReviews',
       '@type': 'rdf:Property',
       label: 'numberOfRequiredReviews',
@@ -614,6 +585,7 @@ module.exports = {
       status: 'testing'
     },
 
+    // Errors
     {
       '@id': 'sa:Error',
       '@type': 'rdfs:Class',
@@ -637,6 +609,7 @@ module.exports = {
       equivalentProperty: 'hydra:statusCode'
     },
 
+    // Identifiers
     {
       '@id': 'sa:doi',
       '@type': 'rdf:Property',
@@ -649,6 +622,20 @@ module.exports = {
       equivalentProperty: 'bibo:doi'
     },
 
+    {
+      '@id': 'sa:slug',
+      '@type': 'rdf:Property',
+      label: 'slug',
+      comment:
+        'Part of a URL that identifies a page in human-readable keywords',
+      range: 'schema:Text',
+      domain: 'sa:Graph',
+      status: 'testing',
+      seeAlso: 'https://en.wikipedia.org/wiki/Semantic_URL#Slug',
+      equivalentProperty: 'http://www.bbc.co.uk/ontologies/provenance/slug'
+    },
+
+    // Annotations TODO https://github.com/scienceai/ontology/issues/28
     {
       '@id': 'sa:hasSelector',
       '@type': 'rdf:Property',
@@ -821,6 +808,7 @@ module.exports = {
       status: 'testing'
     },
 
+    // Actions
     {
       '@id': 'sa:LinkAction',
       '@type': 'rdfs:Class',
@@ -943,142 +931,6 @@ module.exports = {
       altLabel: 'Reset Action',
       comment: 'The act of reseting an object to its canonical state',
       subClassOf: ['sa:Action'],
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:Graph',
-      '@type': 'rdfs:Class',
-      label: 'Graph',
-      comment: 'A graph',
-      subClassOf: ['schema:CreativeWork'],
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:slug',
-      '@type': 'rdf:Property',
-      label: 'slug',
-      comment:
-        'Part of a URL that identifies a page in human-readable keywords',
-      range: 'schema:Text',
-      domain: 'sa:Graph',
-      status: 'testing',
-      seeAlso: 'https://en.wikipedia.org/wiki/Semantic_URL#Slug',
-      equivalentProperty: 'http://www.bbc.co.uk/ontologies/provenance/slug'
-    },
-
-    {
-      '@id': 'sa:ContributorRole',
-      '@type': 'rdfs:Class',
-      label: 'ContributorRole',
-      altLabel: 'Contributor Role',
-      comment: 'A subclass of Role used to describe contributor roles.',
-      subClassOf: ['schema:Role'],
-      source: 'https://github.com/scienceai/scholarly.vernacular.io/issues/32',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:roleAffiliation',
-      '@type': 'rdf:Property',
-      label: 'roleAffiliation',
-      altLabel: 'role affiliation',
-      comment: 'The affiliation under which the role was performed.',
-      range: 'schema:Organization',
-      domain: 'sa:AuthoringRole',
-      source: 'https://github.com/scienceai/scholarly.vernacular.io/issues/32',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:roleContactPoint',
-      '@type': 'rdf:Property',
-      label: 'roleContactPoint',
-      altLabel: 'role contact point',
-      comment:
-        'A contact point for the person or organization behind an authoring role.',
-      range: 'schema:ContactPoint',
-      domain: 'sa:AuthoringRole',
-      source: 'https://github.com/scienceai/scholarly.vernacular.io/issues/32',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:permissionScope',
-      '@type': 'rdf:Property',
-      label: 'permissionScope',
-      altLabel: 'permission scope',
-      comment: 'The scope of a permission.',
-      range: 'schema:Audience',
-      domain: 'schema:DigitalDocumentPermission',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:audienceScope',
-      '@type': 'rdf:Property',
-      label: 'audienceScope',
-      altLabel: 'audience scope',
-      comment: 'The scope of a audience.',
-      range: 'schema:Thing',
-      domain: 'schema:Audience',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:SponsorRole',
-      '@type': 'rdfs:Class',
-      label: 'SponsorRole',
-      altLabel: 'Sponsor Role',
-      comment: 'A subclass of Role used to describe sponsoring roles.',
-      subClassOf: ['schema:Role'],
-      source: 'https://github.com/scienceai/scholarly-article/issues/16',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:FunderRole',
-      '@type': 'rdfs:Class',
-      label: 'FunderRole',
-      altLabel: 'Funder Role',
-      comment: 'A subclass of Role used to describe funding (financing) roles.',
-      subClassOf: ['schema:SponsorRole'],
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:roleOffer',
-      '@type': 'rdf:Property',
-      label: 'roleOffer',
-      altLabel: 'role offer',
-      comment: "An offer made by the role's sponsor or funder.",
-      range: 'schema:Offer',
-      domain: 'sa:SponsorRole',
-      source: 'https://github.com/scienceai/scholarly-article/issues/16',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:FundingSource',
-      '@type': 'rdfs:Class',
-      label: 'FundingSource',
-      altLabel: 'Funding Source',
-      comment: 'The most generic type of funding source',
-      subClassOf: ['schema:Offer'],
-      source: 'https://github.com/scienceai/scholarly-article/issues/16',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:roleAction',
-      '@type': 'rdf:Property',
-      label: 'roleAction',
-      altLabel: 'role action',
-      comment: "Indicates an action in which the role acts as an 'agent'.",
-      range: 'schema:Action',
-      domain: 'sa:ContributorRole',
-      source: 'https://github.com/scienceai/scholarly-article/issues/20',
       status: 'testing'
     },
 
@@ -1231,6 +1083,151 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:AssignUrlAction',
+      '@type': 'rdfs:Class',
+      label: 'AssignUrlAction',
+      altLabel: 'Assign URL Action',
+      comment: 'The act of assigning an URL to an object',
+      subClassOf: ['schema:AssignAction'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:CreatePublicationTypeAction',
+      '@type': 'rdfs:Class',
+      label: 'CreatePublicationTypeAction',
+      altLabel: 'Create Publication Type Action',
+      comment: 'The act of creating a publication type',
+      subClassOf: ['schema:CreateAction'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:CreatePublicationElementTypeAction',
+      '@type': 'rdfs:Class',
+      label: 'CreatePublicationElementTypeAction',
+      altLabel: 'Create Publication Element Type Action',
+      comment: 'The act of creating a publication elememt type',
+      subClassOf: ['schema:CreateAction'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:UnassignUrlAction',
+      '@type': 'rdfs:Class',
+      label: 'UnassignUrlAction',
+      altLabel: 'Unassign URL Action',
+      comment: 'The antonym of an AssignUrlAction',
+      subClassOf: ['schema:UnassignAction'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:suggestedResult',
+      '@type': 'rdf:Property',
+      label: 'suggestedResult',
+      altLabel: 'suggested result',
+      comment: 'The suggested result of an action',
+      range: 'schema:Thing',
+      domain: 'schema:Action',
+      status: 'testing'
+    },
+
+    // Roles
+    {
+      '@id': 'sa:ContributorRole',
+      '@type': 'rdfs:Class',
+      label: 'ContributorRole',
+      altLabel: 'Contributor Role',
+      comment: 'A subclass of Role used to describe contributor roles.',
+      subClassOf: ['schema:Role'],
+      source: 'https://github.com/scienceai/scholarly.vernacular.io/issues/32',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:roleAffiliation',
+      '@type': 'rdf:Property',
+      label: 'roleAffiliation',
+      altLabel: 'role affiliation',
+      comment: 'The affiliation under which the role was performed.',
+      range: 'schema:Organization',
+      domain: 'sa:AuthoringRole',
+      source: 'https://github.com/scienceai/scholarly.vernacular.io/issues/32',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:roleContactPoint',
+      '@type': 'rdf:Property',
+      label: 'roleContactPoint',
+      altLabel: 'role contact point',
+      comment:
+        'A contact point for the person or organization behind an authoring role.',
+      range: 'schema:ContactPoint',
+      domain: 'sa:AuthoringRole',
+      source: 'https://github.com/scienceai/scholarly.vernacular.io/issues/32',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:SponsorRole',
+      '@type': 'rdfs:Class',
+      label: 'SponsorRole',
+      altLabel: 'Sponsor Role',
+      comment: 'A subclass of Role used to describe sponsoring roles.',
+      subClassOf: ['schema:Role'],
+      source: 'https://github.com/scienceai/scholarly-article/issues/16',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:FunderRole',
+      '@type': 'rdfs:Class',
+      label: 'FunderRole',
+      altLabel: 'Funder Role',
+      comment: 'A subclass of Role used to describe funding (financing) roles.',
+      subClassOf: ['schema:SponsorRole'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:roleOffer',
+      '@type': 'rdf:Property',
+      label: 'roleOffer',
+      altLabel: 'role offer',
+      comment: "An offer made by the role's sponsor or funder.",
+      range: 'schema:Offer',
+      domain: 'sa:SponsorRole',
+      source: 'https://github.com/scienceai/scholarly-article/issues/16',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:FundingSource',
+      '@type': 'rdfs:Class',
+      label: 'FundingSource',
+      altLabel: 'Funding Source',
+      comment: 'The most generic type of funding source',
+      subClassOf: ['schema:Offer'],
+      source: 'https://github.com/scienceai/scholarly-article/issues/16',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:roleAction',
+      '@type': 'rdf:Property',
+      label: 'roleAction',
+      altLabel: 'role action',
+      comment: "Indicates an action in which the role acts as an 'agent'.",
+      range: 'schema:Action',
+      domain: 'sa:ContributorRole',
+      source: 'https://github.com/scienceai/scholarly-article/issues/20',
+      status: 'testing'
+    },
+
+    // Facets
+    {
       '@id': 'sa:Tag',
       '@type': 'rdfs:Class',
       label: 'Tag',
@@ -1321,6 +1318,8 @@ module.exports = {
       status: 'testing'
     },
 
+    // Styles
+
     {
       '@id': 'sa:CssVariable',
       '@type': 'rdfs:Class',
@@ -1380,6 +1379,28 @@ module.exports = {
       status: 'testing'
     },
 
+    // Graph
+    {
+      '@id': 'sa:Graph',
+      '@type': 'rdfs:Class',
+      label: 'Graph',
+      comment: 'A graph',
+      subClassOf: ['schema:CreativeWork'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:resourceOf',
+      '@type': 'rdf:Property',
+      label: 'resourceOf',
+      altLabel: 'resource of',
+      comment: 'The Graph this node is a resource of',
+      range: 'sa:Graph',
+      domain: 'schema:CreativeWork',
+      status: 'testing'
+    },
+
+    // Creative work props
     {
       '@id': 'sa:detailedDescription',
       '@type': 'rdf:Property',
@@ -1415,23 +1436,65 @@ module.exports = {
       status: 'testing'
     },
 
+    // Custom types
     {
-      '@id': 'sa:AssignUrlAction',
+      '@id': 'sa:PublicationType',
       '@type': 'rdfs:Class',
-      label: 'AssignUrlAction',
-      altLabel: 'Assign URL Action',
-      comment: 'The act of assigning an URL to an object',
-      subClassOf: ['schema:AssignAction'],
+      label: 'PublicationType',
+      comment: 'A type of publication',
+      subClassOf: 'schema:Enumeration',
       status: 'testing'
     },
 
     {
-      '@id': 'sa:UnassignUrlAction',
+      '@id': 'sa:PublicationElementType',
       '@type': 'rdfs:Class',
-      label: 'UnassignUrlAction',
-      altLabel: 'Unassign URL Action',
-      comment: 'The antonym of an AssignUrlAction',
-      subClassOf: ['schema:UnassignAction'],
+      label: 'PublicationElementType',
+      comment: 'A type of publication element',
+      subClassOf: 'schema:Enumeration',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:AuthorGuidelines',
+      '@type': 'rdfs:Class',
+      label: 'AuthorGuidelines',
+      comment:
+        'Guidelines providing instruction about how to write a given publication type',
+      subClassOf: 'schema:HowTo',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:guidelines',
+      '@type': 'rdf:Property',
+      label: 'guidelines',
+      altLabel: 'guidelines',
+      comment: 'Guidelines  defining the publication type',
+      range: 'schema:HowTo',
+      domain: 'sa:PublicationType',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:publicationElementTypeCoverage',
+      '@type': 'rdf:Property',
+      label: 'publicationElementTypeCoverage',
+      altLabel: 'publication element type coverage',
+      comment: 'Specification of the publication element',
+      range: 'sa:PublicationElementType',
+      domain: 'sa:AuthorGuidelines',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:publicationTypeCoverage',
+      '@type': 'rdf:Property',
+      label: 'publicationTypeCoverage',
+      altLabel: 'publication type coverage',
+      comment: 'The type of publication covered by the periodical',
+      range: 'sa:PublicationType',
+      domain: 'schema:Periodical',
       status: 'testing'
     }
   ]

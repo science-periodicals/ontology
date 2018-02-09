@@ -6727,6 +6727,7 @@ module.exports = {
       "@type": "@id"
     },
     "AdminPermission": "http://ns.science.ai#AdminPermission",
+    "CreateGraphPermission": "http://ns.science.ai#CreateGraphPermission",
     "CommunicatePermission": "http://ns.science.ai#CommunicatePermission",
     "InvitePermission": "http://ns.science.ai#InvitePermission",
     "ViewIdentityPermission": "http://ns.science.ai#ViewIdentityPermission",
