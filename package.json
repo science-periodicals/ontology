@@ -9,7 +9,8 @@
     "build": "browserify index.js > ontology-browser.js && npm run build-website && npm run build-context",
     "prepublish": "npm run build",
     "test": "mocha",
-    "watch": "http-server & nodemon -e js,html,css -w ./lib/ --ignore lib/bundle.js --exec 'npm run build-website'"
+    "watch": "http-server & nodemon -e js,html,css -w ./lib/ --ignore lib/bundle.js --exec 'npm run build-website'",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
