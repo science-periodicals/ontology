@@ -6925,7 +6925,8 @@ module.exports = {
     },
     "publicationTypeCoverage": {
       "@id": "http://ns.science.ai#publicationTypeCoverage",
-      "@type": "@id"
+      "@type": "@id",
+      "@container": "@set"
     }
   }
 };
