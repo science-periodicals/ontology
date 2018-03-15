@@ -4,7 +4,7 @@
   "description": "schema.org extension to describe the production process, content, distribution and preservation of scholarly articles (and similar artifacts)",
   "main": "index.js",
   "scripts": {
-    "build-website": "node ./lib/index.js && browserify ./lib/sa.js > ./lib/bundle.js",
+    "build-website": "node ./lib/index.js",
     "build-context": "node ./lib/context.js",
     "build": "browserify index.js > ontology-browser.js && npm run build-website && npm run build-context",
     "prepublish": "npm run build",
@@ -33,8 +33,6 @@
     "browserify": "^14.4.0",
     "is-url": "1.2.2",
     "jsdom": "^9.12.0",
-    "jsonld-markup": "^0.2.1",
-    "jsonld-vis": "0.2.0",
     "mocha": "^3.5.3",
     "nodemon": "^1.14.12",
     "schema.org": "^3.1.0"
