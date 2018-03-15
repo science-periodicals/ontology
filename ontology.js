@@ -1496,6 +1496,30 @@ module.exports = {
       range: 'sa:PublicationType',
       domain: 'schema:Periodical',
       status: 'testing'
+    },
+
+    // Service status
+    {
+      '@id': 'sa:ServiceStatusType',
+      '@type': 'rdfs:Class',
+      comment: 'The status of a Service.',
+      label: 'ServiceStatusType',
+      subClassOf: ['schema:Enumeration']
+    },
+
+    // Enumeration value
+    {
+      '@id': 'schema:ActiveServiceStatus',
+      '@type': 'sa:ServiceStatusType',
+      label: 'ActiveServiceStatus',
+      comment: 'A service currently activated'
+    },
+
+    {
+      '@id': 'sa:DeactivatedServiceStatus',
+      '@type': 'sa:ServiceStatusType',
+      label: 'DeactivatedServiceStatus',
+      comment: 'A service currently deactivated'
     }
   ]
 };

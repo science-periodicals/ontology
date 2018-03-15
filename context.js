@@ -6927,6 +6927,7 @@ module.exports = {
       "@id": "http://ns.science.ai#publicationTypeCoverage",
       "@type": "@id",
       "@container": "@set"
-    }
+    },
+    "ServiceStatusType": "http://ns.science.ai#ServiceStatusType"
   }
 };
