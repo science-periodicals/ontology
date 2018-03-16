@@ -6928,6 +6928,10 @@ module.exports = {
       "@type": "@id",
       "@container": "@set"
     },
-    "ServiceStatusType": "http://ns.science.ai#ServiceStatusType"
+    "ServiceStatusType": "http://ns.science.ai#ServiceStatusType",
+    "requiresCompletionOf": {
+      "@id": "http://ns.science.ai#requiresCompletionOf",
+      "@type": "@id"
+    }
   }
 };

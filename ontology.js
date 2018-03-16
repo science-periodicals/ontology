@@ -1520,6 +1520,19 @@ module.exports = {
       '@type': 'sa:ServiceStatusType',
       label: 'DeactivatedServiceStatus',
       comment: 'A service currently deactivated'
+    },
+
+    // Endorsements (EndorseAction is in schema.org)
+    {
+      '@id': 'sa:requiresCompletionOf',
+      '@type': 'rdf:Property',
+      label: 'requiresCompletionOf',
+      altLabel: 'requires completion of',
+      comment:
+        'An action, or list of actions, whose completion is required for the completion of this action',
+      range: 'schema:Action',
+      domain: 'schema:Action',
+      status: 'testing'
     }
   ]
 };
