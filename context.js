@@ -6872,7 +6872,11 @@ module.exports = {
     },
     "activatedTime": {
       "@id": "http://ns.science.ai#activatedTime",
-      "@type": "@id"
+      "@type": "schema:Date"
+    },
+    "pendingEndorsementTime": {
+      "@id": "http://ns.science.ai#pendingEndorsementTime",
+      "@type": "schema:Date"
     },
     "dateRejected": {
       "@id": "http://ns.science.ai#dateRejected",

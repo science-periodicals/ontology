@@ -1274,6 +1274,7 @@ module.exports = {
       status: 'testing'
     },
 
+    // Times and dates
     {
       '@id': 'sa:expectedDuration',
       '@type': 'rdf:Property',
@@ -1291,8 +1292,19 @@ module.exports = {
       label: 'activatedTime',
       comment: 'The time when the action was activated',
       altLabel: 'activated time',
-      range: 'schema:Duration',
-      domain: 'sa:TypesettingAction',
+      range: 'schema:Date',
+      domain: 'schema:Action',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:pendingEndorsementTime',
+      '@type': 'rdf:Property',
+      label: 'pendingEndorsementTime',
+      comment: 'The time when the action was marked as ready to be endorsed',
+      altLabel: 'pending endorsement time',
+      range: 'schema:Date',
+      domain: 'schema:Action',
       status: 'testing'
     },
 
