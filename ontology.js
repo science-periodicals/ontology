@@ -1533,6 +1533,13 @@ module.exports = {
       range: 'schema:Action',
       domain: 'schema:Action',
       status: 'testing'
+    },
+
+    {
+      '@id': 'sa:PendingEndorsementActionStatus',
+      '@type': 'schema:ActionStatus',
+      label: 'PendingEndorsementActionStatus',
+      comment: 'An action completed but waiting to be endorsed'
     }
   ]
 };
