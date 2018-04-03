@@ -807,6 +807,7 @@ module.exports = {
     },
 
     // deprecated selector props
+    // TODO delete on next major
     {
       '@id': 'sa:selectionContent',
       '@type': 'rdf:Property',
@@ -1082,13 +1083,24 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:StartWorkflowStageAction',
+      '@type': 'rdfs:Class',
+      label: 'StartWorkflowStageAction',
+      altLabel: 'Start Workflow Stage Action',
+      comment: 'The act of starting and instantiating a workflow stage.',
+      subClassOf: ['schema:Action'],
+      status: 'testing'
+    },
+
+    // TODO delete on next major
+    {
       '@id': 'sa:CreateWorkflowStageAction',
       '@type': 'rdfs:Class',
       label: 'CreateWorkflowStageAction',
       altLabel: 'Create Workflow Stage Action',
       comment: 'The act of creating a workflow stage.',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
+      status: 'deprecated'
     },
 
     {
@@ -1422,17 +1434,6 @@ module.exports = {
       status: 'testing'
     },
 
-    {
-      '@id': 'sa:resultOf',
-      '@type': 'rdf:Property',
-      label: 'resultOf',
-      comment: 'The Action which resulted in this Thing',
-      altLabel: 'result of',
-      range: 'schema:Thing',
-      domain: 'schema:Thing',
-      status: 'testing'
-    },
-
     // Styles
 
     {
@@ -1637,7 +1638,7 @@ module.exports = {
       comment: 'A service currently deactivated'
     },
 
-    // Endorsements (EndorseAction is in schema.org)
+    // Workflow
     {
       '@id': 'sa:requiresCompletionOf',
       '@type': 'rdf:Property',
@@ -1649,7 +1650,29 @@ module.exports = {
       domain: 'schema:Action',
       status: 'testing'
     },
+    {
+      '@id': 'sa:resultOf',
+      '@type': 'rdf:Property',
+      label: 'resultOf',
+      comment: 'The Action which resulted in this Thing',
+      altLabel: 'result of',
+      range: 'schema:Thing',
+      domain: 'schema:Thing',
+      status: 'testing'
+    },
+    {
+      '@id': 'sa:potentialResult',
+      '@type': 'rdf:Property',
+      label: 'potentialResult',
+      comment:
+        'One or several potential results that can be produced by the action',
+      altLabel: 'potential result',
+      range: 'schema:Thing',
+      domain: 'schema:Action',
+      status: 'testing'
+    },
 
+    // Endorsements (EndorseAction is in schema.org)
     {
       '@id': 'sa:PendingEndorsementActionStatus',
       '@type': 'schema:ActionStatus',
@@ -1658,6 +1681,38 @@ module.exports = {
     },
 
     // Triggers
+    {
+      '@id': 'sa:startDateOn',
+      '@type': 'rdf:Property',
+      label: 'startDateOn',
+      comment: 'A trigger indicated when the startDate property should be set',
+      altLabel: 'start date on',
+      range: 'schema:TriggerType',
+      domain: 'schema:Role',
+      status: 'testing'
+    },
+    {
+      '@id': 'sa:endDateOn',
+      '@type': 'rdf:Property',
+      label: 'endDateOn',
+      comment: 'A trigger indicated when the endDate property should be set',
+      altLabel: 'end date on',
+      range: 'schema:TriggerType',
+      domain: 'schema:Role',
+      status: 'testing'
+    },
+    {
+      '@id': 'sa:activateOn',
+      '@type': 'rdf:Property',
+      label: 'activateOn',
+      comment:
+        'A trigger indicated when the actionStatus property should be set to ActivateActionStatus',
+      altLabel: 'activate on',
+      range: 'schema:TriggerType',
+      domain: 'schema:Action',
+      status: 'testing'
+    },
+
     {
       '@id': 'sa:TriggerType',
       '@type': 'rdfs:Class',

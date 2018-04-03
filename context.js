@@ -6851,6 +6851,7 @@ module.exports = {
     "AcknowledgeAction": "http://ns.science.ai#AcknowledgeAction",
     "UploadAction": "http://ns.science.ai#UploadAction",
     "CreateGraphAction": "http://ns.science.ai#CreateGraphAction",
+    "StartWorkflowStageAction": "http://ns.science.ai#StartWorkflowStageAction",
     "CreateWorkflowStageAction": "http://ns.science.ai#CreateWorkflowStageAction",
     "DeleteGraphAction": "http://ns.science.ai#DeleteGraphAction",
     "CreateReleaseAction": "http://ns.science.ai#CreateReleaseAction",
@@ -6911,10 +6912,6 @@ module.exports = {
       "@id": "http://ns.science.ai#dateRejected",
       "@type": "schema:Date"
     },
-    "resultOf": {
-      "@id": "http://ns.science.ai#resultOf",
-      "@type": "@id"
-    },
     "CssVariable": "http://ns.science.ai#CssVariable",
     "styleGuide": {
       "@id": "http://ns.science.ai#styleGuide",
@@ -6964,6 +6961,26 @@ module.exports = {
     "ServiceStatusType": "http://ns.science.ai#ServiceStatusType",
     "requiresCompletionOf": {
       "@id": "http://ns.science.ai#requiresCompletionOf",
+      "@type": "@id"
+    },
+    "resultOf": {
+      "@id": "http://ns.science.ai#resultOf",
+      "@type": "@id"
+    },
+    "potentialResult": {
+      "@id": "http://ns.science.ai#potentialResult",
+      "@type": "@id"
+    },
+    "startDateOn": {
+      "@id": "http://ns.science.ai#startDateOn",
+      "@type": "@id"
+    },
+    "endDateOn": {
+      "@id": "http://ns.science.ai#endDateOn",
+      "@type": "@id"
+    },
+    "activateOn": {
+      "@id": "http://ns.science.ai#activateOn",
       "@type": "@id"
     },
     "TriggerType": "http://ns.science.ai#TriggerType"
