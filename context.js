@@ -6758,11 +6758,54 @@ module.exports = {
       "@id": "http://ns.science.ai#slug",
       "@type": "schema:Text"
     },
+    "TargetRole": "http://ns.science.ai#TargetRole",
     "hasSelector": {
       "@id": "http://ns.science.ai#hasSelector",
       "@type": "@id"
     },
     "Selector": "http://ns.science.ai#Selector",
+    "NodeSelector": "http://ns.science.ai#NodeSelector",
+    "HtmlSelector": "http://ns.science.ai#HtmlSelector",
+    "htmlId": {
+      "@id": "http://ns.science.ai#htmlId",
+      "@type": "schema:Text"
+    },
+    "webVerseId": {
+      "@id": "http://ns.science.ai#webVerseId",
+      "@type": "schema:Text"
+    },
+    "node": {
+      "@id": "http://ns.science.ai#node",
+      "@type": "@id"
+    },
+    "selectedProperty": {
+      "@id": "http://ns.science.ai#selectedProperty",
+      "@type": "schema:Text"
+    },
+    "selectedValue": {
+      "@id": "http://ns.science.ai#selectedValue",
+      "@type": "@id"
+    },
+    "selectedValueChecksum": {
+      "@id": "http://ns.science.ai#selectedValueChecksum",
+      "@type": "@id"
+    },
+    "nodeChecksum": {
+      "@id": "http://ns.science.ai#nodeChecksum",
+      "@type": "@id"
+    },
+    "documentChecksum": {
+      "@id": "http://ns.science.ai#documentChecksum",
+      "@type": "@id"
+    },
+    "startOffset": {
+      "@id": "http://ns.science.ai#startOffset",
+      "@type": "schema:Number"
+    },
+    "endOffset": {
+      "@id": "http://ns.science.ai#endOffset",
+      "@type": "schema:Number"
+    },
     "selectionContent": {
       "@id": "http://ns.science.ai#selectionContent",
       "@type": "schema:Text"
@@ -6771,7 +6814,6 @@ module.exports = {
       "@id": "http://ns.science.ai#selectionHash",
       "@type": "schema:Text"
     },
-    "NodeSelector": "http://ns.science.ai#NodeSelector",
     "nodeKey": {
       "@id": "http://ns.science.ai#nodeKey",
       "@type": "schema:Text"
@@ -6793,19 +6835,6 @@ module.exports = {
       "@id": "http://ns.science.ai#webVerseHash",
       "@type": "schema:Text"
     },
-    "webVerseId": {
-      "@id": "http://ns.science.ai#webVerseId",
-      "@type": "schema:Text"
-    },
-    "startOffset": {
-      "@id": "http://ns.science.ai#startOffset",
-      "@type": "schema:Number"
-    },
-    "endOffset": {
-      "@id": "http://ns.science.ai#endOffset",
-      "@type": "schema:Number"
-    },
-    "TargetRole": "http://ns.science.ai#TargetRole",
     "LinkAction": "http://ns.science.ai#LinkAction",
     "TagAction": "http://ns.science.ai#TagAction",
     "DeauthorizeAction": "http://ns.science.ai#DeauthorizeAction",
@@ -6936,6 +6965,7 @@ module.exports = {
     "requiresCompletionOf": {
       "@id": "http://ns.science.ai#requiresCompletionOf",
       "@type": "@id"
-    }
+    },
+    "TriggerType": "http://ns.science.ai#TriggerType"
   }
 };

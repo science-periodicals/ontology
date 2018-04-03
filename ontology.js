@@ -1655,6 +1655,91 @@ module.exports = {
       '@type': 'schema:ActionStatus',
       label: 'PendingEndorsementActionStatus',
       comment: 'An action completed but waiting to be endorsed'
+    },
+
+    // Triggers
+    {
+      '@id': 'sa:TriggerType',
+      '@type': 'rdfs:Class',
+      label: 'TriggerType',
+      comment: 'A type of trigger',
+      subClassOf: 'schema:Enumeration',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:OnActiveActionStatus',
+      '@type': 'sa:TriggerType',
+      label: 'OnActiveActionStatus',
+      comment:
+        'A trigger activated when the action actionStatus is set to ActiveActionStatus'
+    },
+    {
+      '@id': 'sa:OnCompletedActionStatus',
+      '@type': 'sa:TriggerType',
+      label: 'OnCompletedActionStatus',
+      comment:
+        'A trigger activated when the action actionStatus is set to CompletedActionStatus'
+    },
+    {
+      '@id': 'sa:OnFailedActionStatus',
+      '@type': 'sa:TriggerType',
+      label: 'OnFailedActionStatus',
+      comment:
+        'A trigger activated when the action actionStatus is set to FailedActionStatus'
+    },
+
+    {
+      '@id': 'sa:OnObjectActiveActionStatus',
+      '@type': 'sa:TriggerType',
+      label: 'OnObjectActiveActionStatus',
+      comment:
+        'A trigger activated when the action object is set to ActiveActionStatus'
+    },
+    {
+      '@id': 'sa:OnObjectCompletedActionStatus',
+      '@type': 'sa:TriggerType',
+      label: 'OnObjectCompletedActionStatus',
+      comment:
+        'A trigger activated when the action object is set to CompletedActionStatus'
+    },
+    {
+      '@id': 'sa:OnObjectFailedActionStatus',
+      '@type': 'sa:TriggerType',
+      label: 'OnObjectFailedActionStatus',
+      comment:
+        'A trigger activated when the action object is set to FailedActionStatus'
+    },
+
+    {
+      '@id': 'sa:OnWorkflowStageEnd',
+      '@type': 'sa:TriggerType',
+      label: 'OnWorkflowStageEnd',
+      comment:
+        'A trigger activated when the workflow stage associated with the action ends'
+    },
+    {
+      '@id': 'sa:OnWorkflowEnd',
+      '@type': 'sa:TriggerType',
+      label: 'OnWorkflowEnd',
+      comment:
+        'A trigger activated when the workflow associated with the action ends'
+    },
+
+    {
+      '@id': 'sa:OnObjectEndorsed',
+      '@type': 'sa:TriggerType',
+      label: 'OnObjectEndorsed',
+      comment:
+        'A trigger activated when the object associated with the action is endorsed'
+    },
+
+    {
+      '@id': 'sa:OnAcceptedOffer',
+      '@type': 'sa:TriggerType',
+      label: 'OnAcceptedOffer',
+      comment:
+        'A trigger activated when the offer associated with the action is accepted'
     }
   ]
 };
