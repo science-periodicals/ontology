@@ -1,6 +1,6 @@
 {
   "name": "@scienceai/ontology",
-  "version": "21.3.0",
+  "version": "22.0.0",
   "description": "schema.org extension to describe the production process, content, distribution and preservation of scholarly articles (and similar artifacts)",
   "main": "index.js",
   "scripts": {
@@ -30,11 +30,11 @@
   },
   "homepage": "https://github.com/scienceai/ontology#readme",
   "devDependencies": {
-    "browserify": "^14.4.0",
-    "is-url": "1.2.2",
-    "jsdom": "^9.12.0",
-    "mocha": "^3.5.3",
-    "nodemon": "^1.14.12",
+    "browserify": "^16.1.1",
+    "is-url": "^1.2.4",
+    "jsdom": "^11.7.0",
+    "mocha": "^5.0.5",
+    "nodemon": "^1.17.3",
     "schema.org": "^3.1.0"
   }
 }

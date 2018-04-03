@@ -635,7 +635,18 @@ module.exports = {
       equivalentProperty: 'http://www.bbc.co.uk/ontologies/provenance/slug'
     },
 
-    // Annotations TODO https://github.com/scienceai/ontology/issues/28
+    // Annotations see https://github.com/scienceai/ontology/issues/28
+    {
+      '@id': 'sa:TargetRole',
+      '@type': 'rdfs:Class',
+      label: 'TargetRole',
+      altLabel: 'Target Role',
+      comment:
+        'A subclass of Role allowing to specify specific selections of a target resource',
+      subClassOf: ['schema:Role'],
+      status: 'testing'
+    },
+
     {
       '@id': 'sa:hasSelector',
       '@type': 'rdf:Property',
@@ -649,6 +660,7 @@ module.exports = {
       equivalentProperty: 'oa:hasSelector'
     },
 
+    // Selector and subclasses
     {
       '@id': 'sa:Selector',
       '@type': 'rdfs:Class',
@@ -658,28 +670,6 @@ module.exports = {
       subClassOf: ['schema:Intangible'],
       equivalentClass: 'oa:Selector',
       seeAlso: 'https://github.com/scienceai/web-verse',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:selectionContent',
-      '@type': 'rdf:Property',
-      label: 'selectionContent',
-      altLabel: 'selection content',
-      comment: 'The content of the selection',
-      range: 'schema:Text',
-      domain: 'sa:Selector',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:selectionHash',
-      '@type': 'rdf:Property',
-      label: 'selectionHash',
-      altLabel: 'selection hash',
-      comment: 'The hash of the content of the selection',
-      range: 'schema:Text',
-      domain: 'sa:Selector',
       status: 'testing'
     },
 
@@ -694,72 +684,23 @@ module.exports = {
     },
 
     {
-      '@id': 'sa:nodeKey',
-      '@type': 'rdf:Property',
-      label: 'nodeKey',
-      altLabel: 'node key',
-      comment: 'The key (property) of the node targeted by the selector',
-      range: 'schema:Text',
-      domain: 'sa:NodeSelector',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:nodeId',
-      '@type': 'rdf:Property',
-      label: 'nodeId',
-      altLabel: 'node ID',
-      comment: 'The @id of the node targeted by the selector',
-      range: 'schema:Text',
-      domain: 'sa:NodeSelector',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:nodeValueId',
-      '@type': 'rdf:Property',
-      label: 'nodeValueId',
-      altLabel: 'node value ID',
-      comment:
-        'The @id of the value targeted by the selector, this is especialy useful when the value is a list',
-      range: 'schema:Text',
-      domain: 'sa:NodeSelector',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:WebVerseSelector',
+      '@id': 'sa:HtmlSelector',
       '@type': 'rdfs:Class',
-      label: 'WebVerseSelector',
-      altLabel: 'WebVerse Selector',
-      comment:
-        'A type of selector reasonably resilient to markup modifications and edits of the content',
+      label: 'HtmlSelector',
+      altLabel: 'HTML Selector',
+      comment: 'A type of Selector to select a HTML content',
       subClassOf: ['sa:NodeSelector'],
-      seeAlso: 'https://github.com/scienceai/web-verse',
       status: 'testing'
     },
 
     {
-      '@id': 'sa:webVerseKey',
+      '@id': 'sa:htmlId',
       '@type': 'rdf:Property',
-      label: 'webVerseKey',
-      altLabel: 'web verse key',
-      comment: 'The key of a web verse selector',
+      label: 'htmlId',
+      altLabel: 'HTML ID',
+      comment: 'The ID of an HTML element',
       range: 'schema:Text',
-      domain: 'sa:WebVerseSelector',
-      seeAlso: 'https://github.com/scienceai/web-verse',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:webVerseHash',
-      '@type': 'rdf:Property',
-      label: 'webVerseHash',
-      altLabel: 'web verse hash',
-      comment: 'The hash of a web verse selector',
-      range: 'schema:Text',
-      domain: 'sa:WebVerseSelector',
-      seeAlso: 'https://github.com/scienceai/web-verse',
+      domain: 'sa:HtmlSelector',
       status: 'testing'
     },
 
@@ -767,14 +708,82 @@ module.exports = {
       '@id': 'sa:webVerseId',
       '@type': 'rdf:Property',
       label: 'webVerseId',
-      altLabel: 'web verse id',
-      comment: 'The identifier of a web verse selector',
+      altLabel: 'web verse ID',
+      comment: 'The ID of a web verse selector',
       range: 'schema:Text',
-      domain: 'sa:WebVerseSelector',
+      domain: 'sa:HtmlSelector',
       seeAlso: 'https://github.com/scienceai/web-verse',
       status: 'testing'
     },
 
+    {
+      '@id': 'sa:node',
+      '@type': 'rdf:Property',
+      label: 'node',
+      altLabel: 'node',
+      comment: 'The node targeted by the selector',
+      range: 'schema:Thing',
+      domain: 'sa:NodeSelector',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:selectedProperty',
+      '@type': 'rdf:Property',
+      label: 'selectedProperty',
+      altLabel: 'selected property',
+      comment: 'The property of the node targeted by the selector',
+      range: 'schema:Text',
+      domain: 'sa:NodeSelector',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:selectedValue',
+      '@type': 'rdf:Property',
+      label: 'selectedValue',
+      altLabel: 'selected value',
+      comment: 'The selected value',
+      range: 'schema:Thing',
+      domain: 'sa:Selector',
+      status: 'testing'
+    },
+
+    // selector checksums
+    {
+      '@id': 'sa:selectedValueChecksum',
+      '@type': 'rdf:Property',
+      label: 'selectedValueChecksum',
+      altLabel: 'selected value checksum',
+      comment: 'A checksum of the selected value',
+      range: 'schema:Checksum',
+      domain: 'sa:Selector',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:nodeChecksum',
+      '@type': 'rdf:Property',
+      label: 'nodeChecksum',
+      altLabel: 'node checksum',
+      comment: 'A checksum of the full node (not only the selection)',
+      range: 'schema:Checksum',
+      domain: 'sa:NodeSelector',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:documentChecksum',
+      '@type': 'rdf:Property',
+      label: 'documentChecksum',
+      altLabel: 'document checksum',
+      comment: 'A checksum of the whole HTM document (not only the selection)',
+      range: 'schema:Checksum',
+      domain: 'sa:HtmlSelector',
+      status: 'testing'
+    },
+
+    // webverse extra props
     {
       '@id': 'sa:startOffset',
       '@type': 'rdf:Property',
@@ -797,15 +806,109 @@ module.exports = {
       status: 'testing'
     },
 
+    // deprecated selector props
     {
-      '@id': 'sa:TargetRole',
-      '@type': 'rdfs:Class',
-      label: 'TargetRole',
-      altLabel: 'Target Role',
+      '@id': 'sa:selectionContent',
+      '@type': 'rdf:Property',
+      label: 'selectionContent',
+      altLabel: 'selection content',
+      comment: 'The content of the selection',
+      range: 'schema:Text',
+      domain: 'sa:Selector',
+      status: 'deprecated'
+    },
+
+    {
+      '@id': 'sa:selectionHash',
+      '@type': 'rdf:Property',
+      label: 'selectionHash',
+      altLabel: 'selection hash',
+      comment: 'The hash of the content of the selection',
+      range: 'schema:Text',
+      domain: 'sa:Selector',
+      status: 'deprecated'
+    },
+
+    {
+      '@id': 'sa:nodeKey',
+      '@type': 'rdf:Property',
+      label: 'nodeKey',
+      altLabel: 'node key',
+      comment: 'The key (property) of the node targeted by the selector',
+      range: 'schema:Text',
+      domain: 'sa:NodeSelector',
+      status: 'deprecated'
+    },
+
+    {
+      '@id': 'sa:nodeId',
+      '@type': 'rdf:Property',
+      label: 'nodeId',
+      altLabel: 'node ID',
+      comment: 'The @id of the node targeted by the selector',
+      range: 'schema:Text',
+      domain: 'sa:NodeSelector',
+      status: 'deprecated'
+    },
+
+    {
+      '@id': 'sa:nodeValueId',
+      '@type': 'rdf:Property',
+      label: 'nodeValueId',
+      altLabel: 'node value ID',
       comment:
-        'A subclass of Role allowing to specify specific selections of a target resource',
-      subClassOf: ['schema:Role'],
-      status: 'testing'
+        'The @id of the value targeted by the selector, this is especialy useful when the value is a list',
+      range: 'schema:Text',
+      domain: 'sa:NodeSelector',
+      status: 'deprecated'
+    },
+
+    {
+      '@id': 'sa:WebVerseSelector',
+      '@type': 'rdfs:Class',
+      label: 'WebVerseSelector',
+      altLabel: 'WebVerse Selector',
+      comment:
+        'A type of selector reasonably resilient to markup modifications and edits of the content',
+      subClassOf: ['sa:NodeSelector'],
+      seeAlso: 'https://github.com/scienceai/web-verse',
+      status: 'deprecated'
+    },
+
+    {
+      '@id': 'sa:webVerseKey',
+      '@type': 'rdf:Property',
+      label: 'webVerseKey',
+      altLabel: 'web verse key',
+      comment: 'The key of a web verse selector',
+      range: 'schema:Text',
+      domain: 'sa:WebVerseSelector',
+      seeAlso: 'https://github.com/scienceai/web-verse',
+      status: 'deprecated'
+    },
+
+    {
+      '@id': 'sa:webVerseHash',
+      '@type': 'rdf:Property',
+      label: 'webVerseHash',
+      altLabel: 'web verse hash',
+      comment: 'The hash of a web verse selector',
+      range: 'schema:Text',
+      domain: 'sa:WebVerseSelector',
+      seeAlso: 'https://github.com/scienceai/web-verse',
+      status: 'deprecated'
+    },
+
+    {
+      '@id': 'sa:webVerseId',
+      '@type': 'rdf:Property',
+      label: 'webVerseId',
+      altLabel: 'web verse id',
+      comment: 'The identifier of a web verse selector',
+      range: 'schema:Text',
+      domain: 'sa:WebVerseSelector',
+      seeAlso: 'https://github.com/scienceai/web-verse',
+      status: 'deprecated'
     },
 
     // Actions
