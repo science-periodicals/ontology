@@ -6965,6 +6965,7 @@ module.exports = {
       "@type": "@id"
     },
     "ServiceStatusType": "http://ns.science.ai#ServiceStatusType",
+    "CreateWorkflowAction": "http://ns.science.ai#CreateWorkflowAction",
     "editorialProcess": {
       "@id": "http://ns.science.ai#editorialProcess",
       "@type": "@id"
