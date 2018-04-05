@@ -6,18 +6,29 @@ module.exports = {
   schema: 'http://schema.org/',
   xsd: 'http://www.w3.org/2001/XMLSchema#', // make sure that xsd prefix is present as we use it for typed dates
   sa: 'http://ns.science.ai#',
+  spdx: 'https://spdx.org/licenses/',
+
+  // science.ai API
   user: 'https://science.ai/user/',
-  org: 'https://science.ai/organization/',
   bot: 'https://science.ai/bot/',
   tmp: 'https://science.ai/tmp/',
   seq: 'https://science.ai/seq/',
-  spdx: 'https://spdx.org/licenses/',
   service: 'https://science.ai/service/',
+  org: 'https://science.ai/organization/',
   workflow: 'https://science.ai/workflow/',
+  journal: 'https://science.ai/periodical/',
+  graph: 'https://science.ai/graph/',
+  release: 'https://science.ai/release/',
+  action: 'https://science.ai/action/',
+  node: 'https://science.ai/node/',
   question: 'https://science.ai/question/',
   answer: 'https://science.ai/answer/',
   role: 'https://science.ai/role/',
   style: 'https://science.ai/style/',
+  tag: 'https://science.ai/tag/',
+  order: 'https://science.ai/order/',
+  offer: 'https://science.ai/offer/',
+  event: 'https://science.ai/event/',
   scienceai: 'https://science.ai/',
-  ses: 'https://api.scienceai/ses/'
+  ses: 'https://scienceai/ses/'
 };

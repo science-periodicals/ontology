@@ -3063,9 +3063,7 @@ module.exports = {
     "acrissCode": {
       "@id": "schema:acrissCode"
     },
-    "action": {
-      "@id": "schema:action"
-    },
+    "action": "https://science.ai/action/",
     "actionApplication": {
       "@id": "schema:actionApplication"
     },
@@ -4205,9 +4203,7 @@ module.exports = {
     "estimatesRiskOf": {
       "@id": "schema:estimatesRiskOf"
     },
-    "event": {
-      "@id": "schema:event"
-    },
+    "event": "https://science.ai/event/",
     "eventStatus": {
       "@id": "schema:eventStatus"
     },
@@ -6645,21 +6641,31 @@ module.exports = {
       "@id": "schema:yearsInOperation"
     },
     "sa": "http://ns.science.ai#",
+    "spdx": "https://spdx.org/licenses/",
     "user": "https://science.ai/user/",
     "bot": "https://science.ai/bot/",
     "tmp": "https://science.ai/tmp/",
     "seq": "https://science.ai/seq/",
-    "spdx": "https://spdx.org/licenses/",
     "service": "https://science.ai/service/",
     "workflow": "https://science.ai/workflow/",
+    "journal": "https://science.ai/periodical/",
+    "graph": "https://science.ai/graph/",
+    "release": "https://science.ai/release/",
+    "node": {
+      "@id": "http://ns.science.ai#node",
+      "@type": "@id"
+    },
     "answer": "https://science.ai/answer/",
     "style": {
       "@id": "http://ns.science.ai#style",
       "@type": "@id",
       "@container": "@set"
     },
+    "tag": "https://science.ai/tag/",
+    "order": "https://science.ai/order/",
+    "offer": "https://science.ai/offer/",
     "scienceai": "https://science.ai/",
-    "ses": "https://api.scienceai/ses/",
+    "ses": "https://scienceai/ses/",
     "suggestedResult": {
       "@id": "http://ns.science.ai#suggestedResult",
       "@type": "@id"
@@ -6774,10 +6780,6 @@ module.exports = {
       "@id": "http://ns.science.ai#webVerseId",
       "@type": "schema:Text"
     },
-    "node": {
-      "@id": "http://ns.science.ai#node",
-      "@type": "@id"
-    },
     "selectedProperty": {
       "@id": "http://ns.science.ai#selectedProperty",
       "@type": "schema:Text"
@@ -6863,9 +6865,9 @@ module.exports = {
     "RdfaConversionAction": "http://ns.science.ai#RdfaConversionAction",
     "SemanticTaggingAction": "http://ns.science.ai#SemanticTaggingAction",
     "AssignUrlAction": "http://ns.science.ai#AssignUrlAction",
+    "UnassignUrlAction": "http://ns.science.ai#UnassignUrlAction",
     "CreatePublicationTypeAction": "http://ns.science.ai#CreatePublicationTypeAction",
     "CreatePublicationElementTypeAction": "http://ns.science.ai#CreatePublicationElementTypeAction",
-    "UnassignUrlAction": "http://ns.science.ai#UnassignUrlAction",
     "ContributorRole": "http://ns.science.ai#ContributorRole",
     "roleAffiliation": {
       "@id": "http://ns.science.ai#roleAffiliation",
@@ -6958,7 +6960,21 @@ module.exports = {
       "@type": "@id",
       "@container": "@set"
     },
+    "serviceStatus": {
+      "@id": "http://ns.science.ai#serviceStatus",
+      "@type": "@id"
+    },
     "ServiceStatusType": "http://ns.science.ai#ServiceStatusType",
+    "editorialProcess": {
+      "@id": "http://ns.science.ai#editorialProcess",
+      "@type": "@id"
+    },
+    "Workflow": "http://ns.science.ai#Workflow",
+    "workflowStatus": {
+      "@id": "http://ns.science.ai#workflowStatus",
+      "@type": "@id"
+    },
+    "WorkflowStatusType": "http://ns.science.ai#WorkflowStatusType",
     "requiresCompletionOf": {
       "@id": "http://ns.science.ai#requiresCompletionOf",
       "@type": "@id"

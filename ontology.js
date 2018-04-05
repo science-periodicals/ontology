@@ -965,13 +965,14 @@ module.exports = {
       status: 'testing'
     },
 
+    // TODO remove PaySeriesAction
     {
       '@id': 'sa:PaySeriesAction',
       '@type': 'rdfs:Class',
       label: 'PaySeriesAction',
       altLabel: 'Pay Series Action',
       comment:
-        'A series of PayActions, essentially modelling a subscription with recurring payment.',
+        'A series of PayActions, essentially representing a subscription with recurring payment.',
       subClassOf: ['schema:PayAction'],
       status: 'testing'
     },
@@ -1092,7 +1093,7 @@ module.exports = {
       status: 'testing'
     },
 
-    // TODO delete on next major
+    // TODO delete CreateWorkflowStageAction on next major
     {
       '@id': 'sa:CreateWorkflowStageAction',
       '@type': 'rdfs:Class',
@@ -1208,6 +1209,16 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:UnassignUrlAction',
+      '@type': 'rdfs:Class',
+      label: 'UnassignUrlAction',
+      altLabel: 'Unassign URL Action',
+      comment: 'The antonym of an AssignUrlAction',
+      subClassOf: ['schema:UnassignAction'],
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:CreatePublicationTypeAction',
       '@type': 'rdfs:Class',
       label: 'CreatePublicationTypeAction',
@@ -1224,27 +1235,6 @@ module.exports = {
       altLabel: 'Create Publication Element Type Action',
       comment: 'The act of creating a publication elememt type',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:UnassignUrlAction',
-      '@type': 'rdfs:Class',
-      label: 'UnassignUrlAction',
-      altLabel: 'Unassign URL Action',
-      comment: 'The antonym of an AssignUrlAction',
-      subClassOf: ['schema:UnassignAction'],
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:suggestedResult',
-      '@type': 'rdf:Property',
-      label: 'suggestedResult',
-      altLabel: 'suggested result',
-      comment: 'The suggested result of an action',
-      range: 'schema:Thing',
-      domain: 'schema:Action',
       status: 'testing'
     },
 
@@ -1616,6 +1606,17 @@ module.exports = {
 
     // Service status
     {
+      '@id': 'sa:serviceStatus',
+      '@type': 'rdf:Property',
+      label: 'serviceStatus',
+      comment: 'The status of the service',
+      altLabel: 'service status',
+      range: 'sa:ServiceStatusType',
+      domain: 'schema:Service',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:ServiceStatusType',
       '@type': 'rdfs:Class',
       comment: 'The status of a Service.',
@@ -1640,6 +1641,60 @@ module.exports = {
 
     // Workflow
     {
+      '@id': 'sa:editorialProcess',
+      '@type': 'rdf:Property',
+      label: 'editorialProcess',
+      comment: 'The editorial process',
+      altLabel: 'editorial process',
+      range: 'sa:Workflow',
+      domain: 'schema:CreativeWork',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:Workflow',
+      '@type': 'rdfs:Class',
+      label: 'Workflow',
+      altLabel: 'Workflow',
+      comment: 'A workflow',
+      subClassOf: ['schema:CreativeWork'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:workflowStatus',
+      '@type': 'rdf:Property',
+      label: 'workflowStatus',
+      comment: 'The status of the workflow',
+      altLabel: 'workflow status',
+      range: 'sa:WorkflowStatusType',
+      domain: 'sa:Workflow',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:WorkflowStatusType',
+      '@type': 'rdfs:Class',
+      comment: 'The status of a Workflow.',
+      label: 'WorkflowStatusType',
+      subClassOf: ['schema:Enumeration']
+    },
+
+    {
+      '@id': 'schema:ActiveWorkflowStatus',
+      '@type': 'sa:WorkflowStatusType',
+      label: 'ActiveWorkflowStatus',
+      comment: 'A workflow currently activated'
+    },
+
+    {
+      '@id': 'sa:DeactivatedWorkflowStatus',
+      '@type': 'sa:WorkflowStatusType',
+      label: 'DeactivatedWorkflowStatus',
+      comment: 'A workflow currently deactivated'
+    },
+
+    {
       '@id': 'sa:requiresCompletionOf',
       '@type': 'rdf:Property',
       label: 'requiresCompletionOf',
@@ -1650,6 +1705,7 @@ module.exports = {
       domain: 'schema:Action',
       status: 'testing'
     },
+
     {
       '@id': 'sa:resultOf',
       '@type': 'rdf:Property',
@@ -1660,6 +1716,7 @@ module.exports = {
       domain: 'schema:Thing',
       status: 'testing'
     },
+
     {
       '@id': 'sa:potentialResult',
       '@type': 'rdf:Property',
@@ -1667,6 +1724,18 @@ module.exports = {
       comment:
         'One or several potential results that can be produced by the action',
       altLabel: 'potential result',
+      range: 'schema:Thing',
+      domain: 'schema:Action',
+      status: 'testing'
+    },
+
+    // TODO deprecate `sa:suggestedResult` as we now use 'sa:potentialResult'
+    {
+      '@id': 'sa:suggestedResult',
+      '@type': 'rdf:Property',
+      label: 'suggestedResult',
+      altLabel: 'suggested result',
+      comment: 'The suggested result of an action',
       range: 'schema:Thing',
       domain: 'schema:Action',
       status: 'testing'
@@ -1691,6 +1760,7 @@ module.exports = {
       domain: 'schema:Role',
       status: 'testing'
     },
+
     {
       '@id': 'sa:endDateOn',
       '@type': 'rdf:Property',
@@ -1701,6 +1771,7 @@ module.exports = {
       domain: 'schema:Role',
       status: 'testing'
     },
+
     {
       '@id': 'sa:activateOn',
       '@type': 'rdf:Property',
@@ -1729,6 +1800,7 @@ module.exports = {
       comment:
         'A trigger activated when the action actionStatus is set to ActiveActionStatus'
     },
+
     {
       '@id': 'sa:OnCompletedActionStatus',
       '@type': 'sa:TriggerType',
@@ -1736,6 +1808,7 @@ module.exports = {
       comment:
         'A trigger activated when the action actionStatus is set to CompletedActionStatus'
     },
+
     {
       '@id': 'sa:OnFailedActionStatus',
       '@type': 'sa:TriggerType',
@@ -1751,6 +1824,7 @@ module.exports = {
       comment:
         'A trigger activated when the action object is set to ActiveActionStatus'
     },
+
     {
       '@id': 'sa:OnObjectCompletedActionStatus',
       '@type': 'sa:TriggerType',
@@ -1758,6 +1832,7 @@ module.exports = {
       comment:
         'A trigger activated when the action object is set to CompletedActionStatus'
     },
+
     {
       '@id': 'sa:OnObjectFailedActionStatus',
       '@type': 'sa:TriggerType',
@@ -1773,6 +1848,7 @@ module.exports = {
       comment:
         'A trigger activated when the workflow stage associated with the action ends'
     },
+
     {
       '@id': 'sa:OnWorkflowEnd',
       '@type': 'sa:TriggerType',
