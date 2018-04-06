@@ -24,6 +24,7 @@ module.exports = {
       '@type': '@id',
       '@container': '@set'
     },
+    subPropertyOf: 'rdfs:subPropertyOf',
     comment: 'rdfs:comment',
     label: 'rdfs:label',
     altLabel: 'skos:altLabel',
@@ -41,7 +42,7 @@ module.exports = {
       '@type': 'rdfs:Class',
       label: 'WPUnspecified',
       comment: 'A section that is unknown or otherwise unspecified.',
-      subClassOf: [],
+      subClassOf: 'schema:WebPageElement',
       status: 'testing',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
@@ -52,7 +53,7 @@ module.exports = {
       label: 'WPAbstract',
       comment:
         "A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose.",
-      subClassOf: ['schema:CreativeWork'],
+      subClassOf: 'schema:WebPageElement',
       status: 'testing',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
@@ -62,7 +63,7 @@ module.exports = {
       '@type': 'rdfs:Class',
       label: 'WPAbstractSection',
       comment: 'A section of an abstract',
-      subClassOf: ['sa:Abstract'],
+      subClassOf: 'sa:Abstract',
       status: 'testing',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
@@ -74,7 +75,7 @@ module.exports = {
       altLabel: 'Impact Statement',
       comment:
         "A brief summary, in lay terms of the impact of the work ('So what?',  'Who cares?' etc.).",
-      subClassOf: ['schema:CreativeWork'],
+      subClassOf: 'schema:WebPageElement',
       status: 'testing',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
@@ -86,7 +87,7 @@ module.exports = {
       altLabel: ['Authors'],
       comment:
         'A list of items each denoting an author of a particular publication.',
-      subClassOf: ['http://purl.org/spar/doco/ListOfAuthors'],
+      subClassOf: 'schema:WebPageElement',
       status: 'testing',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
@@ -98,7 +99,7 @@ module.exports = {
       altLabel: ['Contributors'],
       comment:
         'A list of items, each denoting a contributor to a publication where such contributions are insufficient to warrant classification as author.',
-      subClassOf: ['http://purl.org/spar/doco/ListOfContributors'],
+      subClassOf: 'schema:WebPageElement',
       status: 'testing',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
@@ -109,7 +110,7 @@ module.exports = {
       label: 'WPAffiliations',
       altLabel: ['Affiliations'],
       comment: 'A list of affiliations for the authors and contributors.',
-      subClassOf: ['http://purl.org/spar/doco/ListOfOrganizations'],
+      subClassOf: 'schema:WebPageElement',
       status: 'testing',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
@@ -1350,6 +1351,7 @@ module.exports = {
       subClassOf: ['schema:Intangible'],
       status: 'testing'
     },
+
     {
       '@id': 'sa:RangeFacet',
       '@type': 'rdfs:Class',
@@ -1358,6 +1360,7 @@ module.exports = {
       subClassOf: ['sa:Facet'],
       status: 'testing'
     },
+
     {
       '@id': 'sa:itemListFacet',
       '@type': 'rdf:Property',
@@ -1368,6 +1371,7 @@ module.exports = {
       domain: 'schema:ItemList',
       status: 'testing'
     },
+
     {
       '@id': 'sa:count',
       '@type': 'rdf:Property',
@@ -1435,25 +1439,6 @@ module.exports = {
       subClassOf: ['schema:PropertyValue'],
       status: 'testing'
     },
-    {
-      '@id': 'sa:styleGuide',
-      '@type': 'rdf:Property',
-      label: 'styleGuide',
-      altLabel: 'style guide',
-      comment: 'A style guide used in the creation of the CreativeWork',
-      range: 'sa:StyleGuide',
-      domain: 'schema:CreativeWork',
-      status: 'testing'
-    },
-    {
-      '@id': 'sa:StyleGuide',
-      '@type': 'rdfs:Class',
-      label: 'StyleGuide',
-      altLabel: 'Style guide',
-      comment: 'A style guide',
-      subClassOf: ['schema:CreativeWork'],
-      status: 'testing'
-    },
 
     {
       '@id': 'sa:style',
@@ -1464,6 +1449,7 @@ module.exports = {
       domain: 'schema:CreativeWork',
       status: 'testing'
     },
+
     {
       '@id': 'sa:encodesStyle',
       '@type': 'rdf:Property',
@@ -1474,6 +1460,7 @@ module.exports = {
       domain: 'schema:MediaObject',
       status: 'testing'
     },
+
     {
       '@id': 'sa:isStyleOf',
       '@type': 'rdf:Property',
@@ -1551,6 +1538,7 @@ module.exports = {
       subClassOf: 'schema:Enumeration',
       status: 'testing'
     },
+    // Note: we use additionalType to point to the AuthorGuidelines from a Graph
 
     {
       '@id': 'sa:PublicationElementType',
@@ -1562,6 +1550,19 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:objectSpecification',
+      '@type': 'rdf:Property',
+      label: 'objectSpecification',
+      altLabel: 'object specification',
+      comment:
+        'Specification defining the resources associated with the publication type',
+      range: 'schema:CreativeWork',
+      domain: 'sa:PublicationType',
+      status: 'testing'
+    },
+
+    // TODO deprecate
+    {
       '@id': 'sa:AuthorGuidelines',
       '@type': 'rdfs:Class',
       label: 'AuthorGuidelines',
@@ -1571,14 +1572,27 @@ module.exports = {
       status: 'testing'
     },
 
+    // TODO deprecate
     {
       '@id': 'sa:guidelines',
       '@type': 'rdf:Property',
       label: 'guidelines',
       altLabel: 'guidelines',
-      comment: 'Guidelines  defining the publication type',
+      comment: 'Guidelines defining the publication type',
       range: 'schema:HowTo',
       domain: 'sa:PublicationType',
+      status: 'testing'
+    },
+    // Note: we use additionalType to point to the AuthorGuidelines from a Graph
+
+    {
+      '@id': 'sa:publicationTypeCoverage',
+      '@type': 'rdf:Property',
+      label: 'publicationTypeCoverage',
+      altLabel: 'publication type coverage',
+      comment: 'The type of publication covered by the periodical',
+      range: 'sa:PublicationType',
+      domain: 'schema:Periodical',
       status: 'testing'
     },
 
@@ -1593,15 +1607,27 @@ module.exports = {
       status: 'testing'
     },
 
+    // TODO delete `sa:styleGuide`
     {
-      '@id': 'sa:publicationTypeCoverage',
+      '@id': 'sa:styleGuide',
       '@type': 'rdf:Property',
-      label: 'publicationTypeCoverage',
-      altLabel: 'publication type coverage',
-      comment: 'The type of publication covered by the periodical',
-      range: 'sa:PublicationType',
-      domain: 'schema:Periodical',
-      status: 'testing'
+      label: 'styleGuide',
+      altLabel: 'style guide',
+      comment: 'A style guide used in the creation of the CreativeWork',
+      range: 'sa:StyleGuide',
+      domain: 'schema:CreativeWork',
+      status: 'deprecated'
+    },
+
+    // TODO delete `sa:StyleGuide`
+    {
+      '@id': 'sa:StyleGuide',
+      '@type': 'rdfs:Class',
+      label: 'StyleGuide',
+      altLabel: 'Style guide',
+      comment: 'A style guide',
+      subClassOf: ['schema:CreativeWork'],
+      status: 'deprecated'
     },
 
     // Service status
@@ -1728,6 +1754,17 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:instanceOf',
+      '@type': 'rdf:Property',
+      label: 'resultOf',
+      comment: 'The template which resulted in this Thing',
+      altLabel: 'result of',
+      range: 'schema:Thing',
+      domain: 'schema:Thing',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:potentialResult',
       '@type': 'rdf:Property',
       label: 'potentialResult',
@@ -1736,6 +1773,19 @@ module.exports = {
       altLabel: 'potential result',
       range: 'schema:Thing',
       domain: 'schema:Action',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:potentialService',
+      '@type': 'rdf:Property',
+      label: 'potentialService',
+      comment:
+        'One or several service made available to the agent of the action',
+      altLabel: 'potential result',
+      range: 'schema:Service',
+      domain: 'schema:Action',
+      subPropertyOf: 'schema:instrument',
       status: 'testing'
     },
 
@@ -1766,7 +1816,7 @@ module.exports = {
       label: 'startDateOn',
       comment: 'A trigger indicated when the startDate property should be set',
       altLabel: 'start date on',
-      range: 'schema:TriggerType',
+      range: 'sa:TriggerType',
       domain: 'schema:Role',
       status: 'testing'
     },
@@ -1777,7 +1827,7 @@ module.exports = {
       label: 'endDateOn',
       comment: 'A trigger indicated when the endDate property should be set',
       altLabel: 'end date on',
-      range: 'schema:TriggerType',
+      range: 'sa:TriggerType',
       domain: 'schema:Role',
       status: 'testing'
     },
@@ -1791,6 +1841,18 @@ module.exports = {
       altLabel: 'activate on',
       range: 'schema:TriggerType',
       domain: 'schema:Action',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:valueRequiredOn',
+      '@type': 'rdf:Property',
+      label: 'valueRequiredOn',
+      comment:
+        'A trigger indicated when the actionStatus property should be set to ActivateActionStatus',
+      altLabel: 'value required on',
+      range: 'sa:TriggerType',
+      domain: 'schema:PropertyValueSpecification',
       status: 'testing'
     },
 
@@ -1881,6 +1943,13 @@ module.exports = {
       label: 'OnAcceptedOffer',
       comment:
         'A trigger activated when the offer associated with the action is accepted'
+    },
+
+    {
+      '@id': 'sa:OnPublicationAccepted',
+      '@type': 'sa:TriggerType',
+      label: 'OnPublicationAccepted',
+      comment: 'A trigger activated when a publication is accepted'
     }
   ]
 };

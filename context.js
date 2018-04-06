@@ -6915,11 +6915,6 @@ module.exports = {
       "@type": "schema:Date"
     },
     "CssVariable": "http://ns.science.ai#CssVariable",
-    "styleGuide": {
-      "@id": "http://ns.science.ai#styleGuide",
-      "@type": "@id"
-    },
-    "StyleGuide": "http://ns.science.ai#StyleGuide",
     "encodesStyle": {
       "@id": "http://ns.science.ai#encodesStyle",
       "@type": "@id"
@@ -6946,13 +6941,13 @@ module.exports = {
     },
     "PublicationType": "http://ns.science.ai#PublicationType",
     "PublicationElementType": "http://ns.science.ai#PublicationElementType",
+    "objectSpecification": {
+      "@id": "http://ns.science.ai#objectSpecification",
+      "@type": "@id"
+    },
     "AuthorGuidelines": "http://ns.science.ai#AuthorGuidelines",
     "guidelines": {
       "@id": "http://ns.science.ai#guidelines",
-      "@type": "@id"
-    },
-    "publicationElementTypeCoverage": {
-      "@id": "http://ns.science.ai#publicationElementTypeCoverage",
       "@type": "@id"
     },
     "publicationTypeCoverage": {
@@ -6960,6 +6955,15 @@ module.exports = {
       "@type": "@id",
       "@container": "@set"
     },
+    "publicationElementTypeCoverage": {
+      "@id": "http://ns.science.ai#publicationElementTypeCoverage",
+      "@type": "@id"
+    },
+    "styleGuide": {
+      "@id": "http://ns.science.ai#styleGuide",
+      "@type": "@id"
+    },
+    "StyleGuide": "http://ns.science.ai#StyleGuide",
     "serviceStatus": {
       "@id": "http://ns.science.ai#serviceStatus",
       "@type": "@id"
@@ -6984,8 +6988,16 @@ module.exports = {
       "@id": "http://ns.science.ai#resultOf",
       "@type": "@id"
     },
+    "instanceOf": {
+      "@id": "http://ns.science.ai#instanceOf",
+      "@type": "@id"
+    },
     "potentialResult": {
       "@id": "http://ns.science.ai#potentialResult",
+      "@type": "@id"
+    },
+    "potentialService": {
+      "@id": "http://ns.science.ai#potentialService",
       "@type": "@id"
     },
     "startDateOn": {
@@ -6998,6 +7010,10 @@ module.exports = {
     },
     "activateOn": {
       "@id": "http://ns.science.ai#activateOn",
+      "@type": "@id"
+    },
+    "valueRequiredOn": {
+      "@id": "http://ns.science.ai#valueRequiredOn",
       "@type": "@id"
     },
     "TriggerType": "http://ns.science.ai#TriggerType"
