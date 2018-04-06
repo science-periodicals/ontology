@@ -6647,7 +6647,10 @@ module.exports = {
     "tmp": "https://science.ai/tmp/",
     "seq": "https://science.ai/seq/",
     "service": "https://science.ai/service/",
-    "workflow": "https://science.ai/workflow/",
+    "workflow": {
+      "@id": "http://ns.science.ai#workflow",
+      "@type": "@id"
+    },
     "journal": "https://science.ai/periodical/",
     "graph": "https://science.ai/graph/",
     "release": "https://science.ai/release/",
@@ -6969,17 +6972,21 @@ module.exports = {
       "@type": "@id"
     },
     "ServiceStatusType": "http://ns.science.ai#ServiceStatusType",
-    "CreateWorkflowAction": "http://ns.science.ai#CreateWorkflowAction",
-    "editorialProcess": {
-      "@id": "http://ns.science.ai#editorialProcess",
+    "CreateWorkflowSpecificationAction": "http://ns.science.ai#CreateWorkflowSpecificationAction",
+    "potentialWorkflow": {
+      "@id": "http://ns.science.ai#potentialWorkflow",
       "@type": "@id"
     },
-    "Workflow": "http://ns.science.ai#Workflow",
-    "workflowStatus": {
-      "@id": "http://ns.science.ai#workflowStatus",
+    "isPotentialWorkflowOf": {
+      "@id": "http://ns.science.ai#isPotentialWorkflowOf",
       "@type": "@id"
     },
-    "WorkflowStatusType": "http://ns.science.ai#WorkflowStatusType",
+    "WorkflowSpecification": "http://ns.science.ai#WorkflowSpecification",
+    "workflowSpecificationStatus": {
+      "@id": "http://ns.science.ai#workflowSpecificationStatus",
+      "@type": "@id"
+    },
+    "WorkflowSpecificationStatusType": "http://ns.science.ai#WorkflowSpecificationStatusType",
     "requiresCompletionOf": {
       "@id": "http://ns.science.ai#requiresCompletionOf",
       "@type": "@id"

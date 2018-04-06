@@ -1677,57 +1677,82 @@ module.exports = {
     },
 
     {
-      '@id': 'sa:editorialProcess',
+      '@id': 'sa:workflow',
       '@type': 'rdf:Property',
-      label: 'editorialProcess',
-      comment: 'The editorial process',
-      altLabel: 'editorial process',
-      range: 'sa:Workflow',
+      label: 'workflow',
+      comment:
+        'A workflow such an editorial process related responsible for the production of the creative work',
+      altLabel: 'workflow',
+      range: 'sa:WorkflowSpecification',
       domain: 'schema:CreativeWork',
       status: 'testing'
     },
 
     {
-      '@id': 'sa:Workflow',
+      '@id': 'sa:potentialWorkflow',
+      '@type': 'rdf:Property',
+      label: 'potentialWorkflow',
+      comment: 'potential workflow',
+      altLabel: 'workflow',
+      range: 'sa:WorkflowSpecification',
+      domain: 'schema:CreativeWork',
+      status: 'testing'
+    },
+
+    // reverse prop for convenience
+    {
+      '@id': 'sa:isPotentialWorkflowOf',
+      '@type': 'rdf:Property',
+      label: 'isPotentialWorkflowOf',
+      comment:
+        'The creative work for which this workflow is a potential workflow',
+      altLabel: 'is workflow of',
+      range: 'schema:CreativeWork',
+      domain: 'sa:WorkflowSpecification',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:WorkflowSpecification',
       '@type': 'rdfs:Class',
-      label: 'Workflow',
-      altLabel: 'Workflow',
-      comment: 'A workflow',
+      label: 'WorkflowSpecification',
+      altLabel: 'Workflow Specification',
+      comment: 'A workflow specification',
       subClassOf: ['schema:CreativeWork'],
       status: 'testing'
     },
 
     {
-      '@id': 'sa:workflowStatus',
+      '@id': 'sa:workflowSpecificationStatus',
       '@type': 'rdf:Property',
-      label: 'workflowStatus',
-      comment: 'The status of the workflow',
-      altLabel: 'workflow status',
-      range: 'sa:WorkflowStatusType',
-      domain: 'sa:Workflow',
+      label: 'workflowSpecificationStatus',
+      comment: 'The status of the workflow specification',
+      altLabel: 'workflow status specification',
+      range: 'sa:WorkflowSpecificationStatusType',
+      domain: 'sa:WorkflowSpecification',
       status: 'testing'
     },
 
     {
-      '@id': 'sa:WorkflowStatusType',
+      '@id': 'sa:WorkflowSpecificationStatusType',
       '@type': 'rdfs:Class',
       comment: 'The status of a Workflow.',
-      label: 'WorkflowStatusType',
+      label: 'WorkflowSpecificationStatusType',
       subClassOf: ['schema:Enumeration']
     },
 
     {
-      '@id': 'schema:ActiveWorkflowStatus',
-      '@type': 'sa:WorkflowStatusType',
-      label: 'ActiveWorkflowStatus',
-      comment: 'A workflow currently activated'
+      '@id': 'schema:ActiveWorkflowSpecificationStatus',
+      '@type': 'sa:WorkflowSpecificationStatusType',
+      label: 'ActiveWorkflowSpecificationStatus',
+      comment: 'A workflow specification currently activated'
     },
 
     {
-      '@id': 'sa:DeactivatedWorkflowStatus',
-      '@type': 'sa:WorkflowStatusType',
-      label: 'DeactivatedWorkflowStatus',
-      comment: 'A workflow currently deactivated'
+      '@id': 'sa:DeactivatedWorkflowSpecificationStatus',
+      '@type': 'sa:WorkflowSpecificationStatusType',
+      label: 'DeactivatedWorkflowSpecificationStatus',
+      comment: 'A workflow specification currently deactivated'
     },
 
     {
