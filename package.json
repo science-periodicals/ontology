@@ -1,6 +1,6 @@
 {
   "name": "@scienceai/ontology",
-  "version": "22.2.0",
+  "version": "22.2.1",
   "description": "schema.org extension to describe the production process, content, distribution and preservation of scholarly articles (and similar artifacts)",
   "main": "index.js",
   "scripts": {
