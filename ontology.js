@@ -1667,11 +1667,11 @@ module.exports = {
 
     // Workflow
     {
-      '@id': 'sa:CreateWorkflowAction',
+      '@id': 'sa:CreateWorkflowSpecificationAction',
       '@type': 'rdfs:Class',
-      label: 'CreateWorkflowAction',
-      altLabel: 'Create Workflow Action',
-      comment: 'The act of creating a workflow.',
+      label: 'CreateWorkflowSpecificationAction',
+      altLabel: 'Create Workflow Specification Action',
+      comment: 'The act of creating a workflow specification.',
       subClassOf: ['schema:CreateAction'],
       status: 'testing'
     },
