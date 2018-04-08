@@ -309,6 +309,17 @@ module.exports = {
 
     // Resource and encodings
     {
+      '@id': 'sa:reviewer',
+      '@type': 'rdf:Property',
+      label: 'reviewer',
+      comment: 'The reviewer of the content.',
+      altLabel: 'reviewer',
+      range: 'sa:Person',
+      domain: 'schema:CreativeWork',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:Formula',
       '@type': 'rdfs:Class',
       label: 'Formula',

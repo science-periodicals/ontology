@@ -6703,6 +6703,10 @@ module.exports = {
     "WPSupportingInformation": "http://ns.science.ai#WPSupportingInformation",
     "WPReferenceList": "http://ns.science.ai#WPReferenceList",
     "WPReference": "http://ns.science.ai#WPReference",
+    "reviewer": {
+      "@id": "http://ns.science.ai#reviewer",
+      "@type": "@id"
+    },
     "Formula": "http://ns.science.ai#Formula",
     "FormulaObject": "http://ns.science.ai#FormulaObject",
     "SoftwareSourceCodeObject": "http://ns.science.ai#SoftwareSourceCodeObject",
