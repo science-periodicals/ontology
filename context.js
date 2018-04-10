@@ -6864,6 +6864,7 @@ module.exports = {
     "CreateWorkflowStageAction": "http://ns.science.ai#CreateWorkflowStageAction",
     "DeleteGraphAction": "http://ns.science.ai#DeleteGraphAction",
     "CreateReleaseAction": "http://ns.science.ai#CreateReleaseAction",
+    "PublishAction": "http://ns.science.ai#PublishAction",
     "CreatePeriodicalAction": "http://ns.science.ai#CreatePeriodicalAction",
     "CreateOfferAction": "http://ns.science.ai#CreateOfferAction",
     "MimeDetectionAction": "http://ns.science.ai#MimeDetectionAction",
