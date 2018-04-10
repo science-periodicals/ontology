@@ -1137,6 +1137,16 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:PublishAction',
+      '@type': 'rdfs:Class',
+      label: 'PublishAction',
+      altLabel: 'Publish Action',
+      comment: 'The act of publishing an object.',
+      subClassOf: ['sa:CreateReleaseAction'],
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:CreatePeriodicalAction',
       '@type': 'rdfs:Class',
       label: 'CreatePeriodicalAction',
