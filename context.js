@@ -7004,6 +7004,10 @@ module.exports = {
       "@id": "http://ns.science.ai#instanceOf",
       "@type": "@id"
     },
+    "instrumentOf": {
+      "@id": "http://ns.science.ai#instrumentOf",
+      "@type": "@id"
+    },
     "potentialResult": {
       "@id": "http://ns.science.ai#potentialResult",
       "@type": "@id"

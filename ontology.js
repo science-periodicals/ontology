@@ -1805,8 +1805,19 @@ module.exports = {
       label: 'resultOf',
       comment: 'The template which resulted in this Thing',
       altLabel: 'result of',
-      range: 'schema:Thing',
-      domain: 'schema:Thing',
+      range: 'schema:Action',
+      domain: 'schema:Action',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:instrumentOf',
+      '@type': 'rdf:Property',
+      label: 'instrumentOf',
+      comment: 'The reverse property of instrument',
+      altLabel: 'instrument of',
+      range: 'schema:Action',
+      domain: 'schema:Action',
       status: 'testing'
     },
 
