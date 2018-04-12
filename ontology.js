@@ -1879,17 +1879,6 @@ module.exports = {
     },
 
     {
-      '@id': 'sa:endDateOn',
-      '@type': 'rdf:Property',
-      label: 'endDateOn',
-      comment: 'A trigger indicated when the endDate property should be set',
-      altLabel: 'end date on',
-      range: 'sa:TriggerType',
-      domain: 'schema:Role',
-      status: 'testing'
-    },
-
-    {
       '@id': 'sa:activateOn',
       '@type': 'rdf:Property',
       label: 'activateOn',
@@ -1979,25 +1968,9 @@ module.exports = {
     },
 
     {
-      '@id': 'sa:OnWorkflowEnd',
+      '@id': 'sa:OnOfferAccepted',
       '@type': 'sa:TriggerType',
-      label: 'OnWorkflowEnd',
-      comment:
-        'A trigger activated when the workflow associated with the action ends'
-    },
-
-    {
-      '@id': 'sa:OnObjectEndorsed',
-      '@type': 'sa:TriggerType',
-      label: 'OnObjectEndorsed',
-      comment:
-        'A trigger activated when the object associated with the action is endorsed'
-    },
-
-    {
-      '@id': 'sa:OnAcceptedOffer',
-      '@type': 'sa:TriggerType',
-      label: 'OnAcceptedOffer',
+      label: 'OnOfferAccepted',
       comment:
         'A trigger activated when the offer associated with the action is accepted'
     },
@@ -2007,6 +1980,36 @@ module.exports = {
       '@type': 'sa:TriggerType',
       label: 'OnPublicationAccepted',
       comment: 'A trigger activated when a publication is accepted'
+    },
+
+    // Merge strategies
+
+    {
+      '@id': 'sa:mergeStrategy',
+      '@type': 'rdf:Property',
+      label: 'mergeStrategy',
+      comment: 'A merge strategy',
+      altLabel: 'merge strategy',
+      range: 'sa:MergeStrategyType',
+      domain: 'schema:UpdateAction',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:MergeStrategyType',
+      '@type': 'rdfs:Class',
+      label: 'MergeStrategyType',
+      comment: 'A type of merge strategy',
+      subClassOf: 'schema:Enumeration',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:UpsertResourceMergeStrategy',
+      '@type': 'sa:MergeStrategyType',
+      label: 'UpsertResourceMergeStrategy',
+      comment:
+        'Update or create a resource, reconciliating the nodes and letting the other node of the graph untouched'
     }
   ]
 };

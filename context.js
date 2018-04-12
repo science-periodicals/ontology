@@ -7020,10 +7020,6 @@ module.exports = {
       "@id": "http://ns.science.ai#startDateOn",
       "@type": "@id"
     },
-    "endDateOn": {
-      "@id": "http://ns.science.ai#endDateOn",
-      "@type": "@id"
-    },
     "activateOn": {
       "@id": "http://ns.science.ai#activateOn",
       "@type": "@id"
@@ -7032,6 +7028,11 @@ module.exports = {
       "@id": "http://ns.science.ai#valueRequiredOn",
       "@type": "@id"
     },
-    "TriggerType": "http://ns.science.ai#TriggerType"
+    "TriggerType": "http://ns.science.ai#TriggerType",
+    "mergeStrategy": {
+      "@id": "http://ns.science.ai#mergeStrategy",
+      "@type": "@id"
+    },
+    "MergeStrategyType": "http://ns.science.ai#MergeStrategyType"
   }
 };
