@@ -7016,12 +7016,12 @@ module.exports = {
       "@id": "http://ns.science.ai#potentialService",
       "@type": "@id"
     },
-    "startDateOn": {
-      "@id": "http://ns.science.ai#startDateOn",
-      "@type": "@id"
-    },
     "activateOn": {
       "@id": "http://ns.science.ai#activateOn",
+      "@type": "@id"
+    },
+    "completeOn": {
+      "@id": "http://ns.science.ai#completeOn",
       "@type": "@id"
     },
     "valueRequiredOn": {

@@ -1868,23 +1868,24 @@ module.exports = {
 
     // Triggers
     {
-      '@id': 'sa:startDateOn',
-      '@type': 'rdf:Property',
-      label: 'startDateOn',
-      comment: 'A trigger indicated when the startDate property should be set',
-      altLabel: 'start date on',
-      range: 'sa:TriggerType',
-      domain: 'schema:Role',
-      status: 'testing'
-    },
-
-    {
       '@id': 'sa:activateOn',
       '@type': 'rdf:Property',
       label: 'activateOn',
       comment:
-        'A trigger indicated when the actionStatus property should be set to ActivateActionStatus',
+        'A trigger indicating when the actionStatus property should be set to ActivateActionStatus',
       altLabel: 'activate on',
+      range: 'schema:TriggerType',
+      domain: 'schema:Action',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:completeOn',
+      '@type': 'rdf:Property',
+      label: 'completeOn',
+      comment:
+        'A trigger indicating when the actionStatus property should be set to CompletedActionStatus',
+      altLabel: 'complete on',
       range: 'schema:TriggerType',
       domain: 'schema:Action',
       status: 'testing'
@@ -1894,8 +1895,7 @@ module.exports = {
       '@id': 'sa:valueRequiredOn',
       '@type': 'rdf:Property',
       label: 'valueRequiredOn',
-      comment:
-        'A trigger indicated when the actionStatus property should be set to ActivateActionStatus',
+      comment: 'A trigger indicating when a value should be required',
       altLabel: 'value required on',
       range: 'sa:TriggerType',
       domain: 'schema:PropertyValueSpecification',
@@ -1909,30 +1909,6 @@ module.exports = {
       comment: 'A type of trigger',
       subClassOf: 'schema:Enumeration',
       status: 'testing'
-    },
-
-    {
-      '@id': 'sa:OnActiveActionStatus',
-      '@type': 'sa:TriggerType',
-      label: 'OnActiveActionStatus',
-      comment:
-        'A trigger activated when the action actionStatus is set to ActiveActionStatus'
-    },
-
-    {
-      '@id': 'sa:OnCompletedActionStatus',
-      '@type': 'sa:TriggerType',
-      label: 'OnCompletedActionStatus',
-      comment:
-        'A trigger activated when the action actionStatus is set to CompletedActionStatus'
-    },
-
-    {
-      '@id': 'sa:OnFailedActionStatus',
-      '@type': 'sa:TriggerType',
-      label: 'OnFailedActionStatus',
-      comment:
-        'A trigger activated when the action actionStatus is set to FailedActionStatus'
     },
 
     {
@@ -1980,6 +1956,13 @@ module.exports = {
       '@type': 'sa:TriggerType',
       label: 'OnPublicationAccepted',
       comment: 'A trigger activated when a publication is accepted'
+    },
+
+    {
+      '@id': 'sa:OnWorkerEnd',
+      '@type': 'sa:TriggerType',
+      label: 'OnWorkerEnd',
+      comment: 'A trigger activated when a worker ends'
     },
 
     // Merge strategies
