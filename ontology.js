@@ -1920,6 +1920,14 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:OnObjectPendingEndorsementActionStatus',
+      '@type': 'sa:TriggerType',
+      label: 'OnObjectPendingEndorsementActionStatus',
+      comment:
+        'A trigger activated when the action object is set to PendingEndorsementActionStatus'
+    },
+
+    {
       '@id': 'sa:OnObjectCompletedActionStatus',
       '@type': 'sa:TriggerType',
       label: 'OnObjectCompletedActionStatus',
@@ -1963,6 +1971,13 @@ module.exports = {
       '@type': 'sa:TriggerType',
       label: 'OnWorkerEnd',
       comment: 'A trigger activated when a worker ends'
+    },
+
+    {
+      '@id': 'sa:OnEndorsed',
+      '@type': 'sa:TriggerType',
+      label: 'OnEndorsed',
+      comment: 'A trigger activated when the action is endorsed'
     },
 
     // Merge strategies
