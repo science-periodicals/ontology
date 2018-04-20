@@ -3313,9 +3313,7 @@ module.exports = {
     "attendees": {
       "@id": "schema:attendees"
     },
-    "audience": {
-      "@id": "schema:audience"
-    },
+    "audience": "https://science.ai/audience/",
     "audienceType": {
       "@id": "schema:audienceType"
     },
@@ -3828,9 +3826,7 @@ module.exports = {
     "currentExchangeRate": {
       "@id": "schema:currentExchangeRate"
     },
-    "customer": {
-      "@id": "schema:customer"
-    },
+    "customer": "https://science.ai/customer/",
     "dataFeedElement": {
       "@id": "schema:dataFeedElement"
     },
@@ -5360,7 +5356,7 @@ module.exports = {
       "@id": "schema:partOfTVSeries"
     },
     "participant": {
-      "@id": "schema:participant",
+      "@id": "https://science.ai/participant/",
       "@container": "@set",
       "@type": "@id"
     },
@@ -6545,9 +6541,7 @@ module.exports = {
       "@id": "schema:vehicleTransmission",
       "@type": "@id"
     },
-    "vendor": {
-      "@id": "schema:vendor"
-    },
+    "vendor": "https://science.ai/vendor/",
     "version": {
       "@id": "schema:version"
     },
@@ -6666,11 +6660,14 @@ module.exports = {
     },
     "tag": "https://science.ai/tag/",
     "order": "https://science.ai/order/",
+    "audienceRole": "https://science.ai/audienceRole/",
+    "assigner": "https://science.ai/assigner/",
+    "subscriber": "https://science.ai/subscriber/",
     "offer": "https://science.ai/offer/",
     "scienceai": "https://science.ai/",
     "ses": "https://scienceai/ses/",
     "suggestedResult": {
-      "@id": "http://ns.science.ai#suggestedResult",
+      "@id": "http://schema.org/suggestedResult",
       "@type": "@id"
     },
     "itemListFacet": {
@@ -6815,35 +6812,6 @@ module.exports = {
       "@id": "http://ns.science.ai#endOffset",
       "@type": "schema:Number"
     },
-    "selectionContent": {
-      "@id": "http://ns.science.ai#selectionContent",
-      "@type": "schema:Text"
-    },
-    "selectionHash": {
-      "@id": "http://ns.science.ai#selectionHash",
-      "@type": "schema:Text"
-    },
-    "nodeKey": {
-      "@id": "http://ns.science.ai#nodeKey",
-      "@type": "schema:Text"
-    },
-    "nodeId": {
-      "@id": "http://ns.science.ai#nodeId",
-      "@type": "schema:Text"
-    },
-    "nodeValueId": {
-      "@id": "http://ns.science.ai#nodeValueId",
-      "@type": "schema:Text"
-    },
-    "WebVerseSelector": "http://ns.science.ai#WebVerseSelector",
-    "webVerseKey": {
-      "@id": "http://ns.science.ai#webVerseKey",
-      "@type": "schema:Text"
-    },
-    "webVerseHash": {
-      "@id": "http://ns.science.ai#webVerseHash",
-      "@type": "schema:Text"
-    },
     "LinkAction": "http://ns.science.ai#LinkAction",
     "TagAction": "http://ns.science.ai#TagAction",
     "DeauthorizeAction": "http://ns.science.ai#DeauthorizeAction",
@@ -6861,12 +6829,14 @@ module.exports = {
     "UploadAction": "http://ns.science.ai#UploadAction",
     "CreateGraphAction": "http://ns.science.ai#CreateGraphAction",
     "StartWorkflowStageAction": "http://ns.science.ai#StartWorkflowStageAction",
-    "CreateWorkflowStageAction": "http://ns.science.ai#CreateWorkflowStageAction",
     "DeleteGraphAction": "http://ns.science.ai#DeleteGraphAction",
     "CreateReleaseAction": "http://ns.science.ai#CreateReleaseAction",
     "PublishAction": "http://ns.science.ai#PublishAction",
     "CreatePeriodicalAction": "http://ns.science.ai#CreatePeriodicalAction",
     "CreateOfferAction": "http://ns.science.ai#CreateOfferAction",
+    "AddContactPointAction": "http://ns.science.ai#AddContactPointAction",
+    "UpdateContactPointAction": "http://ns.science.ai#UpdateContactPointAction",
+    "DeleteContactPointAction": "http://ns.science.ai#DeleteContactPointAction",
     "MimeDetectionAction": "http://ns.science.ai#MimeDetectionAction",
     "ImageProcessingAction": "http://ns.science.ai#ImageProcessingAction",
     "AudioVideoProcessingAction": "http://ns.science.ai#AudioVideoProcessingAction",
@@ -6877,6 +6847,7 @@ module.exports = {
     "CreatePublicationTypeAction": "http://ns.science.ai#CreatePublicationTypeAction",
     "CreatePublicationElementTypeAction": "http://ns.science.ai#CreatePublicationElementTypeAction",
     "ContributorRole": "http://ns.science.ai#ContributorRole",
+    "AudienceRole": "http://ns.science.ai#AudienceRole",
     "roleAffiliation": {
       "@id": "http://ns.science.ai#roleAffiliation",
       "@type": "@id",
@@ -6953,25 +6924,11 @@ module.exports = {
       "@id": "http://ns.science.ai#objectSpecification",
       "@type": "@id"
     },
-    "AuthorGuidelines": "http://ns.science.ai#AuthorGuidelines",
-    "guidelines": {
-      "@id": "http://ns.science.ai#guidelines",
-      "@type": "@id"
-    },
     "publicationTypeCoverage": {
       "@id": "http://ns.science.ai#publicationTypeCoverage",
       "@type": "@id",
       "@container": "@set"
     },
-    "publicationElementTypeCoverage": {
-      "@id": "http://ns.science.ai#publicationElementTypeCoverage",
-      "@type": "@id"
-    },
-    "styleGuide": {
-      "@id": "http://ns.science.ai#styleGuide",
-      "@type": "@id"
-    },
-    "StyleGuide": "http://ns.science.ai#StyleGuide",
     "serviceStatus": {
       "@id": "http://ns.science.ai#serviceStatus",
       "@type": "@id"

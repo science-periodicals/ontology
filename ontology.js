@@ -818,112 +818,6 @@ module.exports = {
       status: 'testing'
     },
 
-    // deprecated selector props
-    // TODO delete on next major
-    {
-      '@id': 'sa:selectionContent',
-      '@type': 'rdf:Property',
-      label: 'selectionContent',
-      altLabel: 'selection content',
-      comment: 'The content of the selection',
-      range: 'schema:Text',
-      domain: 'sa:Selector',
-      status: 'deprecated'
-    },
-
-    {
-      '@id': 'sa:selectionHash',
-      '@type': 'rdf:Property',
-      label: 'selectionHash',
-      altLabel: 'selection hash',
-      comment: 'The hash of the content of the selection',
-      range: 'schema:Text',
-      domain: 'sa:Selector',
-      status: 'deprecated'
-    },
-
-    {
-      '@id': 'sa:nodeKey',
-      '@type': 'rdf:Property',
-      label: 'nodeKey',
-      altLabel: 'node key',
-      comment: 'The key (property) of the node targeted by the selector',
-      range: 'schema:Text',
-      domain: 'sa:NodeSelector',
-      status: 'deprecated'
-    },
-
-    {
-      '@id': 'sa:nodeId',
-      '@type': 'rdf:Property',
-      label: 'nodeId',
-      altLabel: 'node ID',
-      comment: 'The @id of the node targeted by the selector',
-      range: 'schema:Text',
-      domain: 'sa:NodeSelector',
-      status: 'deprecated'
-    },
-
-    {
-      '@id': 'sa:nodeValueId',
-      '@type': 'rdf:Property',
-      label: 'nodeValueId',
-      altLabel: 'node value ID',
-      comment:
-        'The @id of the value targeted by the selector, this is especialy useful when the value is a list',
-      range: 'schema:Text',
-      domain: 'sa:NodeSelector',
-      status: 'deprecated'
-    },
-
-    {
-      '@id': 'sa:WebVerseSelector',
-      '@type': 'rdfs:Class',
-      label: 'WebVerseSelector',
-      altLabel: 'WebVerse Selector',
-      comment:
-        'A type of selector reasonably resilient to markup modifications and edits of the content',
-      subClassOf: ['sa:NodeSelector'],
-      seeAlso: 'https://github.com/scienceai/web-verse',
-      status: 'deprecated'
-    },
-
-    {
-      '@id': 'sa:webVerseKey',
-      '@type': 'rdf:Property',
-      label: 'webVerseKey',
-      altLabel: 'web verse key',
-      comment: 'The key of a web verse selector',
-      range: 'schema:Text',
-      domain: 'sa:WebVerseSelector',
-      seeAlso: 'https://github.com/scienceai/web-verse',
-      status: 'deprecated'
-    },
-
-    {
-      '@id': 'sa:webVerseHash',
-      '@type': 'rdf:Property',
-      label: 'webVerseHash',
-      altLabel: 'web verse hash',
-      comment: 'The hash of a web verse selector',
-      range: 'schema:Text',
-      domain: 'sa:WebVerseSelector',
-      seeAlso: 'https://github.com/scienceai/web-verse',
-      status: 'deprecated'
-    },
-
-    {
-      '@id': 'sa:webVerseId',
-      '@type': 'rdf:Property',
-      label: 'webVerseId',
-      altLabel: 'web verse id',
-      comment: 'The identifier of a web verse selector',
-      range: 'schema:Text',
-      domain: 'sa:WebVerseSelector',
-      seeAlso: 'https://github.com/scienceai/web-verse',
-      status: 'deprecated'
-    },
-
     // Actions
     {
       '@id': 'sa:LinkAction',
@@ -977,7 +871,7 @@ module.exports = {
       status: 'testing'
     },
 
-    // TODO remove PaySeriesAction
+    // TODO remove PaySeriesAction ?
     {
       '@id': 'sa:PaySeriesAction',
       '@type': 'rdfs:Class',
@@ -1105,17 +999,6 @@ module.exports = {
       status: 'testing'
     },
 
-    // TODO delete CreateWorkflowStageAction on next major
-    {
-      '@id': 'sa:CreateWorkflowStageAction',
-      '@type': 'rdfs:Class',
-      label: 'CreateWorkflowStageAction',
-      altLabel: 'Create Workflow Stage Action',
-      comment: 'The act of creating a workflow stage.',
-      subClassOf: ['schema:CreateAction'],
-      status: 'deprecated'
-    },
-
     {
       '@id': 'sa:DeleteGraphAction',
       '@type': 'rdfs:Class',
@@ -1163,6 +1046,37 @@ module.exports = {
       altLabel: 'Create Offer Action',
       comment: 'The act of creating an Offer.',
       subClassOf: ['schema:CreateAction'],
+      status: 'testing'
+    },
+
+    // create custom classes for ContactPoint management as they have side effect with email validation
+    {
+      '@id': 'sa:AddContactPointAction',
+      '@type': 'rdfs:Class',
+      label: 'AddContactPointAction',
+      altLabel: 'Add Contact Point Action',
+      comment: 'The act of adding a contact point.',
+      subClassOf: ['schema:AddAction'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:UpdateContactPointAction',
+      '@type': 'rdfs:Class',
+      label: 'UpdateContactPointAction',
+      altLabel: 'Update Contact Point Action',
+      comment: 'The act of updating a contact point.',
+      subClassOf: ['schema:UpdateAction'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:DeleteContactPointAction',
+      '@type': 'rdfs:Class',
+      label: 'DeleteContactPointAction',
+      altLabel: 'Delete Contact Point Action',
+      comment: 'The act of deleting a contact point.',
+      subClassOf: ['schema:DeleteAction'],
       status: 'testing'
     },
 
@@ -1268,7 +1182,16 @@ module.exports = {
       altLabel: 'Contributor Role',
       comment: 'A subclass of Role used to describe contributor roles.',
       subClassOf: ['schema:Role'],
-      source: 'https://github.com/scienceai/scholarly.vernacular.io/issues/32',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:AudienceRole',
+      '@type': 'rdfs:Class',
+      label: 'AudienceRole',
+      altLabel: 'Audience Role',
+      comment: 'A subclass of Role used to describe audience roles.',
+      subClassOf: ['schema:Role'],
       status: 'testing'
     },
 
@@ -1559,7 +1482,6 @@ module.exports = {
       subClassOf: 'schema:Enumeration',
       status: 'testing'
     },
-    // Note: we use additionalType to point to the AuthorGuidelines from a Graph
 
     {
       '@id': 'sa:PublicationElementType',
@@ -1579,32 +1501,9 @@ module.exports = {
         'Specification defining the resources associated with the publication type',
       range: 'schema:CreativeWork',
       domain: 'sa:PublicationType',
+      source: 'https://github.com/scienceai/librarian/issues/145',
       status: 'testing'
     },
-
-    // TODO deprecate
-    {
-      '@id': 'sa:AuthorGuidelines',
-      '@type': 'rdfs:Class',
-      label: 'AuthorGuidelines',
-      comment:
-        'Guidelines providing instruction about how to write a given publication type',
-      subClassOf: 'schema:HowTo',
-      status: 'testing'
-    },
-
-    // TODO deprecate
-    {
-      '@id': 'sa:guidelines',
-      '@type': 'rdf:Property',
-      label: 'guidelines',
-      altLabel: 'guidelines',
-      comment: 'Guidelines defining the publication type',
-      range: 'schema:HowTo',
-      domain: 'sa:PublicationType',
-      status: 'testing'
-    },
-    // Note: we use additionalType to point to the AuthorGuidelines from a Graph
 
     {
       '@id': 'sa:publicationTypeCoverage',
@@ -1616,40 +1515,7 @@ module.exports = {
       domain: 'schema:Periodical',
       status: 'testing'
     },
-
-    {
-      '@id': 'sa:publicationElementTypeCoverage',
-      '@type': 'rdf:Property',
-      label: 'publicationElementTypeCoverage',
-      altLabel: 'publication element type coverage',
-      comment: 'Specification of the publication element',
-      range: 'sa:PublicationElementType',
-      domain: 'sa:AuthorGuidelines',
-      status: 'testing'
-    },
-
-    // TODO delete `sa:styleGuide`
-    {
-      '@id': 'sa:styleGuide',
-      '@type': 'rdf:Property',
-      label: 'styleGuide',
-      altLabel: 'style guide',
-      comment: 'A style guide used in the creation of the CreativeWork',
-      range: 'sa:StyleGuide',
-      domain: 'schema:CreativeWork',
-      status: 'deprecated'
-    },
-
-    // TODO delete `sa:StyleGuide`
-    {
-      '@id': 'sa:StyleGuide',
-      '@type': 'rdfs:Class',
-      label: 'StyleGuide',
-      altLabel: 'Style guide',
-      comment: 'A style guide',
-      subClassOf: ['schema:CreativeWork'],
-      status: 'deprecated'
-    },
+    // Note: we use additionalType to point to the PublicationType from a Graph
 
     // Service status
     {
@@ -1846,18 +1712,6 @@ module.exports = {
       status: 'testing'
     },
 
-    // TODO deprecate `sa:suggestedResult` as we now use 'sa:potentialResult'
-    {
-      '@id': 'sa:suggestedResult',
-      '@type': 'rdf:Property',
-      label: 'suggestedResult',
-      altLabel: 'suggested result',
-      comment: 'The suggested result of an action',
-      range: 'schema:Thing',
-      domain: 'schema:Action',
-      status: 'testing'
-    },
-
     // Endorsements (EndorseAction is in schema.org)
     {
       '@id': 'sa:PendingEndorsementActionStatus',
@@ -1981,7 +1835,6 @@ module.exports = {
     },
 
     // Merge strategies
-
     {
       '@id': 'sa:mergeStrategy',
       '@type': 'rdf:Property',
