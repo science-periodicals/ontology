@@ -1820,6 +1820,13 @@ module.exports = {
       comment: 'A trigger activated when a worker ends'
     },
 
+    {
+      '@id': 'sa:OnEndorsed',
+      '@type': 'sa:TriggerType',
+      label: 'OnEndorsed',
+      comment: 'A trigger activated when the action is endorsed'
+    },
+
     // Merge strategies
     {
       '@id': 'sa:mergeStrategy',
