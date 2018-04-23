@@ -1351,11 +1351,12 @@ module.exports = {
     },
 
     {
-      '@id': 'sa:pendingEndorsementTime',
+      '@id': 'sa:stagedTime',
       '@type': 'rdf:Property',
-      label: 'pendingEndorsementTime',
-      comment: 'The time when the action was marked as ready to be endorsed',
-      altLabel: 'pending endorsement time',
+      label: 'stagedTime',
+      comment:
+        'The time when the action was marked as staged (ready to be completed)',
+      altLabel: 'staged time',
       range: 'schema:Date',
       domain: 'schema:Action',
       status: 'testing'
@@ -1714,10 +1715,10 @@ module.exports = {
 
     // Endorsements (EndorseAction is in schema.org)
     {
-      '@id': 'sa:PendingEndorsementActionStatus',
+      '@id': 'sa:StagedActionStatus',
       '@type': 'schema:ActionStatus',
-      label: 'PendingEndorsementActionStatus',
-      comment: 'An action completed but waiting to be endorsed'
+      label: 'StagedActionStatus',
+      comment: 'An action ready to be completed'
     },
 
     // Triggers
@@ -1774,11 +1775,11 @@ module.exports = {
     },
 
     {
-      '@id': 'sa:OnObjectPendingEndorsementActionStatus',
+      '@id': 'sa:OnObjectStagedActionStatus',
       '@type': 'sa:TriggerType',
-      label: 'OnObjectPendingEndorsementActionStatus',
+      label: 'OnObjectStagedActionStatus',
       comment:
-        'A trigger activated when the action object is set to PendingEndorsementActionStatus'
+        'A trigger activated when the action object is set to StagedActionStatus or CompletedActionStatus from ActiveActionStatus, PotentialActionStatus or, FailedActionStatus'
     },
 
     {
@@ -1806,14 +1807,6 @@ module.exports = {
     },
 
     {
-      '@id': 'sa:OnOfferAccepted',
-      '@type': 'sa:TriggerType',
-      label: 'OnOfferAccepted',
-      comment:
-        'A trigger activated when the offer associated with the action is accepted'
-    },
-
-    {
       '@id': 'sa:OnPublicationAccepted',
       '@type': 'sa:TriggerType',
       label: 'OnPublicationAccepted',
@@ -1825,13 +1818,6 @@ module.exports = {
       '@type': 'sa:TriggerType',
       label: 'OnWorkerEnd',
       comment: 'A trigger activated when a worker ends'
-    },
-
-    {
-      '@id': 'sa:OnEndorsed',
-      '@type': 'sa:TriggerType',
-      label: 'OnEndorsed',
-      comment: 'A trigger activated when the action is endorsed'
     },
 
     // Merge strategies
