@@ -1827,6 +1827,18 @@ module.exports = {
       comment: 'A trigger activated when the action is endorsed'
     },
 
+    // Update
+    {
+      '@id': 'sa:ifTargetCollectionMatch',
+      '@type': 'rdf:Property',
+      label: 'ifTargetCollectionMatch',
+      comment: 'The _rev value of the target collection',
+      altLabel: 'if target collection match',
+      range: 'schema:Text',
+      domain: 'schema:UpdateAction',
+      status: 'testing'
+    },
+
     // Merge strategies
     {
       '@id': 'sa:mergeStrategy',
@@ -1849,11 +1861,19 @@ module.exports = {
     },
 
     {
-      '@id': 'sa:UpsertResourceMergeStrategy',
+      '@id': 'sa:ReconcileMergeStrategy',
       '@type': 'sa:MergeStrategyType',
-      label: 'UpsertResourceMergeStrategy',
+      label: 'UpsertMergeStrategy',
       comment:
-        'Update or create a resource, reconciliating the nodes and letting the other node of the graph untouched'
+        'Update or create a resource, reconciliating the nodes part of the object payload and letting the other nodes untouched'
+    },
+
+    {
+      '@id': 'sa:OverwriteMergeStrategy',
+      '@type': 'sa:MergeStrategyType',
+      label: 'OverwriteMergeStrategy',
+      comment:
+        'Update or create a resource, overwriting the values with the one of the update payload'
     }
   ]
 };
