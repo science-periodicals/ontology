@@ -1829,11 +1829,11 @@ module.exports = {
 
     // Update
     {
-      '@id': 'sa:ifTargetCollectionMatch',
+      '@id': 'sa:ifMatch',
       '@type': 'rdf:Property',
-      label: 'ifTargetCollectionMatch',
-      comment: 'The _rev value of the target collection',
-      altLabel: 'if target collection match',
+      label: 'ifMatch',
+      comment: 'The _rev value of the scope',
+      altLabel: 'if  match',
       range: 'schema:Text',
       domain: 'schema:UpdateAction',
       status: 'testing'

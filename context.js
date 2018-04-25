@@ -6986,8 +6986,8 @@ module.exports = {
       "@type": "@id"
     },
     "TriggerType": "http://ns.science.ai#TriggerType",
-    "ifTargetCollectionMatch": {
-      "@id": "http://ns.science.ai#ifTargetCollectionMatch",
+    "ifMatch": {
+      "@id": "http://ns.science.ai#ifMatch",
       "@type": "schema:Text"
     },
     "mergeStrategy": {
