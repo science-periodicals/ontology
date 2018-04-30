@@ -4111,9 +4111,7 @@ module.exports = {
     "eligibleTransactionVolume": {
       "@id": "schema:eligibleTransactionVolume"
     },
-    "email": {
-      "@id": "schema:email"
-    },
+    "email": "https://science.ai/email/",
     "embedUrl": {
       "@id": "schema:embedUrl",
       "@type": "@id"
@@ -6648,6 +6646,7 @@ module.exports = {
     "journal": "https://science.ai/periodical/",
     "graph": "https://science.ai/graph/",
     "release": "https://science.ai/release/",
+    "message": "https://science.ai/message/",
     "node": {
       "@id": "http://ns.science.ai#node",
       "@type": "@id"
@@ -6658,6 +6657,7 @@ module.exports = {
       "@type": "@id",
       "@container": "@set"
     },
+    "styleNode": "https://science.ai/styleNode/",
     "tag": "https://science.ai/tag/",
     "order": "https://science.ai/order/",
     "audienceRole": "https://science.ai/audienceRole/",
@@ -6812,7 +6812,7 @@ module.exports = {
       "@id": "http://ns.science.ai#endOffset",
       "@type": "schema:Number"
     },
-    "LinkAction": "http://ns.science.ai#LinkAction",
+    "ArchiveAction": "http://ns.science.ai#ArchiveAction",
     "TagAction": "http://ns.science.ai#TagAction",
     "DeauthorizeAction": "http://ns.science.ai#DeauthorizeAction",
     "UnassignAction": "http://ns.science.ai#UnassignAction",
@@ -6919,16 +6919,16 @@ module.exports = {
       "@type": "schema:Text"
     },
     "PublicationType": "http://ns.science.ai#PublicationType",
-    "PublicationElementType": "http://ns.science.ai#PublicationElementType",
+    "publicationTypeStatus": {
+      "@id": "http://ns.science.ai#publicationTypeStatus",
+      "@type": "@id"
+    },
+    "PublicationTypeStatusType": "http://ns.science.ai#PublicationTypeStatusType",
     "objectSpecification": {
       "@id": "http://ns.science.ai#objectSpecification",
       "@type": "@id"
     },
-    "publicationTypeCoverage": {
-      "@id": "http://ns.science.ai#publicationTypeCoverage",
-      "@type": "@id",
-      "@container": "@set"
-    },
+    "PublicationElementType": "http://ns.science.ai#PublicationElementType",
     "serviceStatus": {
       "@id": "http://ns.science.ai#serviceStatus",
       "@type": "@id"

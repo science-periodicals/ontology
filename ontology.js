@@ -820,13 +820,12 @@ module.exports = {
 
     // Actions
     {
-      '@id': 'sa:LinkAction',
+      '@id': 'sa:ArchiveAction',
       '@type': 'rdfs:Class',
-      label: 'LinkAction',
-      altLabel: 'Link Action',
-      comment:
-        'The act of annotating an object with the motivation of linking it',
-      subClassOf: ['schema:CommentAction'],
+      label: 'ArchiveAction',
+      altLabel: 'Archive Action',
+      comment: 'The act of archiving an object',
+      subClassOf: ['schema:Action'],
       status: 'testing'
     },
 
@@ -1483,14 +1482,47 @@ module.exports = {
       subClassOf: 'schema:Enumeration',
       status: 'testing'
     },
+    // Note: we use additionalType to point to the PublicationType from a Graph
+
+    // PublicationTypeStatus
+    {
+      '@id': 'sa:publicationTypeStatus',
+      '@type': 'rdf:Property',
+      label: 'publicationTypeStatus',
+      comment: 'The status of the publication type',
+      altLabel: 'publicationType status',
+      range: 'sa:PublicationTypeStatusType',
+      domain: 'schema:PublicationType',
+      status: 'testing'
+    },
 
     {
-      '@id': 'sa:PublicationElementType',
+      '@id': 'sa:PublicationTypeStatusType',
       '@type': 'rdfs:Class',
-      label: 'PublicationElementType',
-      comment: 'A type of publication element',
-      subClassOf: 'schema:Enumeration',
-      status: 'testing'
+      comment: 'The status of a Workflow.',
+      label: 'PublicationTypeStatusType',
+      subClassOf: ['schema:Enumeration']
+    },
+
+    {
+      '@id': 'schema:ActivePublicationTypeStatus',
+      '@type': 'sa:PublicationTypeStatusType',
+      label: 'ActivePublicationTypeStatus',
+      comment: 'A workflow specification currently activated'
+    },
+
+    {
+      '@id': 'sa:DeactivatedPublicationTypeStatus',
+      '@type': 'sa:PublicationTypeStatusType',
+      label: 'DeactivatedPublicationTypeStatus',
+      comment: 'A workflow specification currently deactivated'
+    },
+
+    {
+      '@id': 'sa:ArchivedPublicationTypeStatus',
+      '@type': 'sa:PublicationTypeStatusType',
+      label: 'ArchivedPublicationTypeStatus',
+      comment: 'An archived workflow specification '
     },
 
     {
@@ -1506,17 +1538,16 @@ module.exports = {
       status: 'testing'
     },
 
+    // This is used to define article section inline when specifying the `objectSpecification`
     {
-      '@id': 'sa:publicationTypeCoverage',
-      '@type': 'rdf:Property',
-      label: 'publicationTypeCoverage',
-      altLabel: 'publication type coverage',
-      comment: 'The type of publication covered by the periodical',
-      range: 'sa:PublicationType',
-      domain: 'schema:Periodical',
-      status: 'testing'
+      '@id': 'sa:PublicationElementType',
+      '@type': 'rdfs:Class',
+      label: 'PublicationElementType',
+      comment: 'A type of publication element',
+      subClassOf: 'schema:Enumeration',
+      status: 'testing',
+      source: 'https://github.com/scienceai/librarian/issues/145'
     },
-    // Note: we use additionalType to point to the PublicationType from a Graph
 
     // Service status
     {
@@ -1551,6 +1582,13 @@ module.exports = {
       '@type': 'sa:ServiceStatusType',
       label: 'DeactivatedServiceStatus',
       comment: 'A service currently deactivated'
+    },
+
+    {
+      '@id': 'sa:ArchivedServiceStatus',
+      '@type': 'sa:ServiceStatusType',
+      label: 'ArchivedServiceStatus',
+      comment: 'A service currently archived'
     },
 
     // Workflow
@@ -1641,6 +1679,13 @@ module.exports = {
       '@type': 'sa:WorkflowSpecificationStatusType',
       label: 'DeactivatedWorkflowSpecificationStatus',
       comment: 'A workflow specification currently deactivated'
+    },
+
+    {
+      '@id': 'sa:ArchivedWorkflowSpecificationStatus',
+      '@type': 'sa:WorkflowSpecificationStatusType',
+      label: 'ArchivedWorkflowSpecificationStatus',
+      comment: 'An archived workflow specification '
     },
 
     {
