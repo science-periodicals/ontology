@@ -1756,10 +1756,10 @@ module.exports = {
     },
 
     {
-      '@id': 'sa:AbortedActionStatus',
+      '@id': 'sa:CanceledActionStatus',
       '@type': 'schema:ActionStatus',
-      label: 'AbortedActionStatus',
-      comment: 'An action that has been aborted'
+      label: 'CanceledActionStatus',
+      comment: 'An action that has been canceled'
     },
 
     // Triggers
