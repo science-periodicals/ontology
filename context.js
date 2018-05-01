@@ -6747,12 +6747,12 @@ module.exports = {
       "@id": "http://ns.science.ai#audienceScope",
       "@type": "@id"
     },
-    "numberOfRequiredReviews": {
-      "@id": "http://ns.science.ai#numberOfRequiredReviews",
+    "minInstances": {
+      "@id": "http://ns.science.ai#minInstances",
       "@type": "schema:Number"
     },
-    "numberOfRequiredInstances": {
-      "@id": "http://ns.science.ai#numberOfRequiredInstances",
+    "maxInstances": {
+      "@id": "http://ns.science.ai#maxInstances",
       "@type": "schema:Number"
     },
     "Error": "http://ns.science.ai#Error",
@@ -6816,7 +6816,6 @@ module.exports = {
     "TagAction": "http://ns.science.ai#TagAction",
     "DeauthorizeAction": "http://ns.science.ai#DeauthorizeAction",
     "UnassignAction": "http://ns.science.ai#UnassignAction",
-    "CloneAction": "http://ns.science.ai#CloneAction",
     "PaySeriesAction": "http://ns.science.ai#PaySeriesAction",
     "CreateOrganizationAction": "http://ns.science.ai#CreateOrganizationAction",
     "AuthorizePaymentAction": "http://ns.science.ai#AuthorizePaymentAction",

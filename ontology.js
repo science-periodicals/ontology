@@ -575,23 +575,22 @@ module.exports = {
     },
 
     {
-      '@id': 'sa:numberOfRequiredReviews',
+      '@id': 'sa:minInstances',
       '@type': 'rdf:Property',
-      label: 'numberOfRequiredReviews',
-      altLabel: 'number of required reviews',
-      comment:
-        'The number of reviews required before performing an assess action',
-      domain: 'schema:AssessAction',
+      label: 'minInstances',
+      altLabel: 'minimum number of required instances',
+      comment: 'The minimum number of instances of the action required',
+      domain: 'schema:Action',
       range: 'schema:Number',
       status: 'testing'
     },
 
     {
-      '@id': 'sa:numberOfRequiredInstances',
+      '@id': 'sa:maxInstances',
       '@type': 'rdf:Property',
-      label: 'numberOfRequiredInstances',
-      altLabel: 'number of required instances',
-      comment: 'The number of instances of the action required',
+      label: 'maxInstances',
+      altLabel: 'maximum number of required instances',
+      comment: 'The maximum number of instances of the action required',
       domain: 'schema:Action',
       range: 'schema:Number',
       status: 'testing'
@@ -857,16 +856,6 @@ module.exports = {
       altLabel: 'Unassign Action',
       comment: 'The antonym of an AssignAction',
       subClassOf: ['schema:AllocateAction'],
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:CloneAction',
-      '@type': 'rdfs:Class',
-      label: 'CloneAction',
-      altLabel: 'Clone Action',
-      comment: 'The action of cloning (duplicating) an object',
-      subClassOf: ['schema:Action'],
       status: 'testing'
     },
 
@@ -1764,6 +1753,13 @@ module.exports = {
       '@type': 'schema:ActionStatus',
       label: 'StagedActionStatus',
       comment: 'An action ready to be completed'
+    },
+
+    {
+      '@id': 'sa:AbortedActionStatus',
+      '@type': 'schema:ActionStatus',
+      label: 'AbortedActionStatus',
+      comment: 'An action that has been aborted'
     },
 
     // Triggers
