@@ -6942,6 +6942,10 @@ module.exports = {
       "@id": "http://ns.science.ai#isPotentialWorkflowOf",
       "@type": "@id"
     },
+    "isPublicationTypeOf": {
+      "@id": "http://ns.science.ai#isPublicationTypeOf",
+      "@type": "@id"
+    },
     "WorkflowSpecification": "http://ns.science.ai#WorkflowSpecification",
     "workflowSpecificationStatus": {
       "@id": "http://ns.science.ai#workflowSpecificationStatus",

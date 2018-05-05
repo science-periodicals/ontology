@@ -1628,6 +1628,17 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:isPublicationTypeOf',
+      '@type': 'rdf:Property',
+      label: 'isPublicationTypeOf',
+      comment: 'The periodical for which this type is a publication type',
+      altLabel: 'is workflow of',
+      range: 'schema:Periodical',
+      domain: 'sa:PublicationType',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:WorkflowSpecification',
       '@type': 'rdfs:Class',
       label: 'WorkflowSpecification',
