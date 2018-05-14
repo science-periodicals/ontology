@@ -1101,12 +1101,11 @@ module.exports = {
     },
 
     {
-      '@id': 'sa:RdfaConversionAction',
+      '@id': 'sa:DocumentProcessingAction',
       '@type': 'rdfs:Class',
-      label: 'RDFaConversionAction',
-      altLabel: 'RDFa Conversion Action',
-      comment:
-        'The act of converting an object to RDFa (HTML web document with rich structured data markup).',
+      label: 'DocumentProcessingAction',
+      altLabel: 'Document Processing Action',
+      comment: 'The act of converting a document object to RDFa / JSON-LD.',
       subClassOf: ['schema:Action'],
       status: 'testing'
     },

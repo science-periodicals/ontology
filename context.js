@@ -6839,7 +6839,7 @@ module.exports = {
     "MimeDetectionAction": "http://ns.science.ai#MimeDetectionAction",
     "ImageProcessingAction": "http://ns.science.ai#ImageProcessingAction",
     "AudioVideoProcessingAction": "http://ns.science.ai#AudioVideoProcessingAction",
-    "RdfaConversionAction": "http://ns.science.ai#RdfaConversionAction",
+    "DocumentProcessingAction": "http://ns.science.ai#DocumentProcessingAction",
     "SemanticTaggingAction": "http://ns.science.ai#SemanticTaggingAction",
     "AssignUrlAction": "http://ns.science.ai#AssignUrlAction",
     "UnassignUrlAction": "http://ns.science.ai#UnassignUrlAction",
