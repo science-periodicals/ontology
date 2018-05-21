@@ -340,6 +340,26 @@ module.exports = {
       subClassOf: ['schema:MediaObject'],
       status: 'testing'
     },
+
+    {
+      '@id': 'sa:TextBox',
+      '@type': 'rdfs:Class',
+      label: 'TextBox',
+      altLabel: 'Text Box',
+      comment: 'A text box.',
+      subClassOf: ['schema:CreativeWork'],
+      status: 'testing'
+    },
+    {
+      '@id': 'sa:TextBoxObject',
+      '@type': 'rdfs:Class',
+      label: 'TextBoxObject',
+      altLabel: 'Text Box Object',
+      comment: 'The encoding of a text box',
+      subClassOf: ['schema:MediaObject'],
+      status: 'testing'
+    },
+
     {
       '@id': 'sa:SoftwareSourceCodeObject',
       '@type': 'rdfs:Class',

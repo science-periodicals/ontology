@@ -6706,6 +6706,8 @@ module.exports = {
     },
     "Formula": "http://ns.science.ai#Formula",
     "FormulaObject": "http://ns.science.ai#FormulaObject",
+    "TextBox": "http://ns.science.ai#TextBox",
+    "TextBoxObject": "http://ns.science.ai#TextBoxObject",
     "SoftwareSourceCodeObject": "http://ns.science.ai#SoftwareSourceCodeObject",
     "Image": "http://ns.science.ai#Image",
     "Video": "http://ns.science.ai#Video",
