@@ -307,6 +307,47 @@ module.exports = {
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
+    // Tokens
+    {
+      '@id': 'sa:Token',
+      '@type': 'rdfs:Class',
+      label: 'Token',
+      subClassOf: 'schema:Intangible',
+      comment: 'A token',
+      status: 'testing',
+      seeAlso: 'https://en.wikipedia.org/wiki/Access_token'
+    },
+    {
+      '@id': 'sa:tokenType',
+      '@type': 'rdf:Property',
+      label: 'tokenType',
+      comment: 'The type of the token.',
+      altLabel: 'token type',
+      range: 'schema:Text',
+      domain: 'sa:Token',
+      status: 'testing'
+    },
+    {
+      '@id': 'sa:tokenValue',
+      '@value': 'rdf:Property',
+      label: 'tokenValue',
+      comment: 'The value of the token.',
+      altLabel: 'token value',
+      range: 'schema:Text',
+      domain: 'sa:Token',
+      status: 'testing'
+    },
+    {
+      '@id': 'sa:password',
+      '@value': 'rdf:Property',
+      label: 'password',
+      comment: 'A password.',
+      altLabel: 'password',
+      range: 'schema:Text',
+      domain: 'sa:Token',
+      status: 'testing'
+    },
+
     // Resource and encodings
     {
       '@id': 'sa:reviewer',

@@ -6700,6 +6700,11 @@ module.exports = {
     "WPSupportingInformation": "http://ns.science.ai#WPSupportingInformation",
     "WPReferenceList": "http://ns.science.ai#WPReferenceList",
     "WPReference": "http://ns.science.ai#WPReference",
+    "Token": "http://ns.science.ai#Token",
+    "tokenType": {
+      "@id": "http://ns.science.ai#tokenType",
+      "@type": "schema:Text"
+    },
     "reviewer": {
       "@id": "http://ns.science.ai#reviewer",
       "@type": "@id"
