@@ -1100,12 +1100,12 @@ module.exports = {
 
     // create custom classes for ContactPoint management as they have side effect with email validation
     {
-      '@id': 'sa:AddContactPointAction',
+      '@id': 'sa:CreateContactPointAction',
       '@type': 'rdfs:Class',
-      label: 'AddContactPointAction',
-      altLabel: 'Add Contact Point Action',
-      comment: 'The act of adding a contact point.',
-      subClassOf: ['schema:AddAction'],
+      label: 'CreateContactPointAction',
+      altLabel: 'Create Contact Point Action',
+      comment: 'The act of creating a contact point.',
+      subClassOf: ['schema:CreateAction'],
       status: 'testing'
     },
 
@@ -1120,12 +1120,22 @@ module.exports = {
     },
 
     {
-      '@id': 'sa:DeleteContactPointAction',
+      '@id': 'sa:AssignContactPointAction',
       '@type': 'rdfs:Class',
-      label: 'DeleteContactPointAction',
-      altLabel: 'Delete Contact Point Action',
-      comment: 'The act of deleting a contact point.',
-      subClassOf: ['schema:DeleteAction'],
+      label: 'AssignContactPointAction',
+      altLabel: 'Assign Contact Point Action',
+      comment: 'The act of assigning a contact point.',
+      subClassOf: ['schema:AssignAction'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:UnassignContactPointAction',
+      '@type': 'rdfs:Class',
+      label: 'UnassignContactPointAction',
+      altLabel: 'Unassign Contact Point Action',
+      comment: 'The antonym of AssignContactPointAction.',
+      subClassOf: ['sa:UnassignAction'],
       status: 'testing'
     },
 
