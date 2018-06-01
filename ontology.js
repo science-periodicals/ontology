@@ -911,6 +911,26 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:AuthorizeContributorAction',
+      '@type': 'rdfs:Class',
+      label: 'AuthorizeContributorAction',
+      altLabel: 'Authorize Contributor Action',
+      comment: 'The act of adding a contributor (recipient) to an object',
+      subClassOf: ['schema:AuthorizeAction'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:DeauthorizeContributorAction',
+      '@type': 'rdfs:Class',
+      label: 'DeauthorizeContributorAction',
+      altLabel: 'Deauthorize Contributor Action',
+      comment: 'The act of terminating a contributor (recipient) of an object',
+      subClassOf: ['sa:DeauthorizeAction'],
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:UnassignAction',
       '@type': 'rdfs:Class',
       label: 'UnassignAction',

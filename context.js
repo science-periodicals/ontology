@@ -6822,6 +6822,8 @@ module.exports = {
     "ArchiveAction": "http://ns.science.ai#ArchiveAction",
     "TagAction": "http://ns.science.ai#TagAction",
     "DeauthorizeAction": "http://ns.science.ai#DeauthorizeAction",
+    "AuthorizeContributorAction": "http://ns.science.ai#AuthorizeContributorAction",
+    "DeauthorizeContributorAction": "http://ns.science.ai#DeauthorizeContributorAction",
     "UnassignAction": "http://ns.science.ai#UnassignAction",
     "PaySeriesAction": "http://ns.science.ai#PaySeriesAction",
     "CreateOrganizationAction": "http://ns.science.ai#CreateOrganizationAction",
