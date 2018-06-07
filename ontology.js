@@ -1617,6 +1617,18 @@ module.exports = {
       status: 'testing'
     },
 
+    // Note: we use additionalType to point to the PublicationType from a Graph
+    {
+      '@id': 'sa:publicationTypeCoverage',
+      '@type': 'rdf:Property',
+      label: 'publicationTypeCoverage',
+      altLabel: 'publication type coverage',
+      comment: 'The type of publication covered by the periodical',
+      range: 'sa:PublicationType',
+      domain: 'schema:Periodical',
+      status: 'testing'
+    },
+
     // This is used to define article section inline when specifying the `objectSpecification`
     {
       '@id': 'sa:PublicationElementType',
