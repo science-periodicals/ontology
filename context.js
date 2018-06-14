@@ -6902,6 +6902,10 @@ module.exports = {
       "@id": "http://ns.science.ai#dateRejected",
       "@type": "schema:Date"
     },
+    "dateSubmitted": {
+      "@id": "http://ns.science.ai#dateSubmitted",
+      "@type": "schema:Date"
+    },
     "CssVariable": "http://ns.science.ai#CssVariable",
     "encodesStyle": {
       "@id": "http://ns.science.ai#encodesStyle",

@@ -1451,6 +1451,17 @@ module.exports = {
       status: 'testing'
     },
 
+    {
+      '@id': 'sa:dateSubmitted',
+      '@type': 'rdf:Property',
+      label: 'dateSubmitted',
+      comment: 'The submission date',
+      altLabel: 'date submitted',
+      range: 'schema:Date',
+      domain: 'sa:Graph',
+      status: 'testing'
+    },
+
     // Styles
 
     {
