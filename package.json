@@ -32,9 +32,9 @@
   "devDependencies": {
     "browserify": "^16.1.1",
     "is-url": "^1.2.4",
-    "jsdom": "^11.8.0",
-    "mocha": "^5.1.1",
-    "nodemon": "^1.17.3",
-    "schema.org": "^3.1.0"
+    "jsdom": "^11.11.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5",
+    "schema.org": "^3.1.1"
   }
 }

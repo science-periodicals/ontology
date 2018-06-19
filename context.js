@@ -6987,6 +6987,10 @@ module.exports = {
       "@id": "http://ns.science.ai#instrumentOf",
       "@type": "@id"
     },
+    "serviceOutputOf": {
+      "@id": "http://ns.science.ai#serviceOutputOf",
+      "@type": "@id"
+    },
     "potentialResult": {
       "@id": "http://ns.science.ai#potentialResult",
       "@type": "@id"

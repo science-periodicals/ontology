@@ -1,3 +1,5 @@
+// TODO graph status (archived / rejected etc.)
+
 module.exports = {
   '@context': {
     sa: 'http://ns.science.ai#',
@@ -1801,6 +1803,8 @@ module.exports = {
       comment: 'An archived workflow specification '
     },
 
+    // pointers
+
     {
       '@id': 'sa:requiresCompletionOf',
       '@type': 'rdf:Property',
@@ -1842,6 +1846,17 @@ module.exports = {
       comment: 'The reverse property of instrument',
       altLabel: 'instrument of',
       range: 'schema:Action',
+      domain: 'schema:Action',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:serviceOutputOf',
+      '@type': 'rdf:Property',
+      label: 'serviceOutputOf',
+      comment: 'The reverse property of serviceOutput',
+      altLabel: 'service output of',
+      range: 'schema:Service',
       domain: 'schema:Action',
       status: 'testing'
     },
