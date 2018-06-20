@@ -6660,6 +6660,7 @@ module.exports = {
     "styleNode": "https://science.ai/styleNode/",
     "tag": "https://science.ai/tag/",
     "order": "https://science.ai/order/",
+    "issue": "https://science.ai/issue/",
     "audienceRole": "https://science.ai/audienceRole/",
     "assigner": "https://science.ai/assigner/",
     "subscriber": "https://science.ai/subscriber/",

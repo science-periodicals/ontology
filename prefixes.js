@@ -31,6 +31,7 @@ module.exports = {
   order: 'https://science.ai/order/',
   role: 'https://science.ai/role/',
   audience: 'https://science.ai/audience/',
+  issue: 'https://science.ai/issue/',
   audienceRole: 'https://science.ai/audienceRole/',
   vendor: 'https://science.ai/vendor/',
   customer: 'https://science.ai/customer/',
