@@ -1120,6 +1120,27 @@ module.exports = {
       status: 'testing'
     },
 
+    // Issues
+    {
+      '@id': 'sa:CreatePublicationIssueAction',
+      '@type': 'rdfs:Class',
+      label: 'CreatePublicationIssueAction',
+      altLabel: 'Create Publication Issue Action',
+      comment: 'The act of creating a publication issue.',
+      subClassOf: ['schema:CreateAction'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:CreateSpecialPublicationIssueAction',
+      '@type': 'rdfs:Class',
+      label: 'CreateSpecialPublicationIssueAction',
+      altLabel: 'Create Special Publication Issue Action',
+      comment: 'The act of creating a special publication issue.',
+      subClassOf: ['sa:CreatePublicationIssueAction'],
+      status: 'testing'
+    },
+
     // create custom classes for ContactPoint management as they have side effect with email validation
     {
       '@id': 'sa:CreateContactPointAction',
