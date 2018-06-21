@@ -6845,6 +6845,7 @@ module.exports = {
     "CreateOfferAction": "http://ns.science.ai#CreateOfferAction",
     "CreatePublicationIssueAction": "http://ns.science.ai#CreatePublicationIssueAction",
     "CreateSpecialPublicationIssueAction": "http://ns.science.ai#CreateSpecialPublicationIssueAction",
+    "SpecialPublicationIssue": "http://ns.science.ai#SpecialPublicationIssue",
     "CreateContactPointAction": "http://ns.science.ai#CreateContactPointAction",
     "UpdateContactPointAction": "http://ns.science.ai#UpdateContactPointAction",
     "AssignContactPointAction": "http://ns.science.ai#AssignContactPointAction",

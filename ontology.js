@@ -1141,6 +1141,16 @@ module.exports = {
       status: 'testing'
     },
 
+    {
+      '@id': 'sa:SpecialPublicationIssue',
+      '@type': 'rdfs:Class',
+      label: 'SpecialPublicationIssue',
+      altLabel: 'Special Publication Issue',
+      comment: 'A special issue.',
+      subClassOf: ['schema:PublicationIssue'],
+      status: 'testing'
+    },
+
     // create custom classes for ContactPoint management as they have side effect with email validation
     {
       '@id': 'sa:CreateContactPointAction',
