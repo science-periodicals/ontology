@@ -6846,6 +6846,14 @@ module.exports = {
     "CreatePublicationIssueAction": "http://ns.science.ai#CreatePublicationIssueAction",
     "CreateSpecialPublicationIssueAction": "http://ns.science.ai#CreateSpecialPublicationIssueAction",
     "SpecialPublicationIssue": "http://ns.science.ai#SpecialPublicationIssue",
+    "featuredArticle": {
+      "@id": "http://ns.science.ai#featuredArticle",
+      "@type": "@id"
+    },
+    "featuredIssue": {
+      "@id": "http://ns.science.ai#featuredIssue",
+      "@type": "@id"
+    },
     "CreateContactPointAction": "http://ns.science.ai#CreateContactPointAction",
     "UpdateContactPointAction": "http://ns.science.ai#UpdateContactPointAction",
     "AssignContactPointAction": "http://ns.science.ai#AssignContactPointAction",

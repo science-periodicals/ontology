@@ -1151,6 +1151,9 @@ module.exports = {
       status: 'testing'
     },
 
+    // Featured items
+    // We used `schema:workFeatured` (from `Event`) on Periodical
+
     // create custom classes for ContactPoint management as they have side effect with email validation
     {
       '@id': 'sa:CreateContactPointAction',
