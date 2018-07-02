@@ -6781,6 +6781,10 @@ module.exports = {
       "@id": "http://ns.science.ai#hasSelector",
       "@type": "@id"
     },
+    "hasSubSelector": {
+      "@id": "http://ns.science.ai#hasSubSelector",
+      "@type": "@id"
+    },
     "Selector": "http://ns.science.ai#Selector",
     "NodeSelector": "http://ns.science.ai#NodeSelector",
     "HtmlSelector": "http://ns.science.ai#HtmlSelector",
@@ -6820,6 +6824,7 @@ module.exports = {
       "@id": "http://ns.science.ai#endOffset",
       "@type": "schema:Number"
     },
+    "AnchorAction": "http://ns.science.ai#AnchorAction",
     "ArchiveAction": "http://ns.science.ai#ArchiveAction",
     "TagAction": "http://ns.science.ai#TagAction",
     "DeauthorizeAction": "http://ns.science.ai#DeauthorizeAction",

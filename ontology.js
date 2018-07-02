@@ -734,6 +734,17 @@ module.exports = {
       equivalentProperty: 'oa:hasSelector'
     },
 
+    {
+      '@id': 'sa:hasSubSelector',
+      '@type': 'rdf:Property',
+      label: 'hasSubSelector',
+      comment: 'A sub selector refining the selection of a parent selector',
+      range: 'sa:Selector',
+      domain: 'sa:Selector',
+      status: 'testing',
+      equivalentProperty: 'oa:refinedBy'
+    },
+
     // Selector and subclasses
     {
       '@id': 'sa:Selector',
@@ -881,6 +892,16 @@ module.exports = {
     },
 
     // Actions
+    {
+      '@id': 'sa:AnchorAction',
+      '@type': 'rdfs:Class',
+      label: 'AnchorAction',
+      altLabel: 'Anchor Action',
+      comment: 'The act of anchoring an object',
+      subClassOf: ['schema:OrganizeAction'],
+      status: 'testing'
+    },
+
     {
       '@id': 'sa:ArchiveAction',
       '@type': 'rdfs:Class',
