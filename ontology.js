@@ -802,6 +802,17 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:graph',
+      '@type': 'rdf:Property',
+      label: 'graph',
+      altLabel: 'graph',
+      comment: 'The graph targeted by the selector',
+      range: 'sa:Graph',
+      domain: 'sa:NodeSelector',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:node',
       '@type': 'rdf:Property',
       label: 'node',

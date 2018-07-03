@@ -6644,7 +6644,10 @@ module.exports = {
       "@type": "@id"
     },
     "journal": "https://science.ai/periodical/",
-    "graph": "https://science.ai/graph/",
+    "graph": {
+      "@id": "http://ns.science.ai#graph",
+      "@type": "@id"
+    },
     "release": "https://science.ai/release/",
     "message": "https://science.ai/message/",
     "node": {
