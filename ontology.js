@@ -1574,6 +1574,51 @@ module.exports = {
       status: 'testing'
     },
 
+    // service, person and organization assets
+    {
+      '@id': 'sa:isLogoOf',
+      '@type': 'rdf:Property',
+      label: 'isLogoOf',
+      altLabel: 'is logo of',
+      comment: 'the thing this object is logo of',
+      range: 'schema:Thing',
+      domain: 'sa:MediaObject',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:isImageOf',
+      '@type': 'rdf:Property',
+      label: 'isImageOf',
+      altLabel: 'is image of',
+      comment: 'the thing this object is image of',
+      range: 'schema:Thing',
+      domain: 'sa:MediaObject',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:isAudioOf',
+      '@type': 'rdf:Property',
+      label: 'isAudioOf',
+      altLabel: 'is audio of',
+      comment: 'the thing this object is audio of',
+      range: 'schema:Thing',
+      domain: 'sa:MediaObject',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:isVideoOf',
+      '@type': 'rdf:Property',
+      label: 'isVideoOf',
+      altLabel: 'is video of',
+      comment: 'the thing this object is video of',
+      range: 'schema:Thing',
+      domain: 'sa:MediaObject',
+      status: 'testing'
+    },
+
     // Graph
     {
       '@id': 'sa:Graph',

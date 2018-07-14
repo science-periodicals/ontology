@@ -6927,6 +6927,22 @@ module.exports = {
       "@id": "http://ns.science.ai#isStyleOf",
       "@type": "@id"
     },
+    "isLogoOf": {
+      "@id": "http://ns.science.ai#isLogoOf",
+      "@type": "@id"
+    },
+    "isImageOf": {
+      "@id": "http://ns.science.ai#isImageOf",
+      "@type": "@id"
+    },
+    "isAudioOf": {
+      "@id": "http://ns.science.ai#isAudioOf",
+      "@type": "@id"
+    },
+    "isVideoOf": {
+      "@id": "http://ns.science.ai#isVideoOf",
+      "@type": "@id"
+    },
     "Graph": "http://ns.science.ai#Graph",
     "resourceOf": {
       "@id": "http://ns.science.ai#resourceOf"
