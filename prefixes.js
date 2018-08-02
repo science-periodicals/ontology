@@ -8,6 +8,9 @@ module.exports = {
   sa: 'http://ns.science.ai#',
   spdx: 'https://spdx.org/licenses/',
 
+  // subjects
+  subjects: 'http://ns.nature.com/subjects/',
+
   // science.ai API
   user: 'https://science.ai/user/',
   bot: 'https://science.ai/bot/',

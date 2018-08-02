@@ -6634,6 +6634,7 @@ module.exports = {
     },
     "sa": "http://ns.science.ai#",
     "spdx": "https://spdx.org/licenses/",
+    "subjects": "http://ns.nature.com/subjects/",
     "user": "https://science.ai/user/",
     "bot": "https://science.ai/bot/",
     "tmp": "https://science.ai/tmp/",
