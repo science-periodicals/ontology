@@ -835,6 +835,18 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:selectedItem',
+      '@type': 'rdf:Property',
+      label: 'selectedItem',
+      altLabel: 'selected item',
+      comment:
+        'An identifier for the item in case where selectedProperty takes a list for value',
+      range: 'schema:Text',
+      domain: 'sa:NodeSelector',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:selectedValue',
       '@type': 'rdf:Property',
       label: 'selectedValue',
