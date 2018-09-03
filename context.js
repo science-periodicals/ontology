@@ -6833,6 +6833,7 @@ module.exports = {
       "@type": "schema:Number"
     },
     "AnchorAction": "http://ns.science.ai#AnchorAction",
+    "WithdrawAction": "http://ns.science.ai#WithdrawAction",
     "ArchiveAction": "http://ns.science.ai#ArchiveAction",
     "TagAction": "http://ns.science.ai#TagAction",
     "DeauthorizeAction": "http://ns.science.ai#DeauthorizeAction",
@@ -6921,6 +6922,10 @@ module.exports = {
     },
     "dateSubmitted": {
       "@id": "http://ns.science.ai#dateSubmitted",
+      "@type": "schema:Date"
+    },
+    "dateWithdrawn": {
+      "@id": "http://ns.science.ai#dateWithdrawn",
       "@type": "schema:Date"
     },
     "CssVariable": "http://ns.science.ai#CssVariable",
