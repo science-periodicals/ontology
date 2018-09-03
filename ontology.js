@@ -926,6 +926,16 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:WithdrawAction',
+      '@type': 'rdfs:Class',
+      label: 'WithdrawAction',
+      altLabel: 'Withdraw Action',
+      comment: 'The act of withdrawing an object',
+      subClassOf: ['schema:Action'],
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:ArchiveAction',
       '@type': 'rdfs:Class',
       label: 'ArchiveAction',
@@ -1537,6 +1547,17 @@ module.exports = {
       label: 'dateSubmitted',
       comment: 'The submission date',
       altLabel: 'date submitted',
+      range: 'schema:Date',
+      domain: 'sa:Graph',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:dateWithdrawn',
+      '@type': 'rdf:Property',
+      label: 'dateWithdrawn',
+      comment: 'The withdraw date',
+      altLabel: 'date withdrawn',
       range: 'schema:Date',
       domain: 'sa:Graph',
       status: 'testing'

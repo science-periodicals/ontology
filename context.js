@@ -6804,6 +6804,10 @@ module.exports = {
       "@id": "http://ns.science.ai#selectedProperty",
       "@type": "schema:Text"
     },
+    "selectedItem": {
+      "@id": "http://ns.science.ai#selectedItem",
+      "@type": "schema:Text"
+    },
     "selectedValue": {
       "@id": "http://ns.science.ai#selectedValue",
       "@type": "@id"
