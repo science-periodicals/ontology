@@ -2223,6 +2223,14 @@ module.exports = {
       comment: 'A trigger activated when the action is endorsed'
     },
 
+    {
+      '@id': 'sa:OnChargeSucceeded',
+      '@type': 'sa:TriggerType',
+      label: 'OnChargeSucceeded',
+      comment:
+        'A trigger activated when a payment charge associated with the action has succeded'
+    },
+
     // Update
     {
       '@id': 'sa:ifMatch',
