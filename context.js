@@ -6559,7 +6559,7 @@ module.exports = {
       "@id": "schema:volumeNumber"
     },
     "warning": {
-      "@id": "schema:warning",
+      "@id": "http://ns.science.ai#warning",
       "@type": "@id"
     },
     "warranty": {
@@ -6772,6 +6772,7 @@ module.exports = {
       "@id": "http://ns.science.ai#statusCode",
       "@type": "@id"
     },
+    "Warning": "http://ns.science.ai#Warning",
     "doi": {
       "@id": "http://ns.science.ai#doi",
       "@type": "@id"

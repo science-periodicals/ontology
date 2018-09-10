@@ -668,7 +668,6 @@ module.exports = {
       comment:
         'A runtime error, used to report information beyond the returned status code.',
       status: 'testing',
-      seeAlso: 'https://en.wikipedia.org/wiki/Access_control',
       equivalenClass: 'hydra:Error'
     },
 
@@ -681,6 +680,26 @@ module.exports = {
       domain: 'sa:Error',
       status: 'testing',
       equivalentProperty: 'hydra:statusCode'
+    },
+
+    // Warnings
+    {
+      '@id': 'sa:Warning',
+      '@type': 'rdfs:Class',
+      label: 'Warning',
+      subClassOf: 'schema:Intangible',
+      comment: 'A warning.',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:warning',
+      '@type': 'rdf:Property',
+      label: 'warning',
+      comment: 'warning.',
+      range: 'sa:Warning',
+      domain: 'schema:Action',
+      status: 'testing'
     },
 
     // Identifiers
