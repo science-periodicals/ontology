@@ -350,6 +350,59 @@ module.exports = {
       status: 'testing'
     },
 
+    // DiscountToken
+    {
+      '@id': 'sa:DiscountToken',
+      '@type': 'rdfs:Class',
+      label: 'DiscountToken',
+      subClassOf: 'sa:Token',
+      comment: 'A discount token',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:percentDiscount',
+      '@type': 'rdf:Property',
+      label: 'percentDiscount',
+      comment: 'The percent discount granted by the token',
+      altLabel: 'percent discount',
+      range: 'sa:Number',
+      domain: 'sa:DiscountToken',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:eligibleJournal',
+      '@type': 'rdf:Property',
+      label: 'eligibleJournal',
+      comment: 'The journal for which the token is valid.',
+      altLabel: 'eligible journal',
+      range: 'schema:Periodical',
+      domain: 'sa:DiscountToken',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:eligibleAction',
+      '@type': 'rdf:Property',
+      label: 'eligibleAction',
+      comment: 'The action for which the token is valid.',
+      altLabel: 'eligible action',
+      range: 'schema:Action',
+      domain: 'sa:DiscountToken',
+      status: 'testing'
+    },
+
+    // Auth token
+    {
+      '@id': 'sa:AuthenticationToken',
+      '@type': 'rdfs:Class',
+      label: 'AuthenticationToken',
+      subClassOf: 'sa:Token',
+      comment: 'An authentication token',
+      status: 'testing'
+    },
+
     // Resource and encodings
     {
       '@id': 'sa:reviewer',

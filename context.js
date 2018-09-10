@@ -6710,6 +6710,20 @@ module.exports = {
       "@id": "http://ns.science.ai#tokenType",
       "@type": "schema:Text"
     },
+    "DiscountToken": "http://ns.science.ai#DiscountToken",
+    "percentDiscount": {
+      "@id": "http://ns.science.ai#percentDiscount",
+      "@type": "@id"
+    },
+    "eligibleJournal": {
+      "@id": "http://ns.science.ai#eligibleJournal",
+      "@type": "@id"
+    },
+    "eligibleAction": {
+      "@id": "http://ns.science.ai#eligibleAction",
+      "@type": "@id"
+    },
+    "AuthenticationToken": "http://ns.science.ai#AuthenticationToken",
     "reviewer": {
       "@id": "http://ns.science.ai#reviewer",
       "@type": "@id"
