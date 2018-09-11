@@ -403,6 +403,27 @@ module.exports = {
       status: 'testing'
     },
 
+    // token actions
+    {
+      '@id': 'sa:CreateAuthenticationTokenAction',
+      '@type': 'rdfs:Class',
+      label: 'CreateAuthenticationTokenAction',
+      altLabel: 'Create Authentication Token Action',
+      comment: 'The act of creating an authentication token.',
+      subClassOf: ['schema:CreateAction'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:CreateDiscountTokenAction',
+      '@type': 'rdfs:Class',
+      label: 'CreateDiscountTokenAction',
+      altLabel: 'Create discount token Action',
+      comment: 'The act of creating a discount token.',
+      subClassOf: ['schema:CreateAction'],
+      status: 'testing'
+    },
+
     // Resource and encodings
     {
       '@id': 'sa:reviewer',

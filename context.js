@@ -6724,6 +6724,8 @@ module.exports = {
       "@type": "@id"
     },
     "AuthenticationToken": "http://ns.science.ai#AuthenticationToken",
+    "CreateAuthenticationTokenAction": "http://ns.science.ai#CreateAuthenticationTokenAction",
+    "CreateDiscountTokenAction": "http://ns.science.ai#CreateDiscountTokenAction",
     "reviewer": {
       "@id": "http://ns.science.ai#reviewer",
       "@type": "@id"
