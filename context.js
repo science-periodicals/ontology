@@ -6675,6 +6675,11 @@ module.exports = {
       "@id": "http://schema.org/suggestedResult",
       "@type": "@id"
     },
+    "knowsAbout": {
+      "@id": "http://schema.org/knowsAbout",
+      "@container": "@set",
+      "@type": "@id"
+    },
     "itemListFacet": {
       "@id": "http://ns.science.ai#itemListFacet",
       "@type": "@id"
