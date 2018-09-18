@@ -6893,7 +6893,7 @@ module.exports = {
     "UnassignUrlAction": "http://ns.science.ai#UnassignUrlAction",
     "CreatePublicationTypeAction": "http://ns.science.ai#CreatePublicationTypeAction",
     "CreatePublicationElementTypeAction": "http://ns.science.ai#CreatePublicationElementTypeAction",
-    "CreatePaymentAccount": "http://ns.science.ai#CreatePaymentAccount",
+    "CreatePaymentAccountAction": "http://ns.science.ai#CreatePaymentAccountAction",
     "PaySeriesAction": "http://ns.science.ai#PaySeriesAction",
     "AuthorizePaymentAction": "http://ns.science.ai#AuthorizePaymentAction",
     "ContributorRole": "http://ns.science.ai#ContributorRole",
