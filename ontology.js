@@ -1089,18 +1089,6 @@ module.exports = {
       status: 'testing'
     },
 
-    // TODO remove PaySeriesAction ?
-    {
-      '@id': 'sa:PaySeriesAction',
-      '@type': 'rdfs:Class',
-      label: 'PaySeriesAction',
-      altLabel: 'Pay Series Action',
-      comment:
-        'A series of PayActions, essentially representing a subscription with recurring payment.',
-      subClassOf: ['schema:PayAction'],
-      status: 'testing'
-    },
-
     {
       '@id': 'sa:CreateOrganizationAction',
       '@type': 'rdfs:Class',
@@ -1108,17 +1096,6 @@ module.exports = {
       altLabel: 'Create Organization Action',
       comment: 'An action to create an Organization.',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:AuthorizePaymentAction',
-      '@type': 'rdfs:Class',
-      label: 'AuthorizePaymentAction',
-      altLabel: 'Authorize Payment Action',
-      comment:
-        'An action to authorize payment for an Organization, Person, etc.',
-      subClassOf: ['schema:AuthorizeAction'],
       status: 'testing'
     },
 
@@ -1432,6 +1409,41 @@ module.exports = {
       altLabel: 'Create Publication Element Type Action',
       comment: 'The act of creating a publication elememt type',
       subClassOf: ['schema:CreateAction'],
+      status: 'testing'
+    },
+
+    // Payments
+    {
+      '@id': 'sa:CreatePaymentAccountAction',
+      '@type': 'rdfs:Class',
+      label: 'CreatePaymentAccountAction',
+      altLabel: 'Create Payment Account Action',
+      comment: 'The act of creating an account to process payments',
+      subClassOf: ['schema:CreateAction'],
+      status: 'testing'
+    },
+
+    // TODO remove
+    {
+      '@id': 'sa:PaySeriesAction',
+      '@type': 'rdfs:Class',
+      label: 'PaySeriesAction',
+      altLabel: 'Pay Series Action',
+      comment:
+        'A series of PayActions, essentially representing a subscription with recurring payment.',
+      subClassOf: ['schema:PayAction'],
+      status: 'testing'
+    },
+
+    // TODO remove (we use UpdateAction on the PaymentAccount)
+    {
+      '@id': 'sa:AuthorizePaymentAction',
+      '@type': 'rdfs:Class',
+      label: 'AuthorizePaymentAction',
+      altLabel: 'Authorize Payment Action',
+      comment:
+        'An action to authorize payment for an Organization, Person, etc.',
+      subClassOf: ['schema:AuthorizeAction'],
       status: 'testing'
     },
 
