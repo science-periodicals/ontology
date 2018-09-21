@@ -1,4 +1,4 @@
-// TODO graph status (archived / rejected etc.)
+// TODO? graph status (archived / rejected etc.)
 
 module.exports = {
   '@context': {
@@ -403,6 +403,38 @@ module.exports = {
       status: 'testing'
     },
 
+    // Payment token
+    {
+      '@id': 'sa:PaymentToken',
+      '@type': 'rdfs:Class',
+      label: 'PaymentToken',
+      subClassOf: 'sa:Token',
+      comment: 'A payment token',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:paymentToken',
+      '@type': 'rdf:Property',
+      label: 'paymentToken',
+      comment: 'A payment token',
+      altLabel: 'payment token',
+      range: 'sa:PaymentToken',
+      domain: 'schema:Action',
+      subPropertyOf: 'schema:instrument',
+      status: 'testing'
+    },
+
+    // Password
+    {
+      '@id': 'sa:Password',
+      '@type': 'rdfs:Class',
+      label: 'Password',
+      subClassOf: 'sa:Token',
+      comment: 'A password',
+      status: 'testing'
+    },
+
     // token actions
     {
       '@id': 'sa:CreateAuthenticationTokenAction',
@@ -421,6 +453,16 @@ module.exports = {
       altLabel: 'Create discount token Action',
       comment: 'The act of creating a discount token.',
       subClassOf: ['schema:CreateAction'],
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:UpdatePasswordAction',
+      '@type': 'rdfs:Class',
+      label: 'UpdatePasswordAction',
+      altLabel: 'Update Password Action',
+      comment: 'The act of updating a password.',
+      subClassOf: ['schema:UpdateAction'],
       status: 'testing'
     },
 
@@ -1412,7 +1454,7 @@ module.exports = {
       status: 'testing'
     },
 
-    // Payments
+    // Payments & Billing
     {
       '@id': 'sa:CreatePaymentAccountAction',
       '@type': 'rdfs:Class',
@@ -1423,19 +1465,17 @@ module.exports = {
       status: 'testing'
     },
 
-    // TODO remove
     {
-      '@id': 'sa:PaySeriesAction',
+      '@id': 'sa:CreateCustomerAccountAction',
       '@type': 'rdfs:Class',
-      label: 'PaySeriesAction',
-      altLabel: 'Pay Series Action',
-      comment:
-        'A series of PayActions, essentially representing a subscription with recurring payment.',
-      subClassOf: ['schema:PayAction'],
+      label: 'CreateCustomerAccountAction',
+      altLabel: 'Create Customer Account Action',
+      comment: 'The act of creating a customer account (for billing purposes)',
+      subClassOf: ['schema:CreateAction'],
       status: 'testing'
     },
 
-    // TODO remove (we use UpdateAction on the PaymentAccount)
+    // TODO remove ? (we use UpdateAction on the stripe customer or connect account)
     {
       '@id': 'sa:AuthorizePaymentAction',
       '@type': 'rdfs:Class',
@@ -1445,6 +1485,55 @@ module.exports = {
         'An action to authorize payment for an Organization, Person, etc.',
       subClassOf: ['schema:AuthorizeAction'],
       status: 'testing'
+    },
+
+    {
+      '@id': 'sa:customerAccountStatus',
+      '@type': 'rdf:Property',
+      label: 'customerAccountStatus',
+      comment:
+        'The status of a customer account in respect to its ability to be succesfully charged',
+      altLabel: 'customer account status',
+      range: 'sa:CustomerAccountStatusType',
+      domain: 'schema:Organization',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:CustomerAccountStatusType',
+      '@type': 'rdfs:Class',
+      comment:
+        'The status of a customer account in respect to its ability to be succesfully charged',
+      label: 'CustomerAccountStatusType',
+      subClassOf: ['schema:Enumeration']
+    },
+
+    {
+      '@id': 'sa:PendingCustomerAccountStatus',
+      '@type': 'sa:CustomerAccountStatusType',
+      label: 'PendingCustomerAccountStatus',
+      comment: 'No account has been created yet or one is being created'
+    },
+
+    {
+      '@id': 'sa:ValidCustomerAccountStatus',
+      '@type': 'sa:CustomerAccountStatusType',
+      label: 'ValidCustomerAccountStatus',
+      comment: 'Account can be charged successfully'
+    },
+
+    {
+      '@id': 'sa:InvalidCustomerAccountStatus',
+      '@type': 'sa:CustomerAccountStatusType',
+      label: 'InvalidCustomerAccountStatus',
+      comment: 'Account cannot be charged successfully'
+    },
+
+    {
+      '@id': 'sa:CanceledCustomerAccountStatus',
+      '@type': 'sa:CustomerAccountStatusType',
+      label: 'CanceledCustomerAccountStatus',
+      comment: 'The account has been canceled'
     },
 
     // Roles
@@ -1846,7 +1935,7 @@ module.exports = {
     },
 
     {
-      '@id': 'schema:ActivePublicationTypeStatus',
+      '@id': 'sa:ActivePublicationTypeStatus',
       '@type': 'sa:PublicationTypeStatusType',
       label: 'ActivePublicationTypeStatus',
       comment: 'A workflow specification currently activated'
@@ -2032,7 +2121,7 @@ module.exports = {
     },
 
     {
-      '@id': 'schema:ActiveWorkflowSpecificationStatus',
+      '@id': 'sa:ActiveWorkflowSpecificationStatus',
       '@type': 'sa:WorkflowSpecificationStatusType',
       label: 'ActiveWorkflowSpecificationStatus',
       comment: 'A workflow specification currently activated'

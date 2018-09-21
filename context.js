@@ -6729,8 +6729,15 @@ module.exports = {
       "@type": "@id"
     },
     "AuthenticationToken": "http://ns.science.ai#AuthenticationToken",
+    "PaymentToken": "http://ns.science.ai#PaymentToken",
+    "paymentToken": {
+      "@id": "http://ns.science.ai#paymentToken",
+      "@type": "@id"
+    },
+    "Password": "http://ns.science.ai#Password",
     "CreateAuthenticationTokenAction": "http://ns.science.ai#CreateAuthenticationTokenAction",
     "CreateDiscountTokenAction": "http://ns.science.ai#CreateDiscountTokenAction",
+    "UpdatePasswordAction": "http://ns.science.ai#UpdatePasswordAction",
     "reviewer": {
       "@id": "http://ns.science.ai#reviewer",
       "@type": "@id"
@@ -6894,8 +6901,13 @@ module.exports = {
     "CreatePublicationTypeAction": "http://ns.science.ai#CreatePublicationTypeAction",
     "CreatePublicationElementTypeAction": "http://ns.science.ai#CreatePublicationElementTypeAction",
     "CreatePaymentAccountAction": "http://ns.science.ai#CreatePaymentAccountAction",
-    "PaySeriesAction": "http://ns.science.ai#PaySeriesAction",
+    "CreateCustomerAccountAction": "http://ns.science.ai#CreateCustomerAccountAction",
     "AuthorizePaymentAction": "http://ns.science.ai#AuthorizePaymentAction",
+    "customerAccountStatus": {
+      "@id": "http://ns.science.ai#customerAccountStatus",
+      "@type": "@id"
+    },
+    "CustomerAccountStatusType": "http://ns.science.ai#CustomerAccountStatusType",
     "ContributorRole": "http://ns.science.ai#ContributorRole",
     "AudienceRole": "http://ns.science.ai#AudienceRole",
     "roleAffiliation": {
