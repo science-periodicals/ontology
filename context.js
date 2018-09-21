@@ -6715,6 +6715,11 @@ module.exports = {
       "@id": "http://ns.science.ai#tokenType",
       "@type": "schema:Text"
     },
+    "tokenStatus": {
+      "@id": "http://ns.science.ai#tokenStatus",
+      "@type": "@id"
+    },
+    "TokenStatusType": "http://ns.science.ai#TokenStatusType",
     "DiscountToken": "http://ns.science.ai#DiscountToken",
     "percentDiscount": {
       "@id": "http://ns.science.ai#percentDiscount",

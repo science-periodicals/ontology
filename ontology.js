@@ -350,6 +350,47 @@ module.exports = {
       status: 'testing'
     },
 
+    // token status
+    {
+      '@id': 'sa:tokenStatus',
+      '@type': 'rdf:Property',
+      label: 'tokenStatus',
+      comment: 'The status of a Token',
+      altLabel: 'token status',
+      range: 'sa:TokenStatusType',
+      domain: 'sa:Token',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:TokenStatusType',
+      '@type': 'rdfs:Class',
+      comment: 'The status of a token',
+      label: 'TokenStatusType',
+      subClassOf: ['schema:Enumeration']
+    },
+
+    {
+      '@id': 'sa:PotentialTokenStatus',
+      '@type': 'sa:TokenStatusType',
+      label: 'PotentialTokenStatus',
+      comment: 'A token waiting to be activated'
+    },
+
+    {
+      '@id': 'sa:ActiveTokenStatus',
+      '@type': 'sa:TokenStatusType',
+      label: 'ActiveTokenStatus',
+      comment: 'An active token'
+    },
+
+    {
+      '@id': 'sa:ArchivedTokenStatus',
+      '@type': 'sa:TokenStatusType',
+      label: 'ArchivedTokenStatus',
+      comment: 'An archived token'
+    },
+
     // DiscountToken
     {
       '@id': 'sa:DiscountToken',
