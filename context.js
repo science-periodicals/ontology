@@ -6896,6 +6896,11 @@ module.exports = {
     "UpdateContactPointAction": "http://ns.science.ai#UpdateContactPointAction",
     "AssignContactPointAction": "http://ns.science.ai#AssignContactPointAction",
     "UnassignContactPointAction": "http://ns.science.ai#UnassignContactPointAction",
+    "verificationStatus": {
+      "@id": "http://ns.science.ai#verificationStatus",
+      "@type": "@id"
+    },
+    "VerificationStatusType": "http://ns.science.ai#VerificationStatusType",
     "MimeDetectionAction": "http://ns.science.ai#MimeDetectionAction",
     "ImageProcessingAction": "http://ns.science.ai#ImageProcessingAction",
     "AudioVideoProcessingAction": "http://ns.science.ai#AudioVideoProcessingAction",

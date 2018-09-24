@@ -1361,6 +1361,7 @@ module.exports = {
     // Featured items
     // We used `schema:workFeatured` (from `Event`) on Periodical
 
+    // Contact points
     // create custom classes for ContactPoint management as they have side effect with email validation
     {
       '@id': 'sa:CreateContactPointAction',
@@ -1400,6 +1401,42 @@ module.exports = {
       comment: 'The antonym of AssignContactPointAction.',
       subClassOf: ['sa:UnassignAction'],
       status: 'testing'
+    },
+
+    // Note we could evolve that into a `VerificationData` with a `verifiedProperty`, `verificationMethod`
+    {
+      '@id': 'sa:verificationStatus',
+      '@type': 'rdf:Property',
+      label: 'verificationStatus',
+      comment:
+        'The status of a contact point verification process (validating email etc.)',
+      altLabel: 'verification status',
+      range: 'sa:VerificationStatusType',
+      domain: 'schema:ContactPoint',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:VerificationStatusType',
+      '@type': 'rdfs:Class',
+      comment:
+        'The status of a contact point verification process (validating email etc.)',
+      label: 'VerificationStatusType',
+      subClassOf: ['schema:Enumeration']
+    },
+
+    {
+      '@id': 'sa:UnverifiedVerificationStatus',
+      '@type': 'sa:VerificationStatusType',
+      label: 'UnverifiedVerificationStatus',
+      comment: 'Unverified contact point'
+    },
+
+    {
+      '@id': 'sa:VerifiedVerificationStatus',
+      '@type': 'sa:VerificationStatusType',
+      label: 'VerifiedVerificationStatus',
+      comment: 'Verified contact point'
     },
 
     {
