@@ -1803,6 +1803,17 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:endorsedTime',
+      '@type': 'rdf:Property',
+      label: 'endorsedTime',
+      comment: 'The time when the action was endorsed',
+      altLabel: 'endorsed time',
+      range: 'schema:Date',
+      domain: 'schema:Action',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:dateRejected',
       '@type': 'rdf:Property',
       label: 'dateRejected',
@@ -2308,6 +2319,13 @@ module.exports = {
       '@type': 'schema:ActionStatus',
       label: 'StagedActionStatus',
       comment: 'An action ready to be completed'
+    },
+
+    {
+      '@id': 'sa:EndorsedActionStatus',
+      '@type': 'schema:ActionStatus',
+      label: 'EndorsedActionStatus',
+      comment: 'An endorsed action'
     },
 
     {
