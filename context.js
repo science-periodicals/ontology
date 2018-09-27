@@ -7090,6 +7090,10 @@ module.exports = {
       "@id": "http://ns.science.ai#activateOn",
       "@type": "@id"
     },
+    "endorseOn": {
+      "@id": "http://ns.science.ai#endorseOn",
+      "@type": "@id"
+    },
     "completeOn": {
       "@id": "http://ns.science.ai#completeOn",
       "@type": "@id"

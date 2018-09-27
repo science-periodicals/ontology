@@ -2362,6 +2362,18 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:endorseOn',
+      '@type': 'rdf:Property',
+      label: 'endorseOn',
+      comment:
+        'A trigger indicating when the actionStatus property should be set to EndorsedActionStatus',
+      altLabel: 'complete on',
+      range: 'schema:TriggerType',
+      domain: 'schema:Action',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:completeOn',
       '@type': 'rdf:Property',
       label: 'completeOn',
