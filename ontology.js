@@ -1327,6 +1327,19 @@ module.exports = {
       status: 'testing'
     },
 
+    // APC negotation
+    {
+      '@id': 'sa:requestedPrice',
+      '@value': 'rdf:Property',
+      label: 'requestedPrice',
+      comment:
+        'The requested price in the same currency as the priceSpecification.',
+      altLabel: 'requested price',
+      range: 'schema:Number',
+      domain: 'schema:PayAction',
+      status: 'testing'
+    },
+
     // Issues
     {
       '@id': 'sa:CreatePublicationIssueAction',
