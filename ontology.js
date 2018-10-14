@@ -309,6 +309,42 @@ module.exports = {
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
+    // release requirements
+    {
+      '@id': 'sa:releaseRequirement',
+      '@type': 'rdf:Property',
+      label: 'releaseRequirement',
+      comment: 'The release requirement',
+      altLabel: 'release requirement',
+      range: 'sa:ReleaseRequirementType',
+      domain: 'sa:CreateReleaseAction',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:ReleaseRequirementType',
+      '@type': 'rdfs:Class',
+      comment: 'Release requirement',
+      label: 'ReleaseRequirementType',
+      subClassOf: ['schema:Enumeration']
+    },
+
+    {
+      '@id': 'sa:SubmissionReleaseRequirement',
+      '@type': 'sa:ReleaseRequirementType',
+      label: 'SubmissionReleaseRequirement',
+      comment:
+        'Submission release requirement (as opposed to production release requirement)'
+    },
+
+    {
+      '@id': 'sa:ProductionReleaseRequirement',
+      '@type': 'sa:ReleaseRequirementType',
+      label: 'ProductionReleaseRequirement',
+      comment:
+        'Production release requirement (as opposed to submission release requirement)'
+    },
+
     // Tokens
     {
       '@id': 'sa:Token',

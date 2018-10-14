@@ -6710,6 +6710,11 @@ module.exports = {
     "WPSupportingInformation": "http://ns.science.ai#WPSupportingInformation",
     "WPReferenceList": "http://ns.science.ai#WPReferenceList",
     "WPReference": "http://ns.science.ai#WPReference",
+    "releaseRequirement": {
+      "@id": "http://ns.science.ai#releaseRequirement",
+      "@type": "@id"
+    },
+    "ReleaseRequirementType": "http://ns.science.ai#ReleaseRequirementType",
     "Token": "http://ns.science.ai#Token",
     "tokenType": {
       "@id": "http://ns.science.ai#tokenType",
