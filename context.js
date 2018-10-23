@@ -6819,6 +6819,7 @@ module.exports = {
       "@id": "http://ns.science.ai#slug",
       "@type": "schema:Text"
     },
+    "ReviewAnnotation": "http://ns.science.ai#ReviewAnnotation",
     "TargetRole": "http://ns.science.ai#TargetRole",
     "hasSelector": {
       "@id": "http://ns.science.ai#hasSelector",

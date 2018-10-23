@@ -923,6 +923,15 @@ module.exports = {
 
     // Annotations see https://github.com/scienceai/ontology/issues/28
     {
+      '@id': 'sa:ReviewAnnotation',
+      '@type': 'rdfs:Class',
+      label: 'ReviewAnnotation',
+      subClassOf: 'schema:Comment',
+      comment: 'An annotation part of a Review',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:TargetRole',
       '@type': 'rdfs:Class',
       label: 'TargetRole',
