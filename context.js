@@ -6820,6 +6820,7 @@ module.exports = {
       "@type": "schema:Text"
     },
     "ReviewAnnotation": "http://ns.science.ai#ReviewAnnotation",
+    "ReleaseAnnotation": "http://ns.science.ai#ReleaseAnnotation",
     "TargetRole": "http://ns.science.ai#TargetRole",
     "hasSelector": {
       "@id": "http://ns.science.ai#hasSelector",

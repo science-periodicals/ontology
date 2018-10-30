@@ -932,6 +932,15 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:ReleaseAnnotation',
+      '@type': 'rdfs:Class',
+      label: 'ReleaseAnnotation',
+      subClassOf: 'schema:Comment',
+      comment: 'An annotation part of a release',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:TargetRole',
       '@type': 'rdfs:Class',
       label: 'TargetRole',
