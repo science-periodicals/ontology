@@ -6819,8 +6819,12 @@ module.exports = {
       "@id": "http://ns.science.ai#slug",
       "@type": "schema:Text"
     },
-    "ReviewAnnotation": "http://ns.science.ai#ReviewAnnotation",
-    "ReleaseAnnotation": "http://ns.science.ai#ReleaseAnnotation",
+    "RevisionRequestComment": "http://ns.science.ai#RevisionRequestComment",
+    "AuthorResponseComment": "http://ns.science.ai#AuthorResponseComment",
+    "revision": {
+      "@id": "http://ns.science.ai#revision",
+      "@type": "@id"
+    },
     "TargetRole": "http://ns.science.ai#TargetRole",
     "hasSelector": {
       "@id": "http://ns.science.ai#hasSelector",

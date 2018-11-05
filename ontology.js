@@ -923,20 +923,30 @@ module.exports = {
 
     // Annotations see https://github.com/scienceai/ontology/issues/28
     {
-      '@id': 'sa:ReviewAnnotation',
+      '@id': 'sa:RevisionRequestComment',
       '@type': 'rdfs:Class',
-      label: 'ReviewAnnotation',
+      label: 'RevisionRequestComment',
       subClassOf: 'schema:Comment',
-      comment: 'An annotation part of a Review',
+      comment: 'A comment used to request a revision',
       status: 'testing'
     },
 
     {
-      '@id': 'sa:ReleaseAnnotation',
+      '@id': 'sa:AuthorResponseComment',
       '@type': 'rdfs:Class',
-      label: 'ReleaseAnnotation',
+      label: 'AuthorResponseComment',
       subClassOf: 'schema:Comment',
-      comment: 'An annotation part of a release',
+      comment: 'A comment used to respond to a revision request',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:revision',
+      '@type': 'rdf:Property',
+      label: 'revision',
+      comment: 'The createReleaseAction that resulted in the revision',
+      range: 'sa:CreateReleaseAction',
+      domain: 'sa:AuthorResponseComment',
       status: 'testing'
     },
 
