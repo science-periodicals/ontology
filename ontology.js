@@ -941,6 +941,15 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:ReviewerComment',
+      '@type': 'rdfs:Class',
+      label: 'ReviewerComment',
+      subClassOf: 'schema:Comment',
+      comment: 'A review annotation',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:revision',
       '@type': 'rdf:Property',
       label: 'revision',

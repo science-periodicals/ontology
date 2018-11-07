@@ -6821,6 +6821,7 @@ module.exports = {
     },
     "RevisionRequestComment": "http://ns.science.ai#RevisionRequestComment",
     "AuthorResponseComment": "http://ns.science.ai#AuthorResponseComment",
+    "ReviewerComment": "http://ns.science.ai#ReviewerComment",
     "revision": {
       "@id": "http://ns.science.ai#revision",
       "@type": "@id"
