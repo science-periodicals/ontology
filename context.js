@@ -6819,6 +6819,10 @@ module.exports = {
       "@id": "http://ns.science.ai#slug",
       "@type": "schema:Text"
     },
+    "resultReason": {
+      "@id": "http://ns.science.ai#resultReason",
+      "@type": "schema:Text"
+    },
     "RevisionRequestComment": "http://ns.science.ai#RevisionRequestComment",
     "AuthorResponseComment": "http://ns.science.ai#AuthorResponseComment",
     "ReviewerComment": "http://ns.science.ai#ReviewerComment",

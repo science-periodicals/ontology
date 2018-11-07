@@ -921,6 +921,17 @@ module.exports = {
       equivalentProperty: 'http://www.bbc.co.uk/ontologies/provenance/slug'
     },
 
+    // Assessment
+    {
+      '@id': 'sa:resultReason',
+      '@type': 'rdf:Property',
+      label: 'resultReason',
+      comment: 'The reason that lead to the result',
+      range: 'schema:Text',
+      domain: 'schema:AssessAction',
+      status: 'testing'
+    },
+
     // Annotations see https://github.com/scienceai/ontology/issues/28
     {
       '@id': 'sa:RevisionRequestComment',
