@@ -932,6 +932,18 @@ module.exports = {
       status: 'testing'
     },
 
+    // Review
+    // used for reviewer questions
+    {
+      '@id': 'sa:answer',
+      '@type': 'rdf:Property',
+      label: 'answer',
+      comment: 'An answer',
+      range: 'schema:Answer',
+      domain: 'schema:Action',
+      status: 'testing'
+    },
+
     // Annotations see https://github.com/scienceai/ontology/issues/28
     {
       '@id': 'sa:RevisionRequestComment',

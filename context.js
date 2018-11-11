@@ -6655,7 +6655,10 @@ module.exports = {
       "@id": "http://ns.science.ai#node",
       "@type": "@id"
     },
-    "answer": "https://science.ai/answer/",
+    "answer": {
+      "@id": "http://ns.science.ai#answer",
+      "@type": "@id"
+    },
     "style": {
       "@id": "http://ns.science.ai#style",
       "@type": "@id",
