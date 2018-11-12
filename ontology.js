@@ -345,6 +345,47 @@ module.exports = {
         'Production release requirement (as opposed to submission release requirement)'
     },
 
+    // revision types
+    {
+      '@id': 'sa:revisionType',
+      '@type': 'rdf:Property',
+      label: 'revisionType',
+      comment: 'The type of revision requested during an assessment',
+      altLabel: 'revision type',
+      range: 'sa:RevisionType',
+      domain: 'schema:AssessAction',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:RevisionType',
+      '@type': 'rdfs:Class',
+      comment: 'A type of revision',
+      label: 'RevisionType',
+      subClassOf: ['schema:Enumeration']
+    },
+
+    {
+      '@id': 'sa:PatchRevision',
+      '@type': 'sa:RevisionType',
+      label: 'PatchRevision',
+      comment: 'Patch (correction) revision'
+    },
+
+    {
+      '@id': 'sa:MinorRevision',
+      '@type': 'sa:RevisionType',
+      label: 'MinorRevision',
+      comment: 'Minor revision'
+    },
+
+    {
+      '@id': 'sa:MajorRevision',
+      '@type': 'sa:RevisionType',
+      label: 'Major Revision',
+      comment: 'Major revision'
+    },
+
     // Tokens
     {
       '@id': 'sa:Token',

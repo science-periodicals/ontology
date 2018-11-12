@@ -6718,6 +6718,11 @@ module.exports = {
       "@type": "@id"
     },
     "ReleaseRequirementType": "http://ns.science.ai#ReleaseRequirementType",
+    "revisionType": {
+      "@id": "http://ns.science.ai#revisionType",
+      "@type": "@id"
+    },
+    "RevisionType": "http://ns.science.ai#RevisionType",
     "Token": "http://ns.science.ai#Token",
     "tokenType": {
       "@id": "http://ns.science.ai#tokenType",
