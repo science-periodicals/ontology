@@ -987,6 +987,35 @@ module.exports = {
 
     // Annotations see https://github.com/scienceai/ontology/issues/28
     {
+      '@id': 'sa:Annotation',
+      '@type': 'rdfs:Class',
+      label: 'Annotation',
+      subClassOf: 'schema:CreativeWork',
+      comment: 'An annotation',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:annotationTarget',
+      '@type': 'rdf:Property',
+      label: 'annotationTarget',
+      comment: 'The annotation target',
+      range: 'schema:Thing',
+      domain: 'sa:Annotation',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:annotationBody',
+      '@type': 'rdf:Property',
+      label: 'annotationBody',
+      comment: 'The annotation body',
+      range: 'schema:Thing',
+      domain: 'sa:Annotation',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:RevisionRequestComment',
       '@type': 'rdfs:Class',
       label: 'RevisionRequestComment',
