@@ -6831,6 +6831,15 @@ module.exports = {
       "@id": "http://ns.science.ai#resultReason",
       "@type": "schema:Text"
     },
+    "Annotation": "http://ns.science.ai#Annotation",
+    "annotationTarget": {
+      "@id": "http://ns.science.ai#annotationTarget",
+      "@type": "@id"
+    },
+    "annotationBody": {
+      "@id": "http://ns.science.ai#annotationBody",
+      "@type": "@id"
+    },
     "RevisionRequestComment": "http://ns.science.ai#RevisionRequestComment",
     "AuthorResponseComment": "http://ns.science.ai#AuthorResponseComment",
     "ReviewerComment": "http://ns.science.ai#ReviewerComment",
