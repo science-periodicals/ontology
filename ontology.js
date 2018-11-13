@@ -345,6 +345,18 @@ module.exports = {
         'Production release requirement (as opposed to submission release requirement)'
     },
 
+    // release notes
+    {
+      '@id': 'sa:releaseNotes',
+      '@type': 'rdf:Property',
+      label: 'releaseNotes',
+      comment: 'Release notes',
+      altLabel: 'release notes',
+      range: 'schema:Text',
+      domain: 'sa:CreateReleaseAction',
+      status: 'testing'
+    },
+
     // revision types
     {
       '@id': 'sa:revisionType',
@@ -1039,16 +1051,6 @@ module.exports = {
       label: 'ReviewerComment',
       subClassOf: 'schema:Comment',
       comment: 'A review annotation',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:revision',
-      '@type': 'rdf:Property',
-      label: 'revision',
-      comment: 'The createReleaseAction that resulted in the revision',
-      range: 'sa:CreateReleaseAction',
-      domain: 'sa:AuthorResponseComment',
       status: 'testing'
     },
 

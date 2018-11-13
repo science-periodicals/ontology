@@ -5774,8 +5774,8 @@ module.exports = {
       "@type": "Date"
     },
     "releaseNotes": {
-      "@id": "schema:releaseNotes",
-      "@type": "@id"
+      "@id": "http://ns.science.ai#releaseNotes",
+      "@type": "schema:Text"
     },
     "releaseOf": {
       "@id": "schema:releaseOf"
@@ -6843,10 +6843,6 @@ module.exports = {
     "RevisionRequestComment": "http://ns.science.ai#RevisionRequestComment",
     "AuthorResponseComment": "http://ns.science.ai#AuthorResponseComment",
     "ReviewerComment": "http://ns.science.ai#ReviewerComment",
-    "revision": {
-      "@id": "http://ns.science.ai#revision",
-      "@type": "@id"
-    },
     "TargetRole": "http://ns.science.ai#TargetRole",
     "hasSelector": {
       "@id": "http://ns.science.ai#hasSelector",
