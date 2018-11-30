@@ -6843,6 +6843,7 @@ module.exports = {
     "RevisionRequestComment": "http://ns.science.ai#RevisionRequestComment",
     "AuthorResponseComment": "http://ns.science.ai#AuthorResponseComment",
     "ReviewerComment": "http://ns.science.ai#ReviewerComment",
+    "EndorserComment": "http://ns.science.ai#EndorserComment",
     "TargetRole": "http://ns.science.ai#TargetRole",
     "hasSelector": {
       "@id": "http://ns.science.ai#hasSelector",

@@ -1055,6 +1055,16 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:EndorserComment',
+      '@type': 'rdfs:Class',
+      label: 'EndorserComment',
+      subClassOf: 'schema:Comment',
+      comment:
+        'A comment made by an endorser in the context of an EndorseAction',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:TargetRole',
       '@type': 'rdfs:Class',
       label: 'TargetRole',
