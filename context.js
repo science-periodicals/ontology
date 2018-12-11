@@ -6753,6 +6753,11 @@ module.exports = {
       "@type": "@id"
     },
     "Password": "http://ns.science.ai#Password",
+    "EncryptionKey": "http://ns.science.ai#EncryptionKey",
+    "initializationVector": {
+      "@id": "http://ns.science.ai#initializationVector",
+      "@type": "schema:Text"
+    },
     "CreateAuthenticationTokenAction": "http://ns.science.ai#CreateAuthenticationTokenAction",
     "CreateDiscountTokenAction": "http://ns.science.ai#CreateDiscountTokenAction",
     "UpdatePasswordAction": "http://ns.science.ai#UpdatePasswordAction",
