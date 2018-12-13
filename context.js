@@ -6753,11 +6753,6 @@ module.exports = {
       "@type": "@id"
     },
     "Password": "http://ns.science.ai#Password",
-    "EncryptionKey": "http://ns.science.ai#EncryptionKey",
-    "initializationVector": {
-      "@id": "http://ns.science.ai#initializationVector",
-      "@type": "schema:Text"
-    },
     "CreateAuthenticationTokenAction": "http://ns.science.ai#CreateAuthenticationTokenAction",
     "CreateDiscountTokenAction": "http://ns.science.ai#CreateDiscountTokenAction",
     "UpdatePasswordAction": "http://ns.science.ai#UpdatePasswordAction",
@@ -6801,6 +6796,10 @@ module.exports = {
     "CommunicatePermission": "http://ns.science.ai#CommunicatePermission",
     "InvitePermission": "http://ns.science.ai#InvitePermission",
     "ViewIdentityPermission": "http://ns.science.ai#ViewIdentityPermission",
+    "anonymizedName": {
+      "@id": "http://ns.science.ai#anonymizedName",
+      "@type": "schema:Text"
+    },
     "permissionScope": {
       "@id": "http://ns.science.ai#permissionScope",
       "@type": "@id",
@@ -7040,6 +7039,10 @@ module.exports = {
     "Graph": "http://ns.science.ai#Graph",
     "resourceOf": {
       "@id": "http://ns.science.ai#resourceOf"
+    },
+    "isNodeOf": {
+      "@id": "http://ns.science.ai#isNodeOf",
+      "@type": "@id"
     },
     "detailedDescription": {
       "@id": "http://ns.science.ai#detailedDescription",

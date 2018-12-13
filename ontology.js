@@ -565,28 +565,6 @@ module.exports = {
       status: 'testing'
     },
 
-    // Crypto
-    {
-      '@id': 'sa:EncryptionKey',
-      '@type': 'rdfs:Class',
-      label: 'EncryptionKey',
-      comment: 'An encryption key',
-      subClassOf: 'sa:Token',
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:initializationVector',
-      '@type': 'rdf:Property',
-      label: 'initializationVector',
-      comment: 'An initialization vector',
-      altLabel: 'initialization vector',
-      range: 'schema:Text',
-      domain: 'sa:EncryptionKey',
-      subPropertyOf: 'schema:value',
-      status: 'testing'
-    },
-
     // token actions
     {
       '@id': 'sa:CreateAuthenticationTokenAction',
@@ -872,6 +850,7 @@ module.exports = {
       status: 'testing'
     },
 
+    // blinding
     {
       '@id': 'sa:ViewIdentityPermission',
       '@type': 'rdfs:Class',
@@ -880,6 +859,17 @@ module.exports = {
       altLabel: ['view identity permission'],
       comment:
         'Permission to view the identity of other agents based on their roles.',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:anonymizedName',
+      '@type': 'rdf:Property',
+      label: 'anonymizedName',
+      altLabel: 'anonymized name',
+      comment: 'The anonymized name',
+      range: 'schema:Text',
+      domain: 'schema:Thing',
       status: 'testing'
     },
 
@@ -2166,6 +2156,17 @@ module.exports = {
       comment: 'The Graph this node is a resource of',
       range: 'sa:Graph',
       domain: 'schema:CreativeWork',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:isNodeOf',
+      '@type': 'rdf:Property',
+      label: 'isNodeOf',
+      altLabel: 'is node of',
+      comment: 'The Graph hosting this node',
+      range: 'sa:Graph',
+      domain: 'schema:Thing',
       status: 'testing'
     },
 
