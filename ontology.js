@@ -1919,6 +1919,17 @@ module.exports = {
       status: 'testing'
     },
 
+    {
+      '@id': 'sa:hasActiveRole',
+      '@type': 'rdf:Property',
+      label: 'hasActiveRole',
+      altLabel: 'has active role',
+      comment: 'The active persona incarnated by the Person',
+      range: 'schema:Role',
+      domain: 'schema:Person',
+      status: 'testing'
+    },
+
     // Facets
     {
       '@id': 'sa:Tag',

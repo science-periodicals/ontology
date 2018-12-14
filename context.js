@@ -6976,6 +6976,10 @@ module.exports = {
       "@type": "@id",
       "@container": "@set"
     },
+    "hasActiveRole": {
+      "@id": "http://ns.science.ai#hasActiveRole",
+      "@type": "@id"
+    },
     "Tag": "http://ns.science.ai#Tag",
     "Facet": "http://ns.science.ai#Facet",
     "RangeFacet": "http://ns.science.ai#RangeFacet",
