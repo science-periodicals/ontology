@@ -26,6 +26,7 @@ module.exports = {
   message: 'https://science.ai/message/',
   email: 'https://science.ai/email/',
   node: 'https://science.ai/node/',
+  anon: 'https://science.ai/anon/',
   question: 'https://science.ai/question/',
   answer: 'https://science.ai/answer/',
   style: 'https://science.ai/style/',
