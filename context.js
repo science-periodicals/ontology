@@ -6800,6 +6800,10 @@ module.exports = {
       "@id": "http://ns.science.ai#anonymizedName",
       "@type": "schema:Text"
     },
+    "anonymizedIdentifier": {
+      "@id": "http://ns.science.ai#anonymizedIdentifier",
+      "@type": "schema:Text"
+    },
     "permissionScope": {
       "@id": "http://ns.science.ai#permissionScope",
       "@type": "@id",

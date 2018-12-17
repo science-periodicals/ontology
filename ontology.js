@@ -874,6 +874,17 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:anonymizedIdentifier',
+      '@type': 'rdf:Property',
+      label: 'anonymizedIdentifier',
+      altLabel: 'anonymized identifier',
+      comment: 'The anonymized identifier',
+      range: 'schema:Text',
+      domain: 'schema:Thing',
+      status: 'testing'
+    },
+
+    {
       '@id': 'sa:permissionScope',
       '@type': 'rdf:Property',
       label: 'permissionScope',
