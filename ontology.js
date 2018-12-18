@@ -603,7 +603,7 @@ module.exports = {
       label: 'reviewer',
       comment: 'The reviewer of the content.',
       altLabel: 'reviewer',
-      range: 'sa:Person',
+      range: 'schema:Person',
       domain: 'schema:CreativeWork',
       status: 'testing'
     },
@@ -2226,6 +2226,212 @@ module.exports = {
       range: 'schema:Text',
       domain: 'schema:Article',
       status: 'testing'
+    },
+
+    // Custom properties for citations
+    {
+      '@id': 'sa:conductor',
+      '@type': 'rdf:Property',
+      label: 'conductor',
+      comment: 'The conductor of a musical organzation such as a symphony.',
+      range: 'schema:Person',
+      domain: 'schema:CreativeWork',
+      status: 'testing',
+      seeAlso: 'http://www.datypic.com/sc/ooxml/e-bibliography_Conductor-1.html'
+    },
+
+    {
+      '@id': 'sa:writer',
+      '@type': 'rdf:Property',
+      label: 'writer',
+      comment: 'The writer of the content.',
+      range: 'schema:Person',
+      domain: 'schema:CreativeWork',
+      status: 'testing',
+      seeAlso: 'http://www.datypic.com/sc/ooxml/e-bibliography_Writer-1.html'
+    },
+
+    {
+      '@id': 'sa:interviewer',
+      '@type': 'rdf:Property',
+      label: 'interviewer',
+      comment: 'The person doing an interview.',
+      range: 'schema:Person',
+      domain: 'sa:Interview',
+      status: 'testing',
+      seeAlso:
+        'http://www.datypic.com/sc/ooxml/e-bibliography_Interviewer-1.html'
+    },
+
+    {
+      '@id': 'sa:interviewee',
+      '@type': 'rdf:Property',
+      label: 'interviewee',
+      comment: 'The person being interviewed.',
+      range: 'schema:Person',
+      domain: 'sa:Interview',
+      status: 'testing',
+      seeAlso:
+        'http://www.datypic.com/sc/ooxml/e-bibliography_Interviewee-1.html'
+    },
+
+    {
+      '@id': 'sa:compiler',
+      '@type': 'rdf:Property',
+      label: 'compiler',
+      comment: 'The person compiling the media (e.g., from an interview).',
+      range: 'schema:Person',
+      domain: 'schema:CreativeWork',
+      status: 'testing',
+      seeAlso: 'http://www.datypic.com/sc/ooxml/e-bibliography_Compiler-1.html'
+    },
+
+    {
+      '@id': 'sa:inventor',
+      '@type': 'rdf:Property',
+      label: 'inventor',
+      comment:
+        'The person or persons who contributed to the claims of a patentable invention.',
+      range: 'schema:Person',
+      domain: 'sa:Patent',
+      status: 'testing',
+      seeAlso: 'https://en.wikipedia.org/wiki/Inventor_(patent)'
+    },
+
+    {
+      '@id': 'sa:reporter',
+      '@type': 'rdf:Property',
+      label: 'reporter',
+      comment: 'The person who reports.',
+      range: 'schema:Person',
+      domain: 'schema:CreativeWork',
+      status: 'testing',
+      seeAlso: 'http://www.datypic.com/sc/ooxml/e-bibliography_Reporter-1.html'
+    },
+
+    {
+      '@id': 'sa:counsel',
+      '@type': 'rdf:Property',
+      label: 'counsel',
+      comment: 'The laywer or laywers conducting a case.',
+      range: 'schema:Person',
+      domain: 'sa:Legislation',
+      status: 'testing',
+      seeAlso: 'http://www.datypic.com/sc/ooxml/e-bibliography_Counsel-1.html'
+    },
+
+    {
+      '@id': 'sa:distributor',
+      '@type': 'rdf:Property',
+      label: 'distributor',
+      comment:
+        'The organization responsible for the marketing or distribution (e.g., of a film).',
+      range: 'schema:Organization',
+      domain: 'schema:CreativeWork',
+      status: 'testing',
+      seeAlso:
+        'http://www.datypic.com/sc/ooxml/e-bibliography_Distributor-1.html'
+    },
+
+    {
+      '@id': 'sa:patentNumber',
+      '@type': 'rdf:Property',
+      label: 'patentNumber',
+      comment:
+        'An identifier assigned by a patent office, often used in a patent search (format depends on issuing office, type of patent, and when patent was issued).',
+      range: 'schema:Text',
+      domain: 'sa:Patent',
+      status: 'testing',
+      seeAlso: 'https://en.wikipedia.org/wiki/Patent'
+    },
+
+    {
+      '@id': 'sa:recordingNumber',
+      '@type': 'rdf:Property',
+      label: 'recordingNumber',
+      comment: 'An identifier assigned to audio recordings.',
+      range: 'schema:Text',
+      domain: 'schema:MusicRecording',
+      status: 'testing',
+      seeAlso:
+        'http://www.datypic.com/sc/ooxml/e-bibliography_RecordingNumber-1.html'
+    },
+
+    {
+      '@id': 'sa:chapterNumber',
+      '@type': 'rdf:Property',
+      label: 'chapterNumber',
+      comment: 'The number of a chapter (e.g., in a book).',
+      range: 'schema:Text',
+      domain: 'schema:Chapter',
+      status: 'testing',
+      seeAlso:
+        'http://www.datypic.com/sc/ooxml/e-bibliography_ChapterNumber-1.html'
+    },
+
+    {
+      '@id': 'sa:legislationIdentifier',
+      '@type': 'rdf:Property',
+      label: 'legislationIdentifier',
+      comment:
+        'An identifier for legislation, either string-based or a web-based URL/URI identifier',
+      range: 'schema:Text',
+      domain: 'sa:Legislation',
+      status: 'testing',
+      sameAs: 'https://pending.schema.org/legislationIdentifier'
+    },
+
+    {
+      '@id': 'sa:abbreviatedLegislationIdentifier',
+      '@type': 'rdf:Property',
+      label: 'abbreviatedLegislationIdentifier',
+      comment:
+        'A shortened identifier for legislation, either string-based or a web-based URL/URI identifier',
+      range: 'schema:Text',
+      domain: 'sa:Legislation',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:legislationType',
+      '@type': 'rdf:Property',
+      label: 'legislationType',
+      comment: 'The type of the legislation',
+      range: 'schema:Text',
+      domain: 'sa:Legislation',
+      status: 'testing',
+      sameAs: 'https://pending.schema.org/legislationType'
+    },
+
+    // Custom classes for citations (based on: http://www.datypic.com/sc/ooxml/t-bibliography_ST_SourceType.html)
+    {
+      '@id': 'sa:Interview',
+      '@type': 'rdfs:Class',
+      label: 'Interview',
+      comment: 'A type of creative work involving an interview with someone',
+      subClassOf: 'schema:CreativeWork',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:Patent',
+      '@type': 'rdfs:Class',
+      label: 'Patent',
+      comment:
+        'Document conferring a right or title for a set period, especially the sole right to exclude others from making, using, or selling an invention.',
+      subClassOf: 'schema:CreativeWork',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:Legislation',
+      '@type': 'rdfs:Class',
+      label: 'Legislation',
+      comment:
+        'A legal document such as an act, decree, bill, case, etc. (enforceable or not) or a component of a legal act (like an article).',
+      subClassOf: 'schema:CreativeWork',
+      status: 'testing',
+      sameAs: 'https://pending.schema.org/Legislation'
     },
 
     // Custom types

@@ -15,7 +15,6 @@ longer maintained).
 - https://github.com/DrInventor/ontologies
 - https://github.com/nature/public-npg-core-ontology
 
-
 ## Development
 
 ```
