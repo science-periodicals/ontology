@@ -7065,6 +7065,69 @@ module.exports = {
       "@id": "http://ns.science.ai#articleBackMatter",
       "@type": "schema:Text"
     },
+    "conductor": {
+      "@id": "http://ns.science.ai#conductor",
+      "@type": "@id"
+    },
+    "writer": {
+      "@id": "http://ns.science.ai#writer",
+      "@type": "@id"
+    },
+    "interviewer": {
+      "@id": "http://ns.science.ai#interviewer",
+      "@type": "@id"
+    },
+    "interviewee": {
+      "@id": "http://ns.science.ai#interviewee",
+      "@type": "@id"
+    },
+    "compiler": {
+      "@id": "http://ns.science.ai#compiler",
+      "@type": "@id"
+    },
+    "inventor": {
+      "@id": "http://ns.science.ai#inventor",
+      "@type": "@id"
+    },
+    "reporter": {
+      "@id": "http://ns.science.ai#reporter",
+      "@type": "@id"
+    },
+    "counsel": {
+      "@id": "http://ns.science.ai#counsel",
+      "@type": "@id"
+    },
+    "distributor": {
+      "@id": "http://ns.science.ai#distributor",
+      "@type": "@id"
+    },
+    "patentNumber": {
+      "@id": "http://ns.science.ai#patentNumber",
+      "@type": "schema:Text"
+    },
+    "recordingNumber": {
+      "@id": "http://ns.science.ai#recordingNumber",
+      "@type": "schema:Text"
+    },
+    "chapterNumber": {
+      "@id": "http://ns.science.ai#chapterNumber",
+      "@type": "schema:Text"
+    },
+    "legislationIdentifier": {
+      "@id": "http://ns.science.ai#legislationIdentifier",
+      "@type": "schema:Text"
+    },
+    "abbreviatedLegislationIdentifier": {
+      "@id": "http://ns.science.ai#abbreviatedLegislationIdentifier",
+      "@type": "schema:Text"
+    },
+    "legislationType": {
+      "@id": "http://ns.science.ai#legislationType",
+      "@type": "schema:Text"
+    },
+    "Interview": "http://ns.science.ai#Interview",
+    "Patent": "http://ns.science.ai#Patent",
+    "Legislation": "http://ns.science.ai#Legislation",
     "PublicationType": "http://ns.science.ai#PublicationType",
     "publicationTypeStatus": {
       "@id": "http://ns.science.ai#publicationTypeStatus",
