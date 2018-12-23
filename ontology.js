@@ -45,7 +45,7 @@ module.exports = {
       label: 'WPUnspecified',
       comment: 'A section that is unknown or otherwise unspecified.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -56,7 +56,7 @@ module.exports = {
       comment:
         "A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose.",
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -66,7 +66,7 @@ module.exports = {
       label: 'WPAbstractSection',
       comment: 'A section of an abstract',
       subClassOf: 'sa:Abstract',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -78,7 +78,7 @@ module.exports = {
       comment:
         "A brief summary, in lay terms of the impact of the work ('So what?',  'Who cares?' etc.).",
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -90,7 +90,7 @@ module.exports = {
       comment:
         'A list of items each denoting an author of a particular publication.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -102,7 +102,7 @@ module.exports = {
       comment:
         'A list of items, each denoting a contributor to a publication where such contributions are insufficient to warrant classification as author.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -113,7 +113,7 @@ module.exports = {
       altLabel: ['Affiliations'],
       comment: 'A list of affiliations for the authors and contributors.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -125,7 +125,7 @@ module.exports = {
       comment:
         'An initial description which states the purpose and goals of the following writing, and, in the case of journal articles, typically includes background information on the research topic and a review of related work in the area.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -137,7 +137,7 @@ module.exports = {
       comment:
         "A description in a research paper documenting the specialized materials and/or methods used in the work described. This description is contained in a section often entitled 'Methods and Materials', 'Experimental' or a related term.",
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -148,7 +148,7 @@ module.exports = {
       comment:
         'A list of items that are general notes on the authors, affiliations, or the document.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -158,7 +158,7 @@ module.exports = {
       label: 'WPLicense',
       comment: 'A section conveying licensing information about the document.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -170,7 +170,7 @@ module.exports = {
       comment:
         'The report of the specific findings of an investigation, given without discussion or conclusion being drawn.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -181,7 +181,7 @@ module.exports = {
       comment:
         'An interpretation and discussion of the results obtained and an analysis of their significance, in support of conclusions. These conclusions may be part of this discussion or may be included in a separate section of the document.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -192,7 +192,7 @@ module.exports = {
       comment:
         'A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -204,7 +204,7 @@ module.exports = {
       comment:
         'Usually part of the preface, or a separate section in its own right, often as part of the back matter, it acknowledges those, including funding agencies, who contributed to the undertaking of a research project described in a publication, or to the creation of the work in some way. In scientific articles, the acknowledgements are usually placed as a separated section immediately following the Discussion or Conclusions.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -214,7 +214,7 @@ module.exports = {
       label: 'WPCopyright',
       comment: 'A section containing a copyright mention for the document.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -226,7 +226,7 @@ module.exports = {
       comment:
         'A section containing acknowledgment of facts that interfere with or could reasonably be perceived as interfering with the full and objective presentation, peer review, editorial decision-making, or publication of research',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -237,7 +237,7 @@ module.exports = {
       comment:
         'Person or Organization that funded the research on which a work was based.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -248,7 +248,7 @@ module.exports = {
       comment:
         "A section containing a list of keywords as part of the document's metadata.",
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -273,7 +273,7 @@ module.exports = {
       comment:
         'Any information either auxiliary to the main content of the creative work or required to reproduce or verify the results of the creative work',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -292,7 +292,7 @@ module.exports = {
       comment:
         'A list of items each representing a reference to a specific part of the same document, or to another publication.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -305,7 +305,7 @@ module.exports = {
       comment:
         'A reference to a specific part of the document, or to another publication.',
       subClassOf: 'schema:WebPageElement',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/ontology/issues/26'
     },
 
@@ -318,7 +318,7 @@ module.exports = {
       altLabel: 'release requirement',
       range: 'sa:ReleaseRequirementType',
       domain: 'sa:CreateReleaseAction',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -354,7 +354,7 @@ module.exports = {
       altLabel: 'release notes',
       range: 'schema:Text',
       domain: 'sa:CreateReleaseAction',
-      status: 'testing'
+      status: 'stable'
     },
 
     // revision types
@@ -366,7 +366,7 @@ module.exports = {
       altLabel: 'revision type',
       range: 'sa:RevisionType',
       domain: 'schema:AssessAction',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -405,7 +405,7 @@ module.exports = {
       label: 'Token',
       subClassOf: 'schema:Intangible',
       comment: 'A token',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'https://en.wikipedia.org/wiki/Access_token'
     },
     {
@@ -416,7 +416,7 @@ module.exports = {
       altLabel: 'token type',
       range: 'schema:Text',
       domain: 'sa:Token',
-      status: 'testing'
+      status: 'stable'
     },
     {
       '@id': 'sa:tokenValue',
@@ -426,7 +426,7 @@ module.exports = {
       altLabel: 'token value',
       range: 'schema:Text',
       domain: 'sa:Token',
-      status: 'testing'
+      status: 'stable'
     },
     {
       '@id': 'sa:password',
@@ -436,7 +436,7 @@ module.exports = {
       altLabel: 'password',
       range: 'schema:Text',
       domain: 'sa:Token',
-      status: 'testing'
+      status: 'stable'
     },
 
     // token status
@@ -448,7 +448,7 @@ module.exports = {
       altLabel: 'token status',
       range: 'sa:TokenStatusType',
       domain: 'sa:Token',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -530,7 +530,7 @@ module.exports = {
       label: 'AuthenticationToken',
       subClassOf: 'sa:Token',
       comment: 'An authentication token',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Payment token
@@ -540,7 +540,7 @@ module.exports = {
       label: 'PaymentToken',
       subClassOf: 'sa:Token',
       comment: 'A payment token',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -552,7 +552,7 @@ module.exports = {
       range: 'sa:PaymentToken',
       domain: 'schema:Action',
       subPropertyOf: 'schema:instrument',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Password
@@ -562,7 +562,7 @@ module.exports = {
       label: 'Password',
       subClassOf: 'sa:Token',
       comment: 'A password',
-      status: 'testing'
+      status: 'stable'
     },
 
     // token actions
@@ -573,7 +573,7 @@ module.exports = {
       altLabel: 'Create Authentication Token Action',
       comment: 'The act of creating an authentication token.',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -593,7 +593,7 @@ module.exports = {
       altLabel: 'Update Password Action',
       comment: 'The act of updating a password.',
       subClassOf: ['schema:UpdateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     // Resource and encodings
@@ -605,7 +605,7 @@ module.exports = {
       altLabel: 'reviewer',
       range: 'schema:Person',
       domain: 'schema:CreativeWork',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -637,7 +637,7 @@ module.exports = {
       altLabel: 'Text Box',
       comment: 'A text box.',
       subClassOf: ['schema:CreativeWork'],
-      status: 'testing'
+      status: 'stable'
     },
     {
       '@id': 'sa:TextBoxObject',
@@ -646,7 +646,7 @@ module.exports = {
       altLabel: 'Text Box Object',
       comment: 'The encoding of a text box',
       subClassOf: ['schema:MediaObject'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -657,7 +657,7 @@ module.exports = {
       sameAs: 'http://purl.org/spar/doco/FormulaBox',
       comment: 'A source code object embedded in a web page',
       subClassOf: ['schema:MediaObject'],
-      status: 'testing'
+      status: 'stable'
     },
     {
       '@id': 'sa:Image',
@@ -666,7 +666,7 @@ module.exports = {
       sameAs: 'http://purl.org/spar/doco/Figure',
       comment: 'An image resource',
       subClassOf: ['schema:CreativeWork'],
-      status: 'testing'
+      status: 'stable'
     },
     {
       '@id': 'sa:Video',
@@ -674,7 +674,7 @@ module.exports = {
       label: 'Video',
       comment: 'A video resource',
       subClassOf: ['schema:CreativeWork'],
-      status: 'testing'
+      status: 'stable'
     },
     {
       '@id': 'sa:Audio',
@@ -682,7 +682,7 @@ module.exports = {
       label: 'Audio',
       comment: 'An audio resource',
       subClassOf: ['schema:CreativeWork'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -693,7 +693,7 @@ module.exports = {
       altLabel: 'Table Object',
       comment: 'A table object embedded in a web page',
       subClassOf: ['schema:MediaObject'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -704,7 +704,7 @@ module.exports = {
       comment:
         'The most generic type for creative work encodings that are documents (HTML, LaTEX, DOCX, etc.)',
       subClassOf: ['schema:MediaObject'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -714,7 +714,7 @@ module.exports = {
       subClassOf: 'schema:Comment',
       comment:
         'An ancillary piece of information typically displayed at the bottom of a page.',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Checksums
@@ -725,7 +725,7 @@ module.exports = {
       subClassOf: 'schema:Intangible',
       comment:
         'A small-size datum from an arbitrary block of digital data for the purpose of detecting errors which may have been introduced during its transmission or storage.',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'http://en.wikipedia.org/wiki/Checksum',
       equivalenClass:
         'http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#FileHash'
@@ -739,7 +739,7 @@ module.exports = {
       altLabel: ['Perceptual Hash', 'pHash'],
       comment:
         'A fingerprint of a multimedia file derived from various features from its content. Unlike cryptographic hash functions which rely on the avalanche effect of small changes in input leading to drastic changes in the output, perceptual hashes are close to one another if the features are similar and are resiliant to transformations such as rotation, skew, contrast adjustment and different compression/formats.',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'https://en.wikipedia.org/wiki/Perceptual_hashing'
     },
 
@@ -751,7 +751,7 @@ module.exports = {
       altLabel: 'content checksum',
       range: 'sa:Checksum',
       domain: 'schema:CreativeWork',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'http://en.wikipedia.org/wiki/Checksum',
       equivalentProperty:
         'http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#hasHash'
@@ -766,7 +766,7 @@ module.exports = {
         'Name of the algorithm used to compute the checksum value. Examples might include MD5, SHA-1 etc.',
       range: 'xsd:string',
       domain: 'sa:Checksum',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'http://en.wikipedia.org/wiki/Checksum',
       equivalentProperty:
         'http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#hashAlgorithm'
@@ -781,7 +781,7 @@ module.exports = {
         'The actual value of the hash in base64 if no datatype are present.',
       range: 'xsd:string',
       domain: 'sa:Checksum',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'http://en.wikipedia.org/wiki/Checksum',
       equivalentProperty:
         'http://www.semanticdesktop.org/ontologies/2007/03/22/nfo/#hashValue'
@@ -796,7 +796,7 @@ module.exports = {
       altLabel: ['progress event'],
       comment:
         'An event providing information about the progress status of an action',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -806,7 +806,7 @@ module.exports = {
       comment: 'A quantitative measure of the progress of an event',
       range: 'schema:QuantitativeValue',
       domain: 'schema:Event',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Permissions
@@ -817,7 +817,7 @@ module.exports = {
       label: 'AdminPermission',
       altLabel: ['admin permission'],
       comment: 'Permission to administrate a resource.',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -827,7 +827,7 @@ module.exports = {
       label: 'CreateGraphPermission',
       altLabel: ['create graph permission'],
       comment: 'Permission to create a Graph.',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -837,7 +837,7 @@ module.exports = {
       label: 'CommunicatePermission',
       altLabel: ['communicate permission'],
       comment: 'Permission to contact other agents based on their roles.',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -847,7 +847,7 @@ module.exports = {
       label: 'InvitePermission',
       altLabel: ['invite permission'],
       comment: 'Permission to invite other agents based on their roles.',
-      status: 'testing'
+      status: 'stable'
     },
 
     // blinding
@@ -859,7 +859,7 @@ module.exports = {
       altLabel: ['view identity permission'],
       comment:
         'Permission to view the identity of other agents based on their roles.',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -870,7 +870,7 @@ module.exports = {
       comment: 'The anonymized name',
       range: 'schema:Text',
       domain: 'schema:Thing',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -881,7 +881,7 @@ module.exports = {
       comment: 'The anonymized identifier',
       range: 'schema:Text',
       domain: 'schema:Thing',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -892,7 +892,7 @@ module.exports = {
       comment: 'The scope of a permission.',
       range: 'schema:Audience',
       domain: 'schema:DigitalDocumentPermission',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -903,7 +903,7 @@ module.exports = {
       comment: 'The scope of a audience.',
       range: 'schema:Thing',
       domain: 'schema:Audience',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -914,7 +914,7 @@ module.exports = {
       comment: 'The minimum number of instances of the action required',
       domain: 'schema:Action',
       range: 'schema:Number',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -925,7 +925,7 @@ module.exports = {
       comment: 'The maximum number of instances of the action required',
       domain: 'schema:Action',
       range: 'schema:Number',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Errors
@@ -936,7 +936,7 @@ module.exports = {
       subClassOf: 'schema:Intangible',
       comment:
         'A runtime error, used to report information beyond the returned status code.',
-      status: 'testing',
+      status: 'stable',
       equivalenClass: 'hydra:Error'
     },
 
@@ -947,7 +947,7 @@ module.exports = {
       comment: 'The HTTP status code.',
       range: 'schema:Integer',
       domain: 'sa:Error',
-      status: 'testing',
+      status: 'stable',
       equivalentProperty: 'hydra:statusCode'
     },
 
@@ -958,7 +958,7 @@ module.exports = {
       label: 'Warning',
       subClassOf: 'schema:Intangible',
       comment: 'A warning.',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -968,7 +968,7 @@ module.exports = {
       comment: 'warning.',
       range: 'sa:Warning',
       domain: 'schema:Action',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Identifiers
@@ -979,7 +979,7 @@ module.exports = {
       comment: 'A digital object identifier (DOI) for the resource.',
       range: 'schema:URL',
       domain: 'schema:CreativeWork',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'https://en.wikipedia.org/wiki/Digital_object_identifier',
       equivalentProperty: 'bibo:doi'
     },
@@ -992,7 +992,7 @@ module.exports = {
         'Part of a URL that identifies a page in human-readable keywords',
       range: 'schema:Text',
       domain: 'sa:Graph',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'https://en.wikipedia.org/wiki/Semantic_URL#Slug',
       equivalentProperty: 'http://www.bbc.co.uk/ontologies/provenance/slug'
     },
@@ -1005,7 +1005,7 @@ module.exports = {
       comment: 'The reason that lead to the result',
       range: 'schema:Text',
       domain: 'schema:AssessAction',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Review
@@ -1017,7 +1017,7 @@ module.exports = {
       comment: 'An answer',
       range: 'schema:Answer',
       domain: 'schema:Action',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Annotations see https://github.com/scienceai/ontology/issues/28
@@ -1027,7 +1027,7 @@ module.exports = {
       label: 'Annotation',
       subClassOf: 'schema:CreativeWork',
       comment: 'An annotation',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1037,7 +1037,7 @@ module.exports = {
       comment: 'The annotation target',
       range: 'schema:Thing',
       domain: 'sa:Annotation',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1047,7 +1047,7 @@ module.exports = {
       comment: 'The annotation body',
       range: 'schema:Thing',
       domain: 'sa:Annotation',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1056,7 +1056,7 @@ module.exports = {
       label: 'RevisionRequestComment',
       subClassOf: 'schema:Comment',
       comment: 'A comment used to request a revision',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1065,7 +1065,7 @@ module.exports = {
       label: 'AuthorResponseComment',
       subClassOf: 'schema:Comment',
       comment: 'A comment used to respond to a revision request',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1074,7 +1074,7 @@ module.exports = {
       label: 'ReviewerComment',
       subClassOf: 'schema:Comment',
       comment: 'A review annotation',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1084,7 +1084,7 @@ module.exports = {
       subClassOf: 'schema:Comment',
       comment:
         'A comment made by an endorser in the context of an EndorseAction',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1095,7 +1095,7 @@ module.exports = {
       comment:
         'A subclass of Role allowing to specify specific selections of a target resource',
       subClassOf: ['schema:Role'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1106,7 +1106,7 @@ module.exports = {
         'A selector identifying the region of interest within the target resource',
       range: 'sa:Selector',
       domain: 'sa:TargetRole',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'https://github.com/scienceai/web-verse',
       equivalentProperty: 'oa:hasSelector'
     },
@@ -1118,7 +1118,7 @@ module.exports = {
       comment: 'A sub selector refining the selection of a parent selector',
       range: 'sa:Selector',
       domain: 'sa:Selector',
-      status: 'testing',
+      status: 'stable',
       equivalentProperty: 'oa:refinedBy'
     },
 
@@ -1132,7 +1132,7 @@ module.exports = {
       subClassOf: ['schema:Intangible'],
       equivalentClass: 'oa:Selector',
       seeAlso: 'https://github.com/scienceai/web-verse',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1142,7 +1142,7 @@ module.exports = {
       altLabel: 'Node Selector',
       comment: 'A type of Selector to select a node within a Graph',
       subClassOf: ['sa:Selector'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1152,7 +1152,7 @@ module.exports = {
       altLabel: 'HTML Selector',
       comment: 'A type of Selector to select a HTML content',
       subClassOf: ['sa:NodeSelector'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1163,7 +1163,7 @@ module.exports = {
       comment: 'The ID of an HTML element',
       range: 'schema:Text',
       domain: 'sa:HtmlSelector',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1175,7 +1175,7 @@ module.exports = {
       range: 'schema:Text',
       domain: 'sa:HtmlSelector',
       seeAlso: 'https://github.com/scienceai/web-verse',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1186,7 +1186,7 @@ module.exports = {
       comment: 'The graph targeted by the selector',
       range: 'sa:Graph',
       domain: 'sa:NodeSelector',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1197,7 +1197,7 @@ module.exports = {
       comment: 'The node targeted by the selector',
       range: 'schema:Thing',
       domain: 'sa:NodeSelector',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1208,7 +1208,7 @@ module.exports = {
       comment: 'The property of the node targeted by the selector',
       range: 'schema:Text',
       domain: 'sa:NodeSelector',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1220,7 +1220,7 @@ module.exports = {
         'An identifier for the item in case where selectedProperty takes a list for value',
       range: 'schema:Text',
       domain: 'sa:NodeSelector',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1231,7 +1231,7 @@ module.exports = {
       comment: 'The selected value',
       range: 'schema:Thing',
       domain: 'sa:Selector',
-      status: 'testing'
+      status: 'stable'
     },
 
     // selector checksums
@@ -1243,7 +1243,7 @@ module.exports = {
       comment: 'A checksum of the selected value',
       range: 'schema:Checksum',
       domain: 'sa:Selector',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1254,7 +1254,7 @@ module.exports = {
       comment: 'A checksum of the full node (not only the selection)',
       range: 'schema:Checksum',
       domain: 'sa:NodeSelector',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1265,7 +1265,7 @@ module.exports = {
       comment: 'A checksum of the whole HTM document (not only the selection)',
       range: 'schema:Checksum',
       domain: 'sa:HtmlSelector',
-      status: 'testing'
+      status: 'stable'
     },
 
     // webverse extra props
@@ -1277,7 +1277,7 @@ module.exports = {
       comment: 'A number representing where a range selection starts',
       range: 'schema:Number',
       domain: 'sa:Selector',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1288,7 +1288,7 @@ module.exports = {
       comment: 'A number representing where a range selection ends',
       range: 'schema:Number',
       domain: 'sa:Selector',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Actions
@@ -1299,7 +1299,7 @@ module.exports = {
       altLabel: 'Anchor Action',
       comment: 'The act of anchoring an object',
       subClassOf: ['schema:OrganizeAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1309,7 +1309,7 @@ module.exports = {
       altLabel: 'Withdraw Action',
       comment: 'The act of withdrawing an object',
       subClassOf: ['schema:Action'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1319,7 +1319,7 @@ module.exports = {
       altLabel: 'Archive Action',
       comment: 'The act of archiving an object',
       subClassOf: ['schema:Action'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1330,7 +1330,7 @@ module.exports = {
       comment:
         'The act of annotating an object with the motivation of tagging / classifying it',
       subClassOf: ['schema:CommentAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1340,7 +1340,7 @@ module.exports = {
       altLabel: 'Deauthorize Action',
       comment: 'The antonym of an AuthorizeAction',
       subClassOf: ['schema:Action'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1350,7 +1350,7 @@ module.exports = {
       altLabel: 'Authorize Contributor Action',
       comment: 'The act of adding a contributor (recipient) to an object',
       subClassOf: ['schema:AuthorizeAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1360,7 +1360,7 @@ module.exports = {
       altLabel: 'Deauthorize Contributor Action',
       comment: 'The act of terminating a contributor (recipient) of an object',
       subClassOf: ['sa:DeauthorizeAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1370,7 +1370,7 @@ module.exports = {
       altLabel: 'Unassign Action',
       comment: 'The antonym of an AssignAction',
       subClassOf: ['schema:AllocateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1380,7 +1380,7 @@ module.exports = {
       altLabel: 'Create Organization Action',
       comment: 'An action to create an Organization.',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1391,7 +1391,7 @@ module.exports = {
       comment: 'An action to create a Service.',
       subClassOf: ['schema:CreateAction'],
       source: 'https://github.com/scienceai/librarian/issues/124',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1401,7 +1401,7 @@ module.exports = {
       altLabel: 'Typesetting Action',
       comment: 'The act of typesetting a document',
       subClassOf: ['schema:Action'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1411,7 +1411,7 @@ module.exports = {
       altLabel: 'Create Sandbox Action',
       comment: 'The act of creating a sandbox',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1421,7 +1421,7 @@ module.exports = {
       altLabel: 'Reset Action',
       comment: 'The act of reseting an object to its canonical state',
       subClassOf: ['sa:Action'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1432,7 +1432,7 @@ module.exports = {
       comment: 'The act of making a disclosure.',
       subClassOf: ['schema:InformAction'],
       source: 'https://github.com/scienceai/scholarly-article/issues/20',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1444,7 +1444,7 @@ module.exports = {
         'The act of acknowledging someone, with no expectation of a response.',
       subClassOf: ['schema:CommunicateAction'],
       source: 'https://github.com/scienceai/scholarly-article/issues/20',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1455,7 +1455,7 @@ module.exports = {
       comment:
         'The act of uploading an object to an entry point within some Web-based protocol.',
       subClassOf: ['schema:Action'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1465,7 +1465,7 @@ module.exports = {
       altLabel: 'Create Graph Action',
       comment: 'The act of creating a graph.',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1475,7 +1475,7 @@ module.exports = {
       altLabel: 'Start Workflow Stage Action',
       comment: 'The act of starting and instantiating a workflow stage.',
       subClassOf: ['schema:Action'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1485,7 +1485,7 @@ module.exports = {
       altLabel: 'Delete Graph Action',
       comment: 'The act of deleting a graph.',
       subClassOf: ['schema:DeleteAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1495,17 +1495,7 @@ module.exports = {
       altLabel: 'Create Release Action',
       comment: 'The act of creating a release (snapshot) of an object.',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
-    },
-
-    {
-      '@id': 'sa:PublishAction',
-      '@type': 'rdfs:Class',
-      label: 'PublishAction',
-      altLabel: 'Publish Action',
-      comment: 'The act of publishing an object.',
-      subClassOf: ['sa:CreateReleaseAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1515,7 +1505,7 @@ module.exports = {
       altLabel: 'Create Periodical Action',
       comment: 'The act of creating a periodical.',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1525,7 +1515,42 @@ module.exports = {
       altLabel: 'Create Offer Action',
       comment: 'The act of creating an Offer.',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
+      status: 'stable'
+    },
+
+    // PublishAction
+    {
+      '@id': 'sa:PublishAction',
+      '@type': 'rdfs:Class',
+      label: 'PublishAction',
+      altLabel: 'Publish Action',
+      comment: 'The act of publishing an object.',
+      subClassOf: ['sa:CreateReleaseAction'],
+      status: 'stable'
+    },
+
+    {
+      '@id': 'sa:publishIdentityOf',
+      '@value': 'rdf:Property',
+      label: 'publishIdentityOf',
+      comment:
+        'Specifies the audiences that will be made available publicly upon publication',
+      altLabel: 'publish identity of',
+      range: 'schema:Audience',
+      domain: 'sa:PublishAction',
+      status: 'stable'
+    },
+
+    {
+      '@id': 'sa:publishActionInstanceOf',
+      '@value': 'rdf:Property',
+      label: 'publishActionInstanceOf',
+      comment:
+        'Specifies the action templates (part of a workflow specification) whose instances will be made available publicly upon publication',
+      altLabel: 'publish action instance of',
+      range: 'schema:Action',
+      domain: 'sa:PublishAction',
+      status: 'stable'
     },
 
     // APC negotation
@@ -1538,7 +1563,7 @@ module.exports = {
       altLabel: 'requested price',
       range: 'schema:Number',
       domain: 'schema:PayAction',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Issues
@@ -1549,7 +1574,7 @@ module.exports = {
       altLabel: 'Create Publication Issue Action',
       comment: 'The act of creating a publication issue.',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1559,7 +1584,7 @@ module.exports = {
       altLabel: 'Create Special Publication Issue Action',
       comment: 'The act of creating a special publication issue.',
       subClassOf: ['sa:CreatePublicationIssueAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1569,7 +1594,7 @@ module.exports = {
       altLabel: 'Special Publication Issue',
       comment: 'A special issue.',
       subClassOf: ['schema:PublicationIssue'],
-      status: 'testing'
+      status: 'stable'
     },
 
     // Featured items
@@ -1584,7 +1609,7 @@ module.exports = {
       altLabel: 'Create Contact Point Action',
       comment: 'The act of creating a contact point.',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1594,7 +1619,7 @@ module.exports = {
       altLabel: 'Update Contact Point Action',
       comment: 'The act of updating a contact point.',
       subClassOf: ['schema:UpdateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1604,7 +1629,7 @@ module.exports = {
       altLabel: 'Assign Contact Point Action',
       comment: 'The act of assigning a contact point.',
       subClassOf: ['schema:AssignAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1614,7 +1639,7 @@ module.exports = {
       altLabel: 'Unassign Contact Point Action',
       comment: 'The antonym of AssignContactPointAction.',
       subClassOf: ['sa:UnassignAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     // Note we could evolve that into a `VerificationData` with a `verifiedProperty`, `verificationMethod`
@@ -1627,7 +1652,7 @@ module.exports = {
       altLabel: 'verification status',
       range: 'sa:VerificationStatusType',
       domain: 'schema:ContactPoint',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1660,7 +1685,7 @@ module.exports = {
       altLabel: 'Mime Detection Action',
       comment: 'The act of detecting the MIME type of an object.',
       subClassOf: ['schema:Action'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1671,7 +1696,7 @@ module.exports = {
       comment:
         'The act of converting an image object to web first format and extracting metadata about the object.',
       subClassOf: ['schema:Action'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1682,7 +1707,7 @@ module.exports = {
       comment:
         'The act of converting an audio or video object to web first format and extracting metadata about the object.',
       subClassOf: ['schema:Action'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1692,7 +1717,7 @@ module.exports = {
       altLabel: 'Document Processing Action',
       comment: 'The act of converting a document object to RDFa / JSON-LD.',
       subClassOf: ['schema:Action'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1703,7 +1728,7 @@ module.exports = {
       comment:
         'The act of extracting semantic tags provided by web ontologies (OWL) or vocabularies (RDF Schema) from an object.',
       subClassOf: ['schema:Action'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1713,7 +1738,7 @@ module.exports = {
       altLabel: 'Assign URL Action',
       comment: 'The act of assigning an URL to an object',
       subClassOf: ['schema:AssignAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1723,7 +1748,7 @@ module.exports = {
       altLabel: 'Unassign URL Action',
       comment: 'The antonym of an AssignUrlAction',
       subClassOf: ['schema:UnassignAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1733,7 +1758,7 @@ module.exports = {
       altLabel: 'Create Publication Type Action',
       comment: 'The act of creating a publication type',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1743,7 +1768,7 @@ module.exports = {
       altLabel: 'Create Publication Element Type Action',
       comment: 'The act of creating a publication elememt type',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     // Payments & Billing
@@ -1754,7 +1779,7 @@ module.exports = {
       altLabel: 'Create Payment Account Action',
       comment: 'The act of creating an account to process payments',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1764,7 +1789,7 @@ module.exports = {
       altLabel: 'Create Customer Account Action',
       comment: 'The act of creating a customer account (for billing purposes)',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     // TODO remove ? (we use UpdateAction on the stripe customer or connect account)
@@ -1776,7 +1801,7 @@ module.exports = {
       comment:
         'An action to authorize payment for an Organization, Person, etc.',
       subClassOf: ['schema:AuthorizeAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1788,7 +1813,7 @@ module.exports = {
       altLabel: 'customer account status',
       range: 'sa:CustomerAccountStatusType',
       domain: 'schema:Organization',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1836,7 +1861,7 @@ module.exports = {
       altLabel: 'Contributor Role',
       comment: 'A subclass of Role used to describe contributor roles.',
       subClassOf: ['schema:Role'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1846,7 +1871,7 @@ module.exports = {
       altLabel: 'Audience Role',
       comment: 'A subclass of Role used to describe audience roles.',
       subClassOf: ['schema:Role'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1858,7 +1883,7 @@ module.exports = {
       range: 'schema:Organization',
       domain: 'sa:AuthoringRole',
       source: 'https://github.com/scienceai/scholarly.vernacular.io/issues/32',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1871,7 +1896,7 @@ module.exports = {
       range: 'schema:ContactPoint',
       domain: 'sa:AuthoringRole',
       source: 'https://github.com/scienceai/scholarly.vernacular.io/issues/32',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1882,7 +1907,7 @@ module.exports = {
       comment: 'A subclass of Role used to describe sponsoring roles.',
       subClassOf: ['schema:Role'],
       source: 'https://github.com/scienceai/scholarly-article/issues/16',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1892,7 +1917,7 @@ module.exports = {
       altLabel: 'Funder Role',
       comment: 'A subclass of Role used to describe funding (financing) roles.',
       subClassOf: ['schema:SponsorRole'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1904,7 +1929,7 @@ module.exports = {
       range: 'schema:Offer',
       domain: 'sa:SponsorRole',
       source: 'https://github.com/scienceai/scholarly-article/issues/16',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1915,7 +1940,7 @@ module.exports = {
       comment: 'The most generic type of funding source',
       subClassOf: ['schema:Offer'],
       source: 'https://github.com/scienceai/scholarly-article/issues/16',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1927,7 +1952,7 @@ module.exports = {
       range: 'schema:Action',
       domain: 'sa:ContributorRole',
       source: 'https://github.com/scienceai/scholarly-article/issues/20',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1938,7 +1963,7 @@ module.exports = {
       comment: 'The active persona incarnated by the Person',
       range: 'schema:Role',
       domain: 'schema:Person',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Facets
@@ -1949,7 +1974,7 @@ module.exports = {
       comment:
         'A non-hierarchical keyword or term assigned to a piece of information',
       subClassOf: ['schema:CreativeWork'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1958,7 +1983,7 @@ module.exports = {
       label: 'Facet',
       comment: 'A facet used in faceted search',
       subClassOf: ['schema:Intangible'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1967,7 +1992,7 @@ module.exports = {
       label: 'Tag',
       comment: 'A facet computed over a range',
       subClassOf: ['sa:Facet'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1978,7 +2003,7 @@ module.exports = {
       comment: 'Facets computed from the ItemList',
       range: 'sa:Facet',
       domain: 'schema:ItemList',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -1989,7 +2014,7 @@ module.exports = {
       comment: 'Total number of a collection of items',
       range: 'schema:Intangible',
       domain: 'sa:Facet',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Times and dates
@@ -2001,7 +2026,7 @@ module.exports = {
       altLabel: 'expected duration',
       range: 'schema:Duration',
       domain: 'schema:Action',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2012,7 +2037,7 @@ module.exports = {
       altLabel: 'activated time',
       range: 'schema:Date',
       domain: 'schema:Action',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2024,7 +2049,7 @@ module.exports = {
       altLabel: 'staged time',
       range: 'schema:Date',
       domain: 'schema:Action',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2035,7 +2060,7 @@ module.exports = {
       altLabel: 'endorsed time',
       range: 'schema:Date',
       domain: 'schema:Action',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2046,7 +2071,7 @@ module.exports = {
       altLabel: 'date rejected',
       range: 'schema:Date',
       domain: 'sa:Graph',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2057,7 +2082,7 @@ module.exports = {
       altLabel: 'date submitted',
       range: 'schema:Date',
       domain: 'sa:Graph',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2068,7 +2093,7 @@ module.exports = {
       altLabel: 'date withdrawn',
       range: 'schema:Date',
       domain: 'sa:Graph',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Styles
@@ -2080,7 +2105,7 @@ module.exports = {
       altLabel: 'CSS variable',
       comment: 'A CSS variable',
       subClassOf: ['schema:PropertyValue'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2090,7 +2115,7 @@ module.exports = {
       comment: 'describes how the creative work should be styled',
       range: 'sa:CssVariable',
       domain: 'schema:CreativeWork',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2101,7 +2126,7 @@ module.exports = {
       comment: 'the CSS asset encoded by this MediaObject',
       range: 'sa:CssVariable',
       domain: 'schema:MediaObject',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2112,7 +2137,7 @@ module.exports = {
       comment: 'the CreativeWork styled by this style',
       range: 'schema:CreativeWork',
       domain: 'sa:CssVariable',
-      status: 'testing'
+      status: 'stable'
     },
 
     // service, person and organization assets
@@ -2124,7 +2149,7 @@ module.exports = {
       comment: 'the thing this object is logo of',
       range: 'schema:Thing',
       domain: 'sa:MediaObject',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2135,7 +2160,7 @@ module.exports = {
       comment: 'the thing this object is image of',
       range: 'schema:Thing',
       domain: 'sa:MediaObject',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2146,7 +2171,7 @@ module.exports = {
       comment: 'the thing this object is audio of',
       range: 'schema:Thing',
       domain: 'sa:MediaObject',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2157,7 +2182,7 @@ module.exports = {
       comment: 'the thing this object is video of',
       range: 'schema:Thing',
       domain: 'sa:MediaObject',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Graph
@@ -2167,7 +2192,7 @@ module.exports = {
       label: 'Graph',
       comment: 'A graph',
       subClassOf: ['schema:CreativeWork'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2178,7 +2203,7 @@ module.exports = {
       comment: 'The Graph this node is a resource of',
       range: 'sa:Graph',
       domain: 'schema:CreativeWork',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2189,7 +2214,7 @@ module.exports = {
       comment: 'The Graph hosting this node',
       range: 'sa:Graph',
       domain: 'schema:Thing',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Creative work props
@@ -2202,7 +2227,7 @@ module.exports = {
       altLabel: 'detailed description',
       range: 'schema:CreativeWork',
       domain: 'schema:CreativeWork',
-      status: 'testing',
+      status: 'stable',
       equivalentProperty: 'http://schema.googleapis.com/detailedDescription'
     },
 
@@ -2214,7 +2239,7 @@ module.exports = {
       comment: 'The article front matter',
       range: 'schema:Text',
       domain: 'schema:Article',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2225,7 +2250,7 @@ module.exports = {
       comment: 'The article back matter',
       range: 'schema:Text',
       domain: 'schema:Article',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Custom properties for citations
@@ -2236,7 +2261,7 @@ module.exports = {
       comment: 'The conductor of a musical organzation such as a symphony.',
       range: 'schema:Person',
       domain: 'schema:CreativeWork',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'http://www.datypic.com/sc/ooxml/e-bibliography_Conductor-1.html'
     },
 
@@ -2247,7 +2272,7 @@ module.exports = {
       comment: 'The writer of the content.',
       range: 'schema:Person',
       domain: 'schema:CreativeWork',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'http://www.datypic.com/sc/ooxml/e-bibliography_Writer-1.html'
     },
 
@@ -2258,7 +2283,7 @@ module.exports = {
       comment: 'The person doing an interview.',
       range: 'schema:Person',
       domain: 'sa:Interview',
-      status: 'testing',
+      status: 'stable',
       seeAlso:
         'http://www.datypic.com/sc/ooxml/e-bibliography_Interviewer-1.html'
     },
@@ -2270,7 +2295,7 @@ module.exports = {
       comment: 'The person being interviewed.',
       range: 'schema:Person',
       domain: 'sa:Interview',
-      status: 'testing',
+      status: 'stable',
       seeAlso:
         'http://www.datypic.com/sc/ooxml/e-bibliography_Interviewee-1.html'
     },
@@ -2282,7 +2307,7 @@ module.exports = {
       comment: 'The person compiling the media (e.g., from an interview).',
       range: 'schema:Person',
       domain: 'schema:CreativeWork',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'http://www.datypic.com/sc/ooxml/e-bibliography_Compiler-1.html'
     },
 
@@ -2294,7 +2319,7 @@ module.exports = {
         'The person or persons who contributed to the claims of a patentable invention.',
       range: 'schema:Person',
       domain: 'sa:Patent',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'https://en.wikipedia.org/wiki/Inventor_(patent)'
     },
 
@@ -2305,7 +2330,7 @@ module.exports = {
       comment: 'The person who reports.',
       range: 'schema:Person',
       domain: 'schema:CreativeWork',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'http://www.datypic.com/sc/ooxml/e-bibliography_Reporter-1.html'
     },
 
@@ -2316,7 +2341,7 @@ module.exports = {
       comment: 'The laywer or laywers conducting a case.',
       range: 'schema:Person',
       domain: 'sa:Legislation',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'http://www.datypic.com/sc/ooxml/e-bibliography_Counsel-1.html'
     },
 
@@ -2328,7 +2353,7 @@ module.exports = {
         'The organization responsible for the marketing or distribution (e.g., of a film).',
       range: 'schema:Organization',
       domain: 'schema:CreativeWork',
-      status: 'testing',
+      status: 'stable',
       seeAlso:
         'http://www.datypic.com/sc/ooxml/e-bibliography_Distributor-1.html'
     },
@@ -2341,7 +2366,7 @@ module.exports = {
         'An identifier assigned by a patent office, often used in a patent search (format depends on issuing office, type of patent, and when patent was issued).',
       range: 'schema:Text',
       domain: 'sa:Patent',
-      status: 'testing',
+      status: 'stable',
       seeAlso: 'https://en.wikipedia.org/wiki/Patent'
     },
 
@@ -2352,7 +2377,7 @@ module.exports = {
       comment: 'An identifier assigned to audio recordings.',
       range: 'schema:Text',
       domain: 'schema:MusicRecording',
-      status: 'testing',
+      status: 'stable',
       seeAlso:
         'http://www.datypic.com/sc/ooxml/e-bibliography_RecordingNumber-1.html'
     },
@@ -2364,7 +2389,7 @@ module.exports = {
       comment: 'The number of a chapter (e.g., in a book).',
       range: 'schema:Text',
       domain: 'schema:Chapter',
-      status: 'testing',
+      status: 'stable',
       seeAlso:
         'http://www.datypic.com/sc/ooxml/e-bibliography_ChapterNumber-1.html'
     },
@@ -2377,7 +2402,7 @@ module.exports = {
         'An identifier for legislation, either string-based or a web-based URL/URI identifier',
       range: 'schema:Text',
       domain: 'sa:Legislation',
-      status: 'testing',
+      status: 'stable',
       sameAs: 'https://pending.schema.org/legislationIdentifier'
     },
 
@@ -2389,7 +2414,7 @@ module.exports = {
         'A shortened identifier for legislation, either string-based or a web-based URL/URI identifier',
       range: 'schema:Text',
       domain: 'sa:Legislation',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2399,7 +2424,7 @@ module.exports = {
       comment: 'The type of the legislation',
       range: 'schema:Text',
       domain: 'sa:Legislation',
-      status: 'testing',
+      status: 'stable',
       sameAs: 'https://pending.schema.org/legislationType'
     },
 
@@ -2410,7 +2435,7 @@ module.exports = {
       label: 'Interview',
       comment: 'A type of creative work involving an interview with someone',
       subClassOf: 'schema:CreativeWork',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2420,7 +2445,7 @@ module.exports = {
       comment:
         'Document conferring a right or title for a set period, especially the sole right to exclude others from making, using, or selling an invention.',
       subClassOf: 'schema:CreativeWork',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2430,7 +2455,7 @@ module.exports = {
       comment:
         'A legal document such as an act, decree, bill, case, etc. (enforceable or not) or a component of a legal act (like an article).',
       subClassOf: 'schema:CreativeWork',
-      status: 'testing',
+      status: 'stable',
       sameAs: 'https://pending.schema.org/Legislation'
     },
 
@@ -2441,7 +2466,7 @@ module.exports = {
       label: 'PublicationType',
       comment: 'A type of publication',
       subClassOf: 'schema:Enumeration',
-      status: 'testing'
+      status: 'stable'
     },
     // Note: we use additionalType to point to the PublicationType from a Graph
 
@@ -2454,7 +2479,7 @@ module.exports = {
       altLabel: 'publicationType status',
       range: 'sa:PublicationTypeStatusType',
       domain: 'schema:PublicationType',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2496,7 +2521,7 @@ module.exports = {
       range: 'schema:CreativeWork',
       domain: 'sa:PublicationType',
       source: 'https://github.com/scienceai/librarian/issues/145',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Note: we use additionalType to point to the PublicationType from a Graph
@@ -2508,7 +2533,7 @@ module.exports = {
       comment: 'The type of publication covered by the periodical',
       range: 'sa:PublicationType',
       domain: 'schema:Periodical',
-      status: 'testing'
+      status: 'stable'
     },
 
     // This is used to define article section inline when specifying the `objectSpecification`
@@ -2518,7 +2543,7 @@ module.exports = {
       label: 'PublicationElementType',
       comment: 'A type of publication element',
       subClassOf: 'schema:Enumeration',
-      status: 'testing',
+      status: 'stable',
       source: 'https://github.com/scienceai/librarian/issues/145'
     },
 
@@ -2531,7 +2556,7 @@ module.exports = {
       altLabel: 'service status',
       range: 'sa:ServiceStatusType',
       domain: 'schema:Service',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2572,7 +2597,7 @@ module.exports = {
       altLabel: 'Create Workflow Specification Action',
       comment: 'The act of creating a workflow specification.',
       subClassOf: ['schema:CreateAction'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2584,7 +2609,7 @@ module.exports = {
       altLabel: 'workflow',
       range: 'sa:WorkflowSpecification',
       domain: 'schema:CreativeWork',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2595,7 +2620,7 @@ module.exports = {
       altLabel: 'workflow',
       range: 'sa:WorkflowSpecification',
       domain: 'schema:CreativeWork',
-      status: 'testing'
+      status: 'stable'
     },
 
     // reverse prop for convenience
@@ -2608,7 +2633,7 @@ module.exports = {
       altLabel: 'is workflow of',
       range: 'schema:CreativeWork',
       domain: 'sa:WorkflowSpecification',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2619,7 +2644,7 @@ module.exports = {
       altLabel: 'is workflow of',
       range: 'schema:Periodical',
       domain: 'sa:PublicationType',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2629,7 +2654,7 @@ module.exports = {
       altLabel: 'Workflow Specification',
       comment: 'A workflow specification',
       subClassOf: ['schema:CreativeWork'],
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2640,7 +2665,7 @@ module.exports = {
       altLabel: 'workflow status specification',
       range: 'sa:WorkflowSpecificationStatusType',
       domain: 'sa:WorkflowSpecification',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2683,7 +2708,7 @@ module.exports = {
         'An action, or list of actions, whose completion is required for the completion of this action',
       range: 'schema:Action',
       domain: 'schema:Action',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2694,7 +2719,7 @@ module.exports = {
       altLabel: 'result of',
       range: 'schema:Thing',
       domain: 'schema:Thing',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2705,7 +2730,7 @@ module.exports = {
       altLabel: 'result of',
       range: 'schema:Action',
       domain: 'schema:Action',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2716,7 +2741,7 @@ module.exports = {
       altLabel: 'instrument of',
       range: 'schema:Action',
       domain: 'schema:Action',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2727,7 +2752,7 @@ module.exports = {
       altLabel: 'service output of',
       range: 'schema:Service',
       domain: 'schema:Action',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2739,7 +2764,7 @@ module.exports = {
       altLabel: 'potential result',
       range: 'schema:Thing',
       domain: 'schema:Action',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2752,7 +2777,7 @@ module.exports = {
       range: 'schema:Service',
       domain: 'schema:Action',
       subPropertyOf: 'schema:instrument',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Endorsements (EndorseAction is in schema.org)
@@ -2787,7 +2812,7 @@ module.exports = {
       altLabel: 'activate on',
       range: 'schema:TriggerType',
       domain: 'schema:Action',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2799,7 +2824,7 @@ module.exports = {
       altLabel: 'complete on',
       range: 'schema:TriggerType',
       domain: 'schema:Action',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2811,7 +2836,7 @@ module.exports = {
       altLabel: 'complete on',
       range: 'schema:TriggerType',
       domain: 'schema:Action',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2822,7 +2847,7 @@ module.exports = {
       altLabel: 'value required on',
       range: 'sa:TriggerType',
       domain: 'schema:PropertyValueSpecification',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2831,7 +2856,7 @@ module.exports = {
       label: 'TriggerType',
       comment: 'A type of trigger',
       subClassOf: 'schema:Enumeration',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2912,7 +2937,7 @@ module.exports = {
       altLabel: 'if  match',
       range: 'schema:Text',
       domain: 'schema:UpdateAction',
-      status: 'testing'
+      status: 'stable'
     },
 
     // Merge strategies
@@ -2924,7 +2949,7 @@ module.exports = {
       altLabel: 'merge strategy',
       range: 'sa:MergeStrategyType',
       domain: 'schema:UpdateAction',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
@@ -2933,7 +2958,7 @@ module.exports = {
       label: 'MergeStrategyType',
       comment: 'A type of merge strategy',
       subClassOf: 'schema:Enumeration',
-      status: 'testing'
+      status: 'stable'
     },
 
     {
