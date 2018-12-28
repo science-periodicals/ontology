@@ -420,7 +420,7 @@ module.exports = {
     },
     {
       '@id': 'sa:tokenValue',
-      '@value': 'rdf:Property',
+      '@type': 'rdf:Property',
       label: 'tokenValue',
       comment: 'The value of the token.',
       altLabel: 'token value',
@@ -430,7 +430,7 @@ module.exports = {
     },
     {
       '@id': 'sa:password',
-      '@value': 'rdf:Property',
+      '@type': 'rdf:Property',
       label: 'password',
       comment: 'A password.',
       altLabel: 'password',
@@ -1531,7 +1531,7 @@ module.exports = {
 
     {
       '@id': 'sa:publishIdentityOf',
-      '@value': 'rdf:Property',
+      '@type': 'rdf:Property',
       label: 'publishIdentityOf',
       comment:
         'Specifies the audiences that will be made available publicly upon publication',
@@ -1543,7 +1543,7 @@ module.exports = {
 
     {
       '@id': 'sa:publishActionInstanceOf',
-      '@value': 'rdf:Property',
+      '@type': 'rdf:Property',
       label: 'publishActionInstanceOf',
       comment:
         'Specifies the action templates (part of a workflow specification) whose instances will be made available publicly upon publication',
@@ -1556,7 +1556,7 @@ module.exports = {
     // APC negotation
     {
       '@id': 'sa:requestedPrice',
-      '@value': 'rdf:Property',
+      '@type': 'rdf:Property',
       label: 'requestedPrice',
       comment:
         'The requested price in the same currency as the priceSpecification.',

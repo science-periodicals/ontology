@@ -6729,6 +6729,14 @@ module.exports = {
       "@id": "http://ns.science.ai#tokenType",
       "@type": "schema:Text"
     },
+    "tokenValue": {
+      "@id": "http://ns.science.ai#tokenValue",
+      "@type": "schema:Text"
+    },
+    "password": {
+      "@id": "http://ns.science.ai#password",
+      "@type": "schema:Text"
+    },
     "tokenStatus": {
       "@id": "http://ns.science.ai#tokenStatus",
       "@type": "@id"
@@ -6928,6 +6936,18 @@ module.exports = {
     "CreatePeriodicalAction": "http://ns.science.ai#CreatePeriodicalAction",
     "CreateOfferAction": "http://ns.science.ai#CreateOfferAction",
     "PublishAction": "http://ns.science.ai#PublishAction",
+    "publishIdentityOf": {
+      "@id": "http://ns.science.ai#publishIdentityOf",
+      "@type": "@id"
+    },
+    "publishActionInstanceOf": {
+      "@id": "http://ns.science.ai#publishActionInstanceOf",
+      "@type": "@id"
+    },
+    "requestedPrice": {
+      "@id": "http://ns.science.ai#requestedPrice",
+      "@type": "schema:Number"
+    },
     "CreatePublicationIssueAction": "http://ns.science.ai#CreatePublicationIssueAction",
     "CreateSpecialPublicationIssueAction": "http://ns.science.ai#CreateSpecialPublicationIssueAction",
     "SpecialPublicationIssue": "http://ns.science.ai#SpecialPublicationIssue",
