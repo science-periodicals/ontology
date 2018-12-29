@@ -10,7 +10,6 @@
     "prepare": "npm run build",
     "test": "mocha",
     "watch": "http-server & nodemon -e js,html,css -w ./lib/ --ignore lib/bundle.js --exec 'npm run build-website'",
-    "version": "npm run build",
     "postversion": "git push && git push --tags"
   },
   "repository": {
