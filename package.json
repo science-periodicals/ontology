@@ -7,9 +7,10 @@
     "build-website": "node ./lib/index.js",
     "build-context": "node ./lib/context.js",
     "build": "browserify index.js > ontology-browser.js && npm run build-website && npm run build-context",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "test": "mocha",
     "watch": "http-server & nodemon -e js,html,css -w ./lib/ --ignore lib/bundle.js --exec 'npm run build-website'",
+    "version": "npm run build",
     "postversion": "git push && git push --tags"
   },
   "repository": {

@@ -1955,6 +1955,9 @@ module.exports = {
       status: 'stable'
     },
 
+    // Profiles
+
+    // mostly used for internal purposes to list the active role of an user (needed for filtered replication)
     {
       '@id': 'sa:hasActiveRole',
       '@type': 'rdf:Property',
@@ -1962,6 +1965,17 @@ module.exports = {
       altLabel: 'has active role',
       comment: 'The active persona incarnated by the Person',
       range: 'schema:Role',
+      domain: 'schema:Person',
+      status: 'stable'
+    },
+
+    {
+      '@id': 'sa:isAvailableToReviewFor',
+      '@type': 'rdf:Property',
+      label: 'isAvailableToReviewFor',
+      altLabel: 'is available to review for',
+      comment: 'A list of journal that the user is available to review for',
+      range: 'schema:Periodical',
       domain: 'schema:Person',
       status: 'stable'
     },

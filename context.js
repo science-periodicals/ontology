@@ -7005,6 +7005,10 @@ module.exports = {
       "@id": "http://ns.science.ai#hasActiveRole",
       "@type": "@id"
     },
+    "isAvailableToReviewFor": {
+      "@id": "http://ns.science.ai#isAvailableToReviewFor",
+      "@type": "@id"
+    },
     "Tag": "http://ns.science.ai#Tag",
     "Facet": "http://ns.science.ai#Facet",
     "RangeFacet": "http://ns.science.ai#RangeFacet",
