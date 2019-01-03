@@ -5653,7 +5653,8 @@ module.exports = {
       "@type": "Date"
     },
     "purpose": {
-      "@id": "schema:purpose"
+      "@id": "http://ns.science.ai#purpose",
+      "@type": "@id"
     },
     "qualifications": {
       "@id": "schema:qualifications"
@@ -7003,10 +7004,6 @@ module.exports = {
     },
     "hasActiveRole": {
       "@id": "http://ns.science.ai#hasActiveRole",
-      "@type": "@id"
-    },
-    "isAvailableToReviewFor": {
-      "@id": "http://ns.science.ai#isAvailableToReviewFor",
       "@type": "@id"
     },
     "Tag": "http://ns.science.ai#Tag",

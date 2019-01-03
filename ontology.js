@@ -1293,6 +1293,17 @@ module.exports = {
 
     // Actions
     {
+      '@id': 'sa:purpose',
+      '@type': 'rdf:Property',
+      label: 'purpose',
+      comment:
+        'A goal towards an action is taken. Can be concrete or abstract.',
+      range: 'schema:Thing',
+      domain: 'schema:Action',
+      status: 'stable'
+    },
+
+    {
       '@id': 'sa:AnchorAction',
       '@type': 'rdfs:Class',
       label: 'AnchorAction',
@@ -1965,17 +1976,6 @@ module.exports = {
       altLabel: 'has active role',
       comment: 'The active persona incarnated by the Person',
       range: 'schema:Role',
-      domain: 'schema:Person',
-      status: 'stable'
-    },
-
-    {
-      '@id': 'sa:isAvailableToReviewFor',
-      '@type': 'rdf:Property',
-      label: 'isAvailableToReviewFor',
-      altLabel: 'is available to review for',
-      comment: 'A list of journal that the user is available to review for',
-      range: 'schema:Periodical',
       domain: 'schema:Person',
       status: 'stable'
     },
