@@ -565,6 +565,39 @@ module.exports = {
       status: 'stable'
     },
 
+    // Crypto
+    {
+      '@id': 'sa:EncryptionKey',
+      '@type': 'rdfs:Class',
+      label: 'EncryptionKey',
+      comment: 'An encryption key',
+      subClassOf: 'sa:Token',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:encryptionKey',
+      '@type': 'rdf:Property',
+      label: 'encryptionKey',
+      comment: 'encryption key',
+      altLabel: 'encryption key',
+      range: 'sa:EncryptionKey',
+      domain: 'sa:Graph',
+      status: 'testing'
+    },
+
+    {
+      '@id': 'sa:initializationVector',
+      '@type': 'rdf:Property',
+      label: 'initializationVector',
+      comment: 'An initialization vector',
+      altLabel: 'initialization vector',
+      range: 'schema:Text',
+      domain: 'sa:EncryptionKey',
+      subPropertyOf: 'schema:value',
+      status: 'testing'
+    },
+
     // token actions
     {
       '@id': 'sa:CreateAuthenticationTokenAction',
