@@ -6763,6 +6763,15 @@ module.exports = {
       "@type": "@id"
     },
     "Password": "http://ns.science.ai#Password",
+    "EncryptionKey": "http://ns.science.ai#EncryptionKey",
+    "encryptionKey": {
+      "@id": "http://ns.science.ai#encryptionKey",
+      "@type": "@id"
+    },
+    "initializationVector": {
+      "@id": "http://ns.science.ai#initializationVector",
+      "@type": "schema:Text"
+    },
     "CreateAuthenticationTokenAction": "http://ns.science.ai#CreateAuthenticationTokenAction",
     "CreateDiscountTokenAction": "http://ns.science.ai#CreateDiscountTokenAction",
     "UpdatePasswordAction": "http://ns.science.ai#UpdatePasswordAction",
@@ -7007,6 +7016,8 @@ module.exports = {
       "@type": "@id"
     },
     "Tag": "http://ns.science.ai#Tag",
+    "SearchResultList": "http://ns.science.ai#SearchResultList",
+    "HydratedSearchResultList": "http://ns.science.ai#HydratedSearchResultList",
     "Facet": "http://ns.science.ai#Facet",
     "RangeFacet": "http://ns.science.ai#RangeFacet",
     "count": {

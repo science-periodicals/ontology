@@ -2013,7 +2013,6 @@ module.exports = {
       status: 'stable'
     },
 
-    // Facets
     {
       '@id': 'sa:Tag',
       '@type': 'rdfs:Class',
@@ -2021,6 +2020,28 @@ module.exports = {
       comment:
         'A non-hierarchical keyword or term assigned to a piece of information',
       subClassOf: ['schema:CreativeWork'],
+      status: 'stable'
+    },
+
+    // Faceted Search
+    {
+      '@id': 'sa:SearchResultList',
+      '@type': 'rdfs:Class',
+      label: 'SearchResultList',
+      altLabel: 'Search result list',
+      comment: 'An ItemList representing search results',
+      subClassOf: ['schema:ItemList'],
+      status: 'stable'
+    },
+
+    {
+      '@id': 'sa:HydratedSearchResultList',
+      '@type': 'rdfs:Class',
+      label: 'HydratedSearchResultList',
+      altLabel: 'Hydrated Search results list',
+      comment:
+        'An ItemList representing search results along with associated droplets',
+      subClassOf: ['sa:SearchResultList'],
       status: 'stable'
     },
 
@@ -2049,7 +2070,7 @@ module.exports = {
       altLabel: 'item list facet',
       comment: 'Facets computed from the ItemList',
       range: 'sa:Facet',
-      domain: 'schema:ItemList',
+      domain: 'sa:SearchResultList',
       status: 'stable'
     },
 
