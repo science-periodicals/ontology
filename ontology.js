@@ -1367,6 +1367,16 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:RequestArticleAction',
+      '@type': 'rdfs:Class',
+      label: 'RequestArticleAction',
+      altLabel: 'Request Article Action',
+      comment: 'The act of making a call for articles for a journal',
+      subClassOf: ['schema:Action'],
+      status: 'stable'
+    },
+
+    {
       '@id': 'sa:TagAction',
       '@type': 'rdfs:Class',
       label: 'TagAction',
