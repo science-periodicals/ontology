@@ -6989,6 +6989,7 @@ module.exports = {
     },
     "CustomerAccountStatusType": "http://ns.science.ai#CustomerAccountStatusType",
     "ContributorRole": "http://ns.science.ai#ContributorRole",
+    "ServiceProviderRole": "http://ns.science.ai#ServiceProviderRole",
     "AudienceRole": "http://ns.science.ai#AudienceRole",
     "roleAffiliation": {
       "@id": "http://ns.science.ai#roleAffiliation",

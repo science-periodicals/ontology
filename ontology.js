@@ -1919,6 +1919,16 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:ServiceProviderRole',
+      '@type': 'rdfs:Class',
+      label: 'ServiceProviderRole',
+      altLabel: 'Service Provider Role',
+      comment: 'A subclass of Role used to describe service provider roles.',
+      subClassOf: ['schema:Role'],
+      status: 'stable'
+    },
+
+    {
       '@id': 'sa:AudienceRole',
       '@type': 'rdfs:Class',
       label: 'AudienceRole',
