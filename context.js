@@ -6959,6 +6959,19 @@ module.exports = {
       "@id": "http://ns.science.ai#requestedPrice",
       "@type": "schema:Number"
     },
+    "PaidReviewAction": "http://ns.science.ai#PaidReviewAction",
+    "paidBy": {
+      "@id": "http://ns.science.ai#paidBy",
+      "@type": "@id"
+    },
+    "paidTo": {
+      "@id": "http://ns.science.ai#paidTo",
+      "@type": "@id"
+    },
+    "platformFeesIncluded": {
+      "@id": "http://ns.science.ai#platformFeesIncluded",
+      "@type": "@id"
+    },
     "CreatePublicationIssueAction": "http://ns.science.ai#CreatePublicationIssueAction",
     "CreateSpecialPublicationIssueAction": "http://ns.science.ai#CreateSpecialPublicationIssueAction",
     "SpecialPublicationIssue": "http://ns.science.ai#SpecialPublicationIssue",

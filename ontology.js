@@ -1607,7 +1607,7 @@ module.exports = {
       status: 'stable'
     },
 
-    // APC negotation
+    // APC, paid review and payment
     {
       '@id': 'sa:requestedPrice',
       '@type': 'rdf:Property',
@@ -1616,7 +1616,85 @@ module.exports = {
         'The requested price in the same currency as the priceSpecification.',
       altLabel: 'requested price',
       range: 'schema:Number',
-      domain: 'schema:PayAction',
+      domain: 'schema:Action', // can apply to PayAction (author negotiating the price) and PaidReviewAction (reviewer giving back the money to journal)
+      status: 'stable'
+    },
+
+    {
+      '@id': 'sa:PaidReviewAction',
+      '@type': 'rdfs:Class',
+      label: 'PaidReviewAction',
+      altLabel: 'Paid Review Action',
+      comment:
+        'The act of of reviewing an object in exchange of a monetary compensation.',
+      subClassOf: ['schema:ReviewAction'],
+      status: 'stable'
+    },
+
+    // custom `BusinessEntityType`
+    {
+      '@id': 'sa:Enduser',
+      sameAs: 'http://purl.org/goodrelations/v1#Enduser',
+      '@type': 'schema:BusinessEntityType',
+      label: 'Enduser',
+      comment:
+        'An agent that is purchasing the service for private consumption, in particular not for resale or for usage within an industrial enterprise'
+    },
+    {
+      '@id': 'sa:JournalPublisher',
+      '@type': 'schema:BusinessEntityType',
+      label: 'JournalPublisher',
+      comment:
+        'The organization offering the commercial service and publishing the journal involved in the consumption of the service'
+    },
+    {
+      '@id': 'sa:RevisionAuthor',
+      '@type': 'schema:BusinessEntityType',
+      label: 'RevisionAuthor',
+      comment:
+        'An author involved in the act of revising a manuscript after having already purchased a service as an end user'
+    },
+    {
+      '@id': 'sa:Platform',
+      '@type': 'schema:BusinessEntityType',
+      label: 'Platform',
+      comment: 'The science.ai publishing platform'
+    },
+
+    // PriceSpecification extra props
+    {
+      '@id': 'sa:paidBy',
+      '@type': 'rdf:Property',
+      label: 'paidBy',
+      comment:
+        'The BusinessEntityType to which the payment applies (source of the payment)',
+      altLabel: 'paid by',
+      range: 'schema:BusinessEntityType',
+      domain: 'schema:PriceSpecification',
+      status: 'stable'
+    },
+    {
+      '@id': 'sa:paidTo',
+      '@type': 'rdf:Property',
+      label: 'paidTo',
+      comment:
+        'The BusinessEntityType on the receiving ends of the payment (recipient of the payment)',
+      altLabel: 'paid to',
+      range: 'schema:BusinessEntityType',
+      domain: 'schema:PriceSpecification',
+      status: 'stable'
+    },
+
+    // complement to schema:valueAddedTaxIncluded
+    {
+      '@id': 'sa:platformFeesIncluded',
+      '@type': 'rdf:Property',
+      label: 'platformFeesIncluded',
+      comment:
+        'Specifies whether the applicable platform fees are included in the price specification or not',
+      altLabel: 'platform fees included',
+      range: 'schema:Boolean',
+      domain: 'schema:PriceSpecification',
       status: 'stable'
     },
 
