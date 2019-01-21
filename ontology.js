@@ -2689,7 +2689,30 @@ module.exports = {
       source: 'https://github.com/scienceai/librarian/issues/145'
     },
 
-    // Service status
+    // Services
+    {
+      '@id': 'sa:allowBroker',
+      '@type': 'rdf:Property',
+      label: 'allowBroker',
+      comment:
+        'A flag specifying wether the Service can be used / resold by brokers',
+      altLabel: 'allow broker',
+      range: 'schema:Boolean',
+      domain: 'schema:Service',
+      status: 'stable'
+    },
+
+    {
+      '@id': 'sa:brokeredService',
+      '@type': 'rdf:Property',
+      label: 'brokeredService',
+      comment: 'The service being brokered',
+      altLabel: 'brokered service',
+      range: 'schema:Service',
+      domain: 'schema:Service',
+      status: 'stable'
+    },
+
     {
       '@id': 'sa:serviceStatus',
       '@type': 'rdf:Property',
@@ -2709,7 +2732,7 @@ module.exports = {
       subClassOf: ['schema:Enumeration']
     },
 
-    // Enumeration value
+    // ServiceStatusType Enumeration value
     {
       '@id': 'schema:ActiveServiceStatus',
       '@type': 'sa:ServiceStatusType',

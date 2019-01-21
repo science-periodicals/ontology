@@ -7183,6 +7183,14 @@ module.exports = {
       "@container": "@set"
     },
     "PublicationElementType": "http://ns.science.ai#PublicationElementType",
+    "allowBroker": {
+      "@id": "http://ns.science.ai#allowBroker",
+      "@type": "@id"
+    },
+    "brokeredService": {
+      "@id": "http://ns.science.ai#brokeredService",
+      "@type": "@id"
+    },
     "serviceStatus": {
       "@id": "http://ns.science.ai#serviceStatus",
       "@type": "@id"
