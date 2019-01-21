@@ -1661,30 +1661,6 @@ module.exports = {
       comment: 'The science.ai publishing platform'
     },
 
-    // PriceSpecification extra props
-    {
-      '@id': 'sa:paidBy',
-      '@type': 'rdf:Property',
-      label: 'paidBy',
-      comment:
-        'The BusinessEntityType to which the payment applies (source of the payment)',
-      altLabel: 'paid by',
-      range: 'schema:BusinessEntityType',
-      domain: 'schema:PriceSpecification',
-      status: 'stable'
-    },
-    {
-      '@id': 'sa:paidTo',
-      '@type': 'rdf:Property',
-      label: 'paidTo',
-      comment:
-        'The BusinessEntityType on the receiving ends of the payment (recipient of the payment)',
-      altLabel: 'paid to',
-      range: 'schema:BusinessEntityType',
-      domain: 'schema:PriceSpecification',
-      status: 'stable'
-    },
-
     // complement to schema:valueAddedTaxIncluded
     {
       '@id': 'sa:platformFeesIncluded',

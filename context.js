@@ -6960,14 +6960,6 @@ module.exports = {
       "@type": "schema:Number"
     },
     "PaidReviewAction": "http://ns.science.ai#PaidReviewAction",
-    "paidBy": {
-      "@id": "http://ns.science.ai#paidBy",
-      "@type": "@id"
-    },
-    "paidTo": {
-      "@id": "http://ns.science.ai#paidTo",
-      "@type": "@id"
-    },
     "platformFeesIncluded": {
       "@id": "http://ns.science.ai#platformFeesIncluded",
       "@type": "@id"
