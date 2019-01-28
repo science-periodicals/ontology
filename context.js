@@ -7047,6 +7047,10 @@ module.exports = {
       "@id": "http://ns.science.ai#endorsedTime",
       "@type": "schema:Date"
     },
+    "expectedDatePublishedOrRejected": {
+      "@id": "http://ns.science.ai#expectedDatePublishedOrRejected",
+      "@type": "schema:Date"
+    },
     "dateRejected": {
       "@id": "http://ns.science.ai#dateRejected",
       "@type": "schema:Date"

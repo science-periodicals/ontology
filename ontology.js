@@ -2206,6 +2206,18 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:expectedDatePublishedOrRejected',
+      '@type': 'rdf:Property',
+      label: 'expectedDatePublishedOrRejected',
+      comment:
+        'The date when the Graph is expected to be published or rejected',
+      altLabel: 'expected date published or rejected',
+      range: 'schema:Date',
+      domain: 'sa:Graph',
+      status: 'stable'
+    },
+
+    {
       '@id': 'sa:dateRejected',
       '@type': 'rdf:Property',
       label: 'dateRejected',
