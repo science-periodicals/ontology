@@ -3117,6 +3117,17 @@ module.exports = {
       status: 'stable'
     },
 
+    {
+      '@id': 'sa:autoUpdate',
+      '@type': 'rdf:Property',
+      label: 'autoUpdate',
+      comment: 'Automatically update the resource with the uploaded content',
+      altLabel: 'auto update',
+      range: 'schema:Boolean',
+      domain: 'sa:UploadAction',
+      status: 'stable'
+    },
+
     // Merge strategies
     {
       '@id': 'sa:mergeStrategy',

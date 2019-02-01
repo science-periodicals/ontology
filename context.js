@@ -7268,6 +7268,10 @@ module.exports = {
       "@id": "http://ns.science.ai#ifMatch",
       "@type": "schema:Text"
     },
+    "autoUpdate": {
+      "@id": "http://ns.science.ai#autoUpdate",
+      "@type": "@id"
+    },
     "mergeStrategy": {
       "@id": "http://ns.science.ai#mergeStrategy",
       "@type": "@id"
