@@ -1216,7 +1216,8 @@ module.exports = {
       '@type': 'rdf:Property',
       label: 'graph',
       altLabel: 'graph',
-      comment: 'The graph targeted by the selector',
+      comment:
+        'The graph targeted by the selector defined as the version of the Graph at the time the action providing the annotation capbility is completed. So in case of a CreateReleaseAction graph would be the value of the result of the CreateReleaseAction (the object being the live Graph) whereas for a ReviewAction it would be the object of the ReviewAction',
       range: 'sa:Graph',
       domain: 'sa:NodeSelector',
       status: 'stable'
@@ -1455,6 +1456,17 @@ module.exports = {
       altLabel: 'Typesetting Action',
       comment: 'The act of typesetting a document',
       subClassOf: ['schema:Action'],
+      status: 'stable'
+    },
+
+    {
+      '@id': 'sa:targetedRelease',
+      '@type': 'rdf:Property',
+      label: 'targetedRelease',
+      altLabel: 'targeted release',
+      comment: 'The targeted release (versioned Graph)',
+      range: 'sa:Graph',
+      domain: 'sa:TypesettingAction',
       status: 'stable'
     },
 

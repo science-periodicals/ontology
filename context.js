@@ -6935,6 +6935,10 @@ module.exports = {
     "CreateOrganizationAction": "http://ns.science.ai#CreateOrganizationAction",
     "CreateServiceAction": "http://ns.science.ai#CreateServiceAction",
     "TypesettingAction": "http://ns.science.ai#TypesettingAction",
+    "targetedRelease": {
+      "@id": "http://ns.science.ai#targetedRelease",
+      "@type": "@id"
+    },
     "CreateSandboxAction": "http://ns.science.ai#CreateSandboxAction",
     "ResetAction": "http://ns.science.ai#ResetAction",
     "DisclosureAction": "http://ns.science.ai#DisclosureAction",
