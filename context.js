@@ -7209,6 +7209,10 @@ module.exports = {
       "@id": "http://ns.science.ai#potentialWorkflow",
       "@type": "@id"
     },
+    "eligibleWorkflow": {
+      "@id": "http://ns.science.ai#eligibleWorkflow",
+      "@type": "@id"
+    },
     "isPotentialWorkflowOf": {
       "@id": "http://ns.science.ai#isPotentialWorkflowOf",
       "@type": "@id"

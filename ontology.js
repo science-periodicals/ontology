@@ -2808,7 +2808,18 @@ module.exports = {
       comment: 'potential workflow',
       altLabel: 'potential workflow',
       range: 'sa:WorkflowSpecification',
-      domain: 'schema:CreativeWork', // TODO extend to PublicationType as well
+      domain: 'schema:CreativeWork',
+      status: 'stable'
+    },
+
+    {
+      '@id': 'sa:eligibleWorkflow',
+      '@type': 'rdf:Property',
+      label: 'eligibleWorkflow',
+      comment: 'eligible workflow',
+      altLabel: 'eligible workflow',
+      range: 'sa:WorkflowSpecification',
+      domain: 'sa:PublicationType',
       status: 'stable'
     },
 
