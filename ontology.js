@@ -1378,6 +1378,18 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:isInResponseTo',
+      '@type': 'rdf:Property',
+      label: 'isInResponseTo',
+      altLabel: 'is in response to',
+      comment:
+        'A link to the request for article (RFA) to which the article is in response',
+      range: 'sa:RequestArticleAction',
+      domain: 'sa:Graph',
+      status: 'stable'
+    },
+
+    {
       '@id': 'sa:TagAction',
       '@type': 'rdfs:Class',
       label: 'TagAction',

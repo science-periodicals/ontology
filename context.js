@@ -6927,6 +6927,10 @@ module.exports = {
     "WithdrawAction": "http://ns.science.ai#WithdrawAction",
     "ArchiveAction": "http://ns.science.ai#ArchiveAction",
     "RequestArticleAction": "http://ns.science.ai#RequestArticleAction",
+    "isInResponseTo": {
+      "@id": "http://ns.science.ai#isInResponseTo",
+      "@type": "@id"
+    },
     "TagAction": "http://ns.science.ai#TagAction",
     "DeauthorizeAction": "http://ns.science.ai#DeauthorizeAction",
     "AuthorizeContributorAction": "http://ns.science.ai#AuthorizeContributorAction",
