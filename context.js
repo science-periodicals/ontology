@@ -6996,6 +6996,10 @@ module.exports = {
     "CreatePaymentAccountAction": "http://ns.science.ai#CreatePaymentAccountAction",
     "CreateCustomerAccountAction": "http://ns.science.ai#CreateCustomerAccountAction",
     "AuthorizePaymentAction": "http://ns.science.ai#AuthorizePaymentAction",
+    "canReceivePayment": {
+      "@id": "http://ns.science.ai#canReceivePayment",
+      "@type": "@id"
+    },
     "customerAccountStatus": {
       "@id": "http://ns.science.ai#customerAccountStatus",
       "@type": "@id"

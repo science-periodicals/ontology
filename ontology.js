@@ -1937,6 +1937,17 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:canReceivePayment',
+      '@type': 'rdf:Property',
+      label: 'canReceivePayment',
+      comment: 'The ability for an organization to receive payments',
+      altLabel: 'can receive payment',
+      range: 'schema:Boolean',
+      domain: 'schema:Organization',
+      status: 'stable'
+    },
+
+    {
       '@id': 'sa:customerAccountStatus',
       '@type': 'rdf:Property',
       label: 'customerAccountStatus',
