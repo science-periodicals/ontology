@@ -7263,6 +7263,10 @@ module.exports = {
       "@id": "http://ns.science.ai#potentialService",
       "@type": "@id"
     },
+    "addOnService": {
+      "@id": "http://ns.science.ai#addOnService",
+      "@type": "@id"
+    },
     "activateOn": {
       "@id": "http://ns.science.ai#activateOn",
       "@type": "@id"

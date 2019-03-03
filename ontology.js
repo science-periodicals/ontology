@@ -256,7 +256,6 @@ module.exports = {
       '@id': 'sa:WPSupportingInformation',
       '@type': 'rdfs:Class',
       label: 'WPSupportingInformation',
-      altLabel: 'Supporting Information',
       sameAs: 'http://purl.org/spar/doco/Appendix',
       altLabel: [
         'supplementary material',
@@ -2997,6 +2996,18 @@ module.exports = {
       comment:
         'One or several service made available to the agent of the action',
       altLabel: 'potential result',
+      range: 'schema:Service',
+      domain: 'schema:Action',
+      subPropertyOf: 'schema:instrument',
+      status: 'stable'
+    },
+
+    {
+      '@id': 'sa:addOnService',
+      '@type': 'rdf:Property',
+      label: 'addOnService',
+      comment: 'One or several service invoked at completion of the action',
+      altLabel: 'add on service',
       range: 'schema:Service',
       domain: 'schema:Action',
       subPropertyOf: 'schema:instrument',
