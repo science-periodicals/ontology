@@ -5653,7 +5653,7 @@ module.exports = {
       "@type": "Date"
     },
     "purpose": {
-      "@id": "http://ns.science.ai#purpose",
+      "@id": "http://ns.sci.pe#purpose",
       "@type": "@id"
     },
     "qualifications": {
@@ -5775,7 +5775,7 @@ module.exports = {
       "@type": "Date"
     },
     "releaseNotes": {
-      "@id": "http://ns.science.ai#releaseNotes",
+      "@id": "http://ns.sci.pe#releaseNotes",
       "@type": "schema:Text"
     },
     "releaseOf": {
@@ -6560,7 +6560,7 @@ module.exports = {
       "@id": "schema:volumeNumber"
     },
     "warning": {
-      "@id": "http://ns.science.ai#warning",
+      "@id": "http://ns.sci.pe#warning",
       "@type": "@id"
     },
     "warranty": {
@@ -6642,27 +6642,27 @@ module.exports = {
     "seq": "https://sci.pe/seq/",
     "service": "https://sci.pe/service/",
     "workflow": {
-      "@id": "http://ns.science.ai#workflow",
+      "@id": "http://ns.sci.pe#workflow",
       "@type": "@id"
     },
     "journal": "https://sci.pe/periodical/",
     "graph": {
-      "@id": "http://ns.science.ai#graph",
+      "@id": "http://ns.sci.pe#graph",
       "@type": "@id"
     },
     "release": "https://sci.pe/release/",
     "message": "https://sci.pe/message/",
     "node": {
-      "@id": "http://ns.science.ai#node",
+      "@id": "http://ns.sci.pe#node",
       "@type": "@id"
     },
     "anon": "https://sci.pe/anon/",
     "answer": {
-      "@id": "http://ns.science.ai#answer",
+      "@id": "http://ns.sci.pe#answer",
       "@type": "@id"
     },
     "style": {
-      "@id": "http://ns.science.ai#style",
+      "@id": "http://ns.sci.pe#style",
       "@type": "@id",
       "@container": "@set"
     },
@@ -6687,620 +6687,620 @@ module.exports = {
       "@type": "@id"
     },
     "itemListFacet": {
-      "@id": "http://ns.science.ai#itemListFacet",
+      "@id": "http://ns.sci.pe#itemListFacet",
       "@type": "@id"
     },
     "targetProductOf": {
       "@reverse": "http://schema.org/targetProduct",
       "@type": "@id"
     },
-    "WPUnspecified": "http://ns.science.ai#WPUnspecified",
-    "WPAbstract": "http://ns.science.ai#WPAbstract",
-    "WPAbstractSection": "http://ns.science.ai#WPAbstractSection",
-    "WPImpactStatement": "http://ns.science.ai#WPImpactStatement",
-    "WPAuthors": "http://ns.science.ai#WPAuthors",
-    "WPContributors": "http://ns.science.ai#WPContributors",
-    "WPAffiliations": "http://ns.science.ai#WPAffiliations",
-    "WPIntroduction": "http://ns.science.ai#WPIntroduction",
-    "WPMaterialsAndMethods": "http://ns.science.ai#WPMaterialsAndMethods",
-    "WPNotes": "http://ns.science.ai#WPNotes",
-    "WPLicense": "http://ns.science.ai#WPLicense",
-    "WPResults": "http://ns.science.ai#WPResults",
-    "WPDiscussion": "http://ns.science.ai#WPDiscussion",
-    "WPConclusion": "http://ns.science.ai#WPConclusion",
-    "WPAcknowledgements": "http://ns.science.ai#WPAcknowledgements",
-    "WPCopyright": "http://ns.science.ai#WPCopyright",
-    "WPDisclosure": "http://ns.science.ai#WPDisclosure",
-    "WPFunding": "http://ns.science.ai#WPFunding",
-    "WPKeywords": "http://ns.science.ai#WPKeywords",
-    "WPSupportingInformation": "http://ns.science.ai#WPSupportingInformation",
-    "WPReferenceList": "http://ns.science.ai#WPReferenceList",
-    "WPReference": "http://ns.science.ai#WPReference",
+    "WPUnspecified": "http://ns.sci.pe#WPUnspecified",
+    "WPAbstract": "http://ns.sci.pe#WPAbstract",
+    "WPAbstractSection": "http://ns.sci.pe#WPAbstractSection",
+    "WPImpactStatement": "http://ns.sci.pe#WPImpactStatement",
+    "WPAuthors": "http://ns.sci.pe#WPAuthors",
+    "WPContributors": "http://ns.sci.pe#WPContributors",
+    "WPAffiliations": "http://ns.sci.pe#WPAffiliations",
+    "WPIntroduction": "http://ns.sci.pe#WPIntroduction",
+    "WPMaterialsAndMethods": "http://ns.sci.pe#WPMaterialsAndMethods",
+    "WPNotes": "http://ns.sci.pe#WPNotes",
+    "WPLicense": "http://ns.sci.pe#WPLicense",
+    "WPResults": "http://ns.sci.pe#WPResults",
+    "WPDiscussion": "http://ns.sci.pe#WPDiscussion",
+    "WPConclusion": "http://ns.sci.pe#WPConclusion",
+    "WPAcknowledgements": "http://ns.sci.pe#WPAcknowledgements",
+    "WPCopyright": "http://ns.sci.pe#WPCopyright",
+    "WPDisclosure": "http://ns.sci.pe#WPDisclosure",
+    "WPFunding": "http://ns.sci.pe#WPFunding",
+    "WPKeywords": "http://ns.sci.pe#WPKeywords",
+    "WPSupportingInformation": "http://ns.sci.pe#WPSupportingInformation",
+    "WPReferenceList": "http://ns.sci.pe#WPReferenceList",
+    "WPReference": "http://ns.sci.pe#WPReference",
     "releaseRequirement": {
-      "@id": "http://ns.science.ai#releaseRequirement",
+      "@id": "http://ns.sci.pe#releaseRequirement",
       "@type": "@id"
     },
-    "ReleaseRequirementType": "http://ns.science.ai#ReleaseRequirementType",
+    "ReleaseRequirementType": "http://ns.sci.pe#ReleaseRequirementType",
     "revisionType": {
-      "@id": "http://ns.science.ai#revisionType",
+      "@id": "http://ns.sci.pe#revisionType",
       "@type": "@id"
     },
-    "RevisionType": "http://ns.science.ai#RevisionType",
-    "Token": "http://ns.science.ai#Token",
+    "RevisionType": "http://ns.sci.pe#RevisionType",
+    "Token": "http://ns.sci.pe#Token",
     "tokenType": {
-      "@id": "http://ns.science.ai#tokenType",
+      "@id": "http://ns.sci.pe#tokenType",
       "@type": "schema:Text"
     },
     "tokenValue": {
-      "@id": "http://ns.science.ai#tokenValue",
+      "@id": "http://ns.sci.pe#tokenValue",
       "@type": "schema:Text"
     },
     "password": {
-      "@id": "http://ns.science.ai#password",
+      "@id": "http://ns.sci.pe#password",
       "@type": "schema:Text"
     },
     "tokenStatus": {
-      "@id": "http://ns.science.ai#tokenStatus",
+      "@id": "http://ns.sci.pe#tokenStatus",
       "@type": "@id"
     },
-    "TokenStatusType": "http://ns.science.ai#TokenStatusType",
-    "DiscountToken": "http://ns.science.ai#DiscountToken",
+    "TokenStatusType": "http://ns.sci.pe#TokenStatusType",
+    "DiscountToken": "http://ns.sci.pe#DiscountToken",
     "percentDiscount": {
-      "@id": "http://ns.science.ai#percentDiscount",
+      "@id": "http://ns.sci.pe#percentDiscount",
       "@type": "@id"
     },
     "eligibleJournal": {
-      "@id": "http://ns.science.ai#eligibleJournal",
+      "@id": "http://ns.sci.pe#eligibleJournal",
       "@type": "@id"
     },
     "eligibleAction": {
-      "@id": "http://ns.science.ai#eligibleAction",
+      "@id": "http://ns.sci.pe#eligibleAction",
       "@type": "@id"
     },
-    "AuthenticationToken": "http://ns.science.ai#AuthenticationToken",
-    "PaymentToken": "http://ns.science.ai#PaymentToken",
+    "AuthenticationToken": "http://ns.sci.pe#AuthenticationToken",
+    "PaymentToken": "http://ns.sci.pe#PaymentToken",
     "paymentToken": {
-      "@id": "http://ns.science.ai#paymentToken",
+      "@id": "http://ns.sci.pe#paymentToken",
       "@type": "@id"
     },
-    "Password": "http://ns.science.ai#Password",
-    "EncryptionKey": "http://ns.science.ai#EncryptionKey",
+    "Password": "http://ns.sci.pe#Password",
+    "EncryptionKey": "http://ns.sci.pe#EncryptionKey",
     "encryptionKey": {
-      "@id": "http://ns.science.ai#encryptionKey",
+      "@id": "http://ns.sci.pe#encryptionKey",
       "@type": "@id"
     },
     "initializationVector": {
-      "@id": "http://ns.science.ai#initializationVector",
+      "@id": "http://ns.sci.pe#initializationVector",
       "@type": "schema:Text"
     },
-    "CreateAuthenticationTokenAction": "http://ns.science.ai#CreateAuthenticationTokenAction",
-    "CreateDiscountTokenAction": "http://ns.science.ai#CreateDiscountTokenAction",
-    "UpdatePasswordAction": "http://ns.science.ai#UpdatePasswordAction",
+    "CreateAuthenticationTokenAction": "http://ns.sci.pe#CreateAuthenticationTokenAction",
+    "CreateDiscountTokenAction": "http://ns.sci.pe#CreateDiscountTokenAction",
+    "UpdatePasswordAction": "http://ns.sci.pe#UpdatePasswordAction",
     "reviewer": {
-      "@id": "http://ns.science.ai#reviewer",
+      "@id": "http://ns.sci.pe#reviewer",
       "@type": "@id"
     },
-    "Formula": "http://ns.science.ai#Formula",
-    "FormulaObject": "http://ns.science.ai#FormulaObject",
-    "TextBox": "http://ns.science.ai#TextBox",
-    "TextBoxObject": "http://ns.science.ai#TextBoxObject",
-    "SoftwareSourceCodeObject": "http://ns.science.ai#SoftwareSourceCodeObject",
-    "Image": "http://ns.science.ai#Image",
-    "Video": "http://ns.science.ai#Video",
-    "Audio": "http://ns.science.ai#Audio",
-    "TableObject": "http://ns.science.ai#TableObject",
-    "DocumentObject": "http://ns.science.ai#DocumentObject",
-    "Footnote": "http://ns.science.ai#Footnote",
-    "Checksum": "http://ns.science.ai#Checksum",
-    "PerceptualHash": "http://ns.science.ai#PerceptualHash",
+    "Formula": "http://ns.sci.pe#Formula",
+    "FormulaObject": "http://ns.sci.pe#FormulaObject",
+    "TextBox": "http://ns.sci.pe#TextBox",
+    "TextBoxObject": "http://ns.sci.pe#TextBoxObject",
+    "SoftwareSourceCodeObject": "http://ns.sci.pe#SoftwareSourceCodeObject",
+    "Image": "http://ns.sci.pe#Image",
+    "Video": "http://ns.sci.pe#Video",
+    "Audio": "http://ns.sci.pe#Audio",
+    "TableObject": "http://ns.sci.pe#TableObject",
+    "DocumentObject": "http://ns.sci.pe#DocumentObject",
+    "Footnote": "http://ns.sci.pe#Footnote",
+    "Checksum": "http://ns.sci.pe#Checksum",
+    "PerceptualHash": "http://ns.sci.pe#PerceptualHash",
     "contentChecksum": {
-      "@id": "http://ns.science.ai#contentChecksum",
+      "@id": "http://ns.sci.pe#contentChecksum",
       "@type": "@id",
       "@container": "@set"
     },
     "checksumAlgorithm": {
-      "@id": "http://ns.science.ai#checksumAlgorithm",
+      "@id": "http://ns.sci.pe#checksumAlgorithm",
       "@type": "xsd:string"
     },
     "checksumValue": {
-      "@id": "http://ns.science.ai#checksumValue",
+      "@id": "http://ns.sci.pe#checksumValue",
       "@type": "xsd:string"
     },
-    "ProgressEvent": "http://ns.science.ai#ProgressEvent",
+    "ProgressEvent": "http://ns.sci.pe#ProgressEvent",
     "progress": {
-      "@id": "http://ns.science.ai#progress",
+      "@id": "http://ns.sci.pe#progress",
       "@type": "@id"
     },
-    "AdminPermission": "http://ns.science.ai#AdminPermission",
-    "CreateGraphPermission": "http://ns.science.ai#CreateGraphPermission",
-    "CommunicatePermission": "http://ns.science.ai#CommunicatePermission",
-    "InvitePermission": "http://ns.science.ai#InvitePermission",
-    "ViewIdentityPermission": "http://ns.science.ai#ViewIdentityPermission",
+    "AdminPermission": "http://ns.sci.pe#AdminPermission",
+    "CreateGraphPermission": "http://ns.sci.pe#CreateGraphPermission",
+    "CommunicatePermission": "http://ns.sci.pe#CommunicatePermission",
+    "InvitePermission": "http://ns.sci.pe#InvitePermission",
+    "ViewIdentityPermission": "http://ns.sci.pe#ViewIdentityPermission",
     "anonymizedName": {
-      "@id": "http://ns.science.ai#anonymizedName",
+      "@id": "http://ns.sci.pe#anonymizedName",
       "@type": "schema:Text"
     },
     "anonymizedIdentifier": {
-      "@id": "http://ns.science.ai#anonymizedIdentifier",
+      "@id": "http://ns.sci.pe#anonymizedIdentifier",
       "@type": "schema:Text"
     },
     "permissionScope": {
-      "@id": "http://ns.science.ai#permissionScope",
+      "@id": "http://ns.sci.pe#permissionScope",
       "@type": "@id",
       "@container": "@set"
     },
     "audienceScope": {
-      "@id": "http://ns.science.ai#audienceScope",
+      "@id": "http://ns.sci.pe#audienceScope",
       "@type": "@id"
     },
     "minInstances": {
-      "@id": "http://ns.science.ai#minInstances",
+      "@id": "http://ns.sci.pe#minInstances",
       "@type": "schema:Number"
     },
     "maxInstances": {
-      "@id": "http://ns.science.ai#maxInstances",
+      "@id": "http://ns.sci.pe#maxInstances",
       "@type": "schema:Number"
     },
-    "Error": "http://ns.science.ai#Error",
+    "Error": "http://ns.sci.pe#Error",
     "statusCode": {
-      "@id": "http://ns.science.ai#statusCode",
+      "@id": "http://ns.sci.pe#statusCode",
       "@type": "@id"
     },
-    "Warning": "http://ns.science.ai#Warning",
+    "Warning": "http://ns.sci.pe#Warning",
     "doi": {
-      "@id": "http://ns.science.ai#doi",
+      "@id": "http://ns.sci.pe#doi",
       "@type": "@id"
     },
     "slug": {
-      "@id": "http://ns.science.ai#slug",
+      "@id": "http://ns.sci.pe#slug",
       "@type": "schema:Text"
     },
     "resultReason": {
-      "@id": "http://ns.science.ai#resultReason",
+      "@id": "http://ns.sci.pe#resultReason",
       "@type": "schema:Text"
     },
-    "Annotation": "http://ns.science.ai#Annotation",
+    "Annotation": "http://ns.sci.pe#Annotation",
     "annotationTarget": {
-      "@id": "http://ns.science.ai#annotationTarget",
+      "@id": "http://ns.sci.pe#annotationTarget",
       "@type": "@id"
     },
     "annotationBody": {
-      "@id": "http://ns.science.ai#annotationBody",
+      "@id": "http://ns.sci.pe#annotationBody",
       "@type": "@id"
     },
-    "RevisionRequestComment": "http://ns.science.ai#RevisionRequestComment",
-    "AuthorResponseComment": "http://ns.science.ai#AuthorResponseComment",
-    "ReviewerComment": "http://ns.science.ai#ReviewerComment",
-    "EndorserComment": "http://ns.science.ai#EndorserComment",
-    "TargetRole": "http://ns.science.ai#TargetRole",
+    "RevisionRequestComment": "http://ns.sci.pe#RevisionRequestComment",
+    "AuthorResponseComment": "http://ns.sci.pe#AuthorResponseComment",
+    "ReviewerComment": "http://ns.sci.pe#ReviewerComment",
+    "EndorserComment": "http://ns.sci.pe#EndorserComment",
+    "TargetRole": "http://ns.sci.pe#TargetRole",
     "hasSelector": {
-      "@id": "http://ns.science.ai#hasSelector",
+      "@id": "http://ns.sci.pe#hasSelector",
       "@type": "@id"
     },
     "hasSubSelector": {
-      "@id": "http://ns.science.ai#hasSubSelector",
+      "@id": "http://ns.sci.pe#hasSubSelector",
       "@type": "@id"
     },
-    "Selector": "http://ns.science.ai#Selector",
-    "NodeSelector": "http://ns.science.ai#NodeSelector",
-    "HtmlSelector": "http://ns.science.ai#HtmlSelector",
+    "Selector": "http://ns.sci.pe#Selector",
+    "NodeSelector": "http://ns.sci.pe#NodeSelector",
+    "HtmlSelector": "http://ns.sci.pe#HtmlSelector",
     "htmlId": {
-      "@id": "http://ns.science.ai#htmlId",
+      "@id": "http://ns.sci.pe#htmlId",
       "@type": "schema:Text"
     },
     "webVerseId": {
-      "@id": "http://ns.science.ai#webVerseId",
+      "@id": "http://ns.sci.pe#webVerseId",
       "@type": "schema:Text"
     },
     "selectedProperty": {
-      "@id": "http://ns.science.ai#selectedProperty",
+      "@id": "http://ns.sci.pe#selectedProperty",
       "@type": "schema:Text"
     },
     "selectedItem": {
-      "@id": "http://ns.science.ai#selectedItem",
+      "@id": "http://ns.sci.pe#selectedItem",
       "@type": "schema:Text"
     },
     "selectedValue": {
-      "@id": "http://ns.science.ai#selectedValue",
+      "@id": "http://ns.sci.pe#selectedValue",
       "@type": "@id"
     },
     "selectedValueChecksum": {
-      "@id": "http://ns.science.ai#selectedValueChecksum",
+      "@id": "http://ns.sci.pe#selectedValueChecksum",
       "@type": "@id"
     },
     "nodeChecksum": {
-      "@id": "http://ns.science.ai#nodeChecksum",
+      "@id": "http://ns.sci.pe#nodeChecksum",
       "@type": "@id"
     },
     "documentChecksum": {
-      "@id": "http://ns.science.ai#documentChecksum",
+      "@id": "http://ns.sci.pe#documentChecksum",
       "@type": "@id"
     },
     "startOffset": {
-      "@id": "http://ns.science.ai#startOffset",
+      "@id": "http://ns.sci.pe#startOffset",
       "@type": "schema:Number"
     },
     "endOffset": {
-      "@id": "http://ns.science.ai#endOffset",
+      "@id": "http://ns.sci.pe#endOffset",
       "@type": "schema:Number"
     },
-    "AnchorAction": "http://ns.science.ai#AnchorAction",
-    "WithdrawAction": "http://ns.science.ai#WithdrawAction",
-    "ArchiveAction": "http://ns.science.ai#ArchiveAction",
-    "RequestArticleAction": "http://ns.science.ai#RequestArticleAction",
+    "AnchorAction": "http://ns.sci.pe#AnchorAction",
+    "WithdrawAction": "http://ns.sci.pe#WithdrawAction",
+    "ArchiveAction": "http://ns.sci.pe#ArchiveAction",
+    "RequestArticleAction": "http://ns.sci.pe#RequestArticleAction",
     "isInResponseTo": {
-      "@id": "http://ns.science.ai#isInResponseTo",
+      "@id": "http://ns.sci.pe#isInResponseTo",
       "@type": "@id"
     },
-    "TagAction": "http://ns.science.ai#TagAction",
-    "DeauthorizeAction": "http://ns.science.ai#DeauthorizeAction",
-    "AuthorizeContributorAction": "http://ns.science.ai#AuthorizeContributorAction",
-    "DeauthorizeContributorAction": "http://ns.science.ai#DeauthorizeContributorAction",
-    "UnassignAction": "http://ns.science.ai#UnassignAction",
-    "CreateOrganizationAction": "http://ns.science.ai#CreateOrganizationAction",
-    "CreateServiceAction": "http://ns.science.ai#CreateServiceAction",
-    "TypesettingAction": "http://ns.science.ai#TypesettingAction",
+    "TagAction": "http://ns.sci.pe#TagAction",
+    "DeauthorizeAction": "http://ns.sci.pe#DeauthorizeAction",
+    "AuthorizeContributorAction": "http://ns.sci.pe#AuthorizeContributorAction",
+    "DeauthorizeContributorAction": "http://ns.sci.pe#DeauthorizeContributorAction",
+    "UnassignAction": "http://ns.sci.pe#UnassignAction",
+    "CreateOrganizationAction": "http://ns.sci.pe#CreateOrganizationAction",
+    "CreateServiceAction": "http://ns.sci.pe#CreateServiceAction",
+    "TypesettingAction": "http://ns.sci.pe#TypesettingAction",
     "targetedRelease": {
-      "@id": "http://ns.science.ai#targetedRelease",
+      "@id": "http://ns.sci.pe#targetedRelease",
       "@type": "@id"
     },
-    "CreateSandboxAction": "http://ns.science.ai#CreateSandboxAction",
-    "ResetAction": "http://ns.science.ai#ResetAction",
-    "DisclosureAction": "http://ns.science.ai#DisclosureAction",
-    "AcknowledgeAction": "http://ns.science.ai#AcknowledgeAction",
-    "UploadAction": "http://ns.science.ai#UploadAction",
-    "CreateGraphAction": "http://ns.science.ai#CreateGraphAction",
-    "StartWorkflowStageAction": "http://ns.science.ai#StartWorkflowStageAction",
-    "DeleteGraphAction": "http://ns.science.ai#DeleteGraphAction",
-    "CreateReleaseAction": "http://ns.science.ai#CreateReleaseAction",
-    "CreatePeriodicalAction": "http://ns.science.ai#CreatePeriodicalAction",
-    "CreateOfferAction": "http://ns.science.ai#CreateOfferAction",
-    "PublishAction": "http://ns.science.ai#PublishAction",
+    "CreateSandboxAction": "http://ns.sci.pe#CreateSandboxAction",
+    "ResetAction": "http://ns.sci.pe#ResetAction",
+    "DisclosureAction": "http://ns.sci.pe#DisclosureAction",
+    "AcknowledgeAction": "http://ns.sci.pe#AcknowledgeAction",
+    "UploadAction": "http://ns.sci.pe#UploadAction",
+    "CreateGraphAction": "http://ns.sci.pe#CreateGraphAction",
+    "StartWorkflowStageAction": "http://ns.sci.pe#StartWorkflowStageAction",
+    "DeleteGraphAction": "http://ns.sci.pe#DeleteGraphAction",
+    "CreateReleaseAction": "http://ns.sci.pe#CreateReleaseAction",
+    "CreatePeriodicalAction": "http://ns.sci.pe#CreatePeriodicalAction",
+    "CreateOfferAction": "http://ns.sci.pe#CreateOfferAction",
+    "PublishAction": "http://ns.sci.pe#PublishAction",
     "publishIdentityOf": {
-      "@id": "http://ns.science.ai#publishIdentityOf",
+      "@id": "http://ns.sci.pe#publishIdentityOf",
       "@type": "@id"
     },
     "publishActionInstanceOf": {
-      "@id": "http://ns.science.ai#publishActionInstanceOf",
+      "@id": "http://ns.sci.pe#publishActionInstanceOf",
       "@type": "@id"
     },
     "requestedPrice": {
-      "@id": "http://ns.science.ai#requestedPrice",
+      "@id": "http://ns.sci.pe#requestedPrice",
       "@type": "schema:Number"
     },
-    "PaidReviewAction": "http://ns.science.ai#PaidReviewAction",
+    "PaidReviewAction": "http://ns.sci.pe#PaidReviewAction",
     "platformFeesIncluded": {
-      "@id": "http://ns.science.ai#platformFeesIncluded",
+      "@id": "http://ns.sci.pe#platformFeesIncluded",
       "@type": "@id"
     },
-    "CreatePublicationIssueAction": "http://ns.science.ai#CreatePublicationIssueAction",
-    "CreateSpecialPublicationIssueAction": "http://ns.science.ai#CreateSpecialPublicationIssueAction",
-    "SpecialPublicationIssue": "http://ns.science.ai#SpecialPublicationIssue",
-    "CreateContactPointAction": "http://ns.science.ai#CreateContactPointAction",
-    "UpdateContactPointAction": "http://ns.science.ai#UpdateContactPointAction",
-    "AssignContactPointAction": "http://ns.science.ai#AssignContactPointAction",
-    "UnassignContactPointAction": "http://ns.science.ai#UnassignContactPointAction",
+    "CreatePublicationIssueAction": "http://ns.sci.pe#CreatePublicationIssueAction",
+    "CreateSpecialPublicationIssueAction": "http://ns.sci.pe#CreateSpecialPublicationIssueAction",
+    "SpecialPublicationIssue": "http://ns.sci.pe#SpecialPublicationIssue",
+    "CreateContactPointAction": "http://ns.sci.pe#CreateContactPointAction",
+    "UpdateContactPointAction": "http://ns.sci.pe#UpdateContactPointAction",
+    "AssignContactPointAction": "http://ns.sci.pe#AssignContactPointAction",
+    "UnassignContactPointAction": "http://ns.sci.pe#UnassignContactPointAction",
     "verificationStatus": {
-      "@id": "http://ns.science.ai#verificationStatus",
+      "@id": "http://ns.sci.pe#verificationStatus",
       "@type": "@id"
     },
-    "VerificationStatusType": "http://ns.science.ai#VerificationStatusType",
-    "MimeDetectionAction": "http://ns.science.ai#MimeDetectionAction",
-    "ImageProcessingAction": "http://ns.science.ai#ImageProcessingAction",
-    "AudioVideoProcessingAction": "http://ns.science.ai#AudioVideoProcessingAction",
-    "DocumentProcessingAction": "http://ns.science.ai#DocumentProcessingAction",
-    "SemanticTaggingAction": "http://ns.science.ai#SemanticTaggingAction",
-    "AssignUrlAction": "http://ns.science.ai#AssignUrlAction",
-    "UnassignUrlAction": "http://ns.science.ai#UnassignUrlAction",
-    "CreatePublicationTypeAction": "http://ns.science.ai#CreatePublicationTypeAction",
-    "CreatePublicationElementTypeAction": "http://ns.science.ai#CreatePublicationElementTypeAction",
-    "CreatePaymentAccountAction": "http://ns.science.ai#CreatePaymentAccountAction",
-    "CreateCustomerAccountAction": "http://ns.science.ai#CreateCustomerAccountAction",
-    "AuthorizePaymentAction": "http://ns.science.ai#AuthorizePaymentAction",
+    "VerificationStatusType": "http://ns.sci.pe#VerificationStatusType",
+    "MimeDetectionAction": "http://ns.sci.pe#MimeDetectionAction",
+    "ImageProcessingAction": "http://ns.sci.pe#ImageProcessingAction",
+    "AudioVideoProcessingAction": "http://ns.sci.pe#AudioVideoProcessingAction",
+    "DocumentProcessingAction": "http://ns.sci.pe#DocumentProcessingAction",
+    "SemanticTaggingAction": "http://ns.sci.pe#SemanticTaggingAction",
+    "AssignUrlAction": "http://ns.sci.pe#AssignUrlAction",
+    "UnassignUrlAction": "http://ns.sci.pe#UnassignUrlAction",
+    "CreatePublicationTypeAction": "http://ns.sci.pe#CreatePublicationTypeAction",
+    "CreatePublicationElementTypeAction": "http://ns.sci.pe#CreatePublicationElementTypeAction",
+    "CreatePaymentAccountAction": "http://ns.sci.pe#CreatePaymentAccountAction",
+    "CreateCustomerAccountAction": "http://ns.sci.pe#CreateCustomerAccountAction",
+    "AuthorizePaymentAction": "http://ns.sci.pe#AuthorizePaymentAction",
     "canReceivePayment": {
-      "@id": "http://ns.science.ai#canReceivePayment",
+      "@id": "http://ns.sci.pe#canReceivePayment",
       "@type": "@id"
     },
     "customerAccountStatus": {
-      "@id": "http://ns.science.ai#customerAccountStatus",
+      "@id": "http://ns.sci.pe#customerAccountStatus",
       "@type": "@id"
     },
-    "CustomerAccountStatusType": "http://ns.science.ai#CustomerAccountStatusType",
-    "ContributorRole": "http://ns.science.ai#ContributorRole",
-    "ServiceProviderRole": "http://ns.science.ai#ServiceProviderRole",
-    "AudienceRole": "http://ns.science.ai#AudienceRole",
+    "CustomerAccountStatusType": "http://ns.sci.pe#CustomerAccountStatusType",
+    "ContributorRole": "http://ns.sci.pe#ContributorRole",
+    "ServiceProviderRole": "http://ns.sci.pe#ServiceProviderRole",
+    "AudienceRole": "http://ns.sci.pe#AudienceRole",
     "roleAffiliation": {
-      "@id": "http://ns.science.ai#roleAffiliation",
+      "@id": "http://ns.sci.pe#roleAffiliation",
       "@type": "@id",
       "@container": "@list"
     },
     "roleContactPoint": {
-      "@id": "http://ns.science.ai#roleContactPoint",
+      "@id": "http://ns.sci.pe#roleContactPoint",
       "@type": "@id",
       "@container": "@set"
     },
-    "SponsorRole": "http://ns.science.ai#SponsorRole",
-    "FunderRole": "http://ns.science.ai#FunderRole",
+    "SponsorRole": "http://ns.sci.pe#SponsorRole",
+    "FunderRole": "http://ns.sci.pe#FunderRole",
     "roleOffer": {
-      "@id": "http://ns.science.ai#roleOffer",
+      "@id": "http://ns.sci.pe#roleOffer",
       "@type": "@id"
     },
-    "FundingSource": "http://ns.science.ai#FundingSource",
+    "FundingSource": "http://ns.sci.pe#FundingSource",
     "roleAction": {
-      "@id": "http://ns.science.ai#roleAction",
+      "@id": "http://ns.sci.pe#roleAction",
       "@type": "@id",
       "@container": "@set"
     },
     "hasActiveRole": {
-      "@id": "http://ns.science.ai#hasActiveRole",
+      "@id": "http://ns.sci.pe#hasActiveRole",
       "@type": "@id"
     },
-    "Tag": "http://ns.science.ai#Tag",
-    "SearchResultList": "http://ns.science.ai#SearchResultList",
-    "HydratedSearchResultList": "http://ns.science.ai#HydratedSearchResultList",
-    "Facet": "http://ns.science.ai#Facet",
-    "RangeFacet": "http://ns.science.ai#RangeFacet",
+    "Tag": "http://ns.sci.pe#Tag",
+    "SearchResultList": "http://ns.sci.pe#SearchResultList",
+    "HydratedSearchResultList": "http://ns.sci.pe#HydratedSearchResultList",
+    "Facet": "http://ns.sci.pe#Facet",
+    "RangeFacet": "http://ns.sci.pe#RangeFacet",
     "count": {
-      "@id": "http://ns.science.ai#count",
+      "@id": "http://ns.sci.pe#count",
       "@type": "@id"
     },
     "expectedDuration": {
-      "@id": "http://ns.science.ai#expectedDuration",
+      "@id": "http://ns.sci.pe#expectedDuration",
       "@type": "@id"
     },
     "activatedTime": {
-      "@id": "http://ns.science.ai#activatedTime",
+      "@id": "http://ns.sci.pe#activatedTime",
       "@type": "schema:Date"
     },
     "stagedTime": {
-      "@id": "http://ns.science.ai#stagedTime",
+      "@id": "http://ns.sci.pe#stagedTime",
       "@type": "schema:Date"
     },
     "endorsedTime": {
-      "@id": "http://ns.science.ai#endorsedTime",
+      "@id": "http://ns.sci.pe#endorsedTime",
       "@type": "schema:Date"
     },
     "expectedDatePublishedOrRejected": {
-      "@id": "http://ns.science.ai#expectedDatePublishedOrRejected",
+      "@id": "http://ns.sci.pe#expectedDatePublishedOrRejected",
       "@type": "schema:Date"
     },
     "dateRejected": {
-      "@id": "http://ns.science.ai#dateRejected",
+      "@id": "http://ns.sci.pe#dateRejected",
       "@type": "schema:Date"
     },
     "dateSubmitted": {
-      "@id": "http://ns.science.ai#dateSubmitted",
+      "@id": "http://ns.sci.pe#dateSubmitted",
       "@type": "schema:Date"
     },
     "dateWithdrawn": {
-      "@id": "http://ns.science.ai#dateWithdrawn",
+      "@id": "http://ns.sci.pe#dateWithdrawn",
       "@type": "schema:Date"
     },
-    "CssVariable": "http://ns.science.ai#CssVariable",
+    "CssVariable": "http://ns.sci.pe#CssVariable",
     "encodesStyle": {
-      "@id": "http://ns.science.ai#encodesStyle",
+      "@id": "http://ns.sci.pe#encodesStyle",
       "@type": "@id"
     },
     "isStyleOf": {
-      "@id": "http://ns.science.ai#isStyleOf",
+      "@id": "http://ns.sci.pe#isStyleOf",
       "@type": "@id"
     },
     "isLogoOf": {
-      "@id": "http://ns.science.ai#isLogoOf",
+      "@id": "http://ns.sci.pe#isLogoOf",
       "@type": "@id"
     },
     "isImageOf": {
-      "@id": "http://ns.science.ai#isImageOf",
+      "@id": "http://ns.sci.pe#isImageOf",
       "@type": "@id"
     },
     "isAudioOf": {
-      "@id": "http://ns.science.ai#isAudioOf",
+      "@id": "http://ns.sci.pe#isAudioOf",
       "@type": "@id"
     },
     "isVideoOf": {
-      "@id": "http://ns.science.ai#isVideoOf",
+      "@id": "http://ns.sci.pe#isVideoOf",
       "@type": "@id"
     },
-    "Graph": "http://ns.science.ai#Graph",
+    "Graph": "http://ns.sci.pe#Graph",
     "resourceOf": {
-      "@id": "http://ns.science.ai#resourceOf"
+      "@id": "http://ns.sci.pe#resourceOf"
     },
     "isNodeOf": {
-      "@id": "http://ns.science.ai#isNodeOf",
+      "@id": "http://ns.sci.pe#isNodeOf",
       "@type": "@id"
     },
     "detailedDescription": {
-      "@id": "http://ns.science.ai#detailedDescription",
+      "@id": "http://ns.sci.pe#detailedDescription",
       "@type": "@id"
     },
     "articleFrontMatter": {
-      "@id": "http://ns.science.ai#articleFrontMatter",
+      "@id": "http://ns.sci.pe#articleFrontMatter",
       "@type": "schema:Text"
     },
     "articleBackMatter": {
-      "@id": "http://ns.science.ai#articleBackMatter",
+      "@id": "http://ns.sci.pe#articleBackMatter",
       "@type": "schema:Text"
     },
     "isSupportingResource": {
-      "@id": "http://ns.science.ai#isSupportingResource",
+      "@id": "http://ns.sci.pe#isSupportingResource",
       "@type": "@id"
     },
     "conductor": {
-      "@id": "http://ns.science.ai#conductor",
+      "@id": "http://ns.sci.pe#conductor",
       "@type": "@id"
     },
     "writer": {
-      "@id": "http://ns.science.ai#writer",
+      "@id": "http://ns.sci.pe#writer",
       "@type": "@id"
     },
     "interviewer": {
-      "@id": "http://ns.science.ai#interviewer",
+      "@id": "http://ns.sci.pe#interviewer",
       "@type": "@id"
     },
     "interviewee": {
-      "@id": "http://ns.science.ai#interviewee",
+      "@id": "http://ns.sci.pe#interviewee",
       "@type": "@id"
     },
     "compiler": {
-      "@id": "http://ns.science.ai#compiler",
+      "@id": "http://ns.sci.pe#compiler",
       "@type": "@id"
     },
     "inventor": {
-      "@id": "http://ns.science.ai#inventor",
+      "@id": "http://ns.sci.pe#inventor",
       "@type": "@id"
     },
     "reporter": {
-      "@id": "http://ns.science.ai#reporter",
+      "@id": "http://ns.sci.pe#reporter",
       "@type": "@id"
     },
     "counsel": {
-      "@id": "http://ns.science.ai#counsel",
+      "@id": "http://ns.sci.pe#counsel",
       "@type": "@id"
     },
     "distributor": {
-      "@id": "http://ns.science.ai#distributor",
+      "@id": "http://ns.sci.pe#distributor",
       "@type": "@id"
     },
     "patentNumber": {
-      "@id": "http://ns.science.ai#patentNumber",
+      "@id": "http://ns.sci.pe#patentNumber",
       "@type": "schema:Text"
     },
     "recordingNumber": {
-      "@id": "http://ns.science.ai#recordingNumber",
+      "@id": "http://ns.sci.pe#recordingNumber",
       "@type": "schema:Text"
     },
     "chapterNumber": {
-      "@id": "http://ns.science.ai#chapterNumber",
+      "@id": "http://ns.sci.pe#chapterNumber",
       "@type": "schema:Text"
     },
     "legislationIdentifier": {
-      "@id": "http://ns.science.ai#legislationIdentifier",
+      "@id": "http://ns.sci.pe#legislationIdentifier",
       "@type": "schema:Text"
     },
     "abbreviatedLegislationIdentifier": {
-      "@id": "http://ns.science.ai#abbreviatedLegislationIdentifier",
+      "@id": "http://ns.sci.pe#abbreviatedLegislationIdentifier",
       "@type": "schema:Text"
     },
     "legislationType": {
-      "@id": "http://ns.science.ai#legislationType",
+      "@id": "http://ns.sci.pe#legislationType",
       "@type": "schema:Text"
     },
-    "Interview": "http://ns.science.ai#Interview",
-    "Patent": "http://ns.science.ai#Patent",
-    "Legislation": "http://ns.science.ai#Legislation",
-    "PublicationType": "http://ns.science.ai#PublicationType",
+    "Interview": "http://ns.sci.pe#Interview",
+    "Patent": "http://ns.sci.pe#Patent",
+    "Legislation": "http://ns.sci.pe#Legislation",
+    "PublicationType": "http://ns.sci.pe#PublicationType",
     "publicationTypeStatus": {
-      "@id": "http://ns.science.ai#publicationTypeStatus",
+      "@id": "http://ns.sci.pe#publicationTypeStatus",
       "@type": "@id"
     },
-    "PublicationTypeStatusType": "http://ns.science.ai#PublicationTypeStatusType",
+    "PublicationTypeStatusType": "http://ns.sci.pe#PublicationTypeStatusType",
     "objectSpecification": {
-      "@id": "http://ns.science.ai#objectSpecification",
+      "@id": "http://ns.sci.pe#objectSpecification",
       "@type": "@id"
     },
     "publicationTypeCoverage": {
-      "@id": "http://ns.science.ai#publicationTypeCoverage",
+      "@id": "http://ns.sci.pe#publicationTypeCoverage",
       "@type": "@id",
       "@container": "@set"
     },
-    "PublicationElementType": "http://ns.science.ai#PublicationElementType",
+    "PublicationElementType": "http://ns.sci.pe#PublicationElementType",
     "allowBroker": {
-      "@id": "http://ns.science.ai#allowBroker",
+      "@id": "http://ns.sci.pe#allowBroker",
       "@type": "@id"
     },
     "brokeredService": {
-      "@id": "http://ns.science.ai#brokeredService",
+      "@id": "http://ns.sci.pe#brokeredService",
       "@type": "@id"
     },
     "serviceStatus": {
-      "@id": "http://ns.science.ai#serviceStatus",
+      "@id": "http://ns.sci.pe#serviceStatus",
       "@type": "@id"
     },
-    "ServiceStatusType": "http://ns.science.ai#ServiceStatusType",
-    "CreateWorkflowSpecificationAction": "http://ns.science.ai#CreateWorkflowSpecificationAction",
+    "ServiceStatusType": "http://ns.sci.pe#ServiceStatusType",
+    "CreateWorkflowSpecificationAction": "http://ns.sci.pe#CreateWorkflowSpecificationAction",
     "potentialWorkflow": {
-      "@id": "http://ns.science.ai#potentialWorkflow",
+      "@id": "http://ns.sci.pe#potentialWorkflow",
       "@type": "@id"
     },
     "eligibleWorkflow": {
-      "@id": "http://ns.science.ai#eligibleWorkflow",
+      "@id": "http://ns.sci.pe#eligibleWorkflow",
       "@type": "@id"
     },
     "isPotentialWorkflowOf": {
-      "@id": "http://ns.science.ai#isPotentialWorkflowOf",
+      "@id": "http://ns.sci.pe#isPotentialWorkflowOf",
       "@type": "@id"
     },
     "isPublicationTypeOf": {
-      "@id": "http://ns.science.ai#isPublicationTypeOf",
+      "@id": "http://ns.sci.pe#isPublicationTypeOf",
       "@type": "@id"
     },
-    "WorkflowSpecification": "http://ns.science.ai#WorkflowSpecification",
+    "WorkflowSpecification": "http://ns.sci.pe#WorkflowSpecification",
     "workflowSpecificationStatus": {
-      "@id": "http://ns.science.ai#workflowSpecificationStatus",
+      "@id": "http://ns.sci.pe#workflowSpecificationStatus",
       "@type": "@id"
     },
-    "WorkflowSpecificationStatusType": "http://ns.science.ai#WorkflowSpecificationStatusType",
+    "WorkflowSpecificationStatusType": "http://ns.sci.pe#WorkflowSpecificationStatusType",
     "requiresCompletionOf": {
-      "@id": "http://ns.science.ai#requiresCompletionOf",
+      "@id": "http://ns.sci.pe#requiresCompletionOf",
       "@type": "@id"
     },
     "resultOf": {
-      "@id": "http://ns.science.ai#resultOf",
+      "@id": "http://ns.sci.pe#resultOf",
       "@type": "@id"
     },
     "instanceOf": {
-      "@id": "http://ns.science.ai#instanceOf",
+      "@id": "http://ns.sci.pe#instanceOf",
       "@type": "@id"
     },
     "instrumentOf": {
-      "@id": "http://ns.science.ai#instrumentOf",
+      "@id": "http://ns.sci.pe#instrumentOf",
       "@type": "@id"
     },
     "serviceOutputOf": {
-      "@id": "http://ns.science.ai#serviceOutputOf",
+      "@id": "http://ns.sci.pe#serviceOutputOf",
       "@type": "@id"
     },
     "potentialResult": {
-      "@id": "http://ns.science.ai#potentialResult",
+      "@id": "http://ns.sci.pe#potentialResult",
       "@type": "@id"
     },
     "potentialService": {
-      "@id": "http://ns.science.ai#potentialService",
+      "@id": "http://ns.sci.pe#potentialService",
       "@type": "@id"
     },
     "addOnService": {
-      "@id": "http://ns.science.ai#addOnService",
+      "@id": "http://ns.sci.pe#addOnService",
       "@type": "@id"
     },
     "activateOn": {
-      "@id": "http://ns.science.ai#activateOn",
+      "@id": "http://ns.sci.pe#activateOn",
       "@type": "@id"
     },
     "endorseOn": {
-      "@id": "http://ns.science.ai#endorseOn",
+      "@id": "http://ns.sci.pe#endorseOn",
       "@type": "@id"
     },
     "completeOn": {
-      "@id": "http://ns.science.ai#completeOn",
+      "@id": "http://ns.sci.pe#completeOn",
       "@type": "@id"
     },
     "valueRequiredOn": {
-      "@id": "http://ns.science.ai#valueRequiredOn",
+      "@id": "http://ns.sci.pe#valueRequiredOn",
       "@type": "@id"
     },
-    "TriggerType": "http://ns.science.ai#TriggerType",
+    "TriggerType": "http://ns.sci.pe#TriggerType",
     "ifMatch": {
-      "@id": "http://ns.science.ai#ifMatch",
+      "@id": "http://ns.sci.pe#ifMatch",
       "@type": "schema:Text"
     },
     "autoUpdate": {
-      "@id": "http://ns.science.ai#autoUpdate",
+      "@id": "http://ns.sci.pe#autoUpdate",
       "@type": "@id"
     },
     "mergeStrategy": {
-      "@id": "http://ns.science.ai#mergeStrategy",
+      "@id": "http://ns.sci.pe#mergeStrategy",
       "@type": "@id"
     },
-    "MergeStrategyType": "http://ns.science.ai#MergeStrategyType"
+    "MergeStrategyType": "http://ns.sci.pe#MergeStrategyType"
   }
 };
