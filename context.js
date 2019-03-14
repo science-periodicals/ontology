@@ -6971,7 +6971,7 @@ module.exports = {
     "PaidReviewAction": "http://ns.sci.pe#PaidReviewAction",
     "platformFeesIncluded": {
       "@id": "http://ns.sci.pe#platformFeesIncluded",
-      "@type": "@id"
+      "@type": "xsd:boolean"
     },
     "CreatePublicationIssueAction": "http://ns.sci.pe#CreatePublicationIssueAction",
     "CreateSpecialPublicationIssueAction": "http://ns.sci.pe#CreateSpecialPublicationIssueAction",
@@ -6999,7 +6999,7 @@ module.exports = {
     "AuthorizePaymentAction": "http://ns.sci.pe#AuthorizePaymentAction",
     "canReceivePayment": {
       "@id": "http://ns.sci.pe#canReceivePayment",
-      "@type": "@id"
+      "@type": "xsd:boolean"
     },
     "customerAccountStatus": {
       "@id": "http://ns.sci.pe#customerAccountStatus",
@@ -7123,7 +7123,7 @@ module.exports = {
     },
     "isSupportingResource": {
       "@id": "http://ns.sci.pe#isSupportingResource",
-      "@type": "@id"
+      "@type": "xsd:boolean"
     },
     "conductor": {
       "@id": "http://ns.sci.pe#conductor",
@@ -7206,7 +7206,7 @@ module.exports = {
     "PublicationElementType": "http://ns.sci.pe#PublicationElementType",
     "allowBroker": {
       "@id": "http://ns.sci.pe#allowBroker",
-      "@type": "@id"
+      "@type": "xsd:boolean"
     },
     "brokeredService": {
       "@id": "http://ns.sci.pe#brokeredService",
@@ -7295,7 +7295,7 @@ module.exports = {
     },
     "autoUpdate": {
       "@id": "http://ns.sci.pe#autoUpdate",
-      "@type": "@id"
+      "@type": "xsd:boolean"
     },
     "mergeStrategy": {
       "@id": "http://ns.sci.pe#mergeStrategy",
