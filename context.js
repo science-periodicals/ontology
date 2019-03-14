@@ -23,7 +23,7 @@ module.exports = {
     },
     "ma": "http://www.w3.org/ns/ma-ont#",
     "og": "http://ogp.me/ns#",
-    "org": "https://science.ai/organization/",
+    "org": "https://sci.pe/organization/",
     "owl": "http://www.w3.org/2002/07/owl#",
     "prov": "http://www.w3.org/ns/prov#",
     "ptr": "http://www.w3.org/2009/pointers#",
@@ -33,7 +33,7 @@ module.exports = {
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "rev": "http://purl.org/stuff/rev#",
     "rif": "http://www.w3.org/2007/rif#",
-    "role": "https://science.ai/role/",
+    "role": "https://sci.pe/role/",
     "rr": "http://www.w3.org/ns/r2rml#",
     "sd": "http://www.w3.org/ns/sparql-service-description#",
     "sioc": "http://rdfs.org/sioc/ns#",
@@ -3063,7 +3063,7 @@ module.exports = {
     "acrissCode": {
       "@id": "schema:acrissCode"
     },
-    "action": "https://science.ai/action/",
+    "action": "https://sci.pe/action/",
     "actionApplication": {
       "@id": "schema:actionApplication"
     },
@@ -3313,7 +3313,7 @@ module.exports = {
     "attendees": {
       "@id": "schema:attendees"
     },
-    "audience": "https://science.ai/audience/",
+    "audience": "https://sci.pe/audience/",
     "audienceType": {
       "@id": "schema:audienceType"
     },
@@ -3826,7 +3826,7 @@ module.exports = {
     "currentExchangeRate": {
       "@id": "schema:currentExchangeRate"
     },
-    "customer": "https://science.ai/customer/",
+    "customer": "https://sci.pe/customer/",
     "dataFeedElement": {
       "@id": "schema:dataFeedElement"
     },
@@ -4111,7 +4111,7 @@ module.exports = {
     "eligibleTransactionVolume": {
       "@id": "schema:eligibleTransactionVolume"
     },
-    "email": "https://science.ai/email/",
+    "email": "https://sci.pe/email/",
     "embedUrl": {
       "@id": "schema:embedUrl",
       "@type": "@id"
@@ -4197,7 +4197,7 @@ module.exports = {
     "estimatesRiskOf": {
       "@id": "schema:estimatesRiskOf"
     },
-    "event": "https://science.ai/event/",
+    "event": "https://sci.pe/event/",
     "eventStatus": {
       "@id": "schema:eventStatus"
     },
@@ -5354,7 +5354,7 @@ module.exports = {
       "@id": "schema:partOfTVSeries"
     },
     "participant": {
-      "@id": "https://science.ai/participant/",
+      "@id": "https://sci.pe/participant/",
       "@container": "@set",
       "@type": "@id"
     },
@@ -5666,7 +5666,7 @@ module.exports = {
       "@id": "schema:quest"
     },
     "question": {
-      "@id": "https://science.ai/question/",
+      "@id": "https://sci.pe/question/",
       "@type": "@id"
     },
     "rangeIncludes": {
@@ -6540,7 +6540,7 @@ module.exports = {
       "@id": "schema:vehicleTransmission",
       "@type": "@id"
     },
-    "vendor": "https://science.ai/vendor/",
+    "vendor": "https://sci.pe/vendor/",
     "version": {
       "@id": "schema:version"
     },
@@ -6633,30 +6633,30 @@ module.exports = {
     "yearsInOperation": {
       "@id": "schema:yearsInOperation"
     },
-    "sa": "http://ns.science.ai#",
+    "sa": "http://ns.sci.pe#",
     "spdx": "https://spdx.org/licenses/",
     "subjects": "http://ns.nature.com/subjects/",
-    "user": "https://science.ai/user/",
-    "bot": "https://science.ai/bot/",
-    "tmp": "https://science.ai/tmp/",
-    "seq": "https://science.ai/seq/",
-    "service": "https://science.ai/service/",
+    "user": "https://sci.pe/user/",
+    "bot": "https://sci.pe/bot/",
+    "tmp": "https://sci.pe/tmp/",
+    "seq": "https://sci.pe/seq/",
+    "service": "https://sci.pe/service/",
     "workflow": {
       "@id": "http://ns.science.ai#workflow",
       "@type": "@id"
     },
-    "journal": "https://science.ai/periodical/",
+    "journal": "https://sci.pe/periodical/",
     "graph": {
       "@id": "http://ns.science.ai#graph",
       "@type": "@id"
     },
-    "release": "https://science.ai/release/",
-    "message": "https://science.ai/message/",
+    "release": "https://sci.pe/release/",
+    "message": "https://sci.pe/message/",
     "node": {
       "@id": "http://ns.science.ai#node",
       "@type": "@id"
     },
-    "anon": "https://science.ai/anon/",
+    "anon": "https://sci.pe/anon/",
     "answer": {
       "@id": "http://ns.science.ai#answer",
       "@type": "@id"
@@ -6666,16 +6666,17 @@ module.exports = {
       "@type": "@id",
       "@container": "@set"
     },
-    "styleNode": "https://science.ai/styleNode/",
-    "tag": "https://science.ai/tag/",
-    "order": "https://science.ai/order/",
-    "issue": "https://science.ai/issue/",
-    "audienceRole": "https://science.ai/audienceRole/",
-    "assigner": "https://science.ai/assigner/",
-    "subscriber": "https://science.ai/subscriber/",
-    "offer": "https://science.ai/offer/",
-    "scienceai": "https://science.ai/",
-    "ses": "https://scienceai/ses/",
+    "styleNode": "https://sci.pe/styleNode/",
+    "tag": "https://sci.pe/tag/",
+    "order": "https://sci.pe/order/",
+    "issue": "https://sci.pe/issue/",
+    "audienceRole": "https://sci.pe/audienceRole/",
+    "assigner": "https://sci.pe/assigner/",
+    "subscriber": "https://sci.pe/subscriber/",
+    "offer": "https://sci.pe/offer/",
+    "scienceai": "https://sci.pe/",
+    "scipe": "https://sci.pe/",
+    "ses": "https://sci.pe/ses/",
     "suggestedResult": {
       "@id": "http://schema.org/suggestedResult",
       "@type": "@id"
@@ -7119,6 +7120,10 @@ module.exports = {
     "articleBackMatter": {
       "@id": "http://ns.science.ai#articleBackMatter",
       "@type": "schema:Text"
+    },
+    "isSupportingResource": {
+      "@id": "http://ns.science.ai#isSupportingResource",
+      "@type": "@id"
     },
     "conductor": {
       "@id": "http://ns.science.ai#conductor",

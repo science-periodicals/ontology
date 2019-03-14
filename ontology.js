@@ -2441,6 +2441,18 @@ module.exports = {
       status: 'stable'
     },
 
+    {
+      '@id': 'sa:isSupportingResource',
+      '@type': 'rdf:Property',
+      label: 'isSupportingResource',
+      altLabel: 'is supporting resource',
+      comment:
+        'A boolean indicating if a resource is a supporting resource (part of a supporting information section)',
+      range: 'schema:Boolean',
+      domain: 'schema:CreativeWork',
+      status: 'stable'
+    },
+
     // Custom properties for citations
     {
       '@id': 'sa:conductor',
