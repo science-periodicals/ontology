@@ -35,7 +35,7 @@ module.exports = {
     defines: { '@reverse': 'rdfs:isDefinedBy', '@type': '@id' }
   },
 
-  '@id': 'https://ns.science.ai/',
+  '@id': 'https://ns.sci.pe/',
 
   defines: [
     // Rhetorical elements kind of (all subclassOf schema:WebPageElement)
@@ -1681,7 +1681,7 @@ module.exports = {
       '@id': 'sa:Platform',
       '@type': 'schema:BusinessEntityType',
       label: 'Platform',
-      comment: 'The science.ai publishing platform'
+      comment: 'The sci.pe publishing platform'
     },
 
     // complement to schema:valueAddedTaxIncluded
