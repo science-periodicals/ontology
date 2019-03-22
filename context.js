@@ -6791,6 +6791,7 @@ module.exports = {
     "TableObject": "http://ns.sci.pe#TableObject",
     "DocumentObject": "http://ns.sci.pe#DocumentObject",
     "Footnote": "http://ns.sci.pe#Footnote",
+    "Endnote": "http://ns.sci.pe#Endnote",
     "Checksum": "http://ns.sci.pe#Checksum",
     "PerceptualHash": "http://ns.sci.pe#PerceptualHash",
     "contentChecksum": {

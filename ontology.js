@@ -749,6 +749,16 @@ module.exports = {
       status: 'stable'
     },
 
+    {
+      '@id': 'sa:Endnote',
+      '@type': 'rdfs:Class',
+      label: 'Endnote',
+      subClassOf: 'schema:Comment',
+      comment:
+        'An ancillary piece of information typically displayed at the end of a resource.',
+      status: 'stable'
+    },
+
     // Checksums
     {
       '@id': 'sa:Checksum',
