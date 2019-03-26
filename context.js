@@ -6925,6 +6925,7 @@ module.exports = {
       "@id": "http://ns.sci.pe#endOffset",
       "@type": "schema:Number"
     },
+    "ContributeAction": "http://ns.sci.pe#ContributeAction",
     "AnchorAction": "http://ns.sci.pe#AnchorAction",
     "WithdrawAction": "http://ns.sci.pe#WithdrawAction",
     "ArchiveAction": "http://ns.sci.pe#ArchiveAction",
@@ -6937,6 +6938,7 @@ module.exports = {
     "DeauthorizeAction": "http://ns.sci.pe#DeauthorizeAction",
     "AuthorizeContributorAction": "http://ns.sci.pe#AuthorizeContributorAction",
     "DeauthorizeContributorAction": "http://ns.sci.pe#DeauthorizeContributorAction",
+    "AuthorizeSourceUsageAction": "http://ns.sci.pe#AuthorizeSourceUsageAction",
     "UnassignAction": "http://ns.sci.pe#UnassignAction",
     "CreateOrganizationAction": "http://ns.sci.pe#CreateOrganizationAction",
     "CreateServiceAction": "http://ns.sci.pe#CreateServiceAction",

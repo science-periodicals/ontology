@@ -1347,6 +1347,16 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:ContributeAction',
+      '@type': 'rdfs:Class',
+      label: 'ContributeAction',
+      altLabel: 'Contribute Action',
+      comment: 'The act of contributing',
+      subClassOf: ['schema:Action'],
+      status: 'stable'
+    },
+
+    {
       '@id': 'sa:AnchorAction',
       '@type': 'rdfs:Class',
       label: 'AnchorAction',
@@ -1436,6 +1446,16 @@ module.exports = {
       altLabel: 'Deauthorize Contributor Action',
       comment: 'The act of terminating a contributor (recipient) of an object',
       subClassOf: ['sa:DeauthorizeAction'],
+      status: 'stable'
+    },
+
+    {
+      '@id': 'sa:AuthorizeSourceUsageAction',
+      '@type': 'rdfs:Class',
+      label: 'AuthorizeSourceUsageAction',
+      altLabel: 'Authorize Source Usage Action',
+      comment: 'The act of authorizing the use of a source',
+      subClassOf: ['sa:AuthorizeAction'],
       status: 'stable'
     },
 
