@@ -6958,6 +6958,7 @@ module.exports = {
     "CreateReleaseAction": "http://ns.sci.pe#CreateReleaseAction",
     "CreatePeriodicalAction": "http://ns.sci.pe#CreatePeriodicalAction",
     "CreateOfferAction": "http://ns.sci.pe#CreateOfferAction",
+    "DeclareAction": "http://ns.sci.pe#DeclareAction",
     "PublishAction": "http://ns.sci.pe#PublishAction",
     "publishIdentityOf": {
       "@id": "http://ns.sci.pe#publishIdentityOf",

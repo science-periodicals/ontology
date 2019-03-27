@@ -1625,6 +1625,16 @@ module.exports = {
       status: 'stable'
     },
 
+    {
+      '@id': 'sa:DeclareAction',
+      '@type': 'rdfs:Class',
+      label: 'DeclareAction',
+      altLabel: 'Declare Action',
+      comment: 'The act of making a formal statement (often public).',
+      subClassOf: ['schema:CommunicateAction'],
+      status: 'stable'
+    },
+
     // PublishAction
     {
       '@id': 'sa:PublishAction',
