@@ -6794,11 +6794,11 @@ module.exports = {
     "Endnote": "http://ns.sci.pe#Endnote",
     "noteIdentifier": {
       "@id": "http://ns.sci.pe#noteIdentifier",
-      "@type": "schema:Text"
+      "@type": "schema:Number"
     },
     "roleContactPointNoteIdentifier": {
       "@id": "http://ns.sci.pe#roleContactPointNoteIdentifier",
-      "@type": "schema:Text"
+      "@type": "schema:Number"
     },
     "Checksum": "http://ns.sci.pe#Checksum",
     "PerceptualHash": "http://ns.sci.pe#PerceptualHash",
