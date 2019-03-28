@@ -766,7 +766,7 @@ module.exports = {
       label: 'noteIdentifier',
       comment: 'The identifier (or label) of a footnote or endnote',
       altLabel: 'note identifier',
-      range: 'schema:Text',
+      range: 'schema:Number',
       domain: 'schema:Thing', // applies to ContributeAction and Footnote and Endnote
       subPropertyOf: 'schema:identifier',
       status: 'stable'
@@ -779,7 +779,7 @@ module.exports = {
       comment:
         'The identifier (or label) of a footnote or endnote hosting contact point information',
       altLabel: 'role contact point note identifier',
-      range: 'schema:Text',
+      range: 'schema:Number',
       domain: 'sa:ContributorRole',
       subPropertyOf: 'schema:identifier',
       status: 'stable'
