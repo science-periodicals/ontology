@@ -739,6 +739,7 @@ module.exports = {
       status: 'stable'
     },
 
+    // Footnotes and endnotes
     {
       '@id': 'sa:Footnote',
       '@type': 'rdfs:Class',
@@ -756,6 +757,31 @@ module.exports = {
       subClassOf: 'schema:Comment',
       comment:
         'An ancillary piece of information typically displayed at the end of a resource.',
+      status: 'stable'
+    },
+
+    {
+      '@id': 'sa:noteIdentifier',
+      '@type': 'rdf:Property',
+      label: 'noteIdentifier',
+      comment: 'The identifier (or label) of a footnote or endnote',
+      altLabel: 'note identifier',
+      range: 'schema:Text',
+      domain: 'schema:Thing', // applies to ContributeAction and Footnote and Endnote
+      subPropertyOf: 'schema:identifier',
+      status: 'stable'
+    },
+
+    {
+      '@id': 'sa:roleContactPointNoteIdentifier',
+      '@type': 'rdf:Property',
+      label: 'roleContactPointNoteIdentifier',
+      comment:
+        'The identifier (or label) of a footnote or endnote hosting contact point information',
+      altLabel: 'role contact point note identifier',
+      range: 'schema:Text',
+      domain: 'sa:ContributorRole',
+      subPropertyOf: 'schema:identifier',
       status: 'stable'
     },
 

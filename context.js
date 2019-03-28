@@ -6792,6 +6792,14 @@ module.exports = {
     "DocumentObject": "http://ns.sci.pe#DocumentObject",
     "Footnote": "http://ns.sci.pe#Footnote",
     "Endnote": "http://ns.sci.pe#Endnote",
+    "noteIdentifier": {
+      "@id": "http://ns.sci.pe#noteIdentifier",
+      "@type": "schema:Text"
+    },
+    "roleContactPointNoteIdentifier": {
+      "@id": "http://ns.sci.pe#roleContactPointNoteIdentifier",
+      "@type": "schema:Text"
+    },
     "Checksum": "http://ns.sci.pe#Checksum",
     "PerceptualHash": "http://ns.sci.pe#PerceptualHash",
     "contentChecksum": {
