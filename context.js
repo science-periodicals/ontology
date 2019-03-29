@@ -6792,7 +6792,8 @@ module.exports = {
     "DocumentObject": "http://ns.sci.pe#DocumentObject",
     "note": {
       "@id": "http://ns.sci.pe#note",
-      "@type": "@id"
+      "@type": "@id",
+      "@container": "@set"
     },
     "Footnote": "http://ns.sci.pe#Footnote",
     "Endnote": "http://ns.sci.pe#Endnote",
