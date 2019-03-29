@@ -741,6 +741,17 @@ module.exports = {
 
     // Footnotes and endnotes
     {
+      '@id': 'sa:note',
+      '@type': 'rdf:Property',
+      label: 'note',
+      comment: 'A note (footnote or endnote)',
+      altLabel: 'note',
+      range: 'schema:Comment',
+      domain: 'schema:CreativeWork',
+      status: 'stable'
+    },
+
+    {
       '@id': 'sa:Footnote',
       '@type': 'rdfs:Class',
       label: 'Footnote',

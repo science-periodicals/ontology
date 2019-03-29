@@ -6790,6 +6790,10 @@ module.exports = {
     "Audio": "http://ns.sci.pe#Audio",
     "TableObject": "http://ns.sci.pe#TableObject",
     "DocumentObject": "http://ns.sci.pe#DocumentObject",
+    "note": {
+      "@id": "http://ns.sci.pe#note",
+      "@type": "@id"
+    },
     "Footnote": "http://ns.sci.pe#Footnote",
     "Endnote": "http://ns.sci.pe#Endnote",
     "noteIdentifier": {
