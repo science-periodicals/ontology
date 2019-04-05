@@ -6918,6 +6918,10 @@ module.exports = {
       "@id": "http://ns.sci.pe#selectedValue",
       "@type": "@id"
     },
+    "editorialBoardDescription": {
+      "@id": "http://ns.sci.pe#editorialBoardDescription",
+      "@type": "schema:Text"
+    },
     "selectedValueChecksum": {
       "@id": "http://ns.sci.pe#selectedValueChecksum",
       "@type": "@id"

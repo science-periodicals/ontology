@@ -1314,6 +1314,18 @@ module.exports = {
       status: 'stable'
     },
 
+    // Editorial board
+    {
+      '@id': 'sa:editorialBoardDescription',
+      '@type': 'rdf:Property',
+      label: 'editorialBoardDescription',
+      comment: 'A description of the editorial board',
+      altLabel: 'editorial board description',
+      range: 'schema:Text',
+      domain: 'schema:Periodical',
+      status: 'stable'
+    },
+
     // selector checksums
     {
       '@id': 'sa:selectedValueChecksum',
