@@ -5082,8 +5082,8 @@ module.exports = {
       "@type": "Date"
     },
     "modifiedTime": {
-      "@id": "schema:modifiedTime",
-      "@type": "DateTime"
+      "@id": "http://ns.sci.pe#modifiedTime",
+      "@type": "schema:Date"
     },
     "monthlyMinimumRepaymentAmount": {
       "@id": "schema:monthlyMinimumRepaymentAmount"

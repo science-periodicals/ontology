@@ -2295,6 +2295,17 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:modifiedTime',
+      '@type': 'rdf:Property',
+      label: 'modifiedTime',
+      comment: 'The time when the action was last modified',
+      altLabel: 'modified time',
+      range: 'schema:Date',
+      domain: 'schema:Action',
+      status: 'stable'
+    },
+
+    {
       '@id': 'sa:activatedTime',
       '@type': 'rdf:Property',
       label: 'activatedTime',
