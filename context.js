@@ -6776,6 +6776,7 @@ module.exports = {
     "CreateAuthenticationTokenAction": "http://ns.sci.pe#CreateAuthenticationTokenAction",
     "CreateDiscountTokenAction": "http://ns.sci.pe#CreateDiscountTokenAction",
     "UpdatePasswordAction": "http://ns.sci.pe#UpdatePasswordAction",
+    "ResetPasswordAction": "http://ns.sci.pe#ResetPasswordAction",
     "reviewer": {
       "@id": "http://ns.sci.pe#reviewer",
       "@type": "@id"

@@ -628,6 +628,16 @@ module.exports = {
       status: 'stable'
     },
 
+    {
+      '@id': 'sa:ResetPasswordAction',
+      '@type': 'rdfs:Class',
+      label: 'ResetPasswordAction',
+      altLabel: 'Reset Password Action',
+      comment: 'The act of resetting a password.',
+      subClassOf: ['schema:Action'],
+      status: 'stable'
+    },
+
     // Resource and encodings
     {
       '@id': 'sa:reviewer',
