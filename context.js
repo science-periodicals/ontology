@@ -7128,8 +7128,7 @@ module.exports = {
       "@id": "http://ns.sci.pe#resourceOf"
     },
     "isNodeOf": {
-      "@id": "http://ns.sci.pe#isNodeOf",
-      "@type": "@id"
+      "@id": "http://ns.sci.pe#isNodeOf"
     },
     "detailedDescription": {
       "@id": "http://ns.sci.pe#detailedDescription",
