@@ -37,6 +37,8 @@ module.exports = {
   audience: 'https://sci.pe/audience/',
   issue: 'https://sci.pe/issue/',
   audienceRole: 'https://sci.pe/audienceRole/',
+  arole: 'https://sci.pe/arole/',
+  srole: 'https://sci.pe/srole/',
   vendor: 'https://sci.pe/vendor/',
   customer: 'https://sci.pe/customer/',
   assigner: 'https://sci.pe/assigner/',

@@ -6671,6 +6671,8 @@ module.exports = {
     "order": "https://sci.pe/order/",
     "issue": "https://sci.pe/issue/",
     "audienceRole": "https://sci.pe/audienceRole/",
+    "arole": "https://sci.pe/arole/",
+    "srole": "https://sci.pe/srole/",
     "assigner": "https://sci.pe/assigner/",
     "subscriber": "https://sci.pe/subscriber/",
     "offer": "https://sci.pe/offer/",
