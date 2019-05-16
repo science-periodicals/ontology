@@ -6656,6 +6656,7 @@ module.exports = {
       "@id": "http://ns.sci.pe#node",
       "@type": "@id"
     },
+    "cnode": "https://sci.pe/cnode/",
     "anon": "https://sci.pe/anon/",
     "answer": {
       "@id": "http://ns.sci.pe#answer",
