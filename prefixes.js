@@ -26,6 +26,7 @@ module.exports = {
   message: 'https://sci.pe/message/',
   email: 'https://sci.pe/email/',
   node: 'https://sci.pe/node/',
+  cnode: 'https://sci.pe/cnode/',
   anon: 'https://sci.pe/anon/',
   question: 'https://sci.pe/question/',
   answer: 'https://sci.pe/answer/',
