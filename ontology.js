@@ -3089,6 +3089,17 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:purposeOf',
+      '@type': 'rdf:Property',
+      label: 'purposeOf',
+      comment: 'The reverse property of purpose',
+      altLabel: 'purpose of',
+      range: 'schema:Action',
+      domain: 'schema:Action',
+      status: 'stable'
+    },
+
+    {
       '@id': 'sa:serviceOutputOf',
       '@type': 'rdf:Property',
       label: 'serviceOutputOf',

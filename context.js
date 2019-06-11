@@ -7280,6 +7280,10 @@ module.exports = {
       "@id": "http://ns.sci.pe#instrumentOf",
       "@type": "@id"
     },
+    "purposeOf": {
+      "@id": "http://ns.sci.pe#purposeOf",
+      "@type": "@id"
+    },
     "serviceOutputOf": {
       "@id": "http://ns.sci.pe#serviceOutputOf",
       "@type": "@id"
