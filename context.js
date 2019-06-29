@@ -7149,6 +7149,10 @@ module.exports = {
       "@id": "http://ns.sci.pe#isSupportingResource",
       "@type": "xsd:boolean"
     },
+    "supersedes": {
+      "@id": "http://ns.sci.pe#supersedes",
+      "@type": "@id"
+    },
     "conductor": {
       "@id": "http://ns.sci.pe#conductor",
       "@type": "@id"

@@ -2563,6 +2563,18 @@ module.exports = {
       status: 'stable'
     },
 
+    // encoding props
+    {
+      '@id': 'sa:supersedes',
+      '@type': 'rdf:Property',
+      label: 'supersedes',
+      altLabel: 'supersedes',
+      comment: 'The encoding that got superseded by the current one',
+      range: 'schema:MediaObject',
+      domain: 'schema:MediaObject',
+      status: 'stable'
+    },
+
     // Custom properties for citations
     {
       '@id': 'sa:conductor',
