@@ -1017,6 +1017,19 @@ module.exports = {
       status: 'stable'
     },
 
+    // this is used so that instantiated polyton actions can be sorted
+    // deterministically
+    {
+      '@id': 'sa:instanceIndex',
+      '@type': 'rdf:Property',
+      label: 'instanceIndex',
+      comment: 'The index of the instance (used for polyton actions)',
+      altLabel: 'result of',
+      range: 'schema:Text',
+      domain: 'schema:Action',
+      status: 'stable'
+    },
+
     // Errors
     {
       '@id': 'sa:Error',

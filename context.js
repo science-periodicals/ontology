@@ -6859,6 +6859,10 @@ module.exports = {
       "@id": "http://ns.sci.pe#maxInstances",
       "@type": "schema:Number"
     },
+    "instanceIndex": {
+      "@id": "http://ns.sci.pe#instanceIndex",
+      "@type": "schema:Text"
+    },
     "Error": "http://ns.sci.pe#Error",
     "statusCode": {
       "@id": "http://ns.sci.pe#statusCode",
