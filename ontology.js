@@ -1025,7 +1025,7 @@ module.exports = {
       label: 'instanceIndex',
       comment: 'The index of the instance (used for polyton actions)',
       altLabel: 'result of',
-      range: 'schema:Text',
+      range: 'schema:Number',
       domain: 'schema:Action',
       status: 'stable'
     },

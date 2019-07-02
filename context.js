@@ -6861,7 +6861,7 @@ module.exports = {
     },
     "instanceIndex": {
       "@id": "http://ns.sci.pe#instanceIndex",
-      "@type": "schema:Text"
+      "@type": "schema:Number"
     },
     "Error": "http://ns.sci.pe#Error",
     "statusCode": {
