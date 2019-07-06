@@ -7093,6 +7093,10 @@ module.exports = {
       "@id": "http://ns.sci.pe#expectedDatePublishedOrRejected",
       "@type": "schema:Date"
     },
+    "dateEnded": {
+      "@id": "http://ns.sci.pe#dateEnded",
+      "@type": "schema:Date"
+    },
     "dateRejected": {
       "@id": "http://ns.sci.pe#dateRejected",
       "@type": "schema:Date"

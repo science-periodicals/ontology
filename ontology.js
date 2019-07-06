@@ -2375,6 +2375,18 @@ module.exports = {
     },
 
     {
+      '@id': 'sa:dateEnded',
+      '@type': 'rdf:Property',
+      label: 'dateEnded',
+      comment:
+        'The date when the Graph was published, rejected or withdrawn. Note that it can be different from the datePublished.',
+      altLabel: 'date ended',
+      range: 'schema:Date',
+      domain: 'sa:Graph',
+      status: 'stable'
+    },
+
+    {
       '@id': 'sa:dateRejected',
       '@type': 'rdf:Property',
       label: 'dateRejected',
