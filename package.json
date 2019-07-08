@@ -1,5 +1,5 @@
 {
-  "name": "@scienceai/ontology",
+  "name": "@scipe/ontology",
   "version": "22.79.0",
   "description": "schema.org extension to describe the production process, content, distribution and preservation of scholarly articles (and similar artifacts)",
   "main": "index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scienceai/ontology.git"
+    "url": "git+https://github.com/science-periodicals/ontology.git"
   },
   "keywords": [
     "schema",
@@ -24,17 +24,17 @@
     "JSON-LD"
   ],
   "eslintConfig": {
-    "extends": "scienceai"
+    "extends": "@scipe"
   },
   "author": "Sebastien Ballesteros",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/scienceai/ontology/issues"
+    "url": "https://github.com/science-periodicals/ontology/issues"
   },
-  "homepage": "https://github.com/scienceai/ontology#readme",
+  "homepage": "https://github.com/science-periodicals/ontology#readme",
   "devDependencies": {
+    "@scipe/eslint-config": "^1.0.0",
     "browserify": "^16.2.3",
-    "eslint-config-scienceai": "^4.4.0",
     "is-url": "^1.2.4",
     "jsdom": "^11.12.0",
     "mocha": "^6.1.3",
